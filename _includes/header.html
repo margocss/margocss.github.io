@@ -1,47 +1,29 @@
-<header class="container-fluid">
-  <div class="row">
-    <div class="col-md-6">
-      
-    </div>
-    <div class="col-md-6">
-      
-    </div>
+
+<nav class="dd-navbar">
+  
+  <div class="dd-navbrand">
+    
   </div>
 
-</header>
+  <ul class="dd-navlist">
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+          {% if my_page.url == page.url %}
+          <li class="active">
+            <a href="{{ my_page.url | prepend: site.baseurl }}">             
+              {{ my_page.title }}
+            </a>
+          </li>
+          {% else %}
+          <li class="">
+            <a href="{{ my_page.url | prepend: site.baseurl | prepend: site.url  }}">
+              {{ my_page.title }}
+            </a>
+          </li>
+          {% endif %}
 
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="{{'' | prepend: site.baseurl | prepend: site.url}}">
-        <img 
-          src="{{ '/images/cool-con.svg' | prepend: site.baseurl | prepend: site.url }}" 
-          alt="Header Logo" height="100%" 
-          width="100%"/>
-      </a>
-    </div>
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
-      <ul class="nav navbar-nav">
-          {% for my_page in site.pages %}
-            {% if my_page.title %}
-              {% if my_page.url == page.url %}
-              <li class="active">
-                <a href="{{ my_page.url | prepend: site.baseurl }}">             
-                  {{ my_page.title }}
-                </a>
-              </li>
-              {% else %}
-              <li class="">
-                <a href="{{ my_page.url | prepend: site.baseurl | prepend: site.url  }}">
-                  {{ my_page.title }}
-                </a>
-              </li>
-              {% endif %}
-
-            {% endif %}
-          {% endfor %}
-      </ul>
-    </div>
-
-  </div>
+        {% endif %}
+      {% endfor %}
+  </ul>
+</div>
 </nav>

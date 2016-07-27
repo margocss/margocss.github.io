@@ -2,44 +2,202 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
-@import "../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
 @import "../_sass/mixins";
-@import "../_sass/base";
-@import "../_sass/syntax-highlighting";
-  
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,600italic,400italic,200italic,200);
+
+body{
+  font-family: 'Libre Franklin', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+$med-screen:  550px;
+$lg-screen:   750px;
+$xl-screen:  1000px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 
-$primary-yello: #F4B350;
+$code-color: darkred;
 
+// =========================
+// typography
 
-.jumbotron{
-  background: $primary-yello;
+body, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+  font-weight: 700
 }
 
-.featured-content {
-  h3 {
-    a {
-     color:  $primary-yello;
-     
-     &:hover{
-        color: #D35400;
-      }
-    }
-    
-  }
-
-  p {
-    color: #D35400;
+body {
+  font-size: 1em; /* equivalent to 16px */
+  line-height: 1.25; /* equivalent to 20px */
+  
+  @include media-query($med-screen){
+    font-size: 1em; /* equivalent to 16px */
+    line-height: 1.375; /* equivalent to 20px */
   }
 }
 
-
-
-.pagination {
-  > .active {
-    > a {
-      background: $primary-yello;
-    }
+h1 {
+  font-size: 2em;/* 2x body copy size = 32px */
+  line-height: 1.25; /* 45px / 36px */
+  
+  @include media-query($med-screen){
+    font-size: 2.5em;  /* 2.5x body copy size = 40px */
+    line-height: 1.125;
   }
+
+  @include media-query($lg-screen){
+    font-size: 3em;     /* 3x body copy size = 48px */
+    line-height: 1.05; 
+      /* keep to a multiple of the 20px line height 
+      and something more appropriate for display headings */
+  }
+}
+
+h2 {
+  font-size: 1.625em;/* 2x body copy size = 32px */
+  line-height: 1.1538; /* 45px / 36px */
+  
+  @include media-query($med-screen){
+    font-size: 2em;  /* 2.5x body copy size = 40px */
+    line-height: 1.25;
+  }
+
+  @include media-query($lg-screen){
+    font-size: 2.25em;     /* 3x body copy size = 48px */
+    line-height: 1.25; 
+      /* keep to a multiple of the 20px line height 
+      and something more appropriate for display headings */
+  }
+}
+
+h3 {
+  font-size: 1.375em;/* 2x body copy size = 32px */
+  line-height: 1.136363; /* 45px / 36px */
+  
+  @include media-query($med-screen){
+    font-size: 1.5em;  /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+  }
+
+  @include media-query($lg-screen){
+    font-size: 1.75em;     /* 3x body copy size = 48px */
+    line-height: 1.05; 
+      /* keep to a multiple of the 20px line height 
+      and something more appropriate for display headings */
+  }
+}
+
+h4 {
+  font-size: 1.125em;/* 2x body copy size = 32px */
+  line-height: 1.136363; /* 45px / 36px */
+  @include media-query($med-screen){
+    font-size: 1.125em;  /* 2.5x body copy size = 40px */
+    line-height: 1.222222;
+  }
+
+  @include media-query($lg-screen){
+    font-size: 1.125em;     /* 3x body copy size = 48px */
+    line-height: 1.222222; 
+      /* keep to a multiple of the 20px line height 
+      and something more appropriate for display headings */
+  }
+}
+
+h4 {
+  font-size: 1.125em;/* 2x body copy size = 32px */
+  line-height: 1.136363; /* 45px / 36px */
+  
+  @include media-query($med-screen){
+    font-size: 1.125em;  /* 2.5x body copy size = 40px */
+    line-height: 1.222222;
+  }
+
+  @include media-query($lg-screen){
+    font-size: 1.125em;     /* 3x body copy size = 48px */
+    line-height: 1.222222; 
+      /* keep to a multiple of the 20px line height 
+      and something more appropriate for display headings */
+  }
+}
+
+p{
+  font-weight: 400;
+}
+
+/* Body Content */
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  @include media-query($med-screen){ width: 80%; }
+  @include media-query($lg-screen){ width: 85%; }
+}
+
+
+code {
+  background: #ddd;
+  color: $code-color;
+  padding: 4px;
+}
+
+.container-full{
+  width: 100%;
+}
+
+.container-narrow{
+
+}
+
+.navbar {
+    display: block;
+    width: 100%;
+    background: #fff;
+    z-index: 99;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 0 20px;
+}
+
+.navbar.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-spacer {
+    display: none;
+}
+
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+}
+
+.navbar-item {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.navbar-item:hover {
+    background: #ddd;
+}
+
+.navbar-link {
+    display: block;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    text-decoration: none;
+    line-height: 5rem;
+    color: #222;
+    padding-right: 35px;
+    padding-left: 10px;
+
+}
+
+.navbar-link.active {
+    color: #33C3F0;
 }

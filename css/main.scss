@@ -20,6 +20,10 @@ $code-color: darkred;
 // =========================
 // typography
 
+*{
+  box-sizing: border-box
+}
+
 body, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.5;
   font-weight: 700
@@ -122,6 +126,33 @@ h4 {
 p{
   font-weight: 400;
 }
+
+.grid-container{
+  font-size: 0;
+  >*{
+    display: inline-block;
+    font-size: medium;
+    
+    &.sm-1-x-12{width: 100%}    
+
+    @include media-query($med-screen){
+      &.md-6-x-12{width: 50%} 
+    }
+
+    @include media-query($lg-screen){
+      &.lg-3-x-12{width: 25%} 
+    }
+  }
+  
+}
+
+.grid-container > *{
+  background: #ddd;
+  border: 1px solid #343;
+  height: 20px;
+
+}
+
 
 /* Body Content */
 .container{

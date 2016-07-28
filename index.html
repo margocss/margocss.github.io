@@ -1,14 +1,51 @@
 ---
 layout: default
 ---
-  <div class="container">
-  <h1 class="major-section layout">Layout</h1>
-  </div>
+  <div class="container-narrow">
+  <h1 class="header layout">Layout</h1>
 
-  <div class="container">
-    <h3 class="subheader">Containers</h3>
-      <p class="explanation">Containers set a max width of <strong>920px</strong> on an outer div. <br/>There are types of container classes:  <code>container-narrow</code> and <code>container-full-width</code>.</p>
+
+
+  <div class="container-narrow">
+    <h3 class="subheader">Grid</h3>
+    
+      <h4>Full</h4>
+      <div class="grid-container demo">
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+      </div>
+
+      <h4>Grid With gutters</h4>
+      <div class="grid-container guttered demo">
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+        <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+        </div>
+      </div>
+    
+      <h3 class="subheader">Containers</h3>
+      <p class="explanation">Containers set a max width of <strong>920px</strong> on an outer div. <br/>There are types of container classes:  <code>container-narrow</code> and <code>container-full-width</code>.
+      </p>
     </div>
+  </div>
     <div class="container-narrow demo">
       <h3><code>&lt;div class="container-narrow"&gt;</code></h3>
       <p class="example-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit iusto aspernatur vitae cum obcaecati itaque rem aut voluptatem possimus ullam accusantium veniam, ipsum non, enim magni dolorum. Dicta harum quo deserunt quae corporis?</p>
@@ -21,70 +58,69 @@ layout: default
       <p class="example-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quod voluptatem ratione perferendis quo. Voluptatibus repudiandae placeat rerum asperiores voluptate, voluptatum quo ipsum! Dolor eius velit perspiciatis cumque ab ullam, id impedit in! Minima eligendi est id incidunt molestiae amet expedita possimus, magni quam. Reprehenderit earum atque minima vitae amet quod magnam, voluptatem nostrum ullam. Quisquam nobis eos quos iste! Aliquid dolorum voluptas eum, tenetur sint aspernatur itaque iusto perferendis voluptates, veniam velit libero aperiam, explicabo, esse. Vel suscipit scipit odit sequi reprehenderit esse. Placeat iure distinctio quasi labore autem officiis, sed, voluptate </p>
     </div>
 
-    <h3 class="subheader">Grid</h3>
     
-    <h4>Full</h4>
-    <div class="grid-container">
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
-      </div>
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
-      </div>
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
-      </div>
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
-      </div>
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
-      </div>
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
-      </div>
-    </div>
+  <div class="container-narrow formatting">
+    <h1 class="header">General Formatting</h1>
+      <div class="container-narrow">
+        <h3 class="subheader">Typography</h3>
+        <h1>Heading : &lt;h1&gt; </h1>
+        <h2>Heading : &lt;h2&gt; </h2>
+        <h3>Heading : &lt;h3&gt; </h3>
+        <h4>Heading : &lt;h4&gt; </h4>
+        <h5>Heading : &lt;h5&gt; </h5>
+        <h6>Heading : &lt;h6&gt; </h6>
 
-    <h4>Guttered</h4>
-    <div class="grid-container guttered">
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
+      <h3 class="subheader">Buttons</h3>
+      <p class="explanation">There are two strand button styles (<strong>primary</strong> and <strong>normal</strong>) and four html syntaxes available for each style.</p>
+      <div class="grid-container guttered buttons-section">
+        <div class="sm-12-x-12 lg-6-x-12">
+          <button>Normal</button>
+          <div> 
+            <code>&lt;button&gt;...&lt;/button&gt;</code><br/>
+            <code>&lt;a class="button"&gt;...&lt;/button&gt;</code><br/>
+            <code>&lt;input type="button" value="..."&gt;</code><br/>
+            <code>&lt;input type="submit" value="...&gt;</code><br/>
+          </div>
+        </div>
+        <div class="sm-12-x-12 lg-6-x-12">
+          <input type="button" class="primary" value="Primary">
+          <div>
+            <code>&lt;button class="button"&gt;...&lt;/button&gt;</code><br/>
+            <code>&lt;a class="button primary"&gt;...&lt;/button&gt;</code><br/>
+            <code>&lt;input type="button" class="primary" value="..."&gt;</code><br/>
+            <code>&lt;input type="submit" class="primary" value="...&gt;</code><br/>
+          </div>
+        </div>
       </div>
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
-      </div>
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
-      </div>
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
-      </div>
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
-      </div>
-      <div class="sm-4-x-12 md-6-x-12 lg-4-x-12">
-      </div>
-    </div>
       
 
-  <div class="container">
-    <h1 class="major-section">General Formatting</h1>
+     
+
+      <h3 class="subheader">Links</h3>
+      <h3 class="subheader">Lists</h3>
+    </div>
+
   </div>
-      <h3 class="subheader">Typography</h3>
-      <h1>Heading : &lt;h1&gt; </h1>
-      <h2>Heading : &lt;h2&gt; </h2>
-      <h3>Heading : &lt;h3&gt; </h3>
-      <h4>Heading : &lt;h4&gt; </h4>
-      <h5>Heading : &lt;h5&gt; </h5>
-      <h6>Heading : &lt;h6&gt; </h6>
-
-
-    <h3 class="subheader">Links</h3>
-    <h3 class="subheader">Lists</h3>
-    
-  <h1 class="major-section">Component Formatting</h1>
-    <h3 class="subheader">Buttons</h3>
+  
+  <div class="container-narrow">
+    <h1 class="header">Component Formatting</h1>
     <h3 class="subheader">Tables</h3>
     <h3 class="subheader">Forms</h3>
     <h3 class="subheader">Images</h3>
+  </div>
 
-  <h1 class="major-section">Web Components</h1>
+  <div class="container-narrow">
+    <h1 class="header">Components</h1>
     <h3 class="subheader">Hero-Header</h3>
     <h3 class="subheader">Navigation</h3>
     <h3 class="subheader">Callout-Segment</h3>
     <h3 class="subheader">Sidebars</h3>
     <h3 class="subheader">Thumbnails/Cards</h3>
+  </div>
 
-  <h1 class="major-section">Miscellaneous</h1>
+  <div class="container-narrow">
+    <h1 class="header">Miscellaneous</h1>
     <h4>Code</h4>
     <h3>Block Quotes</h3>
+  </div>
 </div>

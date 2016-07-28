@@ -8,33 +8,42 @@ body {
 * {
   box-sizing: border-box; }
 
+body {
+  margin: 0; }
+
 body, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.5;
-  font-weight: 700; }
+  font-weight: 400; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem; }
+
+p {
+  margin-bottom: 1.5rem; }
 
 body {
   font-size: 1em;
   /* equivalent to 16px */
   line-height: 1.25;
   /* equivalent to 20px */ }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 760px) {
     body {
       font-size: 1em;
       /* equivalent to 16px */
-      line-height: 1.375;
-      /* equivalent to 20px */ } }
+      line-height: 1.625;
+      /* equivalent to 22px */ } }
 
 h1 {
   font-size: 2em;
   /* 2x body copy size = 32px */
   line-height: 1.25;
   /* 45px / 36px */ }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 760px) {
     h1 {
       font-size: 2.5em;
       /* 2.5x body copy size = 40px */
       line-height: 1.125; } }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 960px) {
     h1 {
       font-size: 3em;
       /* 3x body copy size = 48px */
@@ -47,12 +56,12 @@ h2 {
   /* 2x body copy size = 32px */
   line-height: 1.1538;
   /* 45px / 36px */ }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 760px) {
     h2 {
       font-size: 2em;
       /* 2.5x body copy size = 40px */
       line-height: 1.25; } }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 960px) {
     h2 {
       font-size: 2.25em;
       /* 3x body copy size = 48px */
@@ -65,12 +74,12 @@ h3 {
   /* 2x body copy size = 32px */
   line-height: 1.136363;
   /* 45px / 36px */ }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 760px) {
     h3 {
       font-size: 1.5em;
       /* 2.5x body copy size = 40px */
       line-height: 1.125; } }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 960px) {
     h3 {
       font-size: 1.75em;
       /* 3x body copy size = 48px */
@@ -83,12 +92,12 @@ h4 {
   /* 2x body copy size = 32px */
   line-height: 1.136363;
   /* 45px / 36px */ }
-  @media screen and (min-width: 550px) {
+  @media screen and (min-width: 760px) {
     h4 {
       font-size: 1.125em;
       /* 2.5x body copy size = 40px */
       line-height: 1.222222; } }
-  @media screen and (min-width: 750px) {
+  @media screen and (min-width: 960px) {
     h4 {
       font-size: 1.125em;
       /* 3x body copy size = 48px */
@@ -96,23 +105,8 @@ h4 {
       /* keep to a multiple of the 20px line height 
       and something more appropriate for display headings */ } }
 
-h4 {
-  font-size: 1.125em;
-  /* 2x body copy size = 32px */
-  line-height: 1.136363;
-  /* 45px / 36px */ }
-  @media screen and (min-width: 550px) {
-    h4 {
-      font-size: 1.125em;
-      /* 2.5x body copy size = 40px */
-      line-height: 1.222222; } }
-  @media screen and (min-width: 750px) {
-    h4 {
-      font-size: 1.125em;
-      /* 3x body copy size = 48px */
-      line-height: 1.222222;
-      /* keep to a multiple of the 20px line height 
-      and something more appropriate for display headings */ } }
+small {
+  font-size: .75em; }
 
 p {
   font-weight: 400; }
@@ -121,36 +115,233 @@ p {
   font-size: 0; }
   .grid-container > * {
     display: inline-block;
-    font-size: medium; }
+    font-size: medium;
+    vertical-align: top; }
     .grid-container > *.sm-1-x-12 {
-      width: 100%; }
-    @media screen and (min-width: 550px) {
-      .grid-container > *.md-6-x-12 {
-        width: 50%; } }
-    @media screen and (min-width: 750px) {
+      width: 8.33333%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-1-x-12 {
+        width: 8.33333%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container > *.lg-1-x-12 {
+        width: 8.33333%; } }
+    .grid-container > *.sm-2-x-12 {
+      width: 16.66667%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-2-x-12 {
+        width: 16.66667%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container > *.lg-2-x-12 {
+        width: 16.66667%; } }
+    .grid-container > *.sm-3-x-12 {
+      width: 25%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-3-x-12 {
+        width: 25%; } }
+    @media screen and (min-width: 960px) {
       .grid-container > *.lg-3-x-12 {
         width: 25%; } }
+    .grid-container > *.sm-4-x-12 {
+      width: 33.33333%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-4-x-12 {
+        width: 33.33333%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container > *.lg-4-x-12 {
+        width: 33.33333%; } }
+    .grid-container > *.sm-5-x-12 {
+      width: 41.66667%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-5-x-12 {
+        width: 41.66667%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container > *.lg-5-x-12 {
+        width: 41.66667%; } }
+    .grid-container > *.sm-6-x-12 {
+      width: 50%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-6-x-12 {
+        width: 50%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container > *.lg-6-x-12 {
+        width: 50%; } }
+    .grid-container > *.sm-7-x-12 {
+      width: 58.33333%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-7-x-12 {
+        width: 58.33333%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container > *.lg-7-x-12 {
+        width: 58.33333%; } }
+    .grid-container > *.sm-8-x-12 {
+      width: 66.66667%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-8-x-12 {
+        width: 66.66667%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container > *.lg-8-x-12 {
+        width: 66.66667%; } }
+    .grid-container > *.sm-9-x-12 {
+      width: 75%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-9-x-12 {
+        width: 75%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container > *.lg-9-x-12 {
+        width: 75%; } }
+    .grid-container > *.sm-10-x-12 {
+      width: 83.33333%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-10-x-12 {
+        width: 83.33333%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container > *.lg-10-x-12 {
+        width: 83.33333%; } }
+    .grid-container > *.sm-11-x-12 {
+      width: 91.66667%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-11-x-12 {
+        width: 91.66667%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container > *.lg-11-x-12 {
+        width: 91.66667%; } }
+    .grid-container > *.sm-12-x-12 {
+      width: 100%; }
+    @media screen and (min-width: 760px) {
+      .grid-container > *.md-12-x-12 {
+        width: 100%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container > *.lg-12-x-12 {
+        width: 100%; } }
+  .grid-container.guttered {
+    padding-left: 1.5%; }
+    .grid-container.guttered > .sm-1-x-12 {
+      width: 6.83333%;
+      margin-right: 1.5%; }
+    .grid-container.guttered > .sm-2-x-12 {
+      width: 15.16667%;
+      margin-right: 1.5%; }
+    .grid-container.guttered > .sm-3-x-12 {
+      width: 23.5%;
+      margin-right: 1.5%; }
+    .grid-container.guttered > .sm-4-x-12 {
+      width: 31.83333%;
+      margin-right: 1.5%; }
+    .grid-container.guttered > .sm-5-x-12 {
+      width: 40.16667%;
+      margin-right: 1.5%; }
+    .grid-container.guttered > .sm-6-x-12 {
+      width: 48.5%;
+      margin-right: 1.5%; }
+    .grid-container.guttered > .sm-7-x-12 {
+      width: 56.83333%;
+      margin-right: 1.5%; }
+    .grid-container.guttered > .sm-8-x-12 {
+      width: 65.16667%;
+      margin-right: 1.5%; }
+    .grid-container.guttered > .sm-9-x-12 {
+      width: 73.5%;
+      margin-right: 1.5%; }
+    .grid-container.guttered > .sm-10-x-12 {
+      width: 81.83333%;
+      margin-right: 1.5%; }
+    .grid-container.guttered > .sm-11-x-12 {
+      width: 90.16667%;
+      margin-right: 1.5%; }
+    .grid-container.guttered > .sm-12-x-12 {
+      width: 98.5%;
+      margin-right: 1.5%; }
+    @media screen and (min-width: 760px) {
+      .grid-container.guttered > .md-1-x-12 {
+        width: 6.83333%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .md-2-x-12 {
+        width: 15.16667%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .md-3-x-12 {
+        width: 23.5%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .md-4-x-12 {
+        width: 31.83333%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .md-5-x-12 {
+        width: 40.16667%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .md-6-x-12 {
+        width: 48.5%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .md-7-x-12 {
+        width: 56.83333%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .md-8-x-12 {
+        width: 65.16667%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .md-9-x-12 {
+        width: 73.5%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .md-10-x-12 {
+        width: 81.83333%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .md-11-x-12 {
+        width: 90.16667%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .md-12-x-12 {
+        width: 98.5%;
+        margin-right: 1.5%; } }
+    @media screen and (min-width: 960px) {
+      .grid-container.guttered > .lg-1-x-12 {
+        width: 6.83333%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .lg-2-x-12 {
+        width: 15.16667%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .lg-3-x-12 {
+        width: 23.5%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .lg-4-x-12 {
+        width: 31.83333%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .lg-5-x-12 {
+        width: 40.16667%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .lg-6-x-12 {
+        width: 48.5%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .lg-7-x-12 {
+        width: 56.83333%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .lg-8-x-12 {
+        width: 65.16667%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .lg-9-x-12 {
+        width: 73.5%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .lg-10-x-12 {
+        width: 81.83333%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .lg-11-x-12 {
+        width: 90.16667%;
+        margin-right: 1.5%; }
+      .grid-container.guttered > .lg-12-x-12 {
+        width: 98.5%;
+        margin-right: 1.5%; } }
 
-.grid-container > * {
-  background: #ddd;
-  border: 1px solid #343;
-  height: 20px; }
-
-/* Body Content */
-.container {
+/* Body Content - container */
+.container, .container-narrow {
   max-width: 960px;
   margin: 0 auto; }
-  @media screen and (min-width: 550px) {
-    .container {
+  @media screen and (min-width: 760px) {
+    .container, .container-narrow {
       width: 80%; } }
-  @media screen and (min-width: 750px) {
-    .container {
+  @media screen and (min-width: 960px) {
+    .container, .container-narrow {
       width: 85%; } }
 
 code {
   background: #ddd;
-  color: darkred;
-  padding: 4px; }
+  color: #96281B;
+  padding: 1px 4px;
+  margin: 0 1px; }
 
 .container-full {
   width: 100%; }
@@ -200,3 +391,42 @@ code {
 
 .navbar-link.active {
   color: #33C3F0; }
+
+.container-narrow.demo, .container-full-width.demo {
+  padding: 3px;
+  border: 1px rgba(171, 183, 183, 0.75) dotted; }
+  .container-narrow.demo h3, .container-full-width.demo h3 {
+    margin: 0; }
+
+.grid-container {
+  border: 1px solid red; }
+
+.grid-container > * {
+  background: #ddd;
+  border: 1px solid #343;
+  height: 50px; }
+
+.major-section {
+  border: 2px rgba(231, 76, 60, 0.33) solid;
+  padding: 3px;
+  color: #3a539b; }
+
+.subheader {
+  padding: 3px;
+  color: #5c97bf; }
+
+.explanation {
+  font-size: 1.125em;
+  /* 2x body copy size = 32px */
+  padding: 3px; }
+  @media screen and (min-width: 760px) {
+    .explanation {
+      font-size: 1.125em;
+      /* 2.5x body copy size = 40px */ } }
+  @media screen and (min-width: 960px) {
+    .explanation {
+      font-size: 1.125em; } }
+
+.example-text {
+  padding: 3px;
+  color: #abb7b7; }

@@ -11,6 +11,9 @@ body {
 body {
   margin: 0; }
 
+img {
+  max-width: 100%; }
+
 body, h1, h2, h3, h4, h5, h6 {
   font-size-adjust: 0.5;
   font-weight: 400; }
@@ -19,7 +22,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1rem; }
 
 p {
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1.5rem;
+  font-weight: 400; }
+
+ul, ol {
+  padding-left: 1rem; }
+  ul > li, ol > li {
+    padding-left: .5rem; }
+
+ol ol {
+  list-style-type: lower-alpha; }
+  ol ol ol {
+    list-style-type: lower-roman; }
+
+a {
+  color: #5c97bf; }
+  a:hover {
+    color: #3a539b; }
 
 body {
   font-size: 1em;
@@ -106,10 +125,7 @@ h4 {
       and something more appropriate for display headings */ } }
 
 small {
-  font-size: .75em; }
-
-p {
-  font-weight: 400; }
+  font-size: .625em; }
 
 .grid-container {
   font-size: 0; }
@@ -305,20 +321,26 @@ p {
         margin-right: 1.5%; } }
 
 /* Body Content - container */
-.container, .container-narrow {
+.container-narrow {
   max-width: 960px;
   margin: 0 auto; }
   @media screen and (min-width: 760px) {
-    .container, .container-narrow {
+    .container-narrow {
       width: 80%; } }
   @media screen and (min-width: 960px) {
-    .container, .container-narrow {
+    .container-narrow {
       width: 85%; } }
+  .container-narrow .container-narrow {
+    width: 100%; }
+
+mark {
+  background: #f7ca18;
+  padding: 0 .2em; }
 
 code {
   background: #ddd;
   color: #96281B;
-  padding: 1px 4px;
+  padding: .1em .2em;
   margin: 0 1px; }
 
 .container-full {
@@ -395,7 +417,8 @@ button, input[type='button'], input[type='submit'], a.button {
     margin: 0; }
 
 .grid-container.demo {
-  border: 1px solid rgba(231, 76, 60, 0.33); }
+  border: 1px solid rgba(231, 76, 60, 0.33);
+  margin-bottom: 2rem; }
 
 .grid-container.demo > * {
   background: #ddd;
@@ -403,12 +426,12 @@ button, input[type='button'], input[type='submit'], a.button {
   height: 50px; }
 
 .major-section {
-  margin-bottom: 10em; }
+  background: rgba(231, 76, 60, 0.33); }
 
 .header {
-  border: 2px rgba(231, 76, 60, 0.33) solid;
   padding: 3px;
-  color: #3a539b; }
+  color: #3a539b;
+  font-weight: 200; }
   @media screen and (min-width: 760px) {
     .header {
       font-size: 3em; } }
@@ -419,6 +442,11 @@ button, input[type='button'], input[type='submit'], a.button {
 .subheader {
   padding: 3px;
   color: #5c97bf; }
+
+.sub-subheader {
+  margin-top: 0;
+  padding: 5px;
+  background: rgba(58, 83, 155, 0.22); }
 
 .explanation {
   font-size: 1.125em;
@@ -436,11 +464,11 @@ button, input[type='button'], input[type='submit'], a.button {
   padding: 3px;
   color: #abb7b7; }
 
-.buttons-section > * {
+.dual-example > * {
   padding: 10px; }
-.buttons-section > *:nth-child(odd) {
+.dual-example > *:nth-child(odd) {
   border-bottom: 2px solid #abb7b7; }
   @media screen and (min-width: 960px) {
-    .buttons-section > *:nth-child(odd) {
+    .dual-example > *:nth-child(odd) {
       border-bottom: 0;
       border-right: 2px solid #abb7b7; } }

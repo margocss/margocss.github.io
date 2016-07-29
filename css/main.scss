@@ -16,6 +16,7 @@ $light-primary: rgba(58, 83, 155, .22);
 
 $alt-primary: rgba(92, 151, 191, 1.0);
 $light-gray: #D2D7D3;
+$med-gray: #BFBFBF;
 $med-screen:  750px;
 $lg-screen:   1000px;
 $xl-screen:  2000px;
@@ -239,7 +240,7 @@ mark{
 }
 
 code {
-  background: #ddd;
+  background: $light-gray;
   color: $secondary-color;
   padding: .1em .2em;
   margin: 0 1px;
@@ -264,63 +265,94 @@ code {
 }
 
 .navbar {
-    width: 100%;
-    background: #fff;
-    z-index: 99;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    padding: 0 20px;
-    position: relative;
-}
+  $nav-height-mobile: 60;
+  $nav-height-med: 80;
+  $side-padding: 10px;
 
-.navbar.navbar-fixed {
-    position: fixed;
-    top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 0 $side-padding 0 200px;
+  position: relative;
+  height: #{$nav-height-med}px;
+  
+
+  &.navbar-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+  }
+
+  .nav-logo{
+    position: absolute;
+    top: 50%;
     left: 0;
-    width: 100%;
-}
-
-.nav-logo{
-  top: 0; left: 0;
-}
-
-.nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    >*{
-      display: inline-block;
-
-    }
-}
-
-.nav-item {
-    position: relative;
     display: inline-block;
-    text-align: center;
-    margin-bottom: 0;
-}
+    vertical-align: middle;
+    margin: 0;
+    max-width: 200px;
+    transform: translate(0, -50%);
+    padding-left: $side-padding;
+    font-size: 1.375rem;
+  }
 
-.nav-item:hover {
-    background: #ddd;
-}
+  .nav-list {
+      height: #{$nav-height-med}px;
+      list-style: none;
+      margin: 0;
+      text-align: right;
+      float: right;
+      >*{
+        display: inline-block;
+        vertical-align: middle;
+        text-transform: uppercase;
+        height: #{$nav-height-med}px;
+        font-size: .75rem;
+        font-weight: 700;
+        line-height: #{$nav-height-med}px;
+        cursor: pointer;
+        >* { 
+          display: block;
+          padding-right: 30px;
 
-.navbar-link {
-    display: block;
-    text-transform: uppercase;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .2rem;
-    text-decoration: none;
-    line-height: 5rem;
-    color: #222;
-    padding-right: 35px;
-    padding-left: 10px;
+          text-decoration: none; 
+        }
 
-}
-.navbar-link.active {
-    color: #33C3F0;
+        &:hover{
+          background: $med-gray;
+        }
+      }
+  }
+
+  .nav-item {
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      margin-bottom: 0;
+  }
+
+  .nav-item:hover {
+      background: #ddd;
+  }
+
+  .navbar-link {
+      display: block;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .2rem;
+      text-decoration: none;
+      line-height: 5rem;
+      color: #222;
+      padding-right: 35px;
+      padding-left: 10px;
+  }
+  .navbar-link.active {
+      color: #33C3F0;
+  }
 }
 
 button, input[type='button'], input[type='submit'], a.button{
@@ -351,11 +383,11 @@ button, input[type='button'], input[type='submit'], a.button{
   }
 }
 
-.hamburger-div{
+.hamburger-menu{
   $sq-size: 30px; 
   $line-size: 6px;
   $line-color: #333;
-  $hover-color: #ddd; 
+  $hover-color: $light-gray; 
   border-top: $line-size solid $line-color;
   height: $sq-size;
   border-bottom: $line-size solid $line-color;
@@ -409,21 +441,25 @@ $general-site-padding: 3px;
 $light-secondary: rgba(231, 76, 60, .33);
 $strong-header: $primary-color;
 $weak-header: $alt-primary;
+$header-bg: #eee;
 $example-color: rgba(171, 183, 183, 1.0);
 $example-color-translucent: rgba(171, 183, 183, .75);
 
+h3.site-lg-code-example{ 
+  margin: 0;
+}
 
-.container-narrow.demo, .container-full-width.demo{
-  h3{margin: 0;}
+
+.container-narrow.site-demo, .container-full.site-demo{
   padding: $general-site-padding;
   border: 1px $example-color-translucent dotted;
 }
 
-.grid-container.demo{
+.grid-container.site-demo{
   border: 1px solid $light-secondary;
   margin-bottom: 2rem;
 }
-.grid-container.demo > *{
+.grid-container.site-demo > *{
   text-align: center;
   padding: 10px;
   background: #ddd;
@@ -444,7 +480,8 @@ $example-color-translucent: rgba(171, 183, 183, .75);
 }
 
 .major-section{
-  background: $light-secondary;
+  background: $header-bg;
+  border-left: 6px solid $weak-header;
 }
 
 .header{

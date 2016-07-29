@@ -16,8 +16,8 @@ $light-primary: rgba(58, 83, 155, .22);
 
 $alt-primary: rgba(92, 151, 191, 1.0);
 $light-gray: #D2D7D3;
-$med-screen:  760px;
-$lg-screen:   960px;
+$med-screen:  750px;
+$lg-screen:   1000px;
 $xl-screen:  2000px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 
@@ -248,8 +248,11 @@ code {
   width: 100%;
 }
 
+// =========================
+// Nav
+
 .navbar {
-    display: block;
+    display: none;
     width: 100%;
     background: #fff;
     z-index: 99;
@@ -355,9 +358,23 @@ $example-color-translucent: rgba(171, 183, 183, .75);
   margin-bottom: 2rem;
 }
 .grid-container.demo > *{
+  text-align: center;
+  padding: 10px;
   background: #ddd;
   border: 1px solid #343;
-  height: 50px;
+
+  .grid-sz{
+    font-weight: 200;
+    transition: all .1s;
+    opacity: .7;
+
+    &.active{
+      font-weight: 700;
+      font-size: 1.25em;
+      opacity: 1.0;
+    }
+
+  }
 }
 
 .major-section{

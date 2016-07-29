@@ -224,6 +224,7 @@ small{
 /* Body Content - container */
 .container-narrow{
   max-width: 960px;
+  padding: 0 5px;
   margin: 0 auto;
   @include media-query($med-screen){ width: 80%; }
   @include media-query($lg-screen){ width: 85%; }
@@ -251,14 +252,25 @@ code {
 // =========================
 // Nav
 
-.navbar {
+.mobile-only.hamburger-menu{
+  position: absolute;
+  display: block;
+  top: 50%; 
+  right: 10px;
+  transform: translate(0,-50%);
+  @include media-query($med-screen){
     display: none;
+  }
+}
+
+.navbar {
     width: 100%;
     background: #fff;
     z-index: 99;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
     padding: 0 20px;
+    position: relative;
 }
 
 .navbar.navbar-fixed {
@@ -268,24 +280,29 @@ code {
     width: 100%;
 }
 
-.navbar-spacer {
-    display: none;
+.nav-logo{
+  top: 0; left: 0;
 }
 
-
-.navbar-list {
+.nav-list {
     list-style: none;
     margin: 0;
+    padding: 0;
+    text-align: right;
+    >*{
+      display: inline-block;
+
+    }
 }
 
-.navbar-item {
+.nav-item {
     position: relative;
     display: inline-block;
     text-align: center;
     margin-bottom: 0;
 }
 
-.navbar-item:hover {
+.nav-item:hover {
     background: #ddd;
 }
 
@@ -302,7 +319,6 @@ code {
     padding-left: 10px;
 
 }
-
 .navbar-link.active {
     color: #33C3F0;
 }
@@ -312,11 +328,14 @@ button, input[type='button'], input[type='submit'], a.button{
   margin-bottom: .5rem;
   outline: 0;
   border: 1px solid #333;
-  line-height: 40px;
-  padding: 0 20px;
+  line-height: 2.5rem;
+  padding: 0 1rem;
   border-radius: 2px;
-  font-size: 1em;
+  font-size: 1rem;
   cursor: pointer;
+  
+  &.sm { font-size: .75em; line-height: 1.875rem; }
+  &.lg { font-size: 1.5em; line-height: 3.75rem; padding: 0 1.5rem;} 
 
   &:hover{
     background: #D2D7D3;
@@ -328,6 +347,53 @@ button, input[type='button'], input[type='submit'], a.button{
 
     &:hover{
       background: $alt-primary;
+    }
+  }
+}
+
+.hamburger-div{
+  $sq-size: 30px; 
+  $line-size: 6px;
+  $line-color: #333;
+  $hover-color: #ddd; 
+  border-top: $line-size solid $line-color;
+  height: $sq-size;
+  border-bottom: $line-size solid $line-color;
+  width: $sq-size;
+  position: relative;
+  transition: all .2s;
+  cursor: pointer;
+  top: $sq-size/2;
+
+  > .mid-line{
+    margin: 0;
+    position: absolute;
+    top: 50%; left: 0;
+    transform: translate(0,-50%);
+    border: 0;
+    background: $line-color;
+    height: $line-size;
+    width: 100%;
+    transition: all .2s;
+
+  }
+
+  &.open{
+    border-top: $line-size solid $hover-color;
+    border-bottom: $line-size solid $hover-color;
+    > .mid-line{
+      background: $hover-color;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      width: 33%;
+    }
+  }
+
+  &:hover{
+    border-top: $line-size solid $hover-color;
+    border-bottom: $line-size solid $hover-color;
+    > .mid-line{
+      background: $hover-color;
     }
   }
 }
@@ -437,3 +503,8 @@ $example-color-translucent: rgba(171, 183, 183, .75);
     }
   }
 }
+
+.button-sizes button{
+  vertical-align: top;
+}
+

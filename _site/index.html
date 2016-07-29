@@ -20,10 +20,14 @@
     
 <nav class="navbar">
   
-  <div class="navbrand">
+  <div class="nav-logo">
     
   </div>
+  
 
+  <div class="mobile-only hamburger-menu">
+    <hr class="mid-line">
+  </div>
   <ul class="nav-list">
       
         
@@ -66,7 +70,6 @@
       <div class="container-full major-section">
     <h1 class="header layout">Layout</h1>
   </div>
-
 
 
   <div class="container-narrow">
@@ -203,6 +206,7 @@
   <div class="container-full major-section">
     <h1 class="header">General Formatting</h1>
   </div>
+
   <div class="container-narrow formatting">
       <div class="container-narrow">
         <h3 class="subheader">Typography</h3>
@@ -246,22 +250,68 @@
       <div class="grid-container guttered dual-example">
         <div class="sm-12-x-12 lg-6-x-12">
           <button>Normal</button>
-          <!-- <div> 
-            <code>&lt;button&gt;...&lt;/button&gt;</code><br/>
-            <code>&lt;a class="button"&gt;...&lt;/button&gt;</code><br/>
-            <code>&lt;input type="button" value="..."&gt;</code><br/>
-            <code>&lt;input type="submit" value="...&gt;</code><br/>
-          </div> -->
+          <div> 
+            <code>&lt;button class="btn"&gt;...&lt;/button&gt;</code><br/>
+            <code>&lt;a class="btn"&gt;...&lt;/button&gt;</code><br/>
+            <code>&lt;input class="btn" type="button" value="..." &gt;</code><br/>
+            <code>&lt;input class="btn" type="submit" value="...&gt;</code><br/>
+          </div>
+          <hr>
+          <div class="grid-container guttered button-sizes">
+            <div class="sm-4-x-12">
+              <code>"button sm"</code>
+            </div>
+            <div class="sm-4-x-12">
+              <code>"button md"</code>
+            </div>
+            <div class="sm-4-x-12">
+              <code>"button lg"</code>
+            </div>
+
+            <div class="sm-4-x-12">
+              <button class="sm">Small</button>
+            </div>
+            <div class="sm-4-x-12">
+              <button class="md">Medium</button>
+            </div>
+            <div class="sm-4-x-12">
+              <button class="lg">Large</button>
+            </div>
+          </div>
         </div>
         <div class="sm-12-x-12 lg-6-x-12">
           <input type="button" class="primary" value="Primary">
-          <!-- <div>
-            <code>&lt;button class="button"&gt;...&lt;/button&gt;</code><br/>
-            <code>&lt;a class="button primary"&gt;...&lt;/button&gt;</code><br/>
-            <code>&lt;input type="button" class="primary" value="..."&gt;</code><br/>
-            <code>&lt;input type="submit" class="primary" value="...&gt;</code><br/>
-          </div> -->
+          <div>
+            <code>&lt;button class="btn"&gt;...&lt;/button&gt;</code><br/>
+            <code>&lt;a class="btn primary"&gt;...&lt;/button&gt;</code><br/>
+            <code>&lt;input class="btn primary" type="button" value="..."&gt;</code><br/>
+            <code>&lt;input class="btn primary" type="submit" value="...&gt;</code><br/>
+          </div>
+          <hr>
+
+          <div class="grid-container button-sizes">
+            <div class="sm-4-x-12">
+              <code>"btn primary sm"</code>
+            </div>
+            <div class="sm-4-x-12">
+              <code>"btn primary md"</code>
+            </div>
+            <div class="sm-4-x-12">
+              <code>"btn primary lg"</code>
+            </div>
+
+            <div class="sm-4-x-12">
+              <button class="btn sm primary">Small</button>
+            </div>
+            <div class="sm-4-x-12">
+              <button class="btn md primary">Medium</button>
+            </div>
+            <div class="sm-4-x-12">
+              <button class="btn lg primary">Large</button>
+            </div>
+          </div>
         </div>
+
       </div>
             
 
@@ -315,6 +365,7 @@
   <div class="container-full major-section">
       <h1 class="header">Components</h1>
   </div>
+
   <div class="container-narrow">
     <h3 class="subheader">Hero-Header</h3>
     <h3 class="subheader">Navigation</h3>

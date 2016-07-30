@@ -1,35 +1,36 @@
 
-<nav class="navbar">
+<nav class="nav-bar with-logo fixed lg">
   
   <div class="nav-logo">
     Hapsdog-CSS
   </div>
-
-  <div class="mobile-only hamburger-menu">
+  
+  <input type="checkbox" class="nav-mobile hamburger-toggler"/>
+  <div class="nav-mobile hamburger-menu">
     <hr class="mid-line">
   </div>
-  <ul class="nav-list">
+  
+  <div class="nav-list">
       {% for my_page in site.pages %}
         {% if my_page.title %}
           {% if my_page.url == page.url %}
-          <li class="active">
-            <a href="{{ my_page.url | prepend: site.baseurl }}">             
+          <a href="{{ my_page.url | prepend: site.baseurl }}">             
               {{ my_page.title }}
-            </a>
-          </li>
-          {% else %}
-          <li class="">
-            <a href="{{ my_page.url | prepend: site.baseurl | prepend: site.url  }}">
+          </a>
+        {% else %}
+          <a href="{{ my_page.url | prepend: site.baseurl | prepend: site.url  }}">
               {{ my_page.title }}
-            </a>
-          </li>
-          {% endif %}
+          </a>
+        {% endif %}
         {% endif %}
       {% endfor %}
-      <li class=""><a href="#">Not About</a></li>
-      <li class=""><a href="#">Without</a></li>
-      <li class=""><a href="#">Full Out</a></li>
-      <li class=""><a href="#">Get Out</a></li>
-  </ul>
-</div>
+      <a href="#">Layout</a>
+      <a href="#">General Formatting</a>
+      <hr class="breaker"/>
+      <a href="#">Tables + Forms</a>
+      <a href="#">Components</a>
+      <a href="#">Miscellaneous</a>
+
+
+  </div>
 </nav>

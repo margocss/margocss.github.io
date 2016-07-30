@@ -9,3 +9,12 @@
 }
 
 
+@mixin overlay-style($width,$height,$z-index){
+  position: absolute;
+  width: $width;
+  height: $height;
+  z-index: $z-index;
+  top: 50%;
+  transform: translate(0 ,-50%);
+  @content;
+}

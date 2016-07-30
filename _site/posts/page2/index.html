@@ -24,8 +24,8 @@
     Hapsdog-CSS
   </div>
   
-  <input type="checkbox" class="nav-mobile hamburger-toggler"/>
-  <div class="nav-mobile hamburger-menu">
+  <input type="checkbox" class="hamburger-toggler"/>
+  <div class="hamburger-menu">
     <hr class="mid-line">
   </div>
   
@@ -91,7 +91,7 @@
         &nbsp;&nbsp;&nbsp;
         <code class="site-code-marked site-med-font">lg</code> &gt; 1000px.
       </p>
-      <div class="site-demo-grid-code">
+      <div class="site-demo-code-block">
         <span class="site-lg-code-example">
           <code>&lt;div class="grid-container"&gt;</code>
         </span>
@@ -107,7 +107,6 @@
         <span class="site-lg-code-example">
           <code>&lt;/div&gt;</code>
         </span>
-
       </div>
       <p class="explanation">
         There are <strong>two (2) kinds of grids</strong>: default and guttered. The guttered grid has an inner gutter-margin of 3% between its columns and it is created by adding the class of <code>guttered</code> to the parent-div grid container. 
@@ -120,7 +119,7 @@
        
 
       <h4 class="site-sub-subheader"><strong>Default</strong></h4>
-      <div class="site-demo-grid-code">
+      <div class="site-demo-code-block">
         <span class="site-lg-code-example">
           <code>&lt;div class="grid-container"&gt;</code>
         </span>
@@ -667,16 +666,65 @@
     <h3 class="site-subheader">Hero-Header</h3>
     <h3 class="site-subheader">Navigation</h3>
     <p class="explanation">
-      Navigation is responsive and all of the elements are encapsulated within <code>&lt;nav class="navbar"&gt;</code>. 
-      
-      Inside of <code>&lt;nav class="navbar"&gt;</code>, there are two 
-
+      Navigation is responsive and is written completely in CSS. All of the elements are encapsulated within <code>&lt;nav class="navbar"&gt;</code>. 
     </p>
+
+    <div class="site-demo-code-block">
+      <span class="site-lg-code-example">
+        <code>&lt;nav class="nav-bar"&gt;</code>
+      </span>
+      <br/>
+      <br/>
+        <span class="site-lg-code-example">
+          <code>&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" class="hamburger-toggler"/&gt;</code>
+        </span>
+      <br/>
+        <span class="site-lg-code-example">
+          <code>&nbsp;&nbsp;&nbsp;&lt;div class="hamburger-menu"&gt;</code>
+        </span>
+      <br/>
+        <span class="site-lg-code-example">
+          <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;</code>
+        </span>
+      <br/>
+      <span class="site-lg-code-example">
+        <code>&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code>
+      </span>
+      <br/>
+      <br/>
+      
+      <span class="site-lg-code-example">
+        <code>&nbsp;&nbsp;&nbsp;&lt;div class="nav-list"&gt;</code>
+      </span>
+      <br/>
+      <span class="site-lg-code-example">
+        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="..."&gt; Link 1 &lt;/a&gt;</code>
+      </span>
+      <br/>
+      <span class="site-lg-code-example">
+        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="..."&gt; Link 2 &lt;/a&gt;</code>
+      </span>
+      <br/>
+      <span class="site-lg-code-example">
+        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... </code>
+      </span>
+      <br/>
+      <span class="site-lg-code-example">
+        <code>&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code>
+      </span>
+
+      <br/>
+      <br/>
+
+      <span class="site-lg-code-example">
+        <code>&lt;/nav&gt;</code>
+      </span>
+    </div>
     
     <nav class="nav-bar">
-
-      <input type="checkbox" class="nav-mobile hamburger-toggler"/>
-      <div class="nav-mobile hamburger-menu">
+      
+      <input type="checkbox" class="hamburger-toggler"/>
+      <div class="hamburger-menu">
         <hr class="mid-line">
       </div>
 
@@ -691,6 +739,20 @@
     </nav>
 
 
+    <p class="explanation">
+      <strong>NOTE</strong> that in order for the navigation menu to toggle properly, you must include both: 
+      <br/><br/>
+      <code>&lt;input type="checkbox" class="hamburger-toggler"/&gt;</code> 
+      <br/><br/>
+      <code>&lt;class="hamburger-toggler"&gt;</code> 
+      <br/><br/>
+
+      elements <em>in this order</em> before the <code>&lt;div class="nav-list"&gt;</code>.
+    </p>
+
+
+
+
     <h3 class="site-subheader">Callout-Segment</h3>
     <h3 class="site-subheader">Sidebars</h3>
     <h3 class="site-subheader">Thumbnails/Cards</h3>
@@ -703,6 +765,8 @@
     <h3>Block Quotes</h3>
   </div>
 </div>
+
+
 
     <script src="./js/main.js"></script>
   </body>

@@ -477,13 +477,13 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn {
       background: #5c97bf; }
 
 @media screen and (min-width: 750px) {
-  .nav-mobile {
+  .nav-bar input.hamburger-toggler,
+  .nav-bar .hamburger-menu {
     display: none; } }
-
-input.hamburger-toggler {
+.nav-bar input.hamburger-toggler {
   opacity: 0;
   cursor: pointer; }
-  input.hamburger-toggler.nav-mobile {
+  .nav-bar input.hamburger-toggler.nav-mobile {
     position: absolute;
     width: 30px;
     height: 30px;
@@ -493,7 +493,7 @@ input.hamburger-toggler {
     right: 10px;
     background: #393;
     margin: 0; }
-    input.hamburger-toggler.nav-mobile:checked ~ .nav-list {
+    .nav-bar input.hamburger-toggler.nav-mobile:checked ~ .nav-list {
       position: absolute;
       width: 100%;
       max-height: 1000px;
@@ -501,27 +501,27 @@ input.hamburger-toggler {
       z-index: 4;
       background: rgba(255, 255, 255, 0.95); }
       @media screen and (min-width: 750px) {
-        input.hamburger-toggler.nav-mobile:checked ~ .nav-list {
+        .nav-bar input.hamburger-toggler.nav-mobile:checked ~ .nav-list {
           top: 0px;
           position: relative; } }
-  input.hamburger-toggler:hover ~ .hamburger-menu {
+  .nav-bar input.hamburger-toggler:hover ~ .hamburger-menu {
     border-top: 6px solid #D2D7D3;
     border-bottom: 6px solid #D2D7D3; }
-    input.hamburger-toggler:hover ~ .hamburger-menu > .mid-line {
+    .nav-bar input.hamburger-toggler:hover ~ .hamburger-menu > hr {
       background: #D2D7D3; }
-  input.hamburger-toggler:checked ~ .hamburger-menu {
+  .nav-bar input.hamburger-toggler:checked ~ .hamburger-menu {
     border-top: 6px solid #D2D7D3;
     border-bottom: 6px solid #D2D7D3; }
-    input.hamburger-toggler:checked ~ .hamburger-menu > .mid-line {
+    .nav-bar input.hamburger-toggler:checked ~ .hamburger-menu > hr {
       background: #D2D7D3;
       transform: translate(-50%, -50%);
       left: 50%;
       width: 33%; }
-  input.hamburger-toggler:hover:checked ~ .hamburger-menu {
+  .nav-bar input.hamburger-toggler:hover:checked ~ .hamburger-menu {
     border-top: 6px solid #95A5A6;
     border-bottom: 6px solid #95A5A6;
     cursor: pointer; }
-    input.hamburger-toggler:hover:checked ~ .hamburger-menu > .mid-line {
+    .nav-bar input.hamburger-toggler:hover:checked ~ .hamburger-menu > hr {
       background: #95A5A6; }
 
 .hamburger-menu {
@@ -549,17 +549,23 @@ input.hamburger-toggler {
     width: 100%;
     transition: all .2s; }
 
-div.site-demo-grid-code {
+div.site-demo-code-block {
   padding: 10px 5px;
   background: #D2D7D3; }
-  div.site-demo-grid-code > .site-lg-code-example {
+  div.site-demo-code-block > .site-lg-code-example {
     line-height: 1.5; }
 
 .site-lg-code-example {
   display: inline-block;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 1.125rem;
   line-height: 1; }
+  @media screen and (min-width: 750px) {
+    .site-lg-code-example {
+      font-size: 1.25rem; } }
+  @media screen and (min-width: 1000px) {
+    .site-lg-code-example {
+      font-size: 1.5rem; } }
 
 .container-narrow.site-demo, .container-full.site-demo {
   padding: 3px;

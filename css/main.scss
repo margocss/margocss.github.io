@@ -15,6 +15,7 @@ $primary-color: rgba(58, 83, 155, 1.0);
 $light-primary: rgba(58, 83, 155, .22);
 
 $alt-primary: rgba(92, 151, 191, 1.0);
+$faint-gray: #eeeeee;
 $light-gray: #D2D7D3;
 $med-gray: #BFBFBF;
 $med-screen:  750px;
@@ -317,7 +318,6 @@ code {
         >* { 
           display: block;
           padding-right: 30px;
-
           text-decoration: none; 
         }
 
@@ -355,8 +355,7 @@ code {
   }
 }
 
-button, input[type='button'], input[type='submit'], a.button{
-  background: #fff;
+button, button.btn, input[type='button'], input[type='submit'], a.btn{background: #fff;
   margin-bottom: .5rem;
   outline: 0;
   border: 1px solid #333;
@@ -445,8 +444,19 @@ $header-bg: #eee;
 $example-color: rgba(171, 183, 183, 1.0);
 $example-color-translucent: rgba(171, 183, 183, .75);
 
-h3.site-lg-code-example{ 
+div.site-demo-grid-code{
+  padding: 10px 5px;  
+  background: $light-gray;
+  > .site-lg-code-example {
+    line-height: 1.5;
+  }
+}
+
+.site-lg-code-example{
+  display:inline-block;
   margin: 0;
+  font-size: 1.5em;
+  line-height: 1;
 }
 
 
@@ -458,17 +468,22 @@ h3.site-lg-code-example{
 .grid-container.site-demo{
   border: 1px solid $light-secondary;
   margin-bottom: 2rem;
+  margin-top: 1rem;
 }
 .grid-container.site-demo > *{
   text-align: center;
   padding: 10px;
-  background: #ddd;
+  background: $faint-gray;
   border: 1px solid #343;
 
   .grid-sz{
     font-weight: 200;
     transition: all .1s;
     opacity: .7;
+
+    code{
+      background: $faint-gray;
+    }
 
     &.active{
       font-weight: 700;
@@ -487,6 +502,7 @@ h3.site-lg-code-example{
 .header{
   padding: $general-site-padding;
   color: $strong-header;
+  opacity: .25;
   font-weight: 200;
   @include media-query($med-screen){
     font-size: 3em;  
@@ -542,6 +558,20 @@ h3.site-lg-code-example{
 }
 
 .button-sizes button{
+  margin-top: .25rem;
   vertical-align: top;
+}
+
+.site-underlined{
+  text-decoration: underline;
+}
+
+.site-code-marked{
+  margin-left: -2px;
+  margin-right: -2px;
+  background: $tertiary-color;
+  &.site-med-font{
+    font-size: 1.5em;
+  }
 }
 

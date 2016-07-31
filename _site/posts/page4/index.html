@@ -720,6 +720,10 @@
         <code>&lt;/nav&gt;</code>
       </span>
     </div>
+
+    <p class="explanation">
+      <strong>Example:</strong>
+    </p>
     
     <nav class="nav-bar">
       
@@ -727,6 +731,7 @@
       <div class="hamburger-menu">
         <hr class="mid-line">
       </div>
+
 
       <div class="nav-list">
         <a href="#">About</a>
@@ -747,21 +752,103 @@
       <code>&lt;class="hamburger-toggler"&gt;</code> 
       <br/><br/>
 
-      elements <em>in this order</em> before the <code>&lt;div class="nav-list"&gt;</code>.
+      elements <em>in the sequence as shown here</em> before the <code>&lt;div class="nav-list"&gt;</code>.
     </p>
 
 
 
 
     <h3 class="site-subheader">Callout-Segment</h3>
+    <p class="explanation">
+      Use this for any kind of content  that you want to emphasize. Inner HTML content has the top and bottom margin removed for 
+    </p>
+    <section class="segment">
+      
+      <h4>Cities</h4>
+      <ul>
+        <li>Bogota</li>
+        <li>Marfa</li>
+        <li>Oklahoma City</li>
+      </ul>
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident earum modi corrupti exp  edita, accusantium numquam nesciunt non eum ipsa iste voluptate saepe, sit quibusdam odio suscipit inventore velit quos aperiam ducimus dicta perspiciatis.</p>
+    </section>
+
+
     <h3 class="site-subheader">Sidebars</h3>
     <h3 class="site-subheader">Thumbnails/Cards</h3>
+
+    <ul class="site-thumbnail-section">
+      <li>
+        Card thumbnails uses HTML5 <code>figure</code> element
+      </li>
+      <li>
+        Cards have a width of 270px, and are centered in container with <code>margin: auto</code>
+      </li>
+      <li>
+        <code>&lt;img class="card-image"&gt;</code> inside of thumbnail is a 100% width block element with a height of 180px: </li>      
+      <li>
+        Text content is written in HTML5 <code>figcaption</code>elements
+      </li>
+
+      <li>
+        Adding a class value of <code>more-info</code> to a <code>figcaption</code> element will decrease the text inside to <small>.75rem</small> and color it <span class="txt-muted">gray</span>.
+      </li>
+      
+      <li>
+        <code>h1</code>-<code>h6</code> &amp;, <code>p</code> tags have 1.25 line heights and top/bottom margins of .625rem (10px)
+      </li>
+      
+    </ul>
+    
+    <div class="grid-container guttered">
+      <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
+        <figure class="tn-card">
+          <img  class="card-image" alt="example-image" src="./images/butterfly.jpeg">
+          <figcaption>
+            <h4><strong>Tiny Butterfly</strong></h4>
+            <p>So delicate sitting there Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi doloremque incidunt eveniet repudiandae velit. </p>
+            <p>On a flower</p>
+            <button class="btn-sm">Buy</button>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
+        <figure class="tn-card">
+          <img  class="card-image" alt="example-image" src="./images/friendly.jpeg">
+          <figcaption>
+            <h4><strong>Baby Shampoo</strong></h4>
+            <p>I love u baby shampoo. You make my hair feel so soft and I know that you will never make me cry.</p>
+          </figcaption>
+          <figcaption class="more-info">
+            <p>
+            There are so many things to talk about...
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
+        <figure class="tn-card">
+          <img  class="card-image" alt="example-image" src="./images/how-to-use.jpeg">
+          <figcaption>
+            <h4><strong>My Bella</strong></h4>
+            <p>Come her my lovely, I think you need to take a bath. I can smell you from here. It is bath time.</p>
+          </figcaption>
+          <figcaption class="more-info">
+            <p>
+            You should be making this easier.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
   </div>
 
     <div class="container-full major-section">
       <h1 class="site-header">Miscellaneous</h1>
     </div>
-    <h4>Code</h4>
+    <h4>Code Blocks</h4>
     <h3>Block Quotes</h3>
   </div>
 </div>

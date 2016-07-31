@@ -4,6 +4,7 @@
 @charset "utf-8";
 @import "../_sass/mixins";
 
+
 @import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,600italic,400italic,200italic,200);
 
 body{
@@ -40,9 +41,11 @@ $highlight-color: rgba(247, 202, 24, 1.0);
 // Import partials from `sass_dir` (defaults to `_sass`)
 
 $secondary-color: #96281B;
-$light-secondary: rgba(231, 76, 60, .33);
+$translucent-secondary: rgba(231, 76, 60, .33);
 
 $tertiary-color: rgba(247, 202, 24, 1.0);
+
+$site-border-radius: 2px;
 
 // =========================
 // typography
@@ -201,13 +204,6 @@ mark{
   padding: 0 .2em;
 }
 
-code {
-  background: $light-gray;
-  color: $secondary-color;
-  padding: .1em .2em;
-  margin: 0 1px;
-}
-
 small{
   font-size: .625rem;
 }
@@ -315,21 +311,20 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn{background
 
   &.guttered{
       $gutter-size: 1.5/100;
-      padding-left: $gutter-size * 100%;
       
       @for $i from 1 through 12{
-        > .sm-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin-right: $gutter-size * 100%;}
+        > .sm-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin: 0 $gutter-size/2 * 100%;}
       }    
 
       @include media-query($med-screen){
         @for $i from 1 through 12{
-           > .md-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin-right: $gutter-size * 100%;}
+           > .md-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin: 0 $gutter-size/2 * 100%;}
         }  
       }
 
       @include media-query($lg-screen){
         @for $i from 1 through 12{
-           > .lg-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin-right: $gutter-size * 100%;}
+           > .lg-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin: 0 $gutter-size/2 * 100%;}
         }  
       }
   } 
@@ -590,7 +585,6 @@ figure.tn-card{
   > img.card-image, img{
     width: 100%;
     display: block;
-    height: 180px;
 
   }
 
@@ -619,7 +613,74 @@ figure.tn-card{
   }
 }
 
+// =========================
+// Block Quotes
 
+blockquote {
+  border-left: $med-gray .5rem solid;
+  background: $faint-gray;
+  padding: 1.25rem 1rem;
+  font-size: 1.125rem;
+  
+
+  > * {
+    margin: .5rem;
+  }
+
+  > *:first-child{
+    margin-top: 0;
+  }
+
+  > *:last-child,{
+    margin-bottom: 0; 
+  }
+
+  cite {
+    display: block;
+    margin-top: 1.5rem;
+    &:before{
+      content: "— ";
+    }
+    
+    color: $dark-gray;
+    text-indent: -.75rem;
+    margin-left: .75rem;
+
+    font-size: .875rem;
+    font-style: normal;
+  }
+  
+}
+
+// =========================
+// Code Formatting
+
+pre {
+  margin: 1rem auto;
+  overflow: auto;
+  width: 90%;
+  background: $faint-gray;
+  padding: 1rem;
+  font-size: 1rem;
+
+  @include media-query($med-screen){
+    font-size: 1.125rem;
+  }
+  @include media-query($lg-screen){
+    font-size: 1.25rem;
+  }
+
+}
+
+
+code {
+  background: $faint-gray;
+  color: $secondary-color;
+  padding: .1em .2em;
+  margin: 0 1px;
+  font-size: 1.125em;
+  font-family: monospace;
+}
 
 
 // ***********************************
@@ -629,7 +690,7 @@ figure.tn-card{
 // Site Styles
 $general-site-padding: 3px;
 
-$light-secondary: rgba(231, 76, 60, .33);
+$translucent-secondary: rgba(231, 76, 60, .33);
 $strong-header: $primary-color;
 $weak-header: $alt-primary;
 $header-bg: #eee;
@@ -637,8 +698,10 @@ $example-color: rgba(171, 183, 183, 1.0);
 $example-color-translucent: rgba(171, 183, 183, .75);
 
 div.site-demo-code-block{
-  padding: 10px 5px;  
-  background: $light-gray;
+  width: 95%;
+  margin: 0 auto;
+  padding: .625rem .5rem;  
+  background: $faint-gray;
   > .site-lg-code-example {
     line-height: 1.5;
   }
@@ -648,13 +711,13 @@ div.site-demo-code-block{
 .site-lg-code-example{
   display:inline-block;
   margin: 0;
-  font-size: 1.125rem;
+  font-size: 1rem;
 
   @include media-query($med-screen){
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   @include media-query($lg-screen){
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   line-height: 1;
 }
@@ -666,7 +729,7 @@ div.site-demo-code-block{
 }
 
 .grid-container.site-demo{
-  border: 1px solid $light-secondary;
+  border: 1px solid $translucent-secondary;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }

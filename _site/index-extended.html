@@ -1,13 +1,87 @@
----
-layout: default
----
-  <div class="container-full major-section">
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Welcome</title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+  
+  <link rel="icon" type="image/png" href="./images/favicon.png">
+  <link rel="stylesheet" href="http://localhost:3000/css/main.css">
+  <link rel="canonical" href="http://localhost:3000/index-extended">
+  <link rel="alternate" type="application/rss+xml" title="Welcome" href="http://localhost:3000/feed.xml">
+</head>
+
+
+  <body>
+    
+<nav class="nav-bar with-logo fixed lg">
+  
+  <div class="nav-logo">
+    <a href="/"><img src="./images/molecule.png" alt="molecule-logo"></a>
+  </div>
+  
+  <input type="checkbox" class="hamburger-toggler"/>
+  <div class="hamburger-menu">
+    <hr class="mid-line">
+  </div>
+  
+  <div class="nav-list">
+      
+        
+          
+          <a href="http://localhost:3000/about.html">
+              About
+          </a>
+        
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          
+          <a href="http://localhost:3000/more-info.html">
+              Links
+          </a>
+        
+        
+      
+        
+      
+        
+      
+        
+      
+      <a href="#">Layout</a>
+      <a href="#">General Formatting</a>
+      <hr class="breaker"/>
+      <a href="#">Tables + Forms</a>
+      <a href="#">Components</a>
+      <a href="#">Miscellaneous</a>
+
+
+  </div>
+</nav>
+      <div class="container-full major-section">
     <h1 class="site-header layout">Layout</h1>
   </div>
 
 
   <div class="container-narrow">
       <h3 class="site-subheader">Grid</h3>
+      <p class="explanation">
+        The grid system is responsive and <strong>based on a 12 column layout</strong>. In order for the grid to work you <strong>must</strong> have both an outer-div with a class of <code>grid-container</code> and a nested, inner-div with the classes in the format shown below: <code><strong><em>[screen_sz]</em></strong>-<strong><em>[cols_of_12]</em></strong>-x-12</code>. 
+      </p>
       <p class="explanation">  
          You can target column sizes for three screen-widths:
         <br/>
@@ -38,7 +112,15 @@ layout: default
           <code>&lt;/div&gt;</code>
         </span>
       </div>
-     
+      <p class="explanation">
+        There are <strong>two (2) kinds of grids</strong>: default and guttered. The guttered grid has an inner gutter-margin of 3% between its columns and it is created by adding the class of <code>guttered</code> to the parent-div grid container. 
+        <br/>(e.g. <code>&lt;div class="grid-container guttered"&gt;...</code>)
+        </br>
+      </p>
+      <p class="explanation">
+        Check out the demo of both the default grid and the guttered. If you adjust the width of the browser window, the grid will highlight which class rule and column width is currently being applied.
+      </p>
+       
 
       <h4 class="site-sub-subheader"><strong>Default</strong></h4>
       <div class="site-demo-code-block">
@@ -47,22 +129,358 @@ layout: default
         </span>
         <br/>
         <span class="site-lg-code-example">
-          <code>&nbsp;&nbsp;&nbsp;&lt;div class="</code><small>see below</small><code>"&gt;</code><code>...&lt;/div&gt;</code>
-        </span>
-        <br/>
-        <span class="site-lg-code-example">
-          <code>&lt;/div&gt;</code>
+          <code>&nbsp;&nbsp;&nbsp;&lt;div class="</code><small>see below</small><code>"&gt;</code><br/>
         </span>
       </div>
       <div class="grid-container site-demo">
-        {% include grid-default.html %}
+        <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-12-x-12">
+    <code>sm-12-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
+    <code>md-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-4-x-12">
+    <code>lg-4-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-12-x-12">
+    <code>sm-12-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
+    <code>md-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-4-x-12">
+    <code>lg-4-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-12-x-12 md-4-x-12 lg-4-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-12-x-12">
+    <code>sm-12-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-4-x-12">
+    <code>md-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-4-x-12">
+    <code>lg-4-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-6-x-12 md-4-x-12 lg-3-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-6-x-12">
+    <code>sm-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-4-x-12">
+    <code>md-4-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
+    <code>lg-3-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-6-x-12 md-4-x-12 lg-3-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-6-x-12">
+    <code>sm-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-4-x-12">
+    <code>md-4-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
+    <code>lg-3-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-8-x-12 md-6-x-12 lg-3-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-8-x-12">
+    <code>sm-8-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
+    <code>md-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
+    <code>lg-3-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-4-x-12 md-6-x-12 lg-3-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+    <code>sm-4-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
+    <code>md-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
+    <code>lg-3-x-12</code></strong>
+  </span>
+</div>
+<!-- ---- -->
+<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
+      <code>md-3-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
+      <code>md-3-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
+      <code>md-3-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
+      <code>md-3-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+<div class="sm-4-x-12 md-9-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-9-x-12">
+      <code>md-9-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
+      <code>md-3-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+
       </div>
 
 
       <h4 class="site-sub-subheader"><strong>With Gutters</strong></h4>
       <h3 class="site-lg-code-example"><code>&lt;div class="grid-container guttered"&gt;...</code></h3>
       <div class="grid-container guttered site-demo">
-        {% include grid-default.html %}
+        <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-12-x-12">
+    <code>sm-12-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
+    <code>md-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-4-x-12">
+    <code>lg-4-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-12-x-12">
+    <code>sm-12-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
+    <code>md-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-4-x-12">
+    <code>lg-4-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-12-x-12 md-4-x-12 lg-4-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-12-x-12">
+    <code>sm-12-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-4-x-12">
+    <code>md-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-4-x-12">
+    <code>lg-4-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-6-x-12 md-4-x-12 lg-3-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-6-x-12">
+    <code>sm-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-4-x-12">
+    <code>md-4-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
+    <code>lg-3-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-6-x-12 md-4-x-12 lg-3-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-6-x-12">
+    <code>sm-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-4-x-12">
+    <code>md-4-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
+    <code>lg-3-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-8-x-12 md-6-x-12 lg-3-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-8-x-12">
+    <code>sm-8-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
+    <code>md-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
+    <code>lg-3-x-12</code></strong>
+  </span>
+</div>
+<div class="sm-4-x-12 md-6-x-12 lg-3-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+    <code>sm-4-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
+    <code>md-6-x-12</code></strong>
+  </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
+    <code>lg-3-x-12</code></strong>
+  </span>
+</div>
+<!-- ---- -->
+<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
+      <code>md-3-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
+      <code>md-3-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
+      <code>md-3-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
+      <code>md-3-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+<div class="sm-4-x-12 md-9-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-9-x-12">
+      <code>md-9-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
+    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
+      <code>sm-4-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
+      <code>md-3-x-12</code></strong>
+    </span>
+    <br/>
+    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
+      <code>lg-2-x-12</code></strong>
+    </span>
+</div>
+
 
       </div>
   </div>
@@ -471,3 +889,9 @@ layout: default
 </div>
 
 
+
+
+    <script src="./js/main.js"></script>
+  </body>
+
+</html>

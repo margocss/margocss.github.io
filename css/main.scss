@@ -4,7 +4,6 @@
 @charset "utf-8";
 @import "../_sass/mixins";
 
-
 @import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,600italic,400italic,200italic,200);
 
 body{
@@ -210,10 +209,15 @@ small{
 
 a {
   color: $alt-primary;
+  cursor: pointer;
 
   &:hover{
     color: $primary-color;
   }
+}
+
+del {
+  text-decoration: line-through;
 }
 
 .txt-muted{
@@ -257,8 +261,9 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn{background
   max-width: 960px;
   padding: 0 5px;
   margin: 0 auto;
-  @include media-query($med-screen){ width: 80%; }
-  @include media-query($lg-screen){ width: 85%; }
+  width: 95%;
+  @include media-query($med-screen){ width: 95%; }
+  @include media-query($lg-screen){ width: 90%; }
   .container-narrow{
     width: 100%;
   }
@@ -291,42 +296,43 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn{background
     font-size: medium;
     vertical-align: top;
   }
+  
+  $gutter-size: 1.5/100;
+  
   @for $i from 1 through 12{
-      > .sm-#{$i}-x-12{width: #{$i/12* 100%};}
-    }
+    > .sm-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin-left: $gutter-size/2 * 100%; margin-right: $gutter-size/2 * 100%;}
+  }    
 
   @include media-query($med-screen){
     @for $i from 1 through 12{
-      > .md-#{$i}-x-12{width: #{$i/12* 100%};}
-    }
+       > .md-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin-left: $gutter-size/2 * 100%; margin-right: $gutter-size/2 * 100%;}
+    }  
   }
 
   @include media-query($lg-screen){
     @for $i from 1 through 12{
-
-      > .lg-#{$i}-x-12{width: #{$i/12* 100%};}
-    }
+       > .lg-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin-left: $gutter-size/2 * 100%; margin-right: $gutter-size/2 * 100%;}
+    }  
   }
 
 
-  &.guttered{
-      $gutter-size: 1.5/100;
-      
+  &.adjacent{
+    @for $i from 1 through 12{
+        > .sm-#{$i}-x-12{width: #{$i/12* 100%}; margin-left: 0; margin-right: 0;}
+      }
+
+    @include media-query($med-screen){
       @for $i from 1 through 12{
-        > .sm-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin: 0 $gutter-size/2 * 100%;}
-      }    
-
-      @include media-query($med-screen){
-        @for $i from 1 through 12{
-           > .md-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin: 0 $gutter-size/2 * 100%;}
-        }  
+        > .md-#{$i}-x-12{width: #{$i/12* 100%}; margin-left: 0; margin-right: 0;}
       }
+    }
 
-      @include media-query($lg-screen){
-        @for $i from 1 through 12{
-           > .lg-#{$i}-x-12{width: #{($i/12-$gutter-size)* 100%}; margin: 0 $gutter-size/2 * 100%;}
-        }  
+    @include media-query($lg-screen){
+      @for $i from 1 through 12{
+
+        > .lg-#{$i}-x-12{width: #{$i/12* 100%}; margin-left: 0; margin-right: 0;}
       }
+    }
   } 
 }
 
@@ -646,7 +652,7 @@ blockquote {
     text-indent: -.75rem;
     margin-left: .75rem;
 
-    font-size: .875rem;
+    font-size: 1rem;
     font-style: normal;
   }
   
@@ -699,7 +705,7 @@ $example-color-translucent: rgba(171, 183, 183, .75);
 
 div.site-demo-code-block{
   width: 95%;
-  margin: 0 auto;
+  margin: 1rem auto;
   padding: .625rem .5rem;  
   background: $faint-gray;
   > .site-lg-code-example {
@@ -724,12 +730,13 @@ div.site-demo-code-block{
 
 
 .container-narrow.site-demo, .container-full.site-demo{
+  margin-bottom: 1rem;
   padding: $general-site-padding;
-  border: 1px $example-color-translucent dotted;
+  border: 3px $translucent-secondary solid;
 }
 
 .grid-container.site-demo{
-  border: 1px solid $translucent-secondary;
+  border: 3px solid $translucent-secondary;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
@@ -775,7 +782,29 @@ div.site-demo-code-block{
   }
 }
 
+.major-section + .container-narrow > .site-subheader:nth-child(1) {
+  margin-top: 1.5rem;
+  
+  @include media-query($med-screen){
+    margin-top: 3rem;
+  }
+
+  @include media-query($lg-screen){ 
+    margin-top: 4rem;
+  }
+}
+
 .site-subheader{
+  margin-top: 3rem;
+  
+  @include media-query($med-screen){
+    margin-top: 6rem;
+  }
+  
+  @include media-query($lg-screen){ 
+    margin-top: 8rem;
+  }
+
   padding: $general-site-padding;
   color: $weak-header;
 
@@ -820,9 +849,19 @@ div.site-demo-code-block{
   }
 }
 
-.button-sizes button{
-  margin-top: .25rem;
-  vertical-align: top;
+.site-text-formats > * {
+  margin-bottom: 2.5rem;
+}
+
+.site-button-sizes {
+  code{
+    font-size: .875rem;
+  }
+  button{
+    margin-top: .25rem;
+    vertical-align: top;
+  }
+
 }
 
 .site-underlined{

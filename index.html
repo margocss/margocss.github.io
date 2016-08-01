@@ -4,18 +4,59 @@ layout: default
   <div class="container-full major-section">
     <h1 class="site-header layout">Layout</h1>
   </div>
+  <div class="container-narrow">
+    <h3 class="site-subheader">Containers</h3>
+    <p class="explanation">
+      Containers dictate the width of the content. A div with a class of <code>container-full</code> will extend the full width of the page and a div with a class of <code>container-narrow</code> will have a max-width of 960px and will be centered with margin: auto. You can nest a <code>container-narrow</code> inside of a <code>container-full</code>.
+    </p>
+    
+  </div>
+  
+  <div class="container-narrow">
+    <h4 class="site-sub-subheader"><strong>Container-narrow</strong></h4>
+<pre><code>&lt;div="container-narrow"&gt;
+   
+   ...
+
+&lt;/div&gt;</code></pre>
+</div>
+
+  <div class="container-narrow site-demo">
+    <h3 class="site-lg-code-example"><code>&lt;div class="container-narrow"&gt;</code></h3>
+    <p class="example-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit iusto aspernatur vitae cum obcaecati itaque rem aut voluptatem possimus ullam accusantium veniam, ipsum non, enim magni dolorum. Dicta harum quo deserunt quae corporis?</p>
+    <p class="example-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quod voluptatem ratione perferendis quo. Voluptatibus repudiandae placeat rerum asperiores voluptate, voluptatum quo ipsum! Dolor eius velit perspiciatis cumque ab ullam, id impedit in! Minima eligendi est id incidunt molestiae amet expedita possimus, magni quam. Reprehenderit earum atque minima vitae amet quod magnam, voluptatem nostrum ullam. Quisquam nobis eos quos iste! Aliquid dolorum voluptas eum, tenetur sint aspernatur itaque iusto perferendis voluptates, veniam velit libero aperiam, explicabo, esse. Vel suscipit scipit odit sequi reprehenderit esse. Placeat iure distinctio quasi labore autem officiis, sed, voluptate </p>
+
+  </div>
+  <div class="container-narrow">
+    <h4 class="site-sub-subheader"><strong>Container-full</strong></h4>
+<pre><code>&lt;div="container-full"&gt;
+   
+   ...
+
+&lt;/div&gt;</code></pre>
+</div>
+
+  </div>
+  <div class="container-full site-demo">
+    <h3 class="site-lg-code-example"><code>&lt;div class="container-full"&gt;</code></h3>
+    <p class="example-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit iusto aspernatur vitae cum obcaecati itaque rem aut voluptatem possimus ullam accusantium veniam, ipsum non, enim magni dolorum. Dicta harum quo deserunt quae corporis?</p>
+    <p class="example-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quod voluptatem ratione perferendis quo. Voluptatibus repudiandae placeat rerum asperiores voluptate, voluptatum quo ipsum! Dolor eius velit perspiciatis cumque ab ullam, id impedit in! Minima eligendi est id incidunt molestiae amet expedita possimus, magni quam. Reprehenderit earum atque minima vitae amet quod magnam, voluptatem nostrum ullam. Quisquam nobis eos quos iste! Aliquid dolorum voluptas eum, tenetur sint aspernatur itaque iusto perferendis voluptates, veniam velit libero aperiam, explicabo, esse. Vel suscipit scipit odit sequi reprehenderit esse. Placeat iure distinctio quasi labore autem officiis, sed, voluptate </p>
+  </div>
 
 
   <div class="container-narrow">
       <h3 class="site-subheader">Grid</h3>
+      <p class="explanation">
+        Grids <strong>must</strong> have an outer-div with a class of grid-container (<code>&lt;div class="grid-container"&gt;</code>)
+      </p>
       <p class="explanation">  
-         You can target column sizes for three screen-widths:
+         The column widths are specified as divs inside the grid-container, and you can target column sizes for three screen-widths:
         <br/>
         &nbsp;&nbsp;&nbsp;
         <code class="site-code-marked site-med-font">sm</code> &lt; 750px,
         <br/>
         &nbsp;&nbsp;&nbsp;
-        <code class="site-code-marked site-med-font">md</code> = 750px - 1000px 
+        <code class="site-code-marked site-med-font">md</code> &gt; 750px 
         <br/>
         &nbsp;&nbsp;&nbsp;
         <code class="site-code-marked site-med-font">lg</code> &gt; 1000px.
@@ -38,9 +79,13 @@ layout: default
           <code>&lt;/div&gt;</code>
         </span>
       </div>
+
+      <p class="explanation">
+        A div with a class of <code>md-6-x-12</code> will take up <strong>50%</strong> (6 by 12 columns) of the container on medium sized screens <span class="txt-muted">(750px)</span class="txt-muted"> and up. A div with a class of <code>lg-3-x-12</code> will take up <strong>25%</strong> (3 by 12 columns) of large sized screens <span class="txt-muted">(1000px +)</span>.
+      </p>
      
 
-      <h4 class="site-sub-subheader"><strong>Default</strong></h4>
+      <h4 class="site-sub-subheader"><strong>Example</strong></h4>
       <div class="site-demo-code-block">
         <span class="site-lg-code-example">
           <code>&lt;div class="grid-container"&gt;</code>
@@ -57,29 +102,8 @@ layout: default
       <div class="grid-container site-demo">
         {% include grid-default.html %}
       </div>
-
-
-      <h4 class="site-sub-subheader"><strong>With Gutters</strong></h4>
-      <h3 class="site-lg-code-example"><code>&lt;div class="grid-container guttered"&gt;...</code></h3>
-      <div class="grid-container guttered site-demo">
-        {% include grid-default.html %}
-
-      </div>
   </div>
-  <div class="container-narrow">
-    <h3 class="site-subheader">Containers</h3>
-  </div>
-    <div class="container-narrow site-demo">
-      <h3 class="site-lg-code-example"><code>&lt;div class="container-narrow"&gt;</code></h3>
-      <p class="example-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit iusto aspernatur vitae cum obcaecati itaque rem aut voluptatem possimus ullam accusantium veniam, ipsum non, enim magni dolorum. Dicta harum quo deserunt quae corporis?</p>
-      <p class="example-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quod voluptatem ratione perferendis quo. Voluptatibus repudiandae placeat rerum asperiores voluptate, voluptatum quo ipsum! Dolor eius velit perspiciatis cumque ab ullam, id impedit in! Minima eligendi est id incidunt molestiae amet expedita possimus, magni quam. Reprehenderit earum atque minima vitae amet quod magnam, voluptatem nostrum ullam. Quisquam nobis eos quos iste! Aliquid dolorum voluptas eum, tenetur sint aspernatur itaque iusto perferendis voluptates, veniam velit libero aperiam, explicabo, esse. Vel suscipit scipit odit sequi reprehenderit esse. Placeat iure distinctio quasi labore autem officiis, sed, voluptate </p>
-    </div>
-
-    <div class="container-full site-demo">
-      <h3 class="site-lg-code-example"><code>&lt;div class="container-full"&gt;</code></h3>
-      <p class="example-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit iusto aspernatur vitae cum obcaecati itaque rem aut voluptatem possimus ullam accusantium veniam, ipsum non, enim magni dolorum. Dicta harum quo deserunt quae corporis?</p>
-      <p class="example-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quod voluptatem ratione perferendis quo. Voluptatibus repudiandae placeat rerum asperiores voluptate, voluptatum quo ipsum! Dolor eius velit perspiciatis cumque ab ullam, id impedit in! Minima eligendi est id incidunt molestiae amet expedita possimus, magni quam. Reprehenderit earum atque minima vitae amet quod magnam, voluptatem nostrum ullam. Quisquam nobis eos quos iste! Aliquid dolorum voluptas eum, tenetur sint aspernatur itaque iusto perferendis voluptates, veniam velit libero aperiam, explicabo, esse. Vel suscipit scipit odit sequi reprehenderit esse. Placeat iure distinctio quasi labore autem officiis, sed, voluptate </p>
-    </div>
+  
 
   
   <div class="container-full major-section">
@@ -87,7 +111,7 @@ layout: default
   </div>
 
   <div class="container-narrow formatting">
-      <div class="container-narrow">
+<!--       <div class="container-narrow"> -->
         <h3 class="site-subheader">Typography</h3>
         <div class="grid-container guttered dual-example">
           <div class="sm-12-x-12 lg-6-x-12">
@@ -103,22 +127,44 @@ layout: default
             <h4 class="site-sub-subheader"><strong>Text Formats</strong></h4>
 
               <p>The text <em>right here</em> is inside of a &lt;p&gt; tag. All text sizes and line heights are calculated based on ems. The standard paragraph text is sized at 1em. And the default line-height is set to 1.25em on mobile to accomodate the lesser screen height and 1.625em on tablet/desktop for ideal legibility.</p>
+              
+              <div class="grid-container site-text-formats">
+                <div class="sm-6-x-12 md-4-x-12">
+                  <a href="#"> link example</a> 
+                  <br/>
+                  ( in<code>&lt;a&gt;</code> tag )
+                </div>
+                <div class="sm-6-x-12 md-4-x-12">
+                  <code>code syntax</code> 
+                  <br/>
+                  ( in<code>&lt;code&gt;</code> tag )
+                </div>
+                <div class="sm-6-x-12 md-4-x-12">
+                  <mark>highlighted text</mark> 
+                  <br/>
+                  ( in <code>&lt;mark&gt;</code> tag )
+                </div>
+                <div class="sm-6-x-12 md-4-x-12">
+                  <del>line-through text</del> 
+                  <br/>
+                  ( in <code>&lt;del&gt;</code> )
+                </div>
+                <div class="sm-6-x-12 md-4-x-12">
+                  <small>small text </small>
+                  <br/>
+                  (in <code>&lt;small&gt;</code> tag )
+                </div>
 
-              <a href="#"> link example</a> <br/>
 
-              <!-- &nbsp;&nbsp;<code>&lt;a href="..."&gt; whatever &lt;/a&gt; </code>-->              
-              <br/>
-              <code>code syntax</code></br>
-              <!-- &nbsp;&nbsp;<code>&lt;code&gt; so meta &lt;/code&gt; </code> -->
-              <br/>
-              <mark>highlighted text</mark> <br/>
-              <!-- &nbsp;&nbsp;<code>&lt;mark&gt; whatever &lt;/mark&gt; </code> -->
-              <br/>
-              <del>strikethrough text</del><br/>
+              </div>
+             
+        
+
+
               <!-- &nbsp;&nbsp;<code>&lt;del&gt; whatever &lt;/del&gt; </code> -->
 
               <br/> 
-              <small>small text</small>
+              
               <!-- &nbsp;&nbsp;<code>&lt;small&gt; whatever &lt;/small&gt; </code> -->
           </div>
         </div>
@@ -126,8 +172,9 @@ layout: default
 
       <h3 class="site-subheader">Buttons</h3>
       <!-- <p class="explanation">There are two button styles (<strong>primary</strong> and <strong>normal</strong>) and four html syntaxes available for each style.</p> -->
-      <div class="grid-container guttered dual-example">
+      <div class="grid-container dual-example">
         <div class="sm-12-x-12 lg-6-x-12">
+          <h4 class="site-sub-subheader"><strong>Default</strong></h4>
           <button>Normal</button>
           <div> 
             <code>&lt;button class="btn"&gt;...&lt;/button&gt;</code><br/>
@@ -136,7 +183,7 @@ layout: default
             <code>&lt;input class="btn" type="submit" ...&gt;</code><br/>
           </div>
           <hr>
-          <div class="grid-container guttered button-sizes">
+          <div class="grid-container site-button-sizes">
             <div class="sm-4-x-12">
               <code>"btn sm"</code>
             </div>
@@ -159,6 +206,8 @@ layout: default
           </div>
         </div>
         <div class="sm-12-x-12 lg-6-x-12">
+          <h4 class="site-sub-subheader"><strong>Primary</strong></h4>
+
           <input type="button" class="primary" value="Primary">
           <div>
             <code>&lt;button class="btn"&gt;...&lt;/button&gt;</code><br/>
@@ -168,7 +217,7 @@ layout: default
           </div>
           <hr>
 
-          <div class="grid-container button-sizes">
+          <div class="grid-container site-button-sizes">
             <div class="sm-4-x-12">
               <code>"btn primary sm"</code>
             </div>
@@ -190,7 +239,6 @@ layout: default
             </div>
           </div>
         </div>
-
       </div>
             
 
@@ -198,10 +246,6 @@ layout: default
       <div class="grid-container guttered dual-example">
         <div class="sm-12-x-12 lg-6-x-12">
           <h4 class="site-sub-subheader"><strong>Unordered List</strong></h4>
-            <p class="explanation">
-              <span>Unordered lists use the closed circle and open circle list-types.</span>
-            </p>
-            <ul>
               <li>Order</li>
               <li>Eggs</li>
               <li>Sugar</li>
@@ -228,8 +272,7 @@ layout: default
               <li>Sugar</li>
             </ol>
           </h4>
-        </div>
-         
+        </div> 
       </div>
     </div>
 
@@ -252,70 +295,16 @@ layout: default
     <h3 class="site-subheader">Hero-Header</h3>
     <h3 class="site-subheader">Navigation</h3>
     <p class="explanation">
-      Navigation is responsive and is written completely in CSS. All of the elements are encapsulated within <code>&lt;nav class="navbar"&gt;</code>. 
+      Navigation is responsive and written completely in CSS. All of the elements are encapsulated within <code>&lt;nav class="navbar"&gt;</code>. 
     </p>
 
-    <div class="site-demo-code-block">
-      <span class="site-lg-code-example">
-        <code>&lt;nav class="nav-bar"&gt;</code>
-      </span>
-      <br/>
-      <br/>
-        <span class="site-lg-code-example">
-          <code>&nbsp;&nbsp;&nbsp;&lt;input type="checkbox" class="hamburger-toggler"/&gt;</code>
-        </span>
-      <br/>
-        <span class="site-lg-code-example">
-          <code>&nbsp;&nbsp;&nbsp;&lt;div class="hamburger-menu"&gt;</code>
-        </span>
-      <br/>
-        <span class="site-lg-code-example">
-          <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;</code>
-        </span>
-      <br/>
-      <span class="site-lg-code-example">
-        <code>&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code>
-      </span>
-      <br/>
-      <br/>
-      
-      <span class="site-lg-code-example">
-        <code>&nbsp;&nbsp;&nbsp;&lt;div class="nav-list"&gt;</code>
-      </span>
-      <br/>
-      <span class="site-lg-code-example">
-        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="..."&gt; Link 1 &lt;/a&gt;</code>
-      </span>
-      <br/>
-      <span class="site-lg-code-example">
-        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="..."&gt; Link 2 &lt;/a&gt;</code>
-      </span>
-      <br/>
-      <span class="site-lg-code-example">
-        <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ... </code>
-      </span>
-      <br/>
-      <span class="site-lg-code-example">
-        <code>&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code>
-      </span>
-
-      <br/>
-      <br/>
-
-      <span class="site-lg-code-example">
-        <code>&lt;/nav&gt;</code>
-      </span>
-    </div>
-
-    <p class="explanation">
-      <strong>Example:</strong>
-    </p>
-    
+    <h4 class="site-sub-subheader"><strong>Example</strong></h4>
+   
     <nav class="nav-bar">
       
       <input type="checkbox" class="hamburger-toggler"/>
       <div class="hamburger-menu">
-        <hr class="mid-line">
+        <hr class="mid-line"> 
       </div>
 
 
@@ -328,73 +317,80 @@ layout: default
         <a href="#">Log In</a>
       </div>
     </nav>
+<pre><code>&lt;nav class="nav-bar"&gt;
+    <span class="txt-muted">&lt;!--
+      You must include both &lt;input type="checkbox" class="hamburger-toggler&gt;
+      and &lt;div class="hamburger-toggler"&gt; <em>in the order shown below</em> 
+      for the responsive menu to work
+    --&gt;</span>
+    &lt;input type="checkbox" class="hamburger-toggler"/&gt;
+
+    &lt;div class="hamburger-menu"&gt;
+      &lt;hr class="mid-line" /&gt; 
+    &lt;/div&gt;
+
+    &lt;div class="nav-list"&gt;
+      &lt;a href="..."&gt; <span class="txt-muted">Link 1</span> &lt;/a&gt;
+      &lt;a href="..."&gt; <span class="txt-muted">Link 2</span> &lt;/a&gt;
+    &lt;/div&gt;
+
+&lt;/nav&gt;</code></pre>
 
 
+
+    <h3 class="site-subheader">Callout Segment</h3>
     <p class="explanation">
-      <strong>NOTE</strong> that in order for the navigation menu to toggle properly, you must include both: 
-      <br/><br/>
-      <code>&lt;input type="checkbox" class="hamburger-toggler"/&gt;</code> 
-      <br/><br/>
-      <code>&lt;class="hamburger-toggler"&gt;</code> 
-      <br/><br/>
-
-      elements <em>in the sequence as shown here</em> before the <code>&lt;div class="nav-list"&gt;</code>.
+      Use a callout segment for any kind of content that you want to emphasize. To use this component, you use the HTML5 <code>&lt;section&gt;</code> tag with a class of <strong>segment</strong>.
     </p>
 
+    <h4 class="site-sub-subheader"><strong>Example</strong></h4>
 
-
-
-    <h3 class="site-subheader">Callout-Segment</h3>
-    <p class="explanation">
-      Use this for any kind of content  that you want to emphasize. Inner HTML content has the top and bottom margin removed for 
-    </p>
     <section class="segment">
       
-      <h4>Cities</h4>
+      <h4>Cities that start with M</h4>
       <ul>
-        <li>Bogota</li>
+        <li>Minneapolis</li>
         <li>Marfa</li>
-        <li>Oklahoma City</li>
+        <li>Madison</li>
       </ul>
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident earum modi corrupti exp  edita, accusantium numquam nesciunt non eum ipsa iste voluptate saepe, sit quibusdam odio suscipit inventore velit quos aperiam ducimus dicta perspiciatis.</p>
     </section>
+    
+<pre><code>&lt;section class="segment"&gt;
+<span class="txt-muted">
+   &lt;h4&gt;Cities that start with M&lt;/h4&gt;
+   
+   &lt;ul&gt;
+      &lt;li&gt;Minneapolis&lt;/li&gt;   &lt;li&gt;Marfa&lt;/li&gt;
+      &lt;li&gt;Madison&lt;/li&gt;
+   &lt;/ul&gt;
+
+   &lt;p&gt;
+      Lorem ipsum...
+   &lt;/p&gt;
+</span>
+&lt;/section&gt;</code></pre>
+
+
+
+    
 
 
     <h3 class="site-subheader">Sidebars</h3>
     <h3 class="site-subheader">Thumbnails/Cards</h3>
-
-    <ul class="site-thumbnail-section">
-      <li>
-        Card thumbnails uses HTML5 <code>figure</code> element
-      </li>
-      <li>
-        Cards have a width of 270px, and are centered in container with <code>margin: auto</code>
-      </li>
-      <li>
-        <code>&lt;img class="card-image"&gt;</code> inside of thumbnail is 100% (270px). It is recommended that you size the images to desired propotions beforehand with an image editor.</li>      
-      <li>
-        Text content is written in HTML5 <code>figcaption</code>elements
-      </li>
-
-      <li>
-        Adding a class value of <code>more-info</code> to a <code>figcaption</code> element will decrease the text inside to <small>.75rem</small> and color it <span class="txt-muted">gray</span>.
-      </li>
-      
-      <li>
-        <code>h1</code>-<code>h6</code> &amp;, <code>p</code> tags have 1.25 line heights and top/bottom margins of .625rem (10px)
-      </li>      
-    </ul>
-    
+    <p class="explanation">
+      Card thumbnails uses HTML5 <code>&lt;figure&gt;</code> tag with a class of <strong>tn-card</strong> and are 270px in width.
+    </p>
     <div class="grid-container guttered">
       <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
         <figure class="tn-card">
           <img  class="card-image" alt="example-image" src="./images/butterfly.jpeg">
           <figcaption>
             <h4><strong>Tiny Butterfly</strong></h4>
-            <p>So delicate sitting there  </p>
-            <p>On a flower</p>
-            <button class="btn-sm">Buy</button>
+            <p>So delicate sitting there. </p>
+            <p>On a flower.</p>
+            <button class="btn sm">Buy</button>
           </figcaption>
         </figure>
       </div>
@@ -417,7 +413,7 @@ layout: default
           <img  class="card-image" alt="example-image" src="./images/how-to-use.jpeg">
           <figcaption>
             <h4><strong>My Bella</strong></h4>
-            <p>Come her little guy, I think you need to take a bath. I can smell you from here. It is bath time.</p>
+            <p>Come here little guy, I think you need to take a bath. I can smell you from here. It is bath time.</p>
           </figcaption>
           <figcaption class="more-info">
             <p>
@@ -427,6 +423,20 @@ layout: default
         </figure>
       </div>
     </div>
+<pre><code>&lt;figure class="tn-card"&gt;
+
+  &lt;img class="card-image" alt="..." src="..."&gt;
+  
+  &lt;figcaption&gt;
+    <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+  &lt;/figcaption&gt;
+
+  &lt;figcaption class="more-info"&gt;
+    <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
+  &lt;/figcaption&gt;
+
+&lt;/figure&gt;
+</code></pre>
 
   </div>
 

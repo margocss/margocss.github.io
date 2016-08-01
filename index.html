@@ -76,7 +76,7 @@ layout: default
         </span>
         <br/>
         <span class="site-lg-code-example">
-          <code>&nbsp;&nbsp;&nbsp;&lt;div class="</code><code class="site-code-marked">sm</code><code>-n-x-12  </code><code class="site-code-marked">md</code><code>-n-x-12  </code><code class="site-code-marked">lg</code><code>-n-x-12"&gt;</code>
+          <code>&nbsp;&nbsp;&nbsp;&lt;div class="</code><code class="site-code-marked">sm</code><code>-[n]-x-12  </code><code class="site-code-marked">md</code><code>-[n]-x-12  </code><code class="site-code-marked">lg</code><code>-[n]-x-12"&gt;</code>
           <br/>
           <code>&nbsp;&nbsp;&nbsp;....</code>
           <br/>
@@ -291,8 +291,11 @@ layout: default
     <div class="container-full major-section">
         <h1 class="site-header">Tables + Forms</h1>
     </div>
+    
     <div class="container-narrow">
       <h3 class="site-subheader">Tables</h3>
+      {% include table-example.html %}
+
       <h3 class="site-subheader">Forms</h3>
     </div>
   
@@ -306,7 +309,7 @@ layout: default
     <h4 class="site-sub-subheader"><strong>Example</strong></h4>
   </div>
 
-  <header class="hero">
+  <header>
     <div class="container-narrow">
       <h1 class="title">You might land here one day</h1>
       <h3 class="subtitle">And I will be waiting with a bouquet of flowers</h3>
@@ -331,7 +334,7 @@ layout: default
   <div class="container-narrow">
     <h3 class="site-subheader">Navigation</h3>
     <p class="explanation">
-      Navigation is responsive and written completely in CSS. All of the elements are encapsulated within <code>&lt;nav class="navbar"&gt;</code>. 
+      Navigation is responsive and written entirely in CSS. However, it is opinionated about the ordering of the html-elemnts. See the comment in the example code below. Molecular's navbar is encapsulated within <code>&lt;nav class="navbar"&gt;</code>. 
     </p>
 
     <h4 class="site-sub-subheader"><strong>Example</strong></h4>
@@ -383,7 +386,7 @@ layout: default
 
     <section class="segment">
       
-      <h4>Cities that start with M</h4>
+      <h4>Places that start with M</h4>
       <ul>
         <li>Minneapolis</li>
         <li>Marfa</li>

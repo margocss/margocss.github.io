@@ -1,0 +1,238 @@
+$translucent-secondary: rgba(231, 76, 60, .33);
+$strong-header: $primary-color;
+$weak-header: $light-primary;
+$header-bg: #eee;
+$example-color: rgba(171, 183, 183, 1.0);
+$example-color-translucent: rgba(171, 183, 183, .75);
+$general-site-padding: 3px;
+
+header.site-demo-hero{
+
+  background: #E0EAFC; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+  margin-top: #{$nav-height * .75}px;
+  color: $light-primary;
+  
+  @include media-query($med-screen){
+    margin-top: #{$nav-height * 1.5}px;
+  }
+
+  
+
+  h1{
+    margin-bottom: .5rem;
+  }
+
+  h4{
+    margin-top: .5rem;
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+
+  img.site-logo{
+    width: 200px;
+
+    @include media-query($med-screen){
+      width: 240px;
+    }
+
+    @include media-query($lg-screen){
+      
+      width: 350px;
+    }
+
+
+  }
+}
+
+div.site-demo-code-block{
+  width: 95%;
+  margin: 1rem auto;
+  padding: .625rem .5rem;  
+  background: $faint-gray;
+  > .site-lg-code-example {
+    line-height: 1.5;
+  }
+
+}
+
+.site-lg-code-example{
+  display:inline-block;
+  margin: 0;
+  font-size: 1rem;
+
+  @include media-query($med-screen){
+    font-size: 1.125rem;
+  }
+  @include media-query($lg-screen){
+    font-size: 1.25rem;
+  }
+  line-height: 1;
+}
+
+
+.container-narrow.site-demo, .container-full.site-demo{
+  margin-bottom: 1rem;
+  padding: $general-site-padding;
+  border: 3px $translucent-secondary solid;
+}
+
+.grid-container.site-demo{
+  border: 3px solid $translucent-secondary;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+.grid-container.site-demo > *{
+  text-align: center;
+  padding: 10px 2px;
+  background: $faint-gray;
+  border: 1px solid #343;
+
+  .grid-sz{
+    font-weight: 200;
+    transition: all .1s;
+    opacity: .7;
+
+    code{
+      background: $faint-gray;
+    }
+
+    &.active{
+      font-weight: 700;
+      font-size: 1.0em;
+      opacity: 1.0;
+    }
+
+  }
+}
+
+.major-section{
+  background: $header-bg;
+  border-left: 6px solid $weak-header;
+  margin-top: 6rem;
+}
+
+.site-header{
+  padding: $general-site-padding;
+  color: $strong-header;
+  opacity: .25;
+  font-weight: 200;
+  @include media-query($med-screen){
+    font-size: 3em;  
+  }
+  @include media-query($lg-screen){
+    font-size: 6em;  
+  }
+}
+
+.major-section + .container-narrow > .site-subheader:nth-child(1) {
+  margin-top: 1.5rem;
+  
+  @include media-query($med-screen){
+    margin-top: 3rem;
+  }
+
+  @include media-query($lg-screen){ 
+    margin-top: 4rem;
+  }
+}
+
+.site-subheader{
+  margin-top: 3rem;
+  
+  @include media-query($med-screen){
+    margin-top: 6rem;
+  }
+  
+  @include media-query($lg-screen){ 
+    margin-top: 8rem;
+  }
+
+  padding: $general-site-padding;
+  color: $weak-header;
+
+}
+
+.site-sub-subheader{
+  margin-top: 0;
+  padding: $general-site-padding + 2px;
+  background: $primary-color-tranlucent;
+}
+
+
+.explanation{
+
+  font-size: 1.125em;/* 2x body copy size = 32px */
+  padding: $general-site-padding;
+
+  @include media-query($med-screen){
+    font-size: 1.125em;  /* 2.5x body copy size = 40px */
+  }
+
+  @include media-query($lg-screen){
+    font-size: 1.125em;  
+  }
+}
+
+
+.example-text{
+  padding: 3px;
+  color: $example-color;
+}
+
+.dual-example {
+  > * { padding: 10px; }
+
+  > *:nth-child(odd){
+    border-bottom: 2px solid $example-color;
+    @include media-query($lg-screen){
+      border-bottom: 0;
+      border-right: 2px solid $example-color;
+    }
+  }
+}
+
+.site-text-formats > * {
+  margin-bottom: 2.5rem;
+}
+
+.site-button-sizes {
+  code{
+    font-size: .875rem;
+  }
+  button{
+    margin-top: .25rem;
+    vertical-align: top;
+  }
+
+}
+
+.site-underlined{
+  text-decoration: underline;
+}
+
+.site-code-marked{
+  margin-left: -2px;
+  margin-right: -2px;
+  background: $tertiary-color;
+  &.site-med-font{
+    font-size: 1.5em;
+  }
+}
+
+.site-logo-example{
+  background: $dark-gray;
+  color: #fff;
+  padding: 5px;
+  opacity: .33;
+  text-transform: uppercase;
+  font-family: Palatino;
+}
+
+.site-thumbnail-section{
+  > li{
+    margin-bottom: .5rem;
+  }
+
+}

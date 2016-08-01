@@ -245,7 +245,16 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn{background
   cursor: pointer;
   
   &.sm { font-size: .75rem; line-height: 1.875rem; }
-  &.lg { font-size: 1.5rem; line-height: 3.75rem; padding: 0 1.5rem;} 
+  &.lg { 
+    font-size: 1.5rem; 
+    line-height: 3.75rem; 
+    padding: 0 1.25rem;
+
+    @include media-query($med-screen){
+      padding: 0 1.5rem;
+
+    }
+  } 
 
   &:hover{
     background: #D2D7D3;
@@ -349,7 +358,7 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn{background
 // =========================
 // Hero
 
-.hero{
+header.hero{
   width: 100%;
   background: $faint-gray;
   padding-top: 30px;

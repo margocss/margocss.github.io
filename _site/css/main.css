@@ -126,6 +126,8 @@ ul, ol {
 
 ul > li {
   padding-left: .25rem; }
+ul ul {
+  padding-left: 0.75rem; }
 
 ol > li {
   padding-left: .5rem; }
@@ -495,6 +497,47 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn {
       margin-left: 0;
       margin-right: 0; } }
 
+header.hero {
+  width: 100%;
+  background: #eeeeee;
+  padding-top: 30px;
+  min-height: 330px;
+  max-height: 800px;
+  height: 30vh; }
+  @media screen and (min-width: 750px) {
+    header.hero {
+      height: 40vh;
+      min-height: 400px;
+      padding-top: 55px; } }
+  @media screen and (min-width: 1000px) {
+    header.hero {
+      height: 60vh;
+      padding-top: 100px;
+      min-height: 550px; } }
+  header.hero .title,
+  header.hero .subtitle {
+    margin: .5rem 0; }
+  header.hero .title {
+    font-size: 2.5rem;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+    /* 45px / 36px */
+    margin: .5rem 0; }
+    @media screen and (min-width: 750px) {
+      header.hero .title {
+        font-size: 3.125rem;
+        /* 2.5x body copy size = 40px */
+        line-height: 1.125; } }
+    @media screen and (min-width: 1000px) {
+      header.hero .title {
+        font-size: 4rem;
+        /* 3x body copy size = 48px */
+        line-height: 1.05;
+        /* keep to a multiple of the 20px line height 
+        and something more appropriate for display headings */ } }
+  header.hero .subtitle {
+    margin: .5rem 0 1.25rem 0; }
+
 .nav-bar {
   width: 100%;
   background: #fff;
@@ -503,7 +546,7 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn {
   border-bottom: 1px solid #eee;
   padding: 0;
   position: relative;
-  height: 80px; }
+  height: 60px; }
   @media screen and (min-width: 750px) {
     .nav-bar {
       padding: 0 10px 0 10px; } }
@@ -536,7 +579,11 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn {
     padding-left: 10px;
     font-size: 1.375rem; }
     .nav-bar.with-logo .nav-logo img {
-      width: 60px; }
+      display: block;
+      width: 45px; }
+      @media screen and (min-width: 750px) {
+        .nav-bar.with-logo .nav-logo img {
+          width: 60px; } }
   .nav-bar .nav-list {
     max-height: 0px;
     overflow: hidden; }
@@ -730,6 +777,33 @@ code {
   font-size: 1.125em;
   font-family: monospace; }
 
+header.site-demo-hero {
+  background: #E0EAFC;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #E0EAFC, #CFDEF3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #E0EAFC, #CFDEF3);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 60px;
+  color: #5c97bf; }
+  @media screen and (min-width: 750px) {
+    header.site-demo-hero {
+      margin-top: 120px; } }
+  header.site-demo-hero h1 {
+    margin-bottom: .5rem; }
+  header.site-demo-hero h4 {
+    margin-top: .5rem;
+    text-transform: uppercase;
+    color: #3a539b; }
+  header.site-demo-hero img.site-logo {
+    width: 200px; }
+    @media screen and (min-width: 750px) {
+      header.site-demo-hero img.site-logo {
+        width: 240px; } }
+    @media screen and (min-width: 1000px) {
+      header.site-demo-hero img.site-logo {
+        width: 350px; } }
+
 div.site-demo-code-block {
   width: 95%;
   margin: 1rem auto;
@@ -762,7 +836,7 @@ div.site-demo-code-block {
 
 .grid-container.site-demo > * {
   text-align: center;
-  padding: 10px;
+  padding: 10px 2px;
   background: #eeeeee;
   border: 1px solid #343; }
   .grid-container.site-demo > * .grid-sz {
@@ -773,12 +847,13 @@ div.site-demo-code-block {
       background: #eeeeee; }
     .grid-container.site-demo > * .grid-sz.active {
       font-weight: 700;
-      font-size: 1.25em;
+      font-size: 1.0em;
       opacity: 1.0; }
 
 .major-section {
   background: #eee;
-  border-left: 6px solid #5c97bf; }
+  border-left: 6px solid #5c97bf;
+  margin-top: 6rem; }
 
 .site-header {
   padding: 3px;

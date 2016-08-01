@@ -1,6 +1,14 @@
 ---
 layout: default
 ---
+<header class="hero site-demo-hero">
+  <div class="container-narrow">
+    <h1 class="title">Molecular CSS</h1>
+    <h4 class="subtitle">lightweight responsive components</h4>
+    <img src="./images/molecule2.png" alt="logo" class="site-logo">
+  </div>
+</header>
+
   <div class="container-full major-section">
     <h1 class="site-header layout">Layout</h1>
   </div>
@@ -14,7 +22,7 @@ layout: default
   
   <div class="container-narrow">
     <h4 class="site-sub-subheader"><strong>Container-narrow</strong></h4>
-<pre><code>&lt;div="container-narrow"&gt;
+<pre><code>&lt;div class="container-narrow"&gt;
    
    ...
 
@@ -29,7 +37,7 @@ layout: default
   </div>
   <div class="container-narrow">
     <h4 class="site-sub-subheader"><strong>Container-full</strong></h4>
-<pre><code>&lt;div="container-full"&gt;
+<pre><code>&lt;div class="container-full"&gt;
    
    ...
 
@@ -246,14 +254,15 @@ layout: default
       <div class="grid-container guttered dual-example">
         <div class="sm-12-x-12 lg-6-x-12">
           <h4 class="site-sub-subheader"><strong>Unordered List</strong></h4>
+            <ul>
               <li>Order</li>
               <li>Eggs</li>
               <li>Sugar</li>
-              <ul>
-                <li>Chocolate Chips</li>
-                <li>Pecans</li>
-                <li>Peanut Butter</li>
-              </ul>
+                <ul>
+                  <li>Chocolate Chips</li>
+                  <li>Pecans</li>
+                  <li>Peanut Butter</li>
+                </ul>
               <li>Butter</li>
             </ul>
           </h4>
@@ -293,6 +302,33 @@ layout: default
 
   <div class="container-narrow">
     <h3 class="site-subheader">Hero-Header</h3>
+    <p class="explanation">Commonly seen on landing pages. Height of 650px.</p>
+    <h4 class="site-sub-subheader"><strong>Example</strong></h4>
+  </div>
+
+  <header class="hero">
+    <div class="container-narrow">
+      <h1 class="title">You might land here one day</h1>
+      <h3 class="subtitle">And I will be waiting with a bouquet of flowers</h3>
+      <button class="primary lg">Learn More</button>
+    </div>
+  </header>
+  <pre><code>&lt;header class="hero"&gt;
+  <span class="txt-muted">&lt;!-- puts max-width on hero's inner text --&gt;</span>
+   &lt;div class="container-narrow"&gt;
+    
+      &lt;h1 class="title"&gt;...&lt;/h1&gt;
+    
+      &lt;h3 class="subtitle"&gt;...&lt;/h3&gt;
+      ...
+   
+   &lt;/div&gt;
+&lt;/header&gt;</code></pre>
+
+
+
+
+  <div class="container-narrow">
     <h3 class="site-subheader">Navigation</h3>
     <p class="explanation">
       Navigation is responsive and written completely in CSS. All of the elements are encapsulated within <code>&lt;nav class="navbar"&gt;</code>. 
@@ -378,6 +414,9 @@ layout: default
 
 
     <h3 class="site-subheader">Sidebars</h3>
+    <p class="explanation">
+      Coming Soon
+    </p>
     <h3 class="site-subheader">Thumbnails/Cards</h3>
     <p class="explanation">
       Card thumbnails uses HTML5 <code>&lt;figure&gt;</code> tag with a class of <strong>tn-card</strong> and are 270px in width.

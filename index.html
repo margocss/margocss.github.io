@@ -3,7 +3,7 @@ layout: default
 ---
 <header class="hero site-demo-hero">
   <div class="container-narrow">
-    <h1 class="title">Molecular CSS</h1>
+    <h1 class="title">Margo CSS</h1>
     <h4 class="subtitle">lightweight responsive components</h4>
     <img src="./images/molecule2.png" alt="logo" class="site-logo">
   </div>
@@ -291,12 +291,82 @@ layout: default
     <div class="container-full major-section">
         <h1 class="site-header">Tables + Forms</h1>
     </div>
-    
+      
     <div class="container-narrow">
       <h3 class="site-subheader">Tables</h3>
       {% include table-example.html %}
-
       <h3 class="site-subheader">Forms</h3>
+      <p class="explanation">
+        Forms need to be inside a <code>form</code> tag with a class of <strong>form-group</strong>.
+        To achieve column formatting, it is strongly advised that you use also apply the <strong>grid-container</strong> class to the form tag.
+      </p>
+      <p class="explanation">
+        <code>label</code> + <code>input</code> pairs should be encapsulated inside a class of <code>form-field</code><br/> ( <small>plus whatever column styles e.g <code>col-sm-12 col-md-6</code> </small>) to achieve block styling. 
+      </p>
+
+      <div class="site-demo-code-block">
+        <span class="site-lg-code-example">
+          <code>&lt;form class="</code><code class="site-code-marked">form-group</code> &nbsp;<code class="site-code-marked">grid-container</code>"&gt;</code>
+        </span>
+        <br/>
+        <span class="site-lg-code-example">
+          <code>&nbsp;&nbsp;&nbsp;&lt;div class="</code><code class="site-code-marked">form-field</code> &nbsp;<code>sm-[n]-x-12 md-[n]-x-12"&gt;</code>
+          <br/>
+
+          <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;...&lt;/label&gt;</code><code></code>
+          <br/>
+          <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text"/&gt;</code>
+          <br/>
+          <code>&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code>
+        </span>
+        <br/>
+        <span class="site-lg-code-example">
+          <code>&lt;/div&gt;</code>
+        </span>
+      </div>
+      {% include form-example.html %}
+<pre><code>&lt;form class="form-group grid-container"&gt;
+   
+   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+       &lt;label for="firstField"&gt;First &lt;/label&gt;
+       &lt;input type="text"/ &gt;
+   &lt;/div&gt;
+
+   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+       &lt;label for="middleField"&gt;Middle &lt;/label&gt;
+       &lt;input type="text"/ &gt;
+   &lt;/div&gt;
+
+   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+       &lt;label for="lastField"&gt;Last &lt;/label&gt;
+       &lt;input type="text"/ &gt;
+   &lt;/div&gt;
+
+   &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
+       &lt;label for="emailField"&gt;Email &lt;/label&gt;
+       &lt;input type="email"/ &gt;
+   &lt;/div&gt;
+
+   &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
+       &lt;label for="nameField"&gt;State &lt;/label&gt;
+       &lt;select/ &gt;
+         &lt;option value="CA"&gt;California &lt;/option&gt;
+         &lt;option value="NY"&gt;New York &lt;/option&gt;
+         &lt;option value="TX"&gt;Texas &lt;/option&gt;
+     &lt;/select&gt;
+   &lt;/div&gt;
+
+   &lt;div class="sm-12-x-12 md-12-x-12 form-field"&gt;
+      &lt;label for="nameField"&gt;Description &lt;/label&gt;
+      &lt;textarea rows="6"&gt; &lt;/textarea&gt;
+   &lt;/div&gt;
+  
+   &lt;div class="sm-6-x-12 md-6-x-12 form-field"&gt;
+       &lt;input type="submit" class="btn md primary"/ &gt;
+   &lt;/div&gt;
+  
+ &lt;/form&gt;</code></pre>
+
     </div>
   
   <div class="container-full major-section">
@@ -334,9 +404,9 @@ layout: default
   <div class="container-narrow">
     <h3 class="site-subheader">Navigation</h3>
     <p class="explanation">
-      Navigation is responsive and written entirely in CSS. However, it is opinionated about the ordering of the html-elemnts. See the comment in the example code below. Molecular's navbar is encapsulated within <code>&lt;nav class="navbar"&gt;</code>. 
+      Navigation is responsive and written entirely in CSS. However, it is opinionated about the ordering of the html-elemnts. See the comment in the example code below. Margo's navbar is encapsulated within <code>&lt;nav class="navbar"&gt;</code>. 
     </p>
-
+  
     <h4 class="site-sub-subheader"><strong>Example</strong></h4>
    
     <nav class="nav-bar">

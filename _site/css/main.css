@@ -141,7 +141,7 @@ mark {
   padding: 0 .2em; }
 
 small {
-  font-size: .625rem; }
+  font-size: .75rem; }
 
 a {
   color: #5c97bf;
@@ -500,9 +500,52 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn {
       margin-left: 0;
       margin-right: 0; } }
 
+form.form-group {
+  display: block;
+  font-size: 0; }
+  form.form-group input[type='text'],
+  form.form-group input[type='email'],
+  form.form-group input[type='password'],
+  form.form-group select {
+    padding: 0 .75rem;
+    height: 2.5rem; }
+  form.form-group input[type='text'],
+  form.form-group input[type='email'],
+  form.form-group input[type='password'],
+  form.form-group select,
+  form.form-group textarea {
+    width: 100%;
+    line-height: 1.5;
+    outline: 0;
+    border: #bfbfbf 1px solid;
+    font-size: 1rem;
+    border-radius: 2px;
+    margin-bottom: 1.25rem;
+    background: #fff; }
+    form.form-group input[type='text']:focus,
+    form.form-group input[type='email']:focus,
+    form.form-group input[type='password']:focus,
+    form.form-group select:focus,
+    form.form-group textarea:focus {
+      border: 1px solid #5c97bf; }
+  form.form-group textarea {
+    padding: .5rem .75rem; }
+    form.form-group textarea:focus {
+      border: 1px solid #5c97bf; }
+  form.form-group .form-field label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: .5rem; }
+  form.form-group .form-field input[type='text'],
+  form.form-group .form-field input[type='email'],
+  form.form-group .form-field input[type='password'],
+  form.form-group .form-field select,
+  form.form-group .form-field textarea {
+    display: block; }
+
 header.hero {
   width: 100%;
-  background: #FaFafb;
+  background: #eeeeee;
   padding-top: 30px;
   min-height: 330px;
   max-height: 800px;
@@ -558,7 +601,7 @@ table {
   table tbody td {
     border-bottom: #95A5A6 1px solid; }
   table.striped tbody tr:nth-child(2n) {
-    background: #FaFafb; }
+    background: #eeeeee; }
 
 .nav-bar {
   width: 100%;
@@ -575,7 +618,7 @@ table {
       height: 80px; } }
   @media screen and (min-width: 750px) {
     .nav-bar.lg {
-      height: 120px; }
+      height: 122px; }
       .nav-bar.lg .nav-list {
         height: 120px; }
         .nav-bar.lg .nav-list > * {
@@ -622,11 +665,12 @@ table {
       cursor: pointer;
       font-size: 1rem; }
       .nav-bar .nav-list > *:hover, .nav-bar .nav-list > *:active {
-        background: #FaFafb;
+        background: #eeeeee;
         outline: 0; }
     @media screen and (min-width: 750px) {
       .nav-bar .nav-list {
         height: 80px;
+        opacity: 1;
         max-height: initial;
         list-style: none;
         margin: 0;
@@ -671,7 +715,7 @@ table {
     max-height: 1000px;
     opacity: 1;
     transition: opacity .7s;
-    top: 79px;
+    top: 59px;
     z-index: 4;
     background: rgba(255, 255, 255, 0.95); }
     @media screen and (min-width: 750px) {
@@ -762,7 +806,7 @@ figure.tn-card {
 
 blockquote {
   border-left: #bfbfbf 0.5rem solid;
-  background: #FaFafb;
+  background: #eeeeee;
   padding: 1.25rem 1rem;
   font-size: 1.125rem; }
   blockquote > * {
@@ -786,7 +830,7 @@ pre {
   margin: 1rem auto;
   overflow: auto;
   width: 90%;
-  background: #FaFafb;
+  background: #eeeeee;
   padding: 1rem;
   font-size: 1rem; }
   @media screen and (min-width: 750px) {
@@ -797,7 +841,7 @@ pre {
       font-size: 1.25rem; } }
 
 code {
-  background: #FaFafb;
+  background: #eeeeee;
   color: #96281B;
   padding: .1em .2em;
   margin: 0 1px;
@@ -835,7 +879,7 @@ div.site-demo-code-block {
   width: 95%;
   margin: 1rem auto;
   padding: .625rem .5rem;
-  background: #FaFafb; }
+  background: #eeeeee; }
   div.site-demo-code-block > .site-lg-code-example {
     line-height: 1.5; }
 
@@ -864,14 +908,14 @@ div.site-demo-code-block {
 .grid-container.site-demo > * {
   text-align: center;
   padding: 10px 2px;
-  background: #FaFafb;
+  background: #eeeeee;
   border: 1px solid #343; }
   .grid-container.site-demo > * .grid-sz {
     font-weight: 200;
     transition: all .1s;
     opacity: .7; }
     .grid-container.site-demo > * .grid-sz code {
-      background: #FaFafb; }
+      background: #eeeeee; }
     .grid-container.site-demo > * .grid-sz.active {
       font-weight: 700;
       font-size: 1.0em;

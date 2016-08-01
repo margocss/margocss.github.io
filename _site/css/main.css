@@ -551,7 +551,7 @@ header.hero {
   width: 100%;
   background: #eeeeee;
   padding-top: 30px;
-  min-height: 330px;
+  min-height: 270px;
   max-height: 800px;
   height: 30vh; }
   @media screen and (min-width: 750px) {
@@ -588,6 +588,9 @@ header.hero {
   header.hero .subtitle {
     margin: .5rem 0 1.25rem 0; }
 
+div.scroll-wrapper {
+  overflow: scroll; }
+
 table {
   border-collapse: collapse;
   table-layout: fixed;
@@ -595,10 +598,6 @@ table {
   table.full-width {
     width: 100%;
     max-width: 100%; }
-  table thead,
-  table tbody {
-    display: block;
-    overflow-x: scroll; }
   table th:first-child,
   table td:first-child {
     padding-left: .375rem; }
@@ -606,6 +605,36 @@ table {
   table td {
     text-align: left;
     padding: .75rem 0 .75rem 2rem; }
+    table th.tcol-1rem,
+    table td.tcol-1rem {
+      width: 1rem; }
+    table th.tcol-2rem,
+    table td.tcol-2rem {
+      width: 2rem; }
+    table th.tcol-3rem,
+    table td.tcol-3rem {
+      width: 3rem; }
+    table th.tcol-4rem,
+    table td.tcol-4rem {
+      width: 4rem; }
+    table th.tcol-5rem,
+    table td.tcol-5rem {
+      width: 5rem; }
+    table th.tcol-6rem,
+    table td.tcol-6rem {
+      width: 6rem; }
+    table th.tcol-7rem,
+    table td.tcol-7rem {
+      width: 7rem; }
+    table th.tcol-8rem,
+    table td.tcol-8rem {
+      width: 8rem; }
+    table th.tcol-9rem,
+    table td.tcol-9rem {
+      width: 9rem; }
+    table th.tcol-10rem,
+    table td.tcol-10rem {
+      width: 10rem; }
   table thead th {
     border-bottom: #95A5A6 1px solid; }
   table tbody td {

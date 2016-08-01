@@ -11,9 +11,9 @@
 ">
   
   <link rel="icon" type="image/png" href="./images/favicon.png">
-  <link rel="stylesheet" href="http://t3patterson.github.io/margo-css/css/main.css">
-  <link rel="canonical" href="http://t3patterson.github.io/margo-css/posts/page2/">
-  <link rel="alternate" type="application/rss+xml" title="Welcome" href="http://t3patterson.github.io/margo-css/feed.xml">
+  <link rel="stylesheet" href="http://localhost:3000/css/main.css">
+  <link rel="canonical" href="http://localhost:3000/posts/page2/">
+  <link rel="alternate" type="application/rss+xml" title="Welcome" href="http://localhost:3000/feed.xml">
 </head>
 
 
@@ -27,7 +27,9 @@
   
   <input type="checkbox" class="hamburger-toggler"/>
   <div class="hamburger-menu">
-    <hr class="mid-line">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
   </div>
   
   <div class="nav-list">
@@ -35,7 +37,7 @@
       
         
           
-          <a href="http://t3patterson.github.io/margo-css/about.html">
+          <a href="http://localhost:3000/about.html">
               About
           </a>
         
@@ -56,7 +58,7 @@
       
         
           
-          <a href="http://t3patterson.github.io/margo-css/more-info.html">
+          <a href="http://localhost:3000/more-info.html">
               Links
           </a>
         
@@ -140,8 +142,9 @@
         Grids <strong>must</strong> have an outer-div with a class of grid-container (<code>&lt;div class="grid-container"&gt;</code>)
       </p>
       <p class="explanation">  
-         The column widths are specified as divs inside the grid-container, and you can target column sizes for three screen-widths:
-        <br/>
+         The column widths are specified as divs inside the grid-container, and you can target column sizes for three (3) screen-widths:
+      </p>
+      <p class="explanation">
         &nbsp;&nbsp;&nbsp;
         <code class="site-code-marked site-med-font">sm</code> &lt; 750px,
         <br/>
@@ -546,7 +549,8 @@
       
     <div class="container-narrow">
       <h3 class="site-subheader">Tables</h3>
-      <h4 class="site-sub-subheader"><strong>Example: Simple Table</strong></h4>
+      <div class="container-narrow">
+<h4 class="site-sub-subheader"><strong>Example: Simple Table</strong></h4>
 
 <table >
   <thead>
@@ -619,7 +623,7 @@
     </tr>
   </tbody>
 </table>
-
+</div>
       <h3 class="site-subheader">Forms</h3>
       <p class="explanation">
         Forms need to be inside a <code>form</code> tag with a class of <strong>form-group</strong>.

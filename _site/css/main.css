@@ -155,6 +155,10 @@ del {
 .txt-muted {
   color: #95A5A6; }
 
+input[type='button'],
+input[type='submit'] {
+  -webkit-appearance: none; }
+
 button, button.btn, input[type='button'], input[type='submit'], a.btn {
   background: #fff;
   margin-bottom: .5rem;
@@ -586,9 +590,15 @@ header.hero {
 
 table {
   border-collapse: collapse;
+  table-layout: fixed;
   margin: 1rem 0; }
   table.full-width {
-    width: 100%; }
+    width: 100%;
+    max-width: 100%; }
+  table thead,
+  table tbody {
+    display: block;
+    overflow-x: scroll; }
   table th:first-child,
   table td:first-child {
     padding-left: .375rem; }
@@ -646,7 +656,7 @@ table {
     font-size: 1.375rem; }
     .nav-bar.with-logo .nav-logo img {
       display: block;
-      width: 45px; }
+      width: 20px; }
       @media screen and (min-width: 750px) {
         .nav-bar.with-logo .nav-logo img {
           width: 60px; } }
@@ -722,25 +732,24 @@ table {
       .nav-bar input.hamburger-toggler:checked ~ .nav-list {
         top: 0px;
         position: relative; } }
-  .nav-bar input.hamburger-toggler:hover ~ .hamburger-menu {
-    border-top: 6px solid #d2d7d3;
-    border-bottom: 6px solid #d2d7d3; }
-    .nav-bar input.hamburger-toggler:hover ~ .hamburger-menu > hr {
-      background: #d2d7d3; }
-  .nav-bar input.hamburger-toggler:checked ~ .hamburger-menu {
-    border-top: 6px solid #d2d7d3;
-    border-bottom: 6px solid #d2d7d3; }
-    .nav-bar input.hamburger-toggler:checked ~ .hamburger-menu > hr {
-      background: #d2d7d3;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      width: 33%; }
-  .nav-bar input.hamburger-toggler:hover:checked ~ .hamburger-menu {
-    border-top: 6px solid #95A5A6;
-    border-bottom: 6px solid #95A5A6;
-    cursor: pointer; }
-    .nav-bar input.hamburger-toggler:hover:checked ~ .hamburger-menu > hr {
-      background: #95A5A6; }
+  .nav-bar input.hamburger-toggler:hover ~ .hamburger-menu > span.line {
+    background: #d2d7d3; }
+  .nav-bar input.hamburger-toggler:checked ~ .hamburger-menu > span.line {
+    background: #d2d7d3; }
+    .nav-bar input.hamburger-toggler:checked ~ .hamburger-menu > span.line:nth-child(1) {
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%) rotate(45deg); }
+    .nav-bar input.hamburger-toggler:checked ~ .hamburger-menu > span.line:nth-child(2) {
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%) rotate(45deg); }
+    .nav-bar input.hamburger-toggler:checked ~ .hamburger-menu > span.line:nth-child(3) {
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%) rotate(-45deg); }
+  .nav-bar input.hamburger-toggler:hover:checked ~ .hamburger-menu > span.line {
+    background: #95A5A6; }
 
 .hamburger-menu {
   position: absolute;
@@ -749,23 +758,30 @@ table {
   z-index: 1;
   top: 50%;
   transform: translate(0, -50%);
-  right: 10px;
-  border-top: 6px solid #333;
+  right: 15px;
   height: 30px;
-  border-bottom: 6px solid #333;
   transition: all .2s;
   cursor: pointer; }
-  .hamburger-menu > .mid-line {
+  .hamburger-menu > span.line {
     margin: 0;
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translate(0, -50%);
     border: 0;
     background: #333;
-    height: 6px;
+    height: 5px;
     width: 100%;
-    transition: all .2s; }
+    transition: all .2s;
+    transform: translate(0, -50%); }
+    .hamburger-menu > span.line:nth-child(1) {
+      top: 10%;
+      left: 0; }
+    .hamburger-menu > span.line:nth-child(2) {
+      top: 50%;
+      left: 0; }
+    .hamburger-menu > span.line:nth-child(3) {
+      top: 90%;
+      left: 0; }
 
 section.segment {
   position: relative;
@@ -907,6 +923,7 @@ div.site-demo-code-block {
 
 .grid-container.site-demo > * {
   text-align: center;
+  margin-bottom: .5rem;
   padding: 10px 2px;
   background: #eeeeee;
   border: 1px solid #343; }

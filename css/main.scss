@@ -20,7 +20,7 @@ $dark-primary: rgba(44, 62, 80, 1.0);
 $light-primary: rgba(92, 151, 191, 1.0);
 
 $dark-gray: #95A5A6;
-$faint-gray: rgba(238, 238, 238, 1);
+$faint-gray: #FaFafb;
 $faint-gray-tranlucent: rgba(238, 238, 238, .5);
 $light-gray: rgba(210, 215, 211, 1);
 $light-gray-translucent: rgba(210, 215, 211, .5);
@@ -469,6 +469,8 @@ $line-size: 6px;
   
   @include media-query($med-screen){
     padding: 0 $side-padding 0 $side-padding;
+    height: #{$nav-height }px;
+
   }
   
   
@@ -525,6 +527,8 @@ $line-size: 6px;
   .nav-list {
     max-height: 0px;
     overflow: hidden;
+    transition: opacity .7s;
+    opacity: 0;
 
     >*{
       display: block; 
@@ -602,6 +606,10 @@ $line-size: 6px;
       position: absolute;
       width: 100%;
       max-height: 1000px;
+      opacity: 1;
+      transition: opacity .7s;
+
+
       top: #{$nav-height - 1}px;
       z-index: 4;
       background: rgba(255,255,255,.95);

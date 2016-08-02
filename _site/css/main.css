@@ -155,6 +155,7 @@ del {
 .txt-muted {
   color: #95A5A6; }
 
+input,
 input[type='button'],
 input[type='submit'] {
   -webkit-appearance: none; }
@@ -170,7 +171,8 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn {
   padding: 0 1rem;
   border-radius: 2px;
   font-size: 1rem;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #333; }
   button.sm, button.btn.sm, input[type='button'].sm, input[type='submit'].sm, a.btn.sm {
     font-size: .75rem;
     line-height: 1.875rem; }
@@ -507,8 +509,7 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn {
       margin-right: 0; } }
 
 form.form-group {
-  display: block;
-  font-size: 0; }
+  display: block; }
   form.form-group input[type='text'],
   form.form-group input[type='email'],
   form.form-group input[type='password'],
@@ -538,33 +539,34 @@ form.form-group {
     padding: .5rem .75rem; }
     form.form-group textarea:focus {
       border: 1px solid #5c97bf; }
-  form.form-group .form-field label {
-    display: block;
-    font-weight: 700;
-    margin-bottom: .5rem; }
-  form.form-group .form-field input[type='text'],
-  form.form-group .form-field input[type='email'],
-  form.form-group .form-field input[type='password'],
-  form.form-group .form-field select,
-  form.form-group .form-field textarea {
-    display: block; }
+  form.form-group .form-field {
+    display: inline-block; }
+    form.form-group .form-field label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: .5rem; }
+    form.form-group .form-field input[type='text'],
+    form.form-group .form-field input[type='email'],
+    form.form-group .form-field input[type='password'],
+    form.form-group .form-field select,
+    form.form-group .form-field textarea {
+      display: block; }
 
 header.hero {
   width: 100%;
   background: #eeeeee;
-  padding-top: 30px;
+  padding: 30px 0;
   min-height: 270px;
-  max-height: 800px;
   height: 30vh; }
   @media screen and (min-width: 750px) {
     header.hero {
       height: 40vh;
       min-height: 400px;
-      padding-top: 55px; } }
+      padding: 55px 0; } }
   @media screen and (min-width: 1000px) {
     header.hero {
       height: 60vh;
-      padding-top: 100px;
+      padding: 100px 0;
       min-height: 500px; } }
   header.hero .title,
   header.hero .subtitle {
@@ -590,16 +592,15 @@ header.hero {
   header.hero .subtitle {
     margin: .5rem 0 1.25rem 0; }
 
-div.table-wrapper {
+div.table-full-width {
   overflow: scroll; }
+  div.table-full-width > table {
+    width: 100%; }
 
 table {
   border-collapse: collapse;
   table-layout: fixed;
   margin: 1rem 0; }
-  table.full-width {
-    width: 100%;
-    max-width: 100%; }
   table th:first-child,
   table td:first-child {
     padding-left: .375rem; }
@@ -637,6 +638,37 @@ table {
     table th.tcol-10rem,
     table td.tcol-10rem {
       width: 10rem; }
+    @media screen and (min-width: 750px) {
+      table th.tcol-1rem,
+      table td.tcol-1rem {
+        width: inherit; }
+      table th.tcol-2rem,
+      table td.tcol-2rem {
+        width: inherit; }
+      table th.tcol-3rem,
+      table td.tcol-3rem {
+        width: inherit; }
+      table th.tcol-4rem,
+      table td.tcol-4rem {
+        width: inherit; }
+      table th.tcol-5rem,
+      table td.tcol-5rem {
+        width: inherit; }
+      table th.tcol-6rem,
+      table td.tcol-6rem {
+        width: inherit; }
+      table th.tcol-7rem,
+      table td.tcol-7rem {
+        width: inherit; }
+      table th.tcol-8rem,
+      table td.tcol-8rem {
+        width: inherit; }
+      table th.tcol-9rem,
+      table td.tcol-9rem {
+        width: inherit; }
+      table th.tcol-10rem,
+      table td.tcol-10rem {
+        width: inherit; } }
   table thead th {
     border-bottom: #95A5A6 1px solid; }
   table tbody td {
@@ -656,15 +688,7 @@ table {
   @media screen and (min-width: 750px) {
     .nav-bar {
       padding: 0 10px 0 10px;
-      height: 80px; } }
-  @media screen and (min-width: 750px) {
-    .nav-bar.lg {
-      height: 122px; }
-      .nav-bar.lg .nav-list {
-        height: 120px; }
-        .nav-bar.lg .nav-list > * {
-          height: 60px;
-          line-height: 60px; } }
+      height: inherit; } }
   .nav-bar.fixed {
     position: fixed;
     z-index: 200;
@@ -675,18 +699,18 @@ table {
     .nav-bar.with-logo {
       padding: 0 10px 0 200px; } }
   .nav-bar.with-logo .nav-logo {
-    display: none; }
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    left: 10px; }
     @media screen and (min-width: 750px) {
       .nav-bar.with-logo .nav-logo {
-        position: absolute;
         top: 50%;
-        left: 0;
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0;
-        max-width: 200px;
+        left: 10px;
         transform: translate(0, -50%);
-        padding-left: 10px;
+        display: block;
+        margin: 0;
+        max-width: 210px;
         font-size: 1.375rem; } }
   .nav-bar .nav-list {
     max-height: 0px;
@@ -707,18 +731,15 @@ table {
         outline: 0; }
     @media screen and (min-width: 750px) {
       .nav-bar .nav-list {
-        height: 80px;
         opacity: 1;
         max-height: initial;
         list-style: none;
-        margin: 0;
-        text-align: right;
-        float: right; }
+        margin: 0; }
         .nav-bar .nav-list > * {
-          display: inline-block;
+          display: block;
+          float: right;
           vertical-align: middle;
           text-transform: uppercase;
-          height: 80px;
           font-weight: 700;
           line-height: 80px;
           cursor: pointer;
@@ -782,7 +803,7 @@ table {
   width: 25px;
   height: 25px;
   z-index: 1;
-  right: 5px;
+  right: 10px;
   top: 10px;
   height: 25px;
   transition: all .2s;
@@ -896,6 +917,12 @@ code {
   font-size: 1.125em;
   font-family: monospace; }
 
+.site-nav-logo {
+  width: 30px; }
+  @media screen and (min-width: 750px) {
+    .site-nav-logo {
+      width: 40px; } }
+
 header.site-demo-hero {
   position: relative;
   background: #E0EAFC;
@@ -933,6 +960,15 @@ header.site-demo-hero {
     @media screen and (min-width: 1000px) {
       header.site-demo-hero img.site-logo {
         width: 350px; } }
+
+.site-demo-introduction {
+  padding: 1rem 0;
+  background: #eeeeee;
+  margin-top: 3rem; }
+  .site-demo-introduction section.segment {
+    background: #fff; }
+  .site-demo-introduction .project-description {
+    padding: 0 2.5%; }
 
 div.site-demo-code-block {
   width: 95%;

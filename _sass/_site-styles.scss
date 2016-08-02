@@ -6,6 +6,13 @@ $example-color: rgba(171, 183, 183, 1.0);
 $example-color-translucent: rgba(171, 183, 183, .75);
 $general-site-padding: 3px;
 
+.site-nav-logo{
+  width: 30px;
+  @include media-query($med-screen){
+    width: 40px;
+  }
+}
+
 header.site-demo-hero{
   position: relative;
   background: #E0EAFC; /* fallback for old browsers */
@@ -13,7 +20,7 @@ header.site-demo-hero{
   background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
   margin-top: #{$nav-height * .75}px;
   color: $light-primary;
-  
+
   @include media-query($med-screen){
     margin-top: #{$nav-height * 1}px;
   }
@@ -54,6 +61,17 @@ header.site-demo-hero{
     }
 
 
+  }
+}
+
+.site-demo-introduction{
+  padding: 1rem 0 ;
+  background: $faint-gray;
+  margin-top: 3rem;
+  
+  section.segment{background: #fff;}
+  .project-description{
+    padding: 0 2.5%;
   }
 }
 

@@ -21,6 +21,13 @@
     
 <nav class="nav-bar with-logo fixed">
   
+  <div class="nav-logo">
+    <a href="https://t3patterson.github.io/margo-css">
+      <img src="./images/molecule2.png" alt="logo" class="site-nav-logo">
+    </a>
+  </div>
+
+
   <input type="checkbox" class="hamburger-toggler"/>
   <div class="hamburger-menu">
     <span class="line"></span>
@@ -68,12 +75,6 @@
 
       
       
-      <!-- <a href="#"><del>Layout</del></a>
-      <a href="#"><del>General Formatting</del></a>
-      <a href="#"><del>Tables + Forms</del></a>
-      <hr class="breaker"/>
-      <a href="#"><del>Components</del></a>
-      <a href="#"><del>Miscellaneous</del></a> -->
 
 
   </div>
@@ -82,7 +83,7 @@
   <p>&nbsp;</p>
   <p>&nbsp;</p>
   <p>&nbsp;</p>
-  <h1 class="title" style="text-align: center; font-size">Documentation <br/><small style="font-size: .5em; color: ">Margo CSS</small></h1>
+  <h1 class="title" style="text-align: center; font-size">Documentation <br/><small style="font-size: .5em; color: rgba(92, 151, 191, 1.0); ">Margo CSS</small></h1>
 
   <div class="container-full major-section">
     <h1 class="site-header layout">Layout</h1>
@@ -541,46 +542,47 @@
     <div class="container-narrow">
       <h3 class="site-subheader">Tables</h3>
       <div class="container-narrow">
-<h4 class="site-sub-subheader"><strong>Short Table</strong></h4>
+  <h4 class="site-sub-subheader"><strong>Short Table</strong></h4>
+  <h3 class="site-lg-code-example"><code>&lt;table&gt;</code></h3>
+  <p></p>
+  <table >
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Bed Time</th>
+        <th>Favorite Animal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Zoey</td>
+        <td>4</td>
+        <td>9:30</td>
+        <td>Giraffe</td>
+      </tr>
+      <tr>
+        <td>Haley</td>
+        <td>2</td>
+        <td>8:00</td>
+        <td>Tiger</td>
+      </tr>
+      <tr>
+        <td>Rylan</td>
+        <td>1</td>
+        <td>7:30</td>
+        <td>TBD</td>
+      </tr>
+    </tbody>
+  </table>
 
-<table >
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Bed Time</th>
-      <th>Favorite Animal</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Zoey</td>
-      <td>4</td>
-      <td>9:30</td>
-      <td>Giraffe</td>
-    </tr>
-    <tr>
-      <td>Haley</td>
-      <td>2</td>
-      <td>8:00</td>
-      <td>Tiger</td>
-    </tr>
-    <tr>
-      <td>Rylan</td>
-      <td>1</td>
-      <td>7:30</td>
-      <td>TBD</td>
-    </tr>
-  </tbody>
-</table>
+  <p class="explanation">&nbsp;</p>
 
-<p class="explanation">&nbsp;</p>
+  <h4 class="site-sub-subheader"><strong>Full Width Table + Striped</strong></h4>
 
-<h4 class="site-sub-subheader"><strong>Full Width Table + Striped</strong></h4>
-
-<h3 class="site-lg-code-example"><code>&lt;table class="full-width striped"&gt;</code></h3>
-  <div class="table-wrapper">
-    <table class="full-width striped">
+  <h3 class="site-lg-code-example"><code>&lt;table class="full-width striped"&gt;</code></h3>
+  <div class="table-full-width">
+    <table class="striped">
       <thead>
         <tr>
           <th>Rank</th>
@@ -648,6 +650,32 @@
         </span>
       </div>
       
+<h4 class="site-sub-subheader"><strong>Quick Form</strong></h4>
+
+<h3 class="site-lg-code-example"><code>&lt;form class="form-group"&gt;</code></h3>
+<p></p>
+
+<form class="form-group">
+  <div class="form-field">
+    <label for="firstField">Username</label>
+    <input type="text"/ >
+  </div>
+  <div class="form-field">
+    <label for="firstField">Password</label>
+    <input type="password"/ >
+  </div>
+  <br/>
+  <div class="form-field">
+    
+    <input type="submit"/ value="Log In">
+  </div>
+</form>
+
+
+<h4 class="site-sub-subheader"><strong>Long Form</strong></h4>
+
+<h3 class="site-lg-code-example"><code>&lt;form class="form-group grid-container"&gt;</code></h3>
+<p></p>
 
 <form class="form-group grid-container">
 

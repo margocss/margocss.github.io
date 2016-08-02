@@ -10,14 +10,14 @@ body{
   font-family: 'Libre Franklin', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
-$black: #333;
-
 
 $primary-color: rgba(58, 83, 155, 1.0);
 $primary-color-tranlucent: rgba(58, 83, 155, .22);
 
 $dark-primary: rgba(44, 62, 80, 1.0);
 $light-primary: rgba(92, 151, 191, 1.0);
+
+$inverted-color: #333;
 
 $dark-gray: #95A5A6;
 $faint-gray: rgba(238, 238, 238,1);
@@ -236,7 +236,7 @@ del {
 // =========================
 // Button styles
 
-
+input,
 input[type='button'], 
 input[type='submit']{
   -webkit-appearance: none;
@@ -254,6 +254,7 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn{
   border-radius: 2px;
   font-size: 1rem;
   cursor: pointer;
+  color: $inverted-color;
   
   &.sm { font-size: .75rem; line-height: 1.875rem; }
   &.lg { 
@@ -369,7 +370,6 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn{
 
 form.form-group{
   display: block;
-  font-size: 0;
   
   input[type='text'],
   input[type='email'],
@@ -407,6 +407,7 @@ form.form-group{
   }
 
   .form-field{
+    display: inline-block;
     label{
       display: block;
       font-weight: 700;
@@ -433,20 +434,19 @@ form.form-group{
 header.hero{
   width: 100%;
   background: $faint-gray;
-  padding-top: 30px;
+  padding: 30px 0;
   min-height: 270px;
-  max-height: 800px;
 
   height: 30vh;
   @include media-query($med-screen){
     height: 40vh;
     min-height: 400px;
-    padding-top: 55px;
+    padding: 55px 0;
   }
 
   @include media-query($lg-screen){
     height: 60vh;
-    padding-top: 100px;
+    padding: 100px 0;
     min-height: 500px;
 
   }
@@ -485,19 +485,18 @@ header.hero{
 // =========================
 // Table
 
-div.table-wrapper{
+div.table-full-width{
   overflow: scroll;
+  > table{
+    width: 100%;
+
+  }
 }
 
 table {
   border-collapse: collapse;
   table-layout: fixed;
   margin: 1rem 0; 
-
-  &.full-width {
-    width: 100%;
-    max-width: 100%;
-  }
 
   th:first-child,
   td:first-child{
@@ -511,7 +510,13 @@ table {
     padding: .75rem 0 .75rem 2rem;
     @for $i from 1 through 10{
       &.tcol-#{$i}rem { width: #{$i}rem; }
-    }   
+    } 
+
+    @include media-query($med-screen){
+      @for $i from 1 through 10{
+        &.tcol-#{$i}rem { width: inherit; }
+      } 
+    }  
   }
   
   thead th{
@@ -551,24 +556,24 @@ $line-size: 4px;
   
   @include media-query($med-screen){
     padding: 0 $side-padding 0 $side-padding;
-    height: #{$nav-height }px;
+    height: inherit;
 
   }
   
   
 
-  &.lg{
-    @include media-query($med-screen){
-       height: #{$nav-height * 1.5 + 2}px;
-      .nav-list{ 
-        height: #{$nav-height * 1.5 }px;
-        > * {
-          height: #{$nav-height-mobile}px;
-          line-height: #{$nav-height-mobile}px;
-        }
-      }
-    }
-  }
+  // &.lg{
+  //   @include media-query($med-screen){
+  //      height: #{$nav-height * 1.5 + 2}px;
+  //     .nav-list{ 
+  //       height: #{$nav-height * 1.5 }px;
+  //       > * {
+  //         height: #{$nav-height-mobile}px;
+  //         line-height: #{$nav-height-mobile}px;
+  //       }
+  //     }
+  //   }
+  // }
 
   &.fixed {
       position: fixed;
@@ -583,17 +588,18 @@ $line-size: 4px;
       padding: 0 $side-padding 0 $logo-size;
     }
     .nav-logo{
-      display: none;
+        position: absolute;
+        display: inline-block;
+        top: 10px;
+        left: 10px;
+
         @include media-query($med-screen){
-          position: absolute;
           top: 50%;
-          left: 0;
-          display: inline-block;
-          vertical-align: middle;
-          margin: 0;
-          max-width: $logo-size;
+          left: $side-padding;
           transform: translate(0, -50%);
-          padding-left: $side-padding;
+          display: block;
+          margin: 0;
+          max-width: $logo-size + $side-padding;
           font-size: 1.375rem;
         }    
       }
@@ -622,20 +628,17 @@ $line-size: 4px;
     }
 
     @include media-query($med-screen){
-      height: #{$nav-height}px;
       opacity: 1;
 
       max-height: initial;
       list-style: none;
       margin: 0;
-      text-align: right;
-      float: right;
 
       >*{
-        display: inline-block;
+        display: block;
+        float: right;
         vertical-align: middle;
         text-transform: uppercase;
-        height: #{$nav-height}px;
         font-weight: 700;
         line-height: #{$nav-height}px;
         cursor: pointer;
@@ -724,7 +727,7 @@ $line-size: 4px;
 .hamburger-menu{
 
   @include overlay-style($sq-size, $sq-size, 1){
-    right: 5px;
+    right: 10px;
     top: 10px;
   }
 

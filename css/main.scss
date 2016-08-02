@@ -242,7 +242,10 @@ input[type='submit']{
   -webkit-appearance: none;
 }
 
-button, button.btn, input[type='button'], input[type='submit'], a.btn{background: #fff;
+button, button.btn, input[type='button'], input[type='submit'], a.btn{
+  display: inline-block;
+  text-decoration: none;
+  background: #fff;
   margin-bottom: .5rem;
   outline: 0;
   border: 1px solid #333;
@@ -444,7 +447,7 @@ header.hero{
   @include media-query($lg-screen){
     height: 60vh;
     padding-top: 100px;
-    min-height: 550px;
+    min-height: 500px;
 
   }
 
@@ -482,7 +485,7 @@ header.hero{
 // =========================
 // Table
 
-div.scroll-wrapper{
+div.table-wrapper{
   overflow: scroll;
 }
 
@@ -580,28 +583,21 @@ $line-size: 4px;
       padding: 0 $side-padding 0 $logo-size;
     }
     .nav-logo{
-      position: absolute;
-      top: 50%;
-      left: 0;
-      display: inline-block;
-      vertical-align: middle;
-      margin: 0;
-      max-width: $logo-size;
-      transform: translate(0, -50%);
-      padding-left: $side-padding;
-      font-size: 1.375rem;
-      img{
-        display: block;
-        width: 20px;
-
+      display: none;
         @include media-query($med-screen){
-          width: 60px;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0;
+          max-width: $logo-size;
+          transform: translate(0, -50%);
+          padding-left: $side-padding;
+          font-size: 1.375rem;
         }    
       }
     }
-  }
-
-
 
   .nav-list {
     max-height: 0px;
@@ -826,8 +822,13 @@ blockquote {
   border-left: $med-gray .5rem solid;
   background: $faint-gray;
   padding: 1.25rem 1rem;
-  font-size: 1.125rem;
-  
+  margin: 1rem 0;
+  font-size: 1.0rem;
+
+  @include media-query($med-screen){
+    font-size: 1.125rem;
+
+  }
 
   > * {
     margin: .5rem;
@@ -852,8 +853,12 @@ blockquote {
     text-indent: -.75rem;
     margin-left: .75rem;
 
-    font-size: 1rem;
+    font-size: .875rem;
     font-style: normal;
+    @include media-query($med-screen){
+      font-size: 1rem;
+
+    }
   }
   
 }
@@ -880,7 +885,7 @@ pre {
 
 
 code {
-  background: $faint-gray;
+  background: $faint-gray;  
   color: $secondary-color;
   padding: .1em .2em;
   margin: 0 1px;

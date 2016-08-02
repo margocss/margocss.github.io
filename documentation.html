@@ -1,103 +1,33 @@
-<!DOCTYPE html>
-<html>
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <title>Welcome</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
-  
-  <link rel="icon" type="image/png" href="./images/favicon.png">
-  <link rel="stylesheet" href="https://t3patterson.github.io/margo-css/css/main.css">
-  <link rel="canonical" href="https://t3patterson.github.io/margo-css/">
-  <link rel="alternate" type="application/rss+xml" title="Welcome" href="https://t3patterson.github.io/margo-css/feed.xml">
-</head>
-
-
-  <body>
-    
-<nav class="nav-bar with-logo fixed">
-  
-  <input type="checkbox" class="hamburger-toggler"/>
-  <div class="hamburger-menu">
-    <span class="line"></span>
-    <span class="line"></span>
-    <span class="line"></span>
-  </div>
-  
-  <div class="nav-list">
-      <a href="https://t3patterson.github.io/margo-css">Home</a>
-      
-        
-          
-          <a href="https://t3patterson.github.io/margo-css/documentation.html">
-              Docs
-          </a>
-        
-        
-
-      
-        
-
-      
-        
-
-      
-        
-
-      
-        
-          
-          <a href="https://t3patterson.github.io/margo-css/raw-demo.html">
-              Raw Demo
-          </a>
-        
-        
-
-      
-        
-
-      
-        
-
-      
-        
-
-      
-      
-      <!-- <a href="#"><del>Layout</del></a>
-      <a href="#"><del>General Formatting</del></a>
-      <a href="#"><del>Tables + Forms</del></a>
-      <hr class="breaker"/>
-      <a href="#"><del>Components</del></a>
-      <a href="#"><del>Miscellaneous</del></a> -->
-
-
-  </div>
-</nav>
-    <header class="hero site-demo-hero">
-  <div class="container-narrow">
-    <img src="./images/molecule2.png" alt="logo" class="site-logo">
-      
-    <h1 class="title">Margo CSS</h1>
-    <h4 class="subtitle">lightweight responsive components</h4>
-    <a href="/raw-demo.html" class="btn primary">Checkout the styles</a>
-  </div>
-</header>
+---
+layout: default
+title: Docs
+permalink: /documentation.html
+---
+  <p></p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <h1 class="title" style="text-align: center; font-size">Documentation <br/><small style="font-size: .5em; color: ">Margo CSS</small></h1>
 
   <div class="container-full major-section">
     <h1 class="site-header layout">Layout</h1>
   </div>
   <div class="container-narrow">
     <h3 class="site-subheader">Containers</h3>
+    <p class="explanation">
+      Containers dictate the width of the content. A div with a class of <code>container-full</code> will extend the full width of the page and a div with a class of <code>container-narrow</code> will have a max-width of 960px and will be centered with margin: auto. You can nest a <code>container-narrow</code> inside of a <code>container-full</code>.
+    </p>
+    
   </div>
   
   <div class="container-narrow">
     <h4 class="site-sub-subheader"><strong>Container-narrow</strong></h4>
-  </div>
+<pre><code>&lt;div class="container-narrow"&gt;
+   
+   ....
+
+&lt;/div&gt;</code></pre>
+</div>
 
   <div class="container-narrow site-demo">
     <h3 class="site-lg-code-example"><code>&lt;div class="container-narrow"&gt;</code></h3>
@@ -107,6 +37,13 @@
   </div>
   <div class="container-narrow">
     <h4 class="site-sub-subheader"><strong>Container-full</strong></h4>
+<pre><code>&lt;div class="container-full"&gt;
+   
+   ...
+
+&lt;/div&gt;</code></pre>
+</div>
+
   </div>
   <div class="container-full site-demo">
     <h3 class="site-lg-code-example"><code>&lt;div class="container-full"&gt;</code></h3>
@@ -118,6 +55,12 @@
   <div class="container-narrow">
       <h3 class="site-subheader">Grid</h3>
       <p class="explanation">
+        Grids <strong>must</strong> have an outer-div with a class of grid-container (<code>&lt;div class="grid-container"&gt;</code>)
+      </p>
+      <p class="explanation">  
+         The column widths are specified as divs inside the grid-container, and you can target column sizes for three (3) screen-widths:
+      </p>
+      <p class="explanation">
         &nbsp;&nbsp;&nbsp;
         <code class="site-code-marked site-med-font">sm</code> &lt; 750px,
         <br/>
@@ -127,7 +70,31 @@
         &nbsp;&nbsp;&nbsp;
         <code class="site-code-marked site-med-font">lg</code> &gt; 1000px.
       </p>
+      <div class="site-demo-code-block">
 
+        <span class="site-lg-code-example">
+          <code>&lt;div class="grid-container"&gt;</code>
+        </span>
+        <br/>
+        <span class="site-lg-code-example">
+          <code>&nbsp;&nbsp;&nbsp;&lt;div class="</code><code class="site-code-marked">sm</code><code>-[n]-x-12  </code><code class="site-code-marked">md</code><code>-[n]-x-12  </code><code class="site-code-marked">lg</code><code>-[n]-x-12"&gt;</code>
+          <br/>
+          <code>&nbsp;&nbsp;&nbsp;....</code>
+          <br/>
+          <code>&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code>
+        </span>
+        <br/>
+        <span class="site-lg-code-example">
+          <code>&lt;/div&gt;</code>
+        </span>
+      </div>
+
+      <p class="explanation">
+        A div with a class of <code>md-6-x-12</code> will take up <strong>50%</strong> (6 by 12 columns) of the container on medium sized screens <span class="txt-muted">(750px)</span class="txt-muted"> and up. A div with a class of <code>lg-3-x-12</code> will take up <strong>25%</strong> (3 by 12 columns) of large sized screens <span class="txt-muted">(1000px +)</span>.
+      </p>
+     
+
+      <h4 class="site-sub-subheader"><strong>Example</strong></h4>
       <div class="site-demo-code-block">
         <span class="site-lg-code-example">
           <code>&lt;div class="grid-container"&gt;</code>
@@ -142,177 +109,7 @@
         </span>
       </div>
       <div class="grid-container site-demo">
-        <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-12-x-12">
-    <code>sm-12-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
-    <code>md-6-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-4-x-12">
-    <code>lg-4-x-12</code></strong>
-  </span>
-</div>
-<div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-12-x-12">
-    <code>sm-12-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
-    <code>md-6-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-4-x-12">
-    <code>lg-4-x-12</code></strong>
-  </span>
-</div>
-<div class="sm-12-x-12 md-4-x-12 lg-4-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-12-x-12">
-    <code>sm-12-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-4-x-12">
-    <code>md-6-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-4-x-12">
-    <code>lg-4-x-12</code></strong>
-  </span>
-</div>
-<div class="sm-6-x-12 md-4-x-12 lg-3-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-6-x-12">
-    <code>sm-6-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-4-x-12">
-    <code>md-4-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
-    <code>lg-3-x-12</code></strong>
-  </span>
-</div>
-<div class="sm-6-x-12 md-4-x-12 lg-3-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-6-x-12">
-    <code>sm-6-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-4-x-12">
-    <code>md-4-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
-    <code>lg-3-x-12</code></strong>
-  </span>
-</div>
-<div class="sm-8-x-12 md-6-x-12 lg-3-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-8-x-12">
-    <code>sm-8-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
-    <code>md-6-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
-    <code>lg-3-x-12</code></strong>
-  </span>
-</div>
-<div class="sm-4-x-12 md-6-x-12 lg-3-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
-    <code>sm-4-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-6-x-12">
-    <code>md-6-x-12</code></strong>
-  </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-3-x-12">
-    <code>lg-3-x-12</code></strong>
-  </span>
-</div>
-<!-- ---- -->
-<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
-      <code>sm-4-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
-      <code>md-3-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
-      <code>lg-2-x-12</code></strong>
-    </span>
-</div>
-<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
-      <code>sm-4-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
-      <code>md-3-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
-      <code>lg-2-x-12</code></strong>
-    </span>
-</div>
-<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
-      <code>sm-4-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
-      <code>md-3-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
-      <code>lg-2-x-12</code></strong>
-    </span>
-</div>
-<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
-      <code>sm-4-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
-      <code>md-3-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
-      <code>lg-2-x-12</code></strong>
-    </span>
-</div>
-<div class="sm-4-x-12 md-9-x-12 lg-2-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
-      <code>sm-4-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-9-x-12">
-      <code>md-9-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
-      <code>lg-2-x-12</code></strong>
-    </span>
-</div>
-<div class="sm-4-x-12 md-3-x-12 lg-2-x-12">
-    <span class="grid-sz" data-scr="sm" data-val="sm-4-x-12">
-      <code>sm-4-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="md" data-val="md-3-x-12">
-      <code>md-3-x-12</code></strong>
-    </span>
-    <br/>
-    <span class="grid-sz" data-scr="lg" data-val="lg-2-x-12">
-      <code>lg-2-x-12</code></strong>
-    </span>
-</div>
-
+        {% include grid-default.html %}
       </div>
   </div>
   
@@ -338,28 +135,33 @@
           <div class="sm-12-x-12 lg-6-x-12">
             <h4 class="site-sub-subheader"><strong>Text Formats</strong></h4>
 
-              <p>Default font is Libre Franklin from google fonts. The text <em>right here</em> is inside of a &lt;p&gt; tag. All text sizes and line heights are calculated based on ems. The standard paragraph text is sized at 1em. And the default line-height is set to 1.25em on mobile to accomodate the lesser screen height and 1.625em on tablet/desktop for ideal legibility.</p>
+              <p>The text <em>right here</em> is inside of a &lt;p&gt; tag. All text sizes and line heights are calculated based on ems. The standard paragraph text is sized at 1em. And the default line-height is set to 1.25em on mobile to accomodate the lesser screen height and 1.625em on tablet/desktop for ideal legibility.</p>
               
               <div class="grid-container site-text-formats">
                 <div class="sm-6-x-12 md-4-x-12">
                   <a href="#"> link example</a> 
                   <br/>
+                  ( in<code>&lt;a&gt;</code> tag )
                 </div>
                 <div class="sm-6-x-12 md-4-x-12">
                   <code>code syntax</code> 
                   <br/>
+                  ( in<code>&lt;code&gt;</code> tag )
                 </div>
                 <div class="sm-6-x-12 md-4-x-12">
                   <mark>highlighted text</mark> 
                   <br/>
+                  ( in <code>&lt;mark&gt;</code> tag )
                 </div>
                 <div class="sm-6-x-12 md-4-x-12">
                   <del>line-through text</del> 
                   <br/>
+                  ( in <code>&lt;del&gt;</code> )
                 </div>
                 <div class="sm-6-x-12 md-4-x-12">
                   <small>small text </small>
                   <br/>
+                  (in <code>&lt;small&gt;</code> tag )
                 </div>
 
 
@@ -382,7 +184,24 @@
       <div class="grid-container dual-example">
         <div class="sm-12-x-12 lg-6-x-12">
           <h4 class="site-sub-subheader"><strong>Default</strong></h4>
+          <button>Normal</button>
+          <div> 
+            <code>&lt;button class="btn"&gt;...&lt;/button&gt;</code><br/><br/>
+            <code>&lt;a class="btn"&gt;...&lt;/button&gt;</code><br/><br/>
+            <code>&lt;input class="btn" type="button" ... &gt;</code><br/><br/>
+            <code>&lt;input class="btn" type="submit" ...&gt;</code><br/>
+          </div>
+          <hr>
           <div class="grid-container site-button-sizes">
+            <div class="sm-12-x-12 md-4-x-12">
+              <code>"btn sm"</code>
+            </div>
+            <div class="sm-12-x-12 md-4-x-12">
+              <code>"btn md"</code>
+            </div>
+            <div class="sm-12-x-12 md-4-x-12">
+              <code>"btn lg"</code>
+            </div>
 
             <div class="sm-12-x-12 md-4-x-12">
               <button class="sm">Small</button>
@@ -398,7 +217,26 @@
         <div class="sm-12-x-12 lg-6-x-12">
           <h4 class="site-sub-subheader"><strong>Primary</strong></h4>
 
+          <input type="button" class="primary" value="Primary">
+          <div>
+            <code>&lt;button class="btn"&gt;...&lt;/button&gt;</code><br/><br/>
+            <code>&lt;a class="btn primary"&gt;...&lt;/button&gt;</code><br/><br/>
+            <code>&lt;input class="btn primary" type="button" ... &gt;</code><br/><br/>
+            <code>&lt;input class="btn primary" type="submit" ...&gt;</code><br/>
+          </div>
+          <hr>
+
           <div class="grid-container site-button-sizes">
+            <div class="sm-12-x-12 md-4-x-12">
+              <code>"btn primary sm"</code>
+            </div>
+            <div class="sm-12-x-12 md-4-x-12">
+              <code>"btn primary md"</code>
+            </div>
+            <div class="sm-12-x-12 md-4-x-12">
+              <code>"btn primary lg"</code>
+            </div>
+
             <div class="sm-12-x-12 md-4-x-12">
               <button class="btn sm primary">Small</button>
             </div>
@@ -457,132 +295,78 @@
       
     <div class="container-narrow">
       <h3 class="site-subheader">Tables</h3>
-      <div class="container-narrow">
-<h4 class="site-sub-subheader"><strong>Short Table</strong></h4>
-
-<table >
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Age</th>
-      <th>Bed Time</th>
-      <th>Favorite Animal</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Zoey</td>
-      <td>4</td>
-      <td>9:30</td>
-      <td>Giraffe</td>
-    </tr>
-    <tr>
-      <td>Haley</td>
-      <td>2</td>
-      <td>8:00</td>
-      <td>Tiger</td>
-    </tr>
-    <tr>
-      <td>Rylan</td>
-      <td>1</td>
-      <td>7:30</td>
-      <td>TBD</td>
-    </tr>
-  </tbody>
-</table>
-
-<p class="explanation">&nbsp;</p>
-
-<h4 class="site-sub-subheader"><strong>Full Width Table + Striped</strong></h4>
-
-<h3 class="site-lg-code-example"><code>&lt;table class="full-width striped"&gt;</code></h3>
-  <div class="table-wrapper">
-    <table class="full-width striped">
-      <thead>
-        <tr>
-          <th>Rank</th>
-          <th>Team</th>
-          <th>W-L Record</th>
-          <th>Pts For</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>food fight</td>
-          <td>8-4</td>
-          <td>1,137.88</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Foxy Tacos</td>
-          <td>7-5</td>
-          <td>1,184.96</td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>DorkTron</td>
-          <td>7-5</td>
-          <td>912.22</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>It's Just A Name</td>
-          <td>6-6</td>
-          <td>1,158.42</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-      
+      {% include table-example.html %}
       <h3 class="site-subheader">Forms</h3>
-      <h3 class="site-lg-code-example"><code>&lt;form class="form-group grid-container"&gt;</code></h3>
-      <p></p>
-      
+      <p class="explanation">
+        Forms need to be inside a <code>form</code> tag with a class of <strong>form-group</strong>.
+        To achieve column formatting, it is strongly advised that you use also apply the <strong>grid-container</strong> class to the form tag.
+      </p>
+      <p class="explanation">
+        <code>label</code> + <code>input</code> pairs should be encapsulated inside a class of <code>form-field</code><br/> ( <small>plus whatever column styles e.g <code>col-sm-12 col-md-6</code> </small>) to achieve block styling. 
+      </p>
 
-<form class="form-group grid-container">
+      <div class="site-demo-code-block">
+        <span class="site-lg-code-example">
+          <code>&lt;form class="</code><code class="site-code-marked">form-group</code> &nbsp;<code class="site-code-marked">grid-container</code>"&gt;</code>
+        </span>
+        <br/>
+        <span class="site-lg-code-example">
+          <code>&nbsp;&nbsp;&nbsp;&lt;div class="</code><code class="site-code-marked">form-field</code> &nbsp;<code>sm-[n]-x-12 md-[n]-x-12"&gt;</code>
+          <br/>
 
-  <div class="sm-12-x-12 md-4-x-12 form-field">
-    <label for="firstField">First</label>
-    <input type="text"/ >
-  </div>
+          <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;label&gt;...&lt;/label&gt;</code><code></code>
+          <br/>
+          <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="text"/&gt;</code>
+          <br/>
+          <code>&nbsp;&nbsp;&nbsp;&lt;/div&gt;</code>
+        </span>
+        <br/>
+        <span class="site-lg-code-example">
+          <code>&lt;/div&gt;</code>
+        </span>
+      </div>
+      {% include form-example.html %}
+<pre><code>&lt;form class="form-group grid-container"&gt;
+   
+   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+       &lt;label for="firstField"&gt;First &lt;/label&gt;
+       &lt;input type="text"/ &gt;
+   &lt;/div&gt;
 
-  <div class="sm-12-x-12 md-4-x-12 form-field">
-    <label for="middleField">Middle</label>
-    <input type="text"/ >
-  </div>
+   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+       &lt;label for="middleField"&gt;Middle &lt;/label&gt;
+       &lt;input type="text"/ &gt;
+   &lt;/div&gt;
 
-  <div class="sm-12-x-12 md-4-x-12 form-field">
-    <label for="lastField">Last</label>
-    <input type="text"/ >
-  </div>
+   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+       &lt;label for="lastField"&gt;Last &lt;/label&gt;
+       &lt;input type="text"/ &gt;
+   &lt;/div&gt;
 
-  <div class="sm-12-x-12 md-6-x-12 form-field">
-    <label for="emailField">Email</label>
-    <input type="email"/ >
-  </div>
+   &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
+       &lt;label for="emailField"&gt;Email &lt;/label&gt;
+       &lt;input type="email"/ &gt;
+   &lt;/div&gt;
 
-  <div class="sm-12-x-12 md-6-x-12 form-field">
-    <label for="nameField">State</label>
-    <select/ >
-      <option value="CA">California</option>
-      <option value="NY">New York</option>
-      <option value="TX">Texas</option>
-    </select>
-  </div>
+   &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
+       &lt;label for="nameField"&gt;State &lt;/label&gt;
+       &lt;select/ &gt;
+         &lt;option value="CA"&gt;California &lt;/option&gt;
+         &lt;option value="NY"&gt;New York &lt;/option&gt;
+         &lt;option value="TX"&gt;Texas &lt;/option&gt;
+     &lt;/select&gt;
+   &lt;/div&gt;
 
-  <div class="sm-12-x-12 md-12-x-12 form-field">
-    <label for="nameField">Description</label>
-    <textarea rows="6"></textarea>
-  </div>
-
-  <div class="sm-12-x-12 md-12-x-12 form-field">
-    <input type="submit" class="btn primary ">
-  </div>
-
-
-</form>
+   &lt;div class="sm-12-x-12 md-12-x-12 form-field"&gt;
+      &lt;label for="nameField"&gt;Description &lt;/label&gt;
+      &lt;textarea rows="6"&gt; &lt;/textarea&gt;
+   &lt;/div&gt;
+  
+   &lt;div class="sm-6-x-12 md-6-x-12 form-field"&gt;
+       &lt;input type="submit" class="btn md primary"/ &gt;
+   &lt;/div&gt;
+  
+ &lt;/form&gt;</code></pre>
 
     </div>
   
@@ -592,34 +376,45 @@
 
   <div class="container-narrow">
     <h3 class="site-subheader">Hero-Header</h3>
-    <h3 class="site-lg-code-example"><code>&lt;header class="hero"&gt;</code></h3>
-    <p></p>
+    <p class="explanation">Commonly seen on landing pages.</p>
+    <h4 class="site-sub-subheader"><strong>Example</strong></h4>
   </div>
-  
-  <header class="hero">
 
+  <header class="hero">
     <div class="container-narrow">
       <h1 class="title">You might land here one day</h1>
       <h3 class="subtitle">And I will be waiting with a bouquet of flowers</h3>
       <button class="primary lg">Learn More</button>
     </div>
   </header>
-
+  <pre><code>&lt;header class="hero"&gt;
+  <span class="txt-muted">&lt;!-- puts max-width on hero's inner text --&gt;</span>
+   &lt;div class="container-narrow"&gt;
+    
+      &lt;h1 class="title"&gt;...&lt;/h1&gt;
+    
+      &lt;h3 class="subtitle"&gt;...&lt;/h3&gt;
+      ...
+   
+   &lt;/div&gt;
+&lt;/header&gt;</code></pre>
 
 
 
 
   <div class="container-narrow">
     <h3 class="site-subheader">Navigation</h3>
-    
-    <h3 class="site-lg-code-example"><code>&lt;nav class="nav-bar"&gt;</code></h3>
+    <p class="explanation">
+      Navigation is responsive and written entirely in CSS. However, it is opinionated about the ordering of the html-elemnts. See the comment in the example code below. Margo's navbar is encapsulated within <code>&lt;nav class="navbar"&gt;</code>. 
+    </p>
+  
+    <h4 class="site-sub-subheader"><strong>Example</strong></h4>
+   
     <nav class="nav-bar">
       
       <input type="checkbox" class="hamburger-toggler"/>
       <div class="hamburger-menu">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
+        <hr class="mid-line"> 
       </div>
 
 
@@ -632,9 +427,34 @@
         <a href="#">Log In</a>
       </div>
     </nav>
+<pre><code>&lt;nav class="nav-bar"&gt;
+    <span class="txt-muted">&lt;!--
+      You must include both &lt;input type="checkbox" class="hamburger-toggler&gt;
+      and &lt;div class="hamburger-toggler"&gt; <em>in the order shown below</em> 
+      for the responsive menu to work
+    --&gt;</span>
+    &lt;input type="checkbox" class="hamburger-toggler"/&gt;
+
+    &lt;div class="hamburger-menu"&gt;
+      &lt;hr class="mid-line" /&gt; 
+    &lt;/div&gt;
+
+    &lt;div class="nav-list"&gt;
+      &lt;a href="..."&gt; <span class="txt-muted">Link 1</span> &lt;/a&gt;
+      &lt;a href="..."&gt; <span class="txt-muted">Link 2</span> &lt;/a&gt;
+    &lt;/div&gt;
+
+&lt;/nav&gt;</code></pre>
+
+
 
     <h3 class="site-subheader">Callout Segment</h3>
-    <h3 class="site-lg-code-example"><code>&lt;section class="segment"&gt;</code></h3>
+    <p class="explanation">
+      Use a callout segment for any kind of content that you want to emphasize. To use this component, you use the HTML5 <code>&lt;section&gt;</code> tag with a class of <strong>segment</strong>.
+    </p>
+
+    <h4 class="site-sub-subheader"><strong>Example</strong></h4>
+
     <section class="segment">
       
       <h4>Places that start with M</h4>
@@ -646,7 +466,25 @@
 
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident earum modi corrupti exp  edita, accusantium numquam nesciunt non eum ipsa iste voluptate saepe, sit quibusdam odio suscipit inventore velit quos aperiam ducimus dicta perspiciatis.</p>
     </section>
-        
+    
+<pre><code>&lt;section class="segment"&gt;
+<span class="txt-muted">
+   &lt;h4&gt;Cities that start with M&lt;/h4&gt;
+   
+   &lt;ul&gt;
+      &lt;li&gt;Minneapolis&lt;/li&gt;   &lt;li&gt;Marfa&lt;/li&gt;
+      &lt;li&gt;Madison&lt;/li&gt;
+   &lt;/ul&gt;
+
+   &lt;p&gt;
+      Lorem ipsum...
+   &lt;/p&gt;
+</span>
+&lt;/section&gt;</code></pre>
+
+
+
+    
 
 
     <h3 class="site-subheader">Sidebars</h3>
@@ -654,8 +492,9 @@
       Coming Soon
     </p>
     <h3 class="site-subheader">Thumbnails/Cards</h3>
-    <h3 class="site-lg-code-example"><code>&lt;figure class="tn-card"&gt;</code></h3>
-    <p></p>
+    <p class="explanation">
+      Card thumbnails uses HTML5 <code>&lt;figure&gt;</code> tag with a class of <strong>tn-card</strong> and are 270px in width.
+    </p>
     <div class="grid-container guttered">
       <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
         <figure class="tn-card">
@@ -697,8 +536,22 @@
         </figure>
       </div>
     </div>
-  </div>
+<pre><code>&lt;figure class="tn-card"&gt;
 
+  &lt;img class="card-image" alt="..." src="..."&gt;
+  
+  &lt;figcaption&gt;
+    <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+  &lt;/figcaption&gt;
+
+  &lt;figcaption class="more-info"&gt;
+    <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
+  &lt;/figcaption&gt;
+
+&lt;/figure&gt;
+</code></pre>
+
+  </div>
 
     <div class="container-full major-section">
       <h1 class="site-header">Miscellaneous</h1>
@@ -707,8 +560,8 @@
     <div class="container-narrow">
       <h3 class="site-subheader">Code Blocks</h3>
       <p class="explanation">
-      <h3 class="site-lg-code-example"><code>&lt;pre&gt;&lt;code&gt;</code> ... <code>&lt;/code&gt;&lt;/pre&gt;</code></h3>
-      <p></p>
+        Encapsulated in <code>&lt;pre&gt;&lt;code&gt;</code> ... <code>&lt;/pre&gt;&lt;/code&gt;</code>. Be mindful of whitespace inside of <code>&lt;pre&gt;</code> tag.
+      </p>
 <pre><code>&lt;pre&gt;
   &lt;code&gt;
     &lt;h2&gt;This is code&lt;/h2&gt;
@@ -717,13 +570,21 @@
 &lt;/pre&gt;
 </code></pre>
       <h3 class="site-subheader">Block Quotes</h3>
-      <h3 class="site-lg-code-example"><code>&lt;blockquote&gt;</code></h3>
-      <p></p>
       <blockquote>
         <p>Repellendus iusto ex, officia est optio labore quam et, illo necessitatibus consectetur quaerat repudiandae, quae.</p>
         <p> Maiores facere tempore animi mollitia. Facilis quibusdam amet nam consequuntur quidem, deleniti nobis, accusamus autem voluptas rerum odit at, labore numquam exercitationem id porro, modi veniam aspernatur commodi blanditiis ipsam. Animi eaque et veritatis quis. Eum excepturi repellendus, aut iusto, non earum consectetur. Quas architecto facere sint incidunt praesentium! Veniam omnis dignissimos eius, officia, deleniti recusandae libero. </p>
         <cite><strong>Someone important</strong> from <em>A Credible Source</em></cite>
       </blockquote>
+<pre><code>&lt;blockquote&gt;
+  
+  &lt;p&gt;
+    ....
+  &lt;/p&gt;
+  &lt;cite&gt;
+    ....
+  &lt;/cite&gt;
+
+&lt;/blockquote&gt;</code></pre>
     </div>
 
 
@@ -733,8 +594,3 @@
 </div>
 
 
-
-    <script src="./js/main.js"></script>
-  </body>
-
-</html>

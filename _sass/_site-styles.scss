@@ -7,7 +7,7 @@ $example-color-translucent: rgba(171, 183, 183, .75);
 $general-site-padding: 3px;
 
 header.site-demo-hero{
-
+  position: relative;
   background: #E0EAFC; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
@@ -17,7 +17,6 @@ header.site-demo-hero{
   @include media-query($med-screen){
     margin-top: #{$nav-height * 1.5}px;
   }
-
   
 
   h1{
@@ -32,13 +31,14 @@ header.site-demo-hero{
 
   img.site-logo{
     width: 200px;
+    position: absolute;
+    opacity: .11;
 
     @include media-query($med-screen){
       width: 240px;
     }
 
     @include media-query($lg-screen){
-      
       width: 350px;
     }
 

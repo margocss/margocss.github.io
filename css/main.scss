@@ -529,8 +529,8 @@ table {
 // =========================
 // Nav
 
-$sq-size: 30px; 
-$line-size: 5px;
+$sq-size: 25px; 
+$line-size: 4px;
 
 .nav-bar {
   $side-padding: 10px;
@@ -678,15 +678,16 @@ $line-size: 5px;
     cursor: pointer;
 
     @include overlay-style($sq-size, $sq-size, 2){
-      right: 10px;
-      background: #393;
+      top: 20px;
+      right: 5px;
       margin: 0;
     }
 
     &:checked ~ .nav-list{
       position: absolute;
       width: 100%;
-      max-height: 1000px;
+      max-height: 90vh; 
+      overflow: scroll;
       opacity: 1;
       transition: opacity .7s;
 
@@ -728,7 +729,8 @@ $line-size: 5px;
 .hamburger-menu{
 
   @include overlay-style($sq-size, $sq-size, 1){
-    right: 15px;
+    right: 5px;
+    top: 20px;
   }
 
   height: $sq-size;

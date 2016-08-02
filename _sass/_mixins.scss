@@ -14,7 +14,5 @@
   width: $width;
   height: $height;
   z-index: $z-index;
-  top: 50%;
-  transform: translate(0 ,-50%);
   @content;
 }

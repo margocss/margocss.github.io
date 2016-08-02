@@ -678,9 +678,8 @@ $line-size: 4px;
     cursor: pointer;
 
     @include overlay-style($sq-size, $sq-size, 2){
-      top: 20px;
+      top: 10px;
       right: 5px;
-      margin: 0;
     }
 
     &:checked ~ .nav-list{
@@ -730,7 +729,7 @@ $line-size: 4px;
 
   @include overlay-style($sq-size, $sq-size, 1){
     right: 5px;
-    top: 20px;
+    top: 10px;
   }
 
   height: $sq-size;

@@ -743,11 +743,8 @@ table {
   width: 25px;
   height: 25px;
   z-index: 2;
-  top: 50%;
-  transform: translate(0, -50%);
-  top: 20px;
-  right: 5px;
-  margin: 0; }
+  top: 10px;
+  right: 5px; }
   .nav-bar input.hamburger-toggler:checked ~ .nav-list {
     position: absolute;
     width: 100%;
@@ -786,10 +783,8 @@ table {
   width: 25px;
   height: 25px;
   z-index: 1;
-  top: 50%;
-  transform: translate(0, -50%);
   right: 5px;
-  top: 20px;
+  top: 10px;
   height: 25px;
   transition: all .2s;
   cursor: pointer; }

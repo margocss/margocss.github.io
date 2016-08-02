@@ -1018,9 +1018,20 @@ div.site-demo-code-block {
       opacity: 1.0; }
 
 .major-section {
-  background: #eee;
-  border-left: 6px solid #5c97bf;
   margin-top: 6rem; }
+
+.site-margo-overview-page .major-section {
+  background: #eee;
+  border-left: 6px solid #5c97bf; }
+
+.major-section + .container-narrow > .site-subheader:nth-child(1) {
+  margin-top: 1.5rem; }
+  @media screen and (min-width: 750px) {
+    .major-section + .container-narrow > .site-subheader:nth-child(1) {
+      margin-top: 3rem; } }
+  @media screen and (min-width: 1000px) {
+    .major-section + .container-narrow > .site-subheader:nth-child(1) {
+      margin-top: 4rem; } }
 
 .site-header {
   padding: 3px;
@@ -1033,15 +1044,6 @@ div.site-demo-code-block {
   @media screen and (min-width: 1000px) {
     .site-header {
       font-size: 6em; } }
-
-.major-section + .container-narrow > .site-subheader:nth-child(1) {
-  margin-top: 1.5rem; }
-  @media screen and (min-width: 750px) {
-    .major-section + .container-narrow > .site-subheader:nth-child(1) {
-      margin-top: 3rem; } }
-  @media screen and (min-width: 1000px) {
-    .major-section + .container-narrow > .site-subheader:nth-child(1) {
-      margin-top: 4rem; } }
 
 .site-subheader {
   margin-top: 3rem;
@@ -1113,3 +1115,29 @@ div.site-demo-code-block {
 
 .site-thumbnail-section > li {
   margin-bottom: .5rem; }
+
+.site-docs-page .docs-content {
+  padding-left: .5rem; }
+
+aside {
+  background: #333;
+  padding-bottom: 1.5rem; }
+  aside a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none; }
+    aside a:hover {
+      color: #bfbfbf; }
+  aside ul {
+    list-style-type: none; }
+    aside ul li {
+      margin-bottom: 1.75rem; }
+  aside.sm-12-x-12 {
+    position: block; }
+  @media screen and (min-width: 750px) {
+    aside.md-3-x-12 {
+      position: fixed;
+      z-index: 90;
+      width: 25%;
+      height: 100vh;
+      background: #333; } }

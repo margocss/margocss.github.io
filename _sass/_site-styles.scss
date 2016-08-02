@@ -138,22 +138,15 @@ div.site-demo-code-block{
   }
 }
 
+
 .major-section{
-  background: $header-bg;
-  border-left: 6px solid $weak-header;
   margin-top: 6rem;
 }
 
-.site-header{
-  padding: $general-site-padding;
-  color: $strong-header;
-  opacity: .25;
-  font-weight: 200;
-  @include media-query($med-screen){
-    font-size: 3em;  
-  }
-  @include media-query($lg-screen){
-    font-size: 6em;  
+.site-margo-overview-page{
+  .major-section{
+    background: $header-bg;
+    border-left: 6px solid $weak-header;
   }
 }
 
@@ -166,6 +159,21 @@ div.site-demo-code-block{
 
   @include media-query($lg-screen){ 
     margin-top: 4rem;
+  }
+}
+
+
+
+.site-header{
+  padding: $general-site-padding;
+  color: $strong-header;
+  opacity: .25;
+  font-weight: 200;
+  @include media-query($med-screen){
+    font-size: 3em;  
+  }
+  @include media-query($lg-screen){
+    font-size: 6em;  
   }
 }
 
@@ -252,6 +260,8 @@ div.site-demo-code-block{
   }
 }
 
+
+
 .site-logo-example{
   background: $dark-gray;
   color: #fff;
@@ -264,6 +274,47 @@ div.site-demo-code-block{
 .site-thumbnail-section{
   > li{
     margin-bottom: .5rem;
+  }
+
+}
+
+.site-docs-page{
+  .docs-content{
+    padding-left: .5rem;
+  }
+  
+}
+
+aside{
+  background: $inverted-color;
+  padding-bottom: 1.5rem;
+  a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    &:hover{
+      color: $med-gray;
+    }
+  }
+
+  ul{
+    list-style-type: none;
+    li {
+      margin-bottom: 1.75rem;
+    }
+  }
+  &.sm-12-x-12{
+    position: block;
+  }
+  
+  @include media-query($med-screen){
+    &.md-3-x-12{
+       position: fixed;
+        z-index: 90;
+        width: 25%;
+        height: 100vh;
+        background: $inverted-color;
+    }
   }
 
 }

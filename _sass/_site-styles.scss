@@ -289,9 +289,11 @@ aside.demo-docs-sidebar{
 }
 
 .site-docs-page{
-  .docs-content{
-    padding-left: .5rem;
-  } 
+  
+  .site-demo-header{
+    h1{ position: relative; z-index: 4; }
+    img{position: absolute; width: 150px; opacity: .1; z-index: 3; }
+  }
 }
 
 a[name^='nav']{

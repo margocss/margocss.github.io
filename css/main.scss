@@ -382,35 +382,34 @@ aside{
 
     &.sidebar-sm{
       padding: .5rem;
-      width: 17.5%;
-      + .container-full {
+      width: 150px;
+      + * {
         position: relative;
-        width: 82.5%;
-        left: 17.5%;
+        width: 100%;
+        padding-left: 150px;
       }
     }
 
     &.sidebar,
     &.sidebar-md{
       padding: .75rem;
-      width: 25%;
-      + .container-full {
+      width: 225px;
+      + * {
         position: relative;
-        width: 75%;
-        margin-left: 25%;
+        width: 100%;
+        padding-left: 225px;
       }
 
     }
 
     &.sidebar-lg{
       padding: 1rem;
-      width: 33%;
-      max-width: 330px;
+      width: 330px;
 
-      + .container-full {
+      + * {
         position: relative;
-        width: 66.6667%;
-        margin-left: 330px;
+        width: 100%;
+        padding-left: 330px;
       }
     }
   }
@@ -426,7 +425,11 @@ aside{
   }
  
   .sidebar-content{
-    margin-top: 1rem;
+
+    @include media-query($med-screen){
+       margin-top: .5rem;
+    }
+
     a {
       padding: 0 1rem;
       display: block;
@@ -436,6 +439,10 @@ aside{
         color: $med-gray;
       }
     }
+  }
+
+  .sidebar-title{
+    margin: 0;
   }
   
 }

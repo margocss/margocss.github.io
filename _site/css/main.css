@@ -521,26 +521,25 @@ aside {
       overflow: scroll; }
       aside.sidebar-sm {
         padding: .5rem;
-        width: 17.5%; }
-        aside.sidebar-sm + .container-full {
+        width: 150px; }
+        aside.sidebar-sm + * {
           position: relative;
-          width: 82.5%;
-          left: 17.5%; }
+          width: 100%;
+          padding-left: 150px; }
       aside.sidebar, aside.sidebar-md {
         padding: .75rem;
-        width: 25%; }
-        aside.sidebar + .container-full, aside.sidebar-md + .container-full {
+        width: 225px; }
+        aside.sidebar + *, aside.sidebar-md + * {
           position: relative;
-          width: 75%;
-          margin-left: 25%; }
+          width: 100%;
+          padding-left: 225px; }
       aside.sidebar-lg {
         padding: 1rem;
-        width: 33%;
-        max-width: 330px; }
-        aside.sidebar-lg + .container-full {
+        width: 330px; }
+        aside.sidebar-lg + * {
           position: relative;
-          width: 66.6667%;
-          margin-left: 330px; } }
+          width: 100%;
+          padding-left: 330px; } }
   aside hr.navbar-spacer {
     border: 0;
     margin: 0;
@@ -548,15 +547,18 @@ aside {
     @media screen and (min-width: 750px) {
       aside hr.navbar-spacer {
         height: 80px; } }
-  aside .sidebar-content {
-    margin-top: 1rem; }
-    aside .sidebar-content a {
-      padding: 0 1rem;
-      display: block;
-      text-decoration: none;
-      margin-top: 1.25rem; }
-      aside .sidebar-content a:hover {
-        color: #bfbfbf; }
+  @media screen and (min-width: 750px) {
+    aside .sidebar-content {
+      margin-top: .5rem; } }
+  aside .sidebar-content a {
+    padding: 0 1rem;
+    display: block;
+    text-decoration: none;
+    margin-top: 1.25rem; }
+    aside .sidebar-content a:hover {
+      color: #bfbfbf; }
+  aside .sidebar-title {
+    margin: 0; }
 
 form.form-group {
   display: block; }
@@ -1170,8 +1172,14 @@ aside.demo-docs-sidebar {
     color: #fff;
     font-weight: 700; }
 
-.site-docs-page .docs-content {
-  padding-left: .5rem; }
+.site-docs-page .site-demo-header h1 {
+  position: relative;
+  z-index: 4; }
+.site-docs-page .site-demo-header img {
+  position: absolute;
+  width: 150px;
+  opacity: .1;
+  z-index: 3; }
 
 a[name^='nav'] {
   position: absolute;

@@ -362,7 +362,82 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn{
         > .lg-#{$i}-x-12{width: #{$i/12* 100%}; margin-left: 0; margin-right: 0;}
       }
     }
-  } 
+  }
+
+}
+
+// ========================
+
+aside{
+  padding: 1.5rem;
+  border-bottom: 1px solid $med-gray;
+  
+  @include media-query($med-screen){
+    border-right: 1px solid $med-gray;
+    border-bottom: 0;
+    position: fixed;
+    z-index: 90;
+    height: 100vh;
+    overflow: scroll;
+
+    &.sidebar-sm{
+      padding: .5rem;
+      width: 17.5%;
+      + .container-full {
+        position: relative;
+        width: 82.5%;
+        left: 17.5%;
+      }
+    }
+
+    &.sidebar,
+    &.sidebar-md{
+      padding: .75rem;
+      width: 25%;
+      + .container-full {
+        position: relative;
+        width: 75%;
+        margin-left: 25%;
+      }
+
+    }
+
+    &.sidebar-lg{
+      padding: 1rem;
+      width: 33%;
+      max-width: 330px;
+
+      + .container-full {
+        position: relative;
+        width: 66.6667%;
+        margin-left: 330px;
+      }
+    }
+  }
+
+  hr.navbar-spacer{
+    border: 0;
+    margin: 0;
+    height: 60px;
+
+    @include media-query($med-screen){
+      height: 80px;    
+    }
+  }
+ 
+  .sidebar-content{
+    margin-top: 1rem;
+    a {
+      padding: 0 1rem;
+      display: block;
+      text-decoration: none;
+      margin-top: 1.25rem;
+      &:hover{
+        color: $med-gray;
+      }
+    }
+  }
+  
 }
 
 // =========================
@@ -437,15 +512,12 @@ header.hero{
   padding: 30px 0;
   min-height: 270px;
 
-  height: 30vh;
   @include media-query($med-screen){
-    height: 40vh;
     min-height: 400px;
     padding: 55px 0;
   }
 
   @include media-query($lg-screen){
-    height: 60vh;
     padding: 100px 0;
     min-height: 500px;
 
@@ -477,9 +549,6 @@ header.hero{
   .subtitle{
     margin: .5rem 0 1.25rem 0;
   }
-  
-  
- 
 }
 
 // =========================

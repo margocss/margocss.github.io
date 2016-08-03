@@ -508,6 +508,56 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn {
       margin-left: 0;
       margin-right: 0; } }
 
+aside {
+  padding: 1.5rem;
+  border-bottom: 1px solid #bfbfbf; }
+  @media screen and (min-width: 750px) {
+    aside {
+      border-right: 1px solid #bfbfbf;
+      border-bottom: 0;
+      position: fixed;
+      z-index: 90;
+      height: 100vh;
+      overflow: scroll; }
+      aside.sidebar-sm {
+        padding: .5rem;
+        width: 17.5%; }
+        aside.sidebar-sm + .container-full {
+          position: relative;
+          width: 82.5%;
+          left: 17.5%; }
+      aside.sidebar, aside.sidebar-md {
+        padding: .75rem;
+        width: 25%; }
+        aside.sidebar + .container-full, aside.sidebar-md + .container-full {
+          position: relative;
+          width: 75%;
+          margin-left: 25%; }
+      aside.sidebar-lg {
+        padding: 1rem;
+        width: 33%;
+        max-width: 330px; }
+        aside.sidebar-lg + .container-full {
+          position: relative;
+          width: 66.6667%;
+          margin-left: 330px; } }
+  aside hr.navbar-spacer {
+    border: 0;
+    margin: 0;
+    height: 60px; }
+    @media screen and (min-width: 750px) {
+      aside hr.navbar-spacer {
+        height: 80px; } }
+  aside .sidebar-content {
+    margin-top: 1rem; }
+    aside .sidebar-content a {
+      padding: 0 1rem;
+      display: block;
+      text-decoration: none;
+      margin-top: 1.25rem; }
+      aside .sidebar-content a:hover {
+        color: #bfbfbf; }
+
 form.form-group {
   display: block; }
   form.form-group input[type='text'],
@@ -556,16 +606,13 @@ header.hero {
   width: 100%;
   background: #eeeeee;
   padding: 30px 0;
-  min-height: 270px;
-  height: 30vh; }
+  min-height: 270px; }
   @media screen and (min-width: 750px) {
     header.hero {
-      height: 40vh;
       min-height: 400px;
       padding: 55px 0; } }
   @media screen and (min-width: 1000px) {
     header.hero {
-      height: 60vh;
       padding: 100px 0;
       min-height: 500px; } }
   header.hero .title,
@@ -1116,28 +1163,16 @@ div.site-demo-code-block {
 .site-thumbnail-section > li {
   margin-bottom: .5rem; }
 
+aside.demo-docs-sidebar {
+  background: #333;
+  color: #fff; }
+  aside.demo-docs-sidebar a {
+    color: #fff;
+    font-weight: 700; }
+
 .site-docs-page .docs-content {
   padding-left: .5rem; }
 
-aside {
-  background: #333;
-  padding-bottom: 1.5rem; }
-  aside a {
-    color: #fff;
-    font-weight: 700;
-    text-decoration: none; }
-    aside a:hover {
-      color: #bfbfbf; }
-  aside ul {
-    list-style-type: none; }
-    aside ul li {
-      margin-bottom: 1.75rem; }
-  aside.sm-12-x-12 {
-    position: block; }
-  @media screen and (min-width: 750px) {
-    aside.md-3-x-12 {
-      position: fixed;
-      z-index: 90;
-      width: 25%;
-      height: 100vh;
-      background: #333; } }
+a[name^='nav'] {
+  position: absolute;
+  top: -30px; }

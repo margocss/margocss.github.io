@@ -181,7 +181,7 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn {
       button.lg, button.btn.lg, input[type='button'].lg, input[type='submit'].lg, a.btn.lg {
         padding: 0 1.5rem; } }
   button:hover, button.btn:hover, input[type='button']:hover, input[type='submit']:hover, a.btn:hover {
-    background: #D2D7D3; }
+    background: #d2d7d3; }
   button.primary, button.btn.primary, input[type='button'].primary, input[type='submit'].primary, a.btn.primary {
     background: #3a539b;
     color: #fff; }
@@ -760,7 +760,6 @@ table {
       display: block;
       padding: 1rem;
       font-weight: 700;
-      text-transform: uppercase;
       text-decoration: none;
       color: #95A5A6;
       cursor: pointer;
@@ -778,7 +777,6 @@ table {
           display: block;
           float: right;
           vertical-align: middle;
-          text-transform: uppercase;
           font-weight: 700;
           line-height: 80px;
           cursor: pointer;
@@ -1172,6 +1170,13 @@ aside.demo-docs-sidebar {
   aside.demo-docs-sidebar a {
     color: #fff;
     font-weight: 700; }
+    aside.demo-docs-sidebar a.sidebar-subtopic {
+      color: #ededed;
+      font-size: .875rem;
+      margin-top: .5rem;
+      padding-left: 1.75rem; }
+      aside.demo-docs-sidebar a.sidebar-subtopic:hover {
+        color: #bfbfbf; }
 
 .site-docs-page .site-demo-header h1 {
   position: relative;
@@ -1182,6 +1187,6 @@ aside.demo-docs-sidebar {
   opacity: .1;
   z-index: 3; }
 
-a[name^='nav'] {
+a[name^='docs'] {
   position: absolute;
-  top: -30px; }
+  top: -10px; }

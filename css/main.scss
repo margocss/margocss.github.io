@@ -11,13 +11,17 @@ body{
 }
 
 
+$med-screen:  750px;
+$lg-screen:   1000px;
+
+
+// Color Scheme Variables
 $primary-color: rgba(58, 83, 155, 1.0);
 $primary-color-tranlucent: rgba(58, 83, 155, .22);
 
 $dark-primary: rgba(44, 62, 80, 1.0);
 $light-primary: rgba(92, 151, 191, 1.0);
 
-$inverted-color: #333;
 
 $dark-gray: #95A5A6;
 $faint-gray: rgba(238, 238, 238,1);
@@ -28,25 +32,23 @@ $light-gray-translucent: rgba(210, 215, 211, .5);
 $med-gray: rgba(191, 191, 191, 1);
 $med-gray-translucent: rgba(191, 191, 191, .5);
 
-
-$med-screen:  750px;
-$lg-screen:   1000px;
-$xl-screen:  2000px;
-
-$nav-height: 80;
-$nav-height-mobile: $nav-height * .75;
-
-$hamburger-line-color: #333;
-$hamburger-hover-color: $light-gray; 
-
-$highlight-color: rgba(247, 202, 24, 1.0);
-
 // Import partials from `sass_dir` (defaults to `_sass`)
+
+$inverted-color: #333;
 
 $secondary-color: #96281B;
 $translucent-secondary: rgba(231, 76, 60, .33);
 
 $tertiary-color: rgba(247, 202, 24, 1.0);
+$highlight-color: $tertiary-color;
+
+
+// Nav Variables
+$nav-height: 80;
+$nav-height-mobile: $nav-height * .75;
+$hamburger-line-color: #333;
+$hamburger-hover-color: $light-gray; 
+
 
 $site-border-radius: 2px;
 
@@ -265,7 +267,7 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn{
   } 
 
   &:hover{
-    background: #D2D7D3;
+    background: $light-gray;
   }
 
   &.primary{
@@ -606,7 +608,7 @@ $line-size: 4px;
 
 .nav-bar {
   $side-padding: 10px;
-  $logo-size: 200px;
+  $nav-logo-size: 200px;
 
   width: 100%;
   background: #fff;
@@ -649,7 +651,7 @@ $line-size: 4px;
 
   &.with-logo{
     @include media-query($med-screen){
-      padding: 0 $side-padding 0 $logo-size;
+      padding: 0 $side-padding 0 $nav-logo-size;
     }
     .nav-logo{
         position: absolute;
@@ -663,7 +665,7 @@ $line-size: 4px;
           transform: translate(0, -50%);
           display: block;
           margin: 0;
-          max-width: $logo-size + $side-padding;
+          max-width: $nav-logo-size + $side-padding;
           font-size: 1.375rem;
         }    
       }
@@ -679,7 +681,6 @@ $line-size: 4px;
       display: block; 
       padding: 1rem;
       font-weight: 700;
-      text-transform: uppercase;
       text-decoration: none;
       color: $dark-gray;
       cursor: pointer;
@@ -702,7 +703,6 @@ $line-size: 4px;
         display: block;
         float: right;
         vertical-align: middle;
-        text-transform: uppercase;
         font-weight: 700;
         line-height: #{$nav-height}px;
         cursor: pointer;

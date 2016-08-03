@@ -281,10 +281,21 @@ div.site-demo-code-block{
 aside.demo-docs-sidebar{
   background: $inverted-color;
   color: #fff;
+
   a {
     color: #fff;
+    font-weight: 700;
 
-   font-weight: 700;
+   &.sidebar-subtopic{
+      color: #ededed;
+
+      font-size: .875rem;
+      margin-top: .5rem;
+      padding-left: 1.75rem;
+      &:hover{
+        color: $med-gray;
+      }
+    }
   }
 }
 
@@ -294,9 +305,11 @@ aside.demo-docs-sidebar{
     h1{ position: relative; z-index: 4; }
     img{position: absolute; width: 150px; opacity: .1; z-index: 3; }
   }
+
+  
 }
 
-a[name^='nav']{
+a[name^='docs']{
   position: absolute;
-  top: -30px;
+  top: -10px;
 }

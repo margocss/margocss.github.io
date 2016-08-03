@@ -8,11 +8,29 @@ permalink: /documentation.html
 
     <div class="sidebar-content">
       <h4 class="sidebar-title">Major Categories</h4>
-      <a href="#nav-layout">Layout</a>
-      <a href="#nav-formatting">Formatting</a>
-      <a href="#nav-tables-forms">Tables + Forms</a>
-      <a href="#nav-components">Components</a>
-      <a href="#nav-misc">Misc</a>
+      <a class="sidebar-topic"href="#docs-layout">Layout</a>
+      <a class="sidebar-subtopic" href="#docs-containers">Containers</a>
+      <a class="sidebar-subtopic" href="#docs-grid">Grid System</a>
+
+      <a href="#docs-formatting">Formatting</a>
+      <a class="sidebar-subtopic" href="#docs-typography">Typography</a>
+      <a class="sidebar-subtopic" href="#docs-buttons">Buttons</a>
+      <a class="sidebar-subtopic" href="#docs-lists">Lists</a>
+
+      <a href="#docs-tables-forms">Tables + Forms</a>
+      <a class="sidebar-subtopic" href="#docs-tables">Tables</a>
+      <a class="sidebar-subtopic" href="#docs-forms">Forms</a>
+    
+      <a href="#docs-components">Components</a>
+      <a class="sidebar-subtopic" href="#docs-header">Hero Unit Header</a>
+      <a class="sidebar-subtopic" href="#docs-navigation">Navigation Bar</a>
+      <a class="sidebar-subtopic" href="#docs-thumbnails">Thumbnail Cards</a>
+      <a class="sidebar-subtopic" href="#docs-sidebar">Sidebar</a>
+
+      <a href="#docs-misc">Misc</a>
+      <a class="sidebar-subtopic" href="#docs-code">Code Formatting</a>
+      <a class="sidebar-subtopic" href="#docs-blockquotes">Blockquotes</a>
+
       </ul>
     </div>
 </aside>
@@ -28,11 +46,13 @@ permalink: /documentation.html
         <h1 class="title" style=" font-size">Documentation <br/><small style="font-size: .5em; color: rgba(92, 151, 191, 1.0); ">Margo CSS</small></h1>
       </div>
       
-      <div style="position: relative"><a name="nav-layout"></a></div>
+      <div style="position: relative"><a name="docs-layout"></a></div>
       
       <div class="container-full major-section">
         <h1 class="site-header layout">Layout</h1>
       </div>
+
+      <div style="position: relative"><a name="docs-containers"></a></div>
       <div class="container-narrow">
         <h3 class="site-subheader">Containers</h3>
         <p class="explanation">
@@ -71,7 +91,7 @@ permalink: /documentation.html
         <p class="example-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quod voluptatem ratione perferendis quo. Voluptatibus repudiandae placeat rerum asperiores voluptate, voluptatum quo ipsum! Dolor eius velit perspiciatis cumque ab ullam, id impedit in! Minima eligendi est id incidunt molestiae amet expedita possimus, magni quam. Reprehenderit earum atque minima vitae amet quod magnam, voluptatem nostrum ullam. Quisquam nobis eos quos iste! Aliquid dolorum voluptas eum, tenetur sint aspernatur itaque iusto perferendis voluptates, veniam velit libero aperiam, explicabo, esse. Vel suscipit scipit odit sequi reprehenderit esse. Placeat iure distinctio quasi labore autem officiis, sed, voluptate </p>
       </div>
 
-
+      <div style="position: relative"><a name="docs-grid"></a></div>
       <div class="container-narrow">
           <h3 class="site-subheader">Grid</h3>
           <p class="explanation">
@@ -134,11 +154,12 @@ permalink: /documentation.html
       </div>
       
 
-      <div style="position: relative"><a name="nav-formatting"></a></div>
+      <div style="position: relative"><a name="docs-formatting"></a></div>
       <div class="container-full major-section">
         <h1 class="site-header">General Formatting</h1>
       </div>
-
+        
+      <div style="position: relative"><a name="docs-typography"></a></div>
       <div class="container-narrow formatting">
     <!--       <div class="container-narrow"> -->
             <h3 class="site-subheader">Typography</h3>
@@ -198,7 +219,8 @@ permalink: /documentation.html
               </div>
             </div>
 
-
+          <div style="position: relative"><a name="docs-buttons"></a></div>
+      
           <h3 class="site-subheader">Buttons</h3>
           <!-- <p class="explanation">There are two button styles (<strong>primary</strong> and <strong>normal</strong>) and four html syntaxes available for each style.</p> -->
           <div class="grid-container dual-example">
@@ -270,7 +292,7 @@ permalink: /documentation.html
             </div>
           </div>
                 
-
+          <div style="position: relative"><a name="docs-lists"></a></div>
           <h3 class="site-subheader">Lists</h3>
           <div class="grid-container guttered dual-example">
             <div class="sm-12-x-12 lg-6-x-12">
@@ -306,12 +328,13 @@ permalink: /documentation.html
           </div>
         </div>
       
-        <div style="position: absolute;"><a name="nav-tables-forms"></a></div>
+        <div style="position: absolute;"><a name="docs-tables-forms"></a></div>
 
         <div class="container-full major-section">
             <h1 class="site-header">Tables + Forms</h1>
         </div>
-          
+        
+        <div style="position: relative"><a name="docs-tables"></a></div>
         <div class="container-narrow">
           <h3 class="site-subheader">Tables</h3>
           {% include table-example.html %}
@@ -388,10 +411,12 @@ permalink: /documentation.html
  &lt;/form&gt;</code></pre>
 
         </div>
-      <div style="position: relative"><a name="nav-components"></a></div>
+      <div style="position: relative"><a name="docs-components"></a></div>
       <div class="container-full major-section">
           <h1 class="site-header">Components</h1>
       </div>
+      
+      <div style="position: relative"><a name="docs-header"></a></div>
 
       <div class="container-narrow">
         <h3 class="site-subheader">Hero-Header</h3>
@@ -420,7 +445,7 @@ permalink: /documentation.html
 
 
 
-
+      <div style="position: relative"><a name="docs-navigation"></a></div>
       <div class="container-narrow">
         <h3 class="site-subheader">Navigation</h3>
         <p class="explanation">
@@ -466,7 +491,7 @@ permalink: /documentation.html
     &lt;/nav&gt;</code></pre>
 
 
-
+        <div style="position: relative"><a name="docs-segment"></a></div>
         <h3 class="site-subheader">Callout Segment</h3>
         <p class="explanation">
           Use a callout segment for any kind of content that you want to emphasize. To use this component, you use the HTML5 <code>&lt;section&gt;</code> tag with a class of <strong>segment</strong>.
@@ -486,25 +511,27 @@ permalink: /documentation.html
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident earum modi corrupti exp  edita, accusantium numquam nesciunt non eum ipsa iste voluptate saepe, sit quibusdam odio suscipit inventore velit quos aperiam ducimus dicta perspiciatis.</p>
         </section>
         
-    <pre><code>&lt;section class="segment"&gt;
-    <span class="txt-muted">
-       &lt;h4&gt;Cities that start with M&lt;/h4&gt;
-       
-       &lt;ul&gt;
-          &lt;li&gt;Minneapolis&lt;/li&gt;   &lt;li&gt;Marfa&lt;/li&gt;
-          &lt;li&gt;Madison&lt;/li&gt;
-       &lt;/ul&gt;
+<pre><code>&lt;section class="segment"&gt;</code><span class="txt-muted">
+   
+   &lt;h4&gt;Cities that start with M&lt;/h4&gt;
+   
+   &lt;ul&gt;
+      &lt;li&gt;Minneapolis&lt;/li&gt;   
+      &lt;li&gt;Marfa&lt;/li&gt;
+      &lt;li&gt;Madison&lt;/li&gt;
+   &lt;/ul&gt;
 
-       &lt;p&gt;
-          Lorem ipsum...
-       &lt;/p&gt;
-    </span>
-    &lt;/section&gt;</code></pre>
+   &lt;p&gt;
+      Lorem ipsum...
+   &lt;/p&gt;</span>
+
+<code>&lt;/section&gt;</code></pre>
 
 
 
         
 
+        <div style="position: relative"><a name="docs-sidebar"></a></div>
 
         <h3 class="site-subheader">Sidebars</h3>
           <p class="explanation">
@@ -564,7 +591,8 @@ permalink: /documentation.html
 
 &lt;/div&gt;</code></pre>
 
-          
+        <div style="position: relative"><a name="docs-thumbnails"></a></div>
+
         <h3 class="site-subheader">Thumbnails/Cards</h3>
         <p class="explanation">
           Card thumbnails uses HTML5 <code>&lt;figure&gt;</code> tag with a class of <strong>tn-card</strong> and are 270px in width.
@@ -631,6 +659,8 @@ permalink: /documentation.html
         <div class="container-full major-section">
           <h1 class="site-header">Miscellaneous</h1>
         </div>
+        
+        <div style="position: relative"><a name="docs-code"></a></div>
 
         <div class="container-narrow">
           <h3 class="site-subheader">Code Blocks</h3>
@@ -643,6 +673,8 @@ permalink: /documentation.html
         &lt;p&gt;And this is what might happen if you extend past the width of the &lt;pre&gt; container-- a scroll bar will appear. No word-wrap.&lt;/p&gt;
       &lt;/code&gt;
     &lt;/pre&gt;
+    <div style="position: relative"><a name="docs-blockquotes"></a></div>
+
     </code></pre>
           <h3 class="site-subheader">Block Quotes</h3>
           <blockquote>

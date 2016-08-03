@@ -1,192 +1,22 @@
 @charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,600italic,400italic,200italic,200);
 /*
 ** Sane Defaults
 */
-@import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,600italic,400italic,200italic,200);
-body {
-  font-family: 'Libre Franklin', 'Helvetica Neue', 'Helvetica', sans-serif; }
-
+/*
+** Sane Defaults
+*/
 * {
   box-sizing: border-box; }
+
+body {
+  font-family: 'Libre Franklin', 'Helvetica Neue', 'Helvetica', sans-serif; }
 
 body {
   margin: 0; }
 
 img {
   max-width: 100%; }
-
-body, h1, h2, h3, h4, h5, h6 {
-  font-size-adjust: 0.5;
-  font-weight: 400; }
-
-hr.breaker {
-  display: block !important;
-  border: 0 !important;
-  height: 0 !important;
-  width: 0 !important;
-  margin: 0 !important;
-  padding: 0 !important; }
-
-body {
-  font-size: 1rem;
-  /* equivalent to 16px */
-  line-height: 1.25;
-  /* equivalent to 20px */ }
-  @media screen and (min-width: 750px) {
-    body {
-      font-size: 1rem;
-      /* equivalent to 16px */
-      line-height: 1.625;
-      /* equivalent to 22px */ } }
-
-h1, h2, h3, h4, h5, h6 {
-  margin-bottom: 1rem; }
-
-h1 {
-  font-size: 2rem;
-  /* 2x body copy size = 32px */
-  line-height: 1.25;
-  /* 45px / 36px */ }
-  @media screen and (min-width: 750px) {
-    h1 {
-      font-size: 2.5rem;
-      /* 2.5x body copy size = 40px */
-      line-height: 1.125; } }
-  @media screen and (min-width: 1000px) {
-    h1 {
-      font-size: 3rem;
-      /* 3x body copy size = 48px */
-      line-height: 1.05;
-      /* keep to a multiple of the 20px line height 
-      and something more appropriate for display headings */ } }
-
-h2 {
-  font-size: 1.625rem;
-  /* 2x body copy size = 32px */
-  line-height: 1.1538;
-  /* 45px / 36px */ }
-  @media screen and (min-width: 750px) {
-    h2 {
-      font-size: 2rem;
-      /* 2.5x body copy size = 40px */
-      line-height: 1.25; } }
-  @media screen and (min-width: 1000px) {
-    h2 {
-      font-size: 2.25rem;
-      /* 3x body copy size = 48px */
-      line-height: 1.25;
-      /* keep to a multiple of the 20px line height 
-      and something more appropriate for display headings */ } }
-
-h3 {
-  font-size: 1.375rem;
-  /* 2x body copy size = 32px */
-  line-height: 1.136363;
-  /* 45px / 36px */ }
-  @media screen and (min-width: 750px) {
-    h3 {
-      font-size: 1.5rem;
-      /* 2.5x body copy size = 40px */
-      line-height: 1.125; } }
-  @media screen and (min-width: 1000px) {
-    h3 {
-      font-size: 1.75rem;
-      /* 3x body copy size = 48px */
-      line-height: 1.05;
-      /* keep to a multiple of the 20px line height 
-      and something more appropriate for display headings */ } }
-
-h4 {
-  font-size: 1.125rem;
-  /* 2x body copy size = 32px */
-  line-height: 1.136363;
-  /* 45px / 36px */ }
-  @media screen and (min-width: 750px) {
-    h4 {
-      font-size: 1.125rem;
-      /* 2.5x body copy size = 40px */
-      line-height: 1.222222; } }
-  @media screen and (min-width: 1000px) {
-    h4 {
-      font-size: 1.125rem;
-      /* 3x body copy size = 48px */
-      line-height: 1.222222;
-      /* keep to a multiple of the 20px line height 
-      and something more appropriate for display headings */ } }
-
-p {
-  margin-bottom: 1.5rem;
-  font-weight: 400; }
-
-ul, ol {
-  padding-left: 1.25rem;
-  margin: .5rem 0; }
-  ul ul, ul ol, ol ul, ol ol {
-    margin: 0rem 0 .5rem 0; }
-
-ul > li {
-  padding-left: .25rem; }
-ul ul {
-  padding-left: 0.75rem; }
-
-ol > li {
-  padding-left: .5rem; }
-ol ol {
-  list-style-type: lower-alpha; }
-  ol ol ol {
-    list-style-type: lower-roman; }
-
-mark {
-  background: #f7ca18;
-  padding: 0 .2em; }
-
-small {
-  font-size: .75rem; }
-
-a {
-  color: #5c97bf;
-  cursor: pointer; }
-  a:hover {
-    color: #3a539b; }
-
-del {
-  text-decoration: line-through; }
-
-input,
-input[type='button'],
-input[type='submit'] {
-  -webkit-appearance: none; }
-
-button, button.btn, input[type='button'], input[type='submit'], a.btn {
-  display: inline-block;
-  text-decoration: none;
-  background: #fff;
-  margin-bottom: .5rem;
-  outline: 0;
-  border: 1px solid #333;
-  line-height: 2.5rem;
-  padding: 0 1rem;
-  border-radius: 2px;
-  font-size: 1rem;
-  cursor: pointer;
-  color: #333; }
-  button.sm, button.btn.sm, input[type='button'].sm, input[type='submit'].sm, a.btn.sm {
-    font-size: .75rem;
-    line-height: 1.875rem; }
-  button.lg, button.btn.lg, input[type='button'].lg, input[type='submit'].lg, a.btn.lg {
-    font-size: 1.5rem;
-    line-height: 3.75rem;
-    padding: 0 1.25rem; }
-    @media screen and (min-width: 750px) {
-      button.lg, button.btn.lg, input[type='button'].lg, input[type='submit'].lg, a.btn.lg {
-        padding: 0 1.5rem; } }
-  button:hover, button.btn:hover, input[type='button']:hover, input[type='submit']:hover, a.btn:hover {
-    background: #d2d7d3; }
-  button.primary, button.btn.primary, input[type='button'].primary, input[type='submit'].primary, a.btn.primary {
-    background: #3a539b;
-    color: #fff; }
-    button.primary:hover, button.btn.primary:hover, input[type='button'].primary:hover, input[type='submit'].primary:hover, a.btn.primary:hover {
-      background: #5c97bf; }
 
 /* Body Content - container */
 .container-narrow {
@@ -505,50 +335,170 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn {
       margin-left: 0;
       margin-right: 0; } }
 
-aside {
-  padding: 1.5rem;
-  border-bottom: 1px solid #bfbfbf; }
+body, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+  font-weight: 400; }
+
+body {
+  font-size: 1rem;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */ }
   @media screen and (min-width: 750px) {
-    aside {
-      border-right: 1px solid #bfbfbf;
-      border-bottom: 0;
-      position: fixed;
-      z-index: 90;
-      height: 100vh;
-      overflow: scroll; }
-      aside.sidebar-sm {
-        padding: .5rem;
-        width: 150px; }
-        aside.sidebar-sm + * {
-          position: relative;
-          width: 100%;
-          padding-left: 150px; }
-      aside.sidebar, aside.sidebar-md {
-        padding: .75rem;
-        width: 250px; }
-        aside.sidebar + *, aside.sidebar-md + * {
-          position: relative;
-          width: 100%;
-          padding-left: 250px; }
-      aside.sidebar-lg {
-        padding: 1rem;
-        width: 350px; }
-        aside.sidebar-lg + * {
-          position: relative;
-          width: 100%;
-          padding-left: 350px; } }
+    body {
+      font-size: 1rem;
+      /* equivalent to 16px */
+      line-height: 1.625;
+      /* equivalent to 22px */ } }
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem; }
+
+h1 {
+  font-size: 2rem;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */ }
   @media screen and (min-width: 750px) {
-    aside .sidebar-content {
-      margin-top: .5rem; } }
-  aside .sidebar-content a {
-    padding: 0 1rem;
-    display: block;
-    text-decoration: none;
-    margin-top: 1.25rem; }
-    aside .sidebar-content a:hover {
-      color: #bfbfbf; }
-  aside .sidebar-title {
-    margin: 0; }
+    h1 {
+      font-size: 2.5rem;
+      /* 2.5x body copy size = 40px */
+      line-height: 1.125; } }
+  @media screen and (min-width: 1000px) {
+    h1 {
+      font-size: 3rem;
+      /* 3x body copy size = 48px */
+      line-height: 1.05;
+      /* keep to a multiple of the 20px line height 
+      and something more appropriate for display headings */ } }
+
+h2 {
+  font-size: 1.625rem;
+  /* 2x body copy size = 32px */
+  line-height: 1.1538;
+  /* 45px / 36px */ }
+  @media screen and (min-width: 750px) {
+    h2 {
+      font-size: 2rem;
+      /* 2.5x body copy size = 40px */
+      line-height: 1.25; } }
+  @media screen and (min-width: 1000px) {
+    h2 {
+      font-size: 2.25rem;
+      /* 3x body copy size = 48px */
+      line-height: 1.25;
+      /* keep to a multiple of the 20px line height 
+      and something more appropriate for display headings */ } }
+
+h3 {
+  font-size: 1.375rem;
+  /* 2x body copy size = 32px */
+  line-height: 1.136363;
+  /* 45px / 36px */ }
+  @media screen and (min-width: 750px) {
+    h3 {
+      font-size: 1.5rem;
+      /* 2.5x body copy size = 40px */
+      line-height: 1.125; } }
+  @media screen and (min-width: 1000px) {
+    h3 {
+      font-size: 1.75rem;
+      /* 3x body copy size = 48px */
+      line-height: 1.05;
+      /* keep to a multiple of the 20px line height 
+      and something more appropriate for display headings */ } }
+
+h4 {
+  font-size: 1.125rem;
+  /* 2x body copy size = 32px */
+  line-height: 1.136363;
+  /* 45px / 36px */ }
+  @media screen and (min-width: 750px) {
+    h4 {
+      font-size: 1.125rem;
+      /* 2.5x body copy size = 40px */
+      line-height: 1.222222; } }
+  @media screen and (min-width: 1000px) {
+    h4 {
+      font-size: 1.125rem;
+      /* 3x body copy size = 48px */
+      line-height: 1.222222;
+      /* keep to a multiple of the 20px line height 
+      and something more appropriate for display headings */ } }
+
+p {
+  margin-bottom: 1.5rem;
+  font-weight: 400; }
+
+mark {
+  background: #f7ca18;
+  padding: 0 .2em; }
+
+small {
+  font-size: .75rem; }
+
+a {
+  color: #5c97bf;
+  cursor: pointer; }
+  a:hover {
+    color: #3a539b; }
+
+del {
+  text-decoration: line-through; }
+
+ul, ol {
+  padding-left: 1.25rem;
+  margin: .5rem 0; }
+  ul ul, ul ol, ol ul, ol ol {
+    margin: 0rem 0 .5rem 0; }
+
+ul > li {
+  padding-left: .25rem; }
+ul ul {
+  padding-left: 0.75rem; }
+
+ol > li {
+  padding-left: .5rem; }
+ol ol {
+  list-style-type: lower-alpha; }
+  ol ol ol {
+    list-style-type: lower-roman; }
+
+input,
+input[type='button'],
+input[type='submit'] {
+  -webkit-appearance: none; }
+
+button, button.btn, input[type='button'], input[type='submit'], a.btn {
+  display: inline-block;
+  text-decoration: none;
+  background: #fff;
+  margin-bottom: .5rem;
+  outline: 0;
+  border: 1px solid #333;
+  line-height: 2.5rem;
+  padding: 0 1rem;
+  border-radius: 2px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #333; }
+  button.sm, button.btn.sm, input[type='button'].sm, input[type='submit'].sm, a.btn.sm {
+    font-size: .75rem;
+    line-height: 1.875rem; }
+  button.lg, button.btn.lg, input[type='button'].lg, input[type='submit'].lg, a.btn.lg {
+    font-size: 1.5rem;
+    line-height: 3.75rem;
+    padding: 0 1.25rem; }
+    @media screen and (min-width: 750px) {
+      button.lg, button.btn.lg, input[type='button'].lg, input[type='submit'].lg, a.btn.lg {
+        padding: 0 1.5rem; } }
+  button:hover, button.btn:hover, input[type='button']:hover, input[type='submit']:hover, a.btn:hover {
+    background: #d2d7d3; }
+  button.primary, button.btn.primary, input[type='button'].primary, input[type='submit'].primary, a.btn.primary {
+    background: #3a539b;
+    color: #fff; }
+    button.primary:hover, button.btn.primary:hover, input[type='button'].primary:hover, input[type='submit'].primary:hover, a.btn.primary:hover {
+      background: #5c97bf; }
 
 form.form-group {
   display: block; }
@@ -594,6 +544,51 @@ form.form-group {
     form.form-group .form-field textarea {
       display: block; }
 
+aside {
+  padding: 1.5rem;
+  border-bottom: 1px solid #bfbfbf; }
+  @media screen and (min-width: 750px) {
+    aside {
+      border-right: 1px solid #bfbfbf;
+      border-bottom: 0;
+      position: fixed;
+      z-index: 90;
+      height: 100vh;
+      overflow: scroll; }
+      aside.sidebar-sm {
+        padding: .5rem;
+        width: 150px; }
+        aside.sidebar-sm + * {
+          position: relative;
+          width: 100%;
+          padding-left: 150px; }
+      aside.sidebar, aside.sidebar-md {
+        padding: .75rem;
+        width: 250px; }
+        aside.sidebar + *, aside.sidebar-md + * {
+          position: relative;
+          width: 100%;
+          padding-left: 250px; }
+      aside.sidebar-lg {
+        padding: 1rem;
+        width: 350px; }
+        aside.sidebar-lg + * {
+          position: relative;
+          width: 100%;
+          padding-left: 350px; } }
+  @media screen and (min-width: 750px) {
+    aside .sidebar-content {
+      margin-top: .5rem; } }
+  aside .sidebar-content a {
+    padding: 0 1rem;
+    display: block;
+    text-decoration: none;
+    margin-top: 1.25rem; }
+    aside .sidebar-content a:hover {
+      color: #bfbfbf; }
+  aside .sidebar-title {
+    margin: 0; }
+
 header.hero {
   width: 100%;
   background: #eeeeee;
@@ -630,90 +625,6 @@ header.hero {
         and something more appropriate for display headings */ } }
   header.hero .subtitle {
     margin: .5rem 0 1.25rem 0; }
-
-div.table-full-width {
-  overflow: scroll; }
-  div.table-full-width > table {
-    width: 100%; }
-
-table {
-  border-collapse: collapse;
-  table-layout: fixed;
-  margin: 1rem 0; }
-  table th:first-child,
-  table td:first-child {
-    padding-left: .375rem; }
-  table th,
-  table td {
-    text-align: left;
-    padding: .75rem 0 .75rem 2rem; }
-    table th.tcol-1rem,
-    table td.tcol-1rem {
-      width: 1rem; }
-    table th.tcol-2rem,
-    table td.tcol-2rem {
-      width: 2rem; }
-    table th.tcol-3rem,
-    table td.tcol-3rem {
-      width: 3rem; }
-    table th.tcol-4rem,
-    table td.tcol-4rem {
-      width: 4rem; }
-    table th.tcol-5rem,
-    table td.tcol-5rem {
-      width: 5rem; }
-    table th.tcol-6rem,
-    table td.tcol-6rem {
-      width: 6rem; }
-    table th.tcol-7rem,
-    table td.tcol-7rem {
-      width: 7rem; }
-    table th.tcol-8rem,
-    table td.tcol-8rem {
-      width: 8rem; }
-    table th.tcol-9rem,
-    table td.tcol-9rem {
-      width: 9rem; }
-    table th.tcol-10rem,
-    table td.tcol-10rem {
-      width: 10rem; }
-    @media screen and (min-width: 750px) {
-      table th.tcol-1rem,
-      table td.tcol-1rem {
-        width: inherit; }
-      table th.tcol-2rem,
-      table td.tcol-2rem {
-        width: inherit; }
-      table th.tcol-3rem,
-      table td.tcol-3rem {
-        width: inherit; }
-      table th.tcol-4rem,
-      table td.tcol-4rem {
-        width: inherit; }
-      table th.tcol-5rem,
-      table td.tcol-5rem {
-        width: inherit; }
-      table th.tcol-6rem,
-      table td.tcol-6rem {
-        width: inherit; }
-      table th.tcol-7rem,
-      table td.tcol-7rem {
-        width: inherit; }
-      table th.tcol-8rem,
-      table td.tcol-8rem {
-        width: inherit; }
-      table th.tcol-9rem,
-      table td.tcol-9rem {
-        width: inherit; }
-      table th.tcol-10rem,
-      table td.tcol-10rem {
-        width: inherit; } }
-  table thead th {
-    border-bottom: #95A5A6 1px solid; }
-  table tbody td {
-    border-bottom: #95A5A6 1px solid; }
-  table.striped tbody tr:nth-child(2n) {
-    background: #eeeeee; }
 
 .nav-bar {
   width: 100%;
@@ -866,17 +777,89 @@ table {
       top: 90%;
       left: 0; }
 
-section.segment {
-  position: relative;
-  box-shadow: 0 1px 2px 0 rgba(191, 191, 191, 0.5);
-  margin: 1rem 0;
-  padding: 1rem;
-  border-radius: 2px;
-  border: 1px solid #bfbfbf; }
-  section.segment > *:first-child {
-    margin-top: 0; }
-  section.segment > *:last-child {
-    margin-bottom: 0; }
+div.table-full-width {
+  overflow: scroll; }
+  div.table-full-width > table {
+    width: 100%; }
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 1rem 0; }
+  table th:first-child,
+  table td:first-child {
+    padding-left: .375rem; }
+  table th,
+  table td {
+    text-align: left;
+    padding: .75rem 0 .75rem 2rem; }
+    table th.tcol-1rem,
+    table td.tcol-1rem {
+      width: 1rem; }
+    table th.tcol-2rem,
+    table td.tcol-2rem {
+      width: 2rem; }
+    table th.tcol-3rem,
+    table td.tcol-3rem {
+      width: 3rem; }
+    table th.tcol-4rem,
+    table td.tcol-4rem {
+      width: 4rem; }
+    table th.tcol-5rem,
+    table td.tcol-5rem {
+      width: 5rem; }
+    table th.tcol-6rem,
+    table td.tcol-6rem {
+      width: 6rem; }
+    table th.tcol-7rem,
+    table td.tcol-7rem {
+      width: 7rem; }
+    table th.tcol-8rem,
+    table td.tcol-8rem {
+      width: 8rem; }
+    table th.tcol-9rem,
+    table td.tcol-9rem {
+      width: 9rem; }
+    table th.tcol-10rem,
+    table td.tcol-10rem {
+      width: 10rem; }
+    @media screen and (min-width: 750px) {
+      table th.tcol-1rem,
+      table td.tcol-1rem {
+        width: inherit; }
+      table th.tcol-2rem,
+      table td.tcol-2rem {
+        width: inherit; }
+      table th.tcol-3rem,
+      table td.tcol-3rem {
+        width: inherit; }
+      table th.tcol-4rem,
+      table td.tcol-4rem {
+        width: inherit; }
+      table th.tcol-5rem,
+      table td.tcol-5rem {
+        width: inherit; }
+      table th.tcol-6rem,
+      table td.tcol-6rem {
+        width: inherit; }
+      table th.tcol-7rem,
+      table td.tcol-7rem {
+        width: inherit; }
+      table th.tcol-8rem,
+      table td.tcol-8rem {
+        width: inherit; }
+      table th.tcol-9rem,
+      table td.tcol-9rem {
+        width: inherit; }
+      table th.tcol-10rem,
+      table td.tcol-10rem {
+        width: inherit; } }
+  table thead th {
+    border-bottom: #95A5A6 1px solid; }
+  table tbody td {
+    border-bottom: #95A5A6 1px solid; }
+  table.striped tbody tr:nth-child(2n) {
+    background: #eeeeee; }
 
 figure.tn-card {
   max-width: 270px;
@@ -902,6 +885,18 @@ figure.tn-card {
     padding: .5rem .5rem;
     font-size: .75rem;
     color: #95A5A6; }
+
+section.segment {
+  position: relative;
+  box-shadow: 0 1px 2px 0 rgba(191, 191, 191, 0.5);
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 2px;
+  border: 1px solid #bfbfbf; }
+  section.segment > *:first-child {
+    margin-top: 0; }
+  section.segment > *:last-child {
+    margin-bottom: 0; }
 
 blockquote {
   border-left: #bfbfbf 0.5rem solid;
@@ -953,17 +948,6 @@ code {
   margin: 0 1px;
   font-size: 1.125em;
   font-family: monospace; }
-
-hr.navbar-spacer {
-  border: 0;
-  margin: 0;
-  height: 60px; }
-  @media screen and (min-width: 750px) {
-    hr.navbar-spacer {
-      height: 80px; } }
-
-.txt-muted {
-  color: #95A5A6; }
 
 .site-nav-logo {
   width: 30px; }

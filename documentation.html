@@ -507,9 +507,64 @@ permalink: /documentation.html
 
 
         <h3 class="site-subheader">Sidebars</h3>
-        <p class="explanation">
-          Coming Soon
-        </p>
+          <p class="explanation">
+            Example found here on the left. 
+          </p>
+          <p class="explanation">
+            The Margo Sidebar is a fixed panel on the the left side of the page and is created with<br/> <code>&lt;aside class="sidebar"&gt;</code>. It has a view-height of 100% and a default width of 250px. For narrower screens and on mobile devices, it collapses to the top of the page. 
+          </p>
+          <p class="explanation"><strong>In order for the Sidebar to work properly in your layout, you must have <code>&lt;div class="container-full"&gt;</code> <em>immediately</em> after it.</strong> Because the sidebar is a major layout component, it should also be near the root of your <code>&lt;body&gt;</code> element.</strong> 
+          </p>
+          <div class="site-demo-code-block">
+
+            <span class="site-lg-code-example">
+              <code>&lt;aside </code><code class="site-code-marked">class="sidebar"</code><code>&gt;</code>
+              </span>
+              <br/>
+                <span class="site-lg-code-example"><code class="txt-muted">&nbsp;&nbsp;&nbsp;...</code></span>
+              <br/>
+              <span class="site-lg-code-example">
+                <code>&lt;/aside&gt;</code>
+              </span>
+              <br/>
+              <span class="site-lg-code-example">
+
+                <code>&lt;div </code><code class="site-code-marked">class="container-full"</code><code>&gt;</code>
+              </span>
+              <br/>
+                <span class="site-lg-code-example"><code class="txt-muted">&nbsp;&nbsp;&nbsp;&lt;!--site content--&gt;</code></span>
+              <br/>
+              <span class="site-lg-code-example">
+                <code>&lt;/div&gt;</code>
+              </span>
+              <br/>
+          </div>
+          <h4 class="site-sub-subheader"><strong>Sidebar Code Example – Recommended Use</strong></h4>
+          <p class="explanation"><strong>Note: </strong>The use of <code>&lt;hr class='nav-spacer'&gt;</code> is a helper class that gives padding for the fixed-navbar.</p>
+<pre><code>&lt;aside class="sidebar"&gt;
+
+  &lt;div class="sidebar-content"&gt;
+    <span class='txt-muted'>&lt;a href='#go-here'&gt;Go Here On Page&lt;/a&gt;</span>
+    <span class='txt-muted'>&lt;a href='#place2'&gt;Another place to go&lt;/a&gt;</span>
+  &lt;/div&gt;
+  
+&lt;/aside&gt;
+
+<span class='txt-muted'>&lt;!--
+  Element will have 250px of padding to 
+  account for the spacing of fixed-width aside.sidebar 
+--&gt;</span>
+&lt;div class="container-full"&gt;
+    
+   &lt;div class="container-narrow"&gt;
+    
+      <span class='txt-muted'>&lt;!-- Site Content --&gt;</span>
+
+   &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+          
         <h3 class="site-subheader">Thumbnails/Cards</h3>
         <p class="explanation">
           Card thumbnails uses HTML5 <code>&lt;figure&gt;</code> tag with a class of <strong>tn-card</strong> and are 270px in width.
@@ -595,16 +650,16 @@ permalink: /documentation.html
             <p> Maiores facere tempore animi mollitia. Facilis quibusdam amet nam consequuntur quidem, deleniti nobis, accusamus autem voluptas rerum odit at, labore numquam exercitationem id porro, modi veniam aspernatur commodi blanditiis ipsam. Animi eaque et veritatis quis. Eum excepturi repellendus, aut iusto, non earum consectetur. Quas architecto facere sint incidunt praesentium! Veniam omnis dignissimos eius, officia, deleniti recusandae libero. </p>
             <cite><strong>Someone important</strong> from <em>A Credible Source</em></cite>
           </blockquote>
-    <pre><code>&lt;blockquote&gt;
-      
-      &lt;p&gt;
-        ....
-      &lt;/p&gt;
-      &lt;cite&gt;
-        ....
-      &lt;/cite&gt;
+<pre><code>&lt;blockquote&gt;
+  
+  &lt;p&gt;
+    ....
+  &lt;/p&gt;
+  &lt;cite&gt;
+    ....
+  &lt;/cite&gt;
 
-    &lt;/blockquote&gt;</code></pre>
+&lt;/blockquote&gt;</code></pre>
         </div>
 </div>
 

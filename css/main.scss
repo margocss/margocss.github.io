@@ -229,10 +229,6 @@ del {
   text-decoration: line-through;
 }
 
-.txt-muted{
-  color: $dark-gray;
-}
-
 // =========================
 // Button styles
 
@@ -393,36 +389,28 @@ aside{
     &.sidebar,
     &.sidebar-md{
       padding: .75rem;
-      width: 225px;
+      width: 250px;
       + * {
         position: relative;
         width: 100%;
-        padding-left: 225px;
+        padding-left: 250px;
       }
 
     }
 
     &.sidebar-lg{
       padding: 1rem;
-      width: 330px;
+      width: 350px;
 
       + * {
         position: relative;
         width: 100%;
-        padding-left: 330px;
+        padding-left: 350px;
       }
     }
   }
 
-  hr.navbar-spacer{
-    border: 0;
-    margin: 0;
-    height: 60px;
 
-    @include media-query($med-screen){
-      height: 80px;    
-    }
-  }
  
   .sidebar-content{
 
@@ -970,6 +958,24 @@ code {
   margin: 0 1px;
   font-size: 1.125em;
   font-family: monospace;
+}
+
+// =========================
+// Utilities
+
+hr.navbar-spacer{
+  border: 0;
+  margin: 0;
+  height: 60px;
+
+  @include media-query($med-screen){
+    height: 80px;    
+  }
+}
+
+
+.txt-muted{
+  color: $dark-gray;
 }
 
 

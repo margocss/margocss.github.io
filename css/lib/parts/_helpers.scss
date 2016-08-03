@@ -1,0 +1,14 @@
+hr.navbar-spacer{
+  border: 0;
+  margin: 0;
+  height: 60px;
+
+  @include media-query($med-screen){
+    height: 80px;    
+  }
+}
+
+
+.txt-muted{
+  color: $dark-gray;
+}

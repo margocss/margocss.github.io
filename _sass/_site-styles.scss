@@ -254,7 +254,7 @@ div.site-demo-code-block{
 .site-code-marked{
   margin-left: -2px;
   margin-right: -2px;
-  background: $tertiary-color;
+  background: $highlight-color;
   &.site-med-font{
     font-size: 1.5em;
   }
@@ -279,7 +279,7 @@ div.site-demo-code-block{
 }
 
 aside.demo-docs-sidebar{
-  background: $inverted-color;
+  background: $bg-inverted-color;
   color: #fff;
 
   a {

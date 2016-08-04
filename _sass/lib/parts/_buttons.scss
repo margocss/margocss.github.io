@@ -20,7 +20,7 @@ button, button.btn, input[type='button'], input[type='submit'], a.btn{
   border-radius: 2px;
   font-size: 1rem;
   cursor: pointer;
-  color: $inverted-color;
+  color: #333;
   
   &.sm { font-size: .75rem; line-height: 1.875rem; }
   &.lg { 

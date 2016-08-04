@@ -39,7 +39,8 @@ img {
   .grid-container > * {
     display: inline-block;
     font-size: medium;
-    vertical-align: top; }
+    vertical-align: top;
+    width: 100%; }
   .grid-container > .sm-1-x-12 {
     width: 6.83333%;
     margin-left: 0.75%;
@@ -550,42 +551,49 @@ aside {
       border-right: 1px solid #bfbfbf;
       border-bottom: 0;
       position: fixed;
+      top: 0;
+      left: 0;
       z-index: 90;
       height: 100vh;
       overflow: scroll; }
       aside.sidebar-sm {
-        padding: .5rem;
+        padding: 1rem .5rem 2.5 .5rem;
         width: 150px; }
         aside.sidebar-sm + * {
           position: relative;
           width: 100%;
           padding-left: 150px; }
       aside.sidebar, aside.sidebar-md {
-        padding: .75rem;
+        padding: 1rem .75rem 2.5rem .75rem;
         width: 250px; }
         aside.sidebar + *, aside.sidebar-md + * {
           position: relative;
           width: 100%;
           padding-left: 250px; }
       aside.sidebar-lg {
-        padding: 1rem;
+        padding: 1rem 1rem 2.5 1rem;
         width: 350px; }
         aside.sidebar-lg + * {
           position: relative;
           width: 100%;
           padding-left: 350px; } }
+  aside .sidebar-title {
+    margin: 0; }
   @media screen and (min-width: 750px) {
     aside .sidebar-content {
       margin-top: .5rem; } }
-  aside .sidebar-content a {
+  aside .sidebar-content .sidebar-topic {
     padding: 0 1rem;
-    display: block;
-    text-decoration: none;
     margin-top: 1.25rem; }
-    aside .sidebar-content a:hover {
+  aside .sidebar-content .sidebar-subtopic {
+    font-size: .875rem;
+    margin-top: .5rem;
+    padding-left: 1.75rem; }
+  aside .sidebar-content .sidebar-topic, aside .sidebar-content .sidebar-subtopic {
+    display: block;
+    text-decoration: none; }
+    aside .sidebar-content .sidebar-topic:hover, aside .sidebar-content .sidebar-subtopic:hover {
       color: #bfbfbf; }
-  aside .sidebar-title {
-    margin: 0; }
 
 .hero {
   width: 100%;
@@ -884,16 +892,16 @@ figure.tn-card {
     font-size: .75rem;
     color: #95A5A6; }
 
-section.segment {
+.segment {
   position: relative;
   box-shadow: 0 1px 2px 0 rgba(191, 191, 191, 0.5);
   margin: 1rem 0;
   padding: 1rem;
   border-radius: 2px;
   border: 1px solid #bfbfbf; }
-  section.segment > *:first-child {
+  .segment > *:first-child {
     margin-top: 0; }
-  section.segment > *:last-child {
+  .segment > *:last-child {
     margin-bottom: 0; }
 
 blockquote {

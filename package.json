@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build-dev": "gulp dev",
     "build-production": "gulp production",
     "build-dist": "gulp dist && bash ./exec/make-dist.sh",
     "move-to-loc": "cp -r ./dist/* ../margo-css/"

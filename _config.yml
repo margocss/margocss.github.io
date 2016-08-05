@@ -28,12 +28,12 @@ gems: [jekyll-paginate]
 
 
 #Development-Settings
-url: "http://localhost:3000" # the base hostname & protocol for your site
-baseurl: "" # the subpath of your site, e.g. /my-furries
+# url: "http://localhost:3000" # the base hostname & protocol for your site
+# baseurl: "" # the subpath of your site, e.g. /my-furries
 
 #Production-Settings
-# baseurl: "" # the subpath of your site, e.g. /my-furries
-# url: "https://margocss.github.io" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /my-furries
+url: "https://margocss.github.io" # the base hostname & protocol for your site
 
 
 #ENV

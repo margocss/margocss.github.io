@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-dist": "gulp dist && bash ./exec/make-dist.sh && npm run move-to-loc",
+    "build-dist": "gulp dist && bash ./exec/make-dist.sh",
     "move-to-loc": "cp -r ./dist/* ../margo-css/"
   },
   "author": "",

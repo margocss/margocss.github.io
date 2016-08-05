@@ -13,7 +13,7 @@ aside{
     overflow: scroll;
 
     &.sidebar-sm{
-      padding: 1rem .5rem 2.5 .5rem;
+      padding: 1rem .5rem 2.5rem .5rem;
       width: 150px;
       + * {
         position: relative;
@@ -35,7 +35,7 @@ aside{
     }
 
     &.sidebar-lg{
-      padding: 1rem 1rem 2.5 1rem;
+      padding: 1rem 1rem 2.5rem 1rem;
       width: 350px;
 
       + * {

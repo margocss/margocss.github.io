@@ -557,7 +557,7 @@ aside {
       height: 100vh;
       overflow: scroll; }
       aside.sidebar-sm {
-        padding: 1rem .5rem 2.5 .5rem;
+        padding: 1rem .5rem 2.5rem .5rem;
         width: 150px; }
         aside.sidebar-sm + * {
           position: relative;
@@ -571,7 +571,7 @@ aside {
           width: 100%;
           padding-left: 250px; }
       aside.sidebar-lg {
-        padding: 1rem 1rem 2.5 1rem;
+        padding: 1rem 1rem 2.5rem 1rem;
         width: 350px; }
         aside.sidebar-lg + * {
           position: relative;

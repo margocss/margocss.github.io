@@ -19,21 +19,34 @@ gulp.task('serve', function(){
   gulp.watch('_site/**/*.*')//.on('change', function(){ browserSync.reload() })
 })
 
-gulp.task('minify-css', function(){
+gulp.task('minify-dist-css', function(){
   return gulp.src('./_site/css/main.css')
     .pipe(cleanCSS())
     .pipe(rename('margo.min.css'))
-    .pipe(gulp.dest('dist/margo-lib'))
+    .pipe(gulp.dest('dist'))
 
 })
 
+gulp.task('minify-production-css', function(){
+  return gulp.src('./_site/css/main.css')
+    .pipe(cleanCSS())
+    .pipe(rename('main.min.css'))
+    .pipe(gulp.dest('./_site/css'))
+
+})
+
+
 gulp.task('build-production', shell.task([
-  'rm -rf ./dist/margo-lib; ', 
-  'mkdir ./dist/margo-lib',
+    'jekyll build'
+]))
+
+
+gulp.task('build-dist', shell.task([
+  'rm -rf ./dist/*', 
   'jekyll build',
   'echo "done building...."',
-  'cp ./_site/css/main.css ./dist/margo-lib/main.css',
-  'cp -rf ./_sass/lib/* ./dist/margo-lib/'
+  'cp ./_site/css/main.css ./dist/margo.css',
+  'cp -rf ./_sass/lib/* ./dist/',
 ]))
 
 
@@ -41,4 +54,6 @@ gulp.task('build-production', shell.task([
 
 gulp.task('dev', ['build-dev', 'serve']);
 
-gulp.task('production', ['minify-css', 'build-production']);
+gulp.task('production', ['build-production', 'minify-production-css']);
+
+gulp.task('dist', ['build-dist', 'minify-dist-css']);

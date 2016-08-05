@@ -23,17 +23,17 @@ paginate_path: "/posts/page:num"
 
 # Build settings
 markdown: kramdown
-exclude: [node_modules, gulpfile.js, bower_components]
+exclude: [node_modules, gulpfile.js, bower_component, exec]
 gems: [jekyll-paginate]
 
 
-###Development-Settings
-####url: "http://localhost:3000" # the base hostname & protocol for your site
-####baseurl: "" # the subpath of your site, e.g. /my-furries
+#Development-Settings
+# url: "http://localhost:3000" # the base hostname & protocol for your site
+# baseurl: "" # the subpath of your site, e.g. /my-furries
 
-###Production-Settings
-baseurl: "/margo-css" # the subpath of your site, e.g. /my-furries
-url: "https://t3patterson.github.io" # the base hostname & protocol for your site
+#Production-Settings
+baseurl: "" # the subpath of your site, e.g. /my-furries
+url: "https://margocss.github.io" # the base hostname & protocol for your site
 
 
-###ENV
+#ENV

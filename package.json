@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-dev": "gulp dev",
     "build-production": "gulp production",
-    "build-dist": "gulp dist && bash ./exec/make-dist.sh && npm run zip-dist-and-distribute ",
+    "build-dist": "gulp dist && bash ./exec/make-dist.sh",
     "zip-dist-and-distribute": "zip -r ./dist/margo-css.zip ./dist/* && cp -r ./dist/* ../margo-css/ && cp ./dist/margo-css.zip ./download/margo-css.zip"
   },
   "author": "",

@@ -13,22 +13,22 @@ img { max-width: 100%; }
 
 
 
-@import "./parts/mixins";
-@import "./parts/variables";
+@import "./lib/parts/mixins";
+@import "./lib/parts/variables";
 
-@import "./parts/containers";
-@import "./parts/grid";
-@import "./parts/typography";
-@import "./parts/lists";
-@import "./parts/buttons";
-@import "./parts/forms";
-@import "./parts/sidebar";
-@import "./parts/header-hero";
-@import "./parts/navigation";
-@import "./parts/tables";
-@import "./parts/thumbnail-cards";
-@import "./parts/segment";
-@import "./parts/miscellaneous";
-@import "./parts/helpers";
+@import "./lib/parts/containers";
+@import "./lib/parts/grid";
+@import "./lib/parts/typography";
+@import "./lib/parts/lists";
+@import "./lib/parts/buttons";
+@import "./lib/parts/forms";
+@import "./lib/parts/sidebar";
+@import "./lib/parts/header-hero";
+@import "./lib/parts/navigation";
+@import "./lib/parts/tables";
+@import "./lib/parts/thumbnail-cards";
+@import "./lib/parts/segment";
+@import "./lib/parts/miscellaneous";
+@import "./lib/parts/helpers";
 
 

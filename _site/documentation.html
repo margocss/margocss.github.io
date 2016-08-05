@@ -11,9 +11,9 @@
 ">
   
   <link rel="icon" type="image/png" href="./images/favicon.png">
-  <link rel="stylesheet" href="https://margocss.github.io/css/main.css">
-  <link rel="canonical" href="https://margocss.github.io/documentation.html">
-  <link rel="alternate" type="application/rss+xml" title="Welcome" href="https://margocss.github.io/feed.xml">
+  <link rel="stylesheet" href="http://localhost:3000/css/main.css">
+  <link rel="canonical" href="http://localhost:3000/documentation.html">
+  <link rel="alternate" type="application/rss+xml" title="Welcome" href="http://localhost:3000/feed.xml">
 </head>
 
 
@@ -22,7 +22,7 @@
 <nav class="nav-bar with-logo fixed">
   
   <div class="nav-logo">
-    <a href="https://margocss.github.io">
+    <a href="http://localhost:3000">
       <img src="./images/molecule2.png" alt="logo" class="site-nav-logo">
     </a>
   </div>
@@ -36,7 +36,7 @@
   </div>
   
   <div class="nav-list">
-      <a href="https://margocss.github.io">Home</a>
+      <a href="http://localhost:3000">Home</a>
       
         
           
@@ -58,7 +58,7 @@
       
         
           
-          <a href="https://margocss.github.io/overview.html">
+          <a href="http://localhost:3000/overview.html">
               Overview
           </a>
         
@@ -67,7 +67,7 @@
       
         
           
-          <a href="https://margocss.github.io/raw-demo.html">
+          <a href="http://localhost:3000/raw-demo.html">
               Raw Demo
           </a>
         
@@ -845,17 +845,20 @@
           <button class="primary lg">Learn More</button>
         </div>
       </header>
-      <pre><code>&lt;header class="hero"&gt;
-      <span class="txt-muted">&lt;!-- puts max-width on hero's inner text --&gt;</span>
-       &lt;div class="container-narrow"&gt;
-        
-          &lt;h1 class="title"&gt;...&lt;/h1&gt;
-        
-          &lt;h3 class="subtitle"&gt;...&lt;/h3&gt;
-          ...
-       
-       &lt;/div&gt;
-    &lt;/header&gt;</code></pre>
+<pre><code>&lt;header class="hero"&gt;
+ <span class="txt-muted">&lt;!-- puts max-width on hero's inner text --&gt;</span>
+  &lt;div class="container-narrow"&gt;
+      
+     <span class="txt-muted">&lt;!-- will make h1 larger --&gt;</span>
+     &lt;h1 class="title"&gt;...&lt;/h1&gt;
+    
+     <span class="txt-muted">&lt;!-- will reduce margin of &lt;h&gt; tags --&gt;</span>
+     &lt;h3 class="subtitle"&gt;...&lt;/h3&gt;
+     ...
+ 
+  &lt;/div&gt;
+
+&lt;/header&gt;</code></pre>
 
 
 
@@ -872,7 +875,9 @@
           
           <input type="checkbox" class="hamburger-toggler"/>
           <div class="hamburger-menu">
-            <hr class="mid-line"> 
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
           </div>
 
 
@@ -885,24 +890,24 @@
             <a href="#">Log In</a>
           </div>
         </nav>
-    <pre><code>&lt;nav class="nav-bar"&gt;
-        <span class="txt-muted">&lt;!--
-          You must include both &lt;input type="checkbox" class="hamburger-toggler&gt;
-          and &lt;div class="hamburger-toggler"&gt; <em>in the order shown below</em> 
-          for the responsive menu to work
-        --&gt;</span>
-        &lt;input type="checkbox" class="hamburger-toggler"/&gt;
+<pre><code>&lt;nav class="nav-bar"&gt;
+    <span class="txt-muted">&lt;!--
+      You must include both &lt;input type="checkbox" class="hamburger-toggler&gt;
+      and &lt;div class="hamburger-toggler"&gt; <em>in the order shown below</em> 
+      for the responsive menu to work
+    --&gt;</span>
+    &lt;input type="checkbox" class="hamburger-toggler"/&gt;
 
-        &lt;div class="hamburger-menu"&gt;
-          &lt;hr class="mid-line" /&gt; 
-        &lt;/div&gt;
+    &lt;div class="hamburger-menu"&gt;
+      &lt;hr class="mid-line" /&gt; 
+    &lt;/div&gt;
 
-        &lt;div class="nav-list"&gt;
-          &lt;a href="..."&gt; <span class="txt-muted">Link 1</span> &lt;/a&gt;
-          &lt;a href="..."&gt; <span class="txt-muted">Link 2</span> &lt;/a&gt;
-        &lt;/div&gt;
+    &lt;div class="nav-list"&gt;
+      &lt;a href="..."&gt; <span class="txt-muted">Link 1</span> &lt;/a&gt;
+      &lt;a href="..."&gt; <span class="txt-muted">Link 2</span> &lt;/a&gt;
+    &lt;/div&gt;
 
-    &lt;/nav&gt;</code></pre>
+&lt;/nav&gt;</code></pre>
 
 
         <div style="position: relative"><a name="docs-segment"></a></div>
@@ -999,9 +1004,7 @@
 &lt;div class="container-full"&gt;
     
    &lt;div class="container-narrow"&gt;
-    
       <span class='txt-muted'>&lt;!-- Site Content --&gt;</span>
-
    &lt;/div&gt;
 
 &lt;/div&gt;</code></pre>

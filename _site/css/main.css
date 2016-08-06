@@ -599,12 +599,9 @@ aside {
           position: relative;
           width: 100%;
           padding-left: 350px; }
-<<<<<<< HEAD
-=======
         aside.lg.right + * {
           padding-right: 350px;
           padding-left: inherit; }
->>>>>>> staging
       aside .sidebar-content .sidebar-topic {
         padding: 0 0 0 1rem;
         margin-top: 1.25rem; }

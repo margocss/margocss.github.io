@@ -569,27 +569,42 @@ aside {
       z-index: 90;
       height: 100vh;
       overflow: scroll; }
-      aside.sidebar-sm {
+      aside.right {
+        left: inherit;
+        right: 0; }
+      aside.sm {
         padding: 1rem .5rem 2.5rem .5rem;
         width: 150px; }
-        aside.sidebar-sm + * {
+        aside.sm + * {
           position: relative;
           width: 100%;
           padding-left: 150px; }
-      aside.sidebar, aside.sidebar-md {
+        aside.sm.right + * {
+          padding-right: 150px;
+          padding-left: inherit; }
+      aside.sidebar, aside.md {
         padding: 1rem .75rem 2.5rem .75rem;
-        width: 250px; }
-        aside.sidebar + *, aside.sidebar-md + * {
+        width: 275px; }
+        aside.sidebar + *, aside.md + * {
           position: relative;
           width: 100%;
-          padding-left: 250px; }
-      aside.sidebar-lg {
+          padding-left: 275px; }
+        aside.sidebar.right + *, aside.md.right + * {
+          padding-right: 275px;
+          padding-left: inherit; }
+      aside.lg {
         padding: 1rem 1rem 2.5rem 1rem;
         width: 350px; }
-        aside.sidebar-lg + * {
+        aside.lg + * {
           position: relative;
           width: 100%;
           padding-left: 350px; }
+<<<<<<< HEAD
+=======
+        aside.lg.right + * {
+          padding-right: 350px;
+          padding-left: inherit; }
+>>>>>>> staging
       aside .sidebar-content .sidebar-topic {
         padding: 0 0 0 1rem;
         margin-top: 1.25rem; }
@@ -1211,19 +1226,16 @@ div.site-demo-code-block {
 .site-thumbnail-section > li {
   margin-bottom: .5rem; }
 
-aside.demo-docs-sidebar {
-  background: #333;
-  color: #fff; }
-  aside.demo-docs-sidebar a {
-    color: #fff;
-    font-weight: 700; }
-    aside.demo-docs-sidebar a.sidebar-subtopic {
-      color: #ededed;
-      font-size: .875rem;
-      margin-top: .5rem;
-      padding-left: 1.75rem; }
-      aside.demo-docs-sidebar a.sidebar-subtopic:hover {
-        color: #bfbfbf; }
+aside.demo-docs-sidebar a {
+  color: #fff;
+  font-weight: 700; }
+  aside.demo-docs-sidebar a.sidebar-subtopic {
+    color: #ededed;
+    font-size: .875rem;
+    margin-top: .5rem;
+    padding-left: 1.75rem; }
+    aside.demo-docs-sidebar a.sidebar-subtopic:hover {
+      color: #bfbfbf; }
 
 .site-docs-page .site-demo-header h1 {
   position: relative;

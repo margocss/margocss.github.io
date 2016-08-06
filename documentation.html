@@ -19,7 +19,7 @@ permalink: /documentation.html
 
       <a class="sidebar-topic" href="#docs-tables-forms">Tables + Forms</a>
       <a class="sidebar-subtopic" href="#docs-tables">Tables</a>
-      <a class="sidebar-topic" class="sidebar-subtopic" href="#docs-forms">Forms</a>
+      <a class="sidebar-subtopic" class="sidebar-subtopic" href="#docs-forms">Forms</a>
     
       <a class="sidebar-topic" href="#docs-components">Components</a>
       <a class="sidebar-subtopic" href="#docs-header">Hero Unit Header</a>
@@ -62,11 +62,11 @@ permalink: /documentation.html
       
       <div class="container-narrow">
         <h4 class="site-sub-subheader"><strong>Container-narrow</strong></h4>
-    <pre><code>&lt;div class="container-narrow"&gt;
-       
-       ....
+<pre><code>&lt;div class="container-narrow"&gt;
+   
+   ....
 
-    &lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre>
     </div>
 
       <div class="container-narrow site-demo">
@@ -77,12 +77,12 @@ permalink: /documentation.html
       </div>
       <div class="container-narrow">
         <h4 class="site-sub-subheader"><strong>Container-full</strong></h4>
-    <pre><code>&lt;div class="container-full"&gt;
-       
-       ...
+<pre><code>&lt;div class="container-full"&gt;
+   
+   ...
 
-    &lt;/div&gt;</code></pre>
-    </div>
+&lt;/div&gt;</code></pre>
+</div>
       
       <div class="container-full site-demo">
         <h3 class="site-lg-code-example"><code>&lt;div class="container-full"&gt;</code></h3>
@@ -308,6 +308,17 @@ permalink: /documentation.html
                   <li>Butter</li>
                 </ul>
               </h4>
+<pre><code>&lt;ul&gt;
+   &lt;li&gt;Order&lt;/li&gt;
+   &lt;li&gt;Eggs&lt;/li&gt;
+   &lt;li&gt;Sugar&lt;/li&gt;
+   &lt;ul&gt;
+      &lt;li&gt;Chocolate Chips&lt;/li&gt;
+      &lt;li&gt;Pecans&lt;/li&gt;
+      &lt;li&gt;Peanut Butter&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;li&gt;Butter&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
             </div>
             <div class="sm-12-x-12 lg-6-x-12">
               <h4 class="site-sub-subheader"><strong>Ordered List</strong></h4>
@@ -322,7 +333,17 @@ permalink: /documentation.html
                   </ol>
                   <li>Sugar</li>
                 </ol>
-              </h4>
+<pre><code>&lt;ol&gt;
+   &lt;li&gt;Milk&lt;/li&gt;
+   &lt;li&gt;Eggs&lt;/li&gt;
+   &lt;li&gt;Flour&lt;/li&gt;
+   &lt;ol&gt;
+      &lt;li&gt;Apple&lt;/li&gt;
+      &lt;li&gt;Orange&lt;/li&gt;
+      &lt;li&gt;Carrot&lt;/li&gt;
+   &lt;/ol&gt;
+   &lt;li&gt;Sugar&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
             </div> 
           </div>
         </div>
@@ -370,36 +391,36 @@ permalink: /documentation.html
 <pre><code>&lt;form class="form-group grid-container"&gt;
    
    &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
-       &lt;label for="firstField"&gt;First &lt;/label&gt;
-       &lt;input type="text"/ &gt;
+       &lt;label&gt; <span class="txt-muted">First </span>&lt;/label&gt;
+       &lt;input type="text"/&gt;
    &lt;/div&gt;
 
    &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
-       &lt;label for="middleField"&gt;Middle &lt;/label&gt;
-       &lt;input type="text"/ &gt;
+       &lt;label&gt;<span class="txt-muted">Middle</span> &lt;/label&gt;
+       &lt;input type="text"/&gt;
    &lt;/div&gt;
 
    &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
-       &lt;label for="lastField"&gt;Last &lt;/label&gt;
-       &lt;input type="text"/ &gt;
+       &lt;label&gt;<span class="txt-muted">Last</span> &lt;/label&gt;
+       &lt;input type="text"/&gt;
    &lt;/div&gt;
 
    &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
-       &lt;label for="emailField"&gt;Email &lt;/label&gt;
-       &lt;input type="email"/ &gt;
+       &lt;label &gt;<span class="txt-muted">Email</span> &lt;/label&gt;
+       &lt;input type="email"/&gt;
    &lt;/div&gt;
 
    &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
-       &lt;label for="nameField"&gt;State &lt;/label&gt;
-       &lt;select/ &gt;
-         &lt;option value="CA"&gt;California &lt;/option&gt;
-         &lt;option value="NY"&gt;New York &lt;/option&gt;
-         &lt;option value="TX"&gt;Texas &lt;/option&gt;
+       &lt;label&gt;<span class="txt-muted">State</span> &lt;/label&gt;
+       &lt;select&gt;
+         &lt;option <span class="txt-muted">value="CA"</span>&gt;<span class="txt-muted">California</span> &lt;/option&gt;
+         &lt;option <span class="txt-muted">value="NY"</span>&gt;<span class="txt-muted">New York</span> &lt;/option&gt;
+         &lt;option <span class="txt-muted">value="TX"</span>&gt;<span class="txt-muted">Texas</span> &lt;/option&gt;
      &lt;/select&gt;
    &lt;/div&gt;
 
    &lt;div class="sm-12-x-12 md-12-x-12 form-field"&gt;
-      &lt;label for="nameField"&gt;Description &lt;/label&gt;
+      &lt;label"&gt;<span class="txt-muted">Description</span> &lt;/label&gt;
       &lt;textarea rows="6"&gt; &lt;/textarea&gt;
    &lt;/div&gt;
   
@@ -484,7 +505,7 @@ permalink: /documentation.html
     &lt;input type="checkbox" class="hamburger-toggler"/&gt;
 
     &lt;div class="hamburger-menu"&gt;
-      &lt;hr class="mid-line" /&gt; 
+      &lt;span class="line"&gt;&lt;/span&gt; 
     &lt;/div&gt;
 
     &lt;div class="nav-list"&gt;
@@ -539,12 +560,12 @@ permalink: /documentation.html
 
         <h3 class="site-subheader">Sidebars</h3>
           <p class="explanation">
-            Example found here on the left. 
+            Sidebar example demonstrated here on the left. 
           </p>
           <p class="explanation">
-            The Margo Sidebar is a fixed panel on the the left side of the page and is created with<br/> <code>&lt;aside class="sidebar"&gt;</code>. It has a view-height of 100% and a default width of 250px. For narrower screens and on mobile devices, it collapses to the top of the page. 
+            The Margo Sidebar is a fixed panel on the the left side of the page and is created with<br/> <code>&lt;aside class="sidebar"&gt;</code>. It has a view-height of 100% and a default width of 250px. For narrower screens and on mobile devices, it shifts to the top of the page. 
           </p>
-          <p class="explanation"><strong>In order for the Sidebar to work properly in your layout, you must have <code>&lt;div class="container-full"&gt;</code> <em>immediately</em> after it.</strong> Because the sidebar is a major layout component, it should also be near the root of your <code>&lt;body&gt;</code> element.</strong> 
+          <p class="explanation"><strong>In order for the Sidebar to work properly in your layout, you must have <code>&lt;div class="container-full"&gt;</code> <em>immediately</em> after it.</strong> Because the sidebar is a major layout component, it should also be near the root of your <code>&lt;body&gt;</code> element. Here is the required HTML structure:
           </p>
           <div class="site-demo-code-block">
 
@@ -571,13 +592,21 @@ permalink: /documentation.html
               <br/>
           </div>
           <h4 class="site-sub-subheader"><strong>Sidebar Code Example – Recommended Use</strong></h4>
-          <p class="explanation"><strong>Note: </strong>The use of <code>&lt;div class="nav-spacer"&gt;</code> is a helper class that gives padding for the fixed-navbar.</p>
+          <p class="explanation"><strong>Note: </strong>The use of <code>&lt;div class="nav-spacer"&gt;</code> is a helper class that gives padding if you are using a fixed-navbar.</p>
+          <p class="explanation">
+            Also, if you place a <code>&lt;div class="sidebar-content"&gt;</code> inside the sidebar with nested <code>&lt;a class="sidebar-topic"&gt;</code> and  <code>&lt;a class="sidebar-subtopic"&gt;</code>, the site will provide indentation for a topic-subtopic list of anchor tags (as shown of the sidebar of this very page).
+
+          </p>
 <pre><code>&lt;aside class="sidebar"&gt;
-  &lt;div class="nav-spacer"&gt;&lt;/div class="nav-spacer"&gt;
+  <span class='txt-muted'>&lt;!-- Provides padding-top to push content below fixed navbar --&gt;</span>
+  &lt;div class="nav-spacer"&gt;&lt;/div&gt;
 
   &lt;div class="sidebar-content"&gt;
-    <span class='txt-muted'>&lt;a href='#go-here'&gt;Go Here On Page&lt;/a&gt;</span>
-    <span class='txt-muted'>&lt;a href='#place2'&gt;Another place to go&lt;/a&gt;</span>
+    
+    &lt;a class="sidebar-topic" href='#...'&gt;<span class='txt-muted'>Furniture</span>&lt;/a&gt;
+    &lt;a class="sidebar-subtopic" href='#...'&gt;<span class='txt-muted'>Sofas</span>&lt;/a&gt;
+    &lt;a class="sidebar-subtopic" href='#...'&gt;<span class='txt-muted'>Desks</span>&lt;/a&gt;
+    
   &lt;/div&gt;
   
 &lt;/aside&gt;
@@ -670,15 +699,12 @@ permalink: /documentation.html
           <p class="explanation">
             Encapsulated in <code>&lt;pre&gt;&lt;code&gt;</code> ... <code>&lt;/pre&gt;&lt;/code&gt;</code>. Be mindful of whitespace inside of <code>&lt;pre&gt;</code> tag.
           </p>
-    <pre><code>&lt;pre&gt;
-      &lt;code&gt;
-        &lt;h2&gt;This is code&lt;/h2&gt;
-        &lt;p&gt;And this is what might happen if you extend past the width of the &lt;pre&gt; container-- a scroll bar will appear. No word-wrap.&lt;/p&gt;
-      &lt;/code&gt;
-    &lt;/pre&gt;
-    <div style="position: relative"><a name="docs-blockquotes"></a></div>
-
-    </code></pre>
+<pre><code>&lt;pre&gt;&lt;code&gt;
+    &lt;h2&gt;This is code&lt;/h2&gt;
+    &lt;p&gt;And this is what might happen if you extend past the width of the &lt;pre&gt; container-- a scroll bar will appear. No word-wrap.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+          <div style="position: relative"><a name="docs-blockquotes"></a></div>
           <h3 class="site-subheader">Block Quotes</h3>
           <blockquote>
             <p>Repellendus iusto ex, officia est optio labore quam et, illo necessitatibus consectetur quaerat repudiandae, quae.</p>

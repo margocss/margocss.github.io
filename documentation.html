@@ -3,7 +3,7 @@ layout: default
 title: Docs
 permalink: /documentation.html
 ---
-<aside class="sidebar demo-docs-sidebar">
+<aside class="sidebar bg-inverted demo-docs-sidebar">
     <div class="navbar-spacer"></div>
 
     <div class="sidebar-content">
@@ -28,8 +28,11 @@ permalink: /documentation.html
       <a class="sidebar-subtopic" href="#docs-sidebar">Sidebar</a>
 
       <a class="sidebar-topic" href="#docs-misc">Misc</a>
-      <a class="sidebar-subtopic" href="#docs-code">Code Formatting</a>
+      <a class="sidebar-subtopic" href="#docs-context-colors">Context Colors</a>
+      <a class="sidebar-subtopic" href="#docs-text-helpers">Text Helpers</a>
       <a class="sidebar-subtopic" href="#docs-blockquotes">Blockquotes</a>
+      <a class="sidebar-subtopic" href="#docs-code">Code Formatting</a>
+
 
     </div>
 </aside>
@@ -140,7 +143,17 @@ permalink: /documentation.html
             </span>
             <br/>
             <span class="site-lg-code-example">
-              <code>&nbsp;&nbsp;&nbsp;&lt;div class="</code><small>see below</small><code>"&gt;</code><code>...&lt;/div&gt;</code>
+              <code>&nbsp;&nbsp;&nbsp;&lt;div class" sm-[n]-x-12 md-[n]-x-12 lg-[n]-x-12"&gt;...&lt;/div&gt;</code>
+            </span>
+            <span class="site-lg-code-example">
+              <code>&nbsp;&nbsp;&nbsp;&lt;div class" sm-[n]-x-12 md-[n]-x-12 lg-[n]-x-12"&gt;...&lt;/div&gt;</code>
+            </span>
+            <span class="site-lg-code-example">
+              <code>&nbsp;&nbsp;&nbsp;&lt;div class" sm-[n]-x-12 md-[n]-x-12 lg-[n]-x-12"&gt;...&lt;/div&gt;</code>
+            </span>
+            <br/>
+            <span class="site-lg-code-example">
+              <code>&nbsp;&nbsp;&nbsp;...</code>
             </span>
             <br/>
             <span class="site-lg-code-example">
@@ -348,7 +361,7 @@ permalink: /documentation.html
           </div>
         </div>
       
-        <div style="position: absolute;"><a name="docs-tables-forms"></a></div>
+        <div style="position: relative;"><a name="docs-tables-forms"></a></div>
 
         <div class="container-full major-section">
             <h1 class="site-header">Tables + Forms</h1>
@@ -358,6 +371,8 @@ permalink: /documentation.html
         <div class="container-narrow">
           <h3 class="site-subheader">Tables</h3>
           {% include table-example.html %}
+
+          <div style="position: relative"><a name="docs-forms"></a></div>
           <h3 class="site-subheader">Forms</h3>
           <p class="explanation">
             Forms need to be inside a <code>form</code> tag with a class of <strong>form-group</strong>.
@@ -366,7 +381,7 @@ permalink: /documentation.html
           <p class="explanation">
             <code>label</code> + <code>input</code> pairs should be encapsulated inside a class of <code>form-field</code><br/> ( <small>plus whatever column styles e.g <code>col-sm-12 col-md-6</code> </small>) to achieve block styling. 
           </p>
-
+          
           <div class="site-demo-code-block">
             <span class="site-lg-code-example">
               <code>&lt;form class="</code><code class="site-code-marked">form-group</code> &nbsp;<code class="site-code-marked">grid-container</code>"&gt;</code>
@@ -686,24 +701,65 @@ permalink: /documentation.html
     </code></pre>
 
       </div>
-        <div style="position: relative"><a name="nav-misc"></a></div>
+        <div style="position: relative"><a name="docs-misc"></a></div>
 
         <div class="container-full major-section">
           <h1 class="site-header">Miscellaneous</h1>
         </div>
         
-        <div style="position: relative"><a name="docs-code"></a></div>
+        <div style="position: relative"><a name="docs-context-colors"></a></div>
 
         <div class="container-narrow">
-          <h3 class="site-subheader">Code Blocks</h3>
-          <p class="explanation">
-            Encapsulated in <code>&lt;pre&gt;&lt;code&gt;</code> ... <code>&lt;/pre&gt;&lt;/code&gt;</code>. Be mindful of whitespace inside of <code>&lt;pre&gt;</code> tag.
-          </p>
-<pre><code>&lt;pre&gt;&lt;code&gt;
-    &lt;h2&gt;This is code&lt;/h2&gt;
-    &lt;p&gt;And this is what might happen if you extend past the width of the &lt;pre&gt; container-- a scroll bar will appear. No word-wrap.&lt;/p&gt;
-&lt;/code&gt;&lt;/pre&gt;
-</code></pre>
+          <h3 class="site-subheader">Context Colors</h3>
+          <div class="grid-container adjacent">
+            <div class="sm-12-x-12 md-6-x-12 txt-center bg-success">
+              <p class="explanation"> <code>class="... bg-success"</code></p>
+              <p>Something good happened</p>
+            </div>
+            <div class="sm-12-x-12 md-6-x-12 txt-center bg-info">
+              <p class="explanation"> <code>class="... bg-info"</code></p>
+              <p>Something notable happened</p>
+            </div>
+            <div class="sm-12-x-12 md-6-x-12 txt-center bg-warn">
+              <p class="explanation"> <code>class="... bg-warn"</code></p>
+              <p>Something peculiar happened</p>
+            </div>
+            <div class="sm-12-x-12 md-6-x-12 txt-center bg-fail">
+              <p class="explanation"> <code>class="... bg-fail"</code></p>
+              <p>Something bad happened</p>
+            </div>
+
+            <div class="sm-12-x-12">
+              <hr/>
+            </div>
+            
+            <div class="sm-12-x-12 md-6-x-12 txt-center bg-inverted">
+              <p class="explanation"> <code>class="... bg-inverted"</code></p>
+              <p>Something needs to be contrasted</p>
+            </div>   
+            <div class="sm-12-x-12 md-6-x-12 txt-center bg-disabled">
+              <p class="explanation"> <code>class="... bg-disabled"</code></p>
+              <p>Something needs to be disabled</p>
+            </div>      
+                 
+          
+          </div>
+          
+          <div style="position: relative"><a name="docs-text-helpers"></a></div>
+          <h3 class="site-subheader">Text Formatting Helpers</h3>
+            <p class="explanation txt-left">Aligned <strong>left</strong><br/><code>class="... txt-left"</code></p>
+            <p class="explanation txt-center">Aligned <strong>center</strong><br/><code>class="... txt-center"</code></p>
+            <p class="explanation txt-right">Aligned <strong>right</strong><br/><code>class="... txt-right"</code></p>
+            <hr/>
+            <p class="explanation">
+              <span class="txt-muted">
+                <code>class="... txt-muted"</code> will subdue the text a light gray color
+              </span>
+              <br/>
+                <span class="txt-primary">
+                  <code>class="... txt-primary"</code> will emphasize the text with the primary color.
+                </span>
+            </p>
           <div style="position: relative"><a name="docs-blockquotes"></a></div>
           <h3 class="site-subheader">Block Quotes</h3>
           <blockquote>
@@ -721,6 +777,16 @@ permalink: /documentation.html
   &lt;/cite&gt;
 
 &lt;/blockquote&gt;</code></pre>
+<div style="position: relative"><a name="docs-code"></a></div>
+          <h3 class="site-subheader">Code Blocks</h3>
+          <p class="explanation">
+            Encapsulated in <code>&lt;pre&gt;&lt;code&gt;</code> ... <code>&lt;/pre&gt;&lt;/code&gt;</code>. Be mindful of whitespace inside of <code>&lt;pre&gt;</code> tag.
+          </p>
+<pre><code>&lt;pre&gt;&lt;code&gt;
+    &lt;h2&gt;This is code&lt;/h2&gt;
+    &lt;p&gt;And this is what might happen if you extend past the width of the &lt;pre&gt; container-- a scroll bar will appear. No word-wrap.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
         </div>
 </div>
 

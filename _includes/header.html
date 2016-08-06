@@ -16,18 +16,25 @@
   </div>
   
   <div class="nav-list">
-      <a href="{{'' | prepend: site.baseurl | prepend: site.url}}">Home</a>
+      {% if page.url == '/' %}
+        <a href="{{'' | prepend: site.baseurl | prepend: site.url}}" class="active">Home</a>
+      {% else %}
+        <a href="{{'' | prepend: site.baseurl | prepend: site.url}}">
+          Home
+        </a>
+      {% endif %}
+
       {% for my_page in site.pages %}
         {% if my_page.title %}
           {% if my_page.url == page.url %}
-          <a href="{{ my_page.url | prepend: site.baseurl }}">              
+          <a class="active "href="{{ my_page.url | prepend: site.baseurl }}">              
               {{ my_page.title }}
-          </a>
-        {% else %}
+          </a>          
+          {% else %}
           <a href="{{ my_page.url | prepend: site.baseurl | prepend: site.url  }}">
               {{ my_page.title }}
           </a>
-        {% endif %}
+          {% endif %}
         {% endif %}
 
       {% endfor %}

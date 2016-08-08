@@ -31,6 +31,7 @@ navigable: false
       <a class="sidebar-subtopic" href="#docs-context-colors">Context Colors</a>
       <a class="sidebar-subtopic" href="#docs-text-helpers">Text Helpers</a>
       <a class="sidebar-subtopic" href="#docs-blockquotes">Blockquotes</a>
+      <a class="sidebar-subtopic" href="#docs-tiles">Responsive Tiles</a>
       <a class="sidebar-subtopic" href="#docs-code">Code Formatting</a>
 
 
@@ -58,7 +59,7 @@ navigable: false
       <div class="container-narrow">
         <h3 class="site-subheader">Containers</h3>
         <p class="explanation">
-          Containers dictate the width of the content. A div with a class of <code>container-full</code> will extend the full width of the page and a div with a class of <code>container-narrow</code> will have a max-width of 960px and will be centered with margin: auto. You can nest a <code>container-narrow</code> inside of a <code>container-full</code>.
+          Containers dictate the width of the content and give the inner-content a slight amount of padding from the outer border. A div with a class of <code>container-full</code> will extend the full width of the page and a div with a class of <code>container-narrow</code> will have a max-width of 960px and will be centered with margin: auto. You can nest a <code>container-narrow</code> inside of a <code>container-full</code>.
         </p>
         
       </div>
@@ -425,7 +426,7 @@ navigable: false
         </div>
       </header>
 <pre><code>&lt;header class="hero"&gt;
- <span class="txt-muted">&lt;!-- puts max-width on hero's inner text --&gt;</span>
+  
   &lt;div class="container-narrow"&gt;
       
      <span class="txt-muted">&lt;!-- will make h1 larger --&gt;</span>
@@ -643,20 +644,20 @@ navigable: false
             </figure>
           </div>
         </div>
-    <pre><code>&lt;figure class="tn-card"&gt;
+<pre><code>&lt;figure class="tn-card"&gt;
 
-      &lt;img class="card-image" alt="..." src="..."&gt;
-      
-      &lt;figcaption&gt;
-        <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
-      &lt;/figcaption&gt;
+  &lt;img class="card-image" alt="..." src="..."&gt;
+  
+  &lt;figcaption&gt;
+    <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+  &lt;/figcaption&gt;
 
-      &lt;figcaption class="more-info"&gt;
-        <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
-      &lt;/figcaption&gt;
+  &lt;figcaption class="more-info"&gt;
+    <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
+  &lt;/figcaption&gt;
 
-    &lt;/figure&gt;
-    </code></pre>
+&lt;/figure&gt;
+</code></pre>
 
       </div>
         <div style="position: relative"><a name="docs-misc"></a></div>
@@ -735,16 +736,158 @@ navigable: false
   &lt;/cite&gt;
 
 &lt;/blockquote&gt;</code></pre>
-<div style="position: relative"><a name="docs-code"></a></div>
-          <h3 class="site-subheader">Code Blocks</h3>
-          <p class="explanation">
-            Encapsulated in <code>&lt;pre&gt;&lt;code&gt;</code> ... <code>&lt;/pre&gt;&lt;/code&gt;</code>. Be mindful of whitespace inside of <code>&lt;pre&gt;</code> tag.
-          </p>
+  
+  <div style="position: relative"><a name="docs-tiles"></a></div>
+  <h3 class="site-subheader">Responsive Tiles</h3>
+  <p class="explanation">
+    Create responsive tiles that retain their proportions with fluid (%-based) widths
+  </p>
+
+  <div class="grid-container site-tile-demo">
+    <div class="sm-6-x-12 md-4-x-12">
+      <p class="tile-label txt-center"><code>tile sm-1-to-1</code></p>
+      <div class="tile sm-1-to-1">
+        <div class="tile-content contents-centered">
+          <span>1:1</span>
+        </div>
+      </div>
+    </div>
+    <div class="sm-6-x-12 md-4-x-12">
+      <p class="tile-label txt-center"><code>tile sm-4-to-3</code></p>
+      <div class="tile sm-4-to-3">
+        <div class="tile-content contents-centered">
+          <span>4:3</span>
+        </div>
+      </div>
+    </div>
+    <div class="sm-6-x-12 md-4-x-12">
+      <p class="tile-label txt-center"><code>tile sm-3-to-2</code></p>
+      <div class="tile sm-3-to-2">
+        <div class="tile-content contents-centered">
+          <span>3:2</span>
+        </div>
+      </div>
+    </div>
+    <div class="sm-6-x-12 md-4-x-12">
+      <p class="tile-label txt-center"><code>tile sm-16-to-9</code></p>
+      <div class="tile sm-16-to-9">
+        <div class="tile-content contents-centered">
+          <span>16:9</span>
+        </div>
+      </div>
+    </div>
+    <div class="sm-6-x-12 md-4-x-12">
+      <p class="tile-label txt-center"><code>tile sm-2-to-1</code></p>
+      <div class="tile sm-2-to-1">
+        <div class="tile-content contents-centered">
+          <span>2:1</span>
+        </div>
+      </div>
+    </div>
+    <div class="sm-6-x-12 md-4-x-12">
+      <p class="tile-label txt-center"><code>tile sm-3-to-1</code></p>
+      <div class="tile sm-3-to-1">
+        <div class="tile-content contents-centered">
+          <span>3:1</span>
+        </div>
+      </div>
+      <p class="tile-label txt-center"><code>tile sm-4-to-1</code></p>
+      <div class="tile sm-4-to-1">
+        <div class="tile-content contents-centered">
+          <span>4:1</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <h4 class="site-sub-subheader"><strong>Full Example + Code</strong> </h4>
+
+  <div class="grid-container adjacent site-demo-tiles-live">
+    <div class="sm-12-x-12 md-6-x-12">
+      <div class="tile sm-2-to-1">
+         <div class="tile-content padded-tile bg-success">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Facilis error nobis, autem nulla quis doloribus corporis porro animi voluptatibus quisquam tenetur totam! Eveniet, soluta?</p>
+         </div>
+      </div>
+      <div class="tile sm-2-to-1">
+         <div class="tile-content contents-centered bg-info">
+            <h3>Ramsey Jung</h3>
+         </div>
+      </div>
+    </div>
+    <div class="sm-12-x-12 md-6-x-12">
+      <div class="tile sm-1-to-1">
+         <div class="tile-content padded-tile bg-warn">
+            <div class="img-stretch">
+              <img src="./images/example-photo-2.jpg">
+            </div>
+         </div>
+      </div>
+    </div>
+  </div>
+
+<pre><code><span class="txt-muted">&lt;div class="grid-container"&gt;
+
+   &lt;div class="sm-12-x-12 md-6-x-12"&gt;</span>
+      &lt;div class="tile sm-2-to-1"&gt;
+         &lt;div class="tile-content padded-tile"&gt;<span class="txt-muted">
+            &lt;h2&gt;Speaker&lt;/h2&gt;
+            &lt;p&gt;Ramsey Chang&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, ipsa.&lt;/p&gt;</span>
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class="tile sm-2-to-1"&gt;
+         &lt;div class="tile-content contents-centered"&gt;<span class="txt-muted">
+            &lt;h3&gt;Email&lt;/h3&gt;</span>
+         &lt;/div&gt;
+      &lt;/div&gt;
+   <span class="txt-muted">&lt;/div&gt;
+
+   &lt;div class="sm-12-x-12 md-6-x-12"&gt;</span>
+      &lt;div class="tile sm-1-to-1"&gt;
+         &lt;div class="tile-content padded-tile"&gt;<span class="txt-muted">
+            &lt;div class="img-stretch"&gt;
+               &lt;img src="..."/&gt;
+            &lt;/div&gt;</span>
+         &lt;/div&gt;
+      &lt;/div&gt;
+   <span class="txt-muted">&lt;/div&gt;
+
+&lt;/div&gt;</span></code></pre>
+  <div style="position: relative"><a name="docs-code"></a></div>
+    <h3 class="site-subheader">Responsive Padded Images</h3>
+    <p class="explanation">
+      If you want to create an element with a fixed height, then you can make the image scale to 'cover' the height buy putting the <code>img</code> inside a  <code>&lt;div class="img-stretch"/&gt;</code> tag.
+    </p>
+
+<div class="tile sm-4-to-1 site-stretch-image">
+  <div class="tile-content padded-tile">
+    <div class="img-stretch">
+      <img src="./images/stock-default.jpeg" alt="example-img">
+    </div>
+  </div>
+</div>
+
+<pre><code><span class="txt-muted">&lt;!-- .example-image {height: 200px; padding: 15px;} --&gt;
+
+&lt;div class="example-image"&gt;</span>
+    &lt;div class="img-stretch"&gt;
+       &lt;img src="..."/&gt;
+    &lt;/div&gt;<span class="txt-muted">
+&lt;/div&gt;</span></code></pre>
+
+  <div style="position: relative"><a name="docs-code"></a></div>
+    <h3 class="site-subheader">Code Blocks</h3>
+    <p class="explanation">
+      Encapsulated in <code>&lt;pre&gt;&lt;code&gt;</code> ... <code>&lt;/pre&gt;&lt;/code&gt;</code>. Be mindful of whitespace inside of <code>&lt;pre&gt;</code> tag.
+    </p>
 <pre><code>&lt;pre&gt;&lt;code&gt;
+    <span class="txt-muted">
     &lt;h2&gt;This is code&lt;/h2&gt;
     &lt;p&gt;And this is what might happen if you extend past the width of the &lt;pre&gt; container-- a scroll bar will appear. No word-wrap.&lt;/p&gt;
-&lt;/code&gt;&lt;/pre&gt;
-</code></pre>
-        </div>
+    </span>
+&lt;/code&gt;&lt;/pre&gt;</code></pre>
+  </div>
 </div>
 

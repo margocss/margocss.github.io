@@ -303,9 +303,23 @@ aside.demo-docs-sidebar{
     h1{ position: relative; z-index: 4; }
     img{position: absolute; width: 150px; opacity: .1; z-index: 3; }
   }
-
-  
 }
+
+.site-tile-demo{
+  p.tile-label{
+    margin-bottom: .5rem;
+    margin-top: 1.5rem;
+  }
+  .tile {
+    border: 1px solid $med-gray-translucent;
+  }
+}
+
+.site-stretch-image{
+  border: 1px solid $translucent-secondary;
+}
+
+
 
 a[name^='docs']{
   position: absolute;

@@ -511,6 +511,16 @@
     <div class="container-narrow">
       <h3 class="site-subheader">Tables</h3>
       <div class="container-narrow">
+  <p class="explanation">
+    The Margo <code>&lt;table&gt;</code> element follows the convention of having an inner <code>&lt;thead&gt; </code> for the table header row and <code>&lt;tbody&gt;</code> for the data rows.
+  </p>
+  <h4><strong>Options</strong></h4>
+    <ul>
+      <li><code>&lt;table class="striped"&gt;</code> highlights every other row.</li>
+      <li><code>&lt;tr class="bg-success|fail|info|warn"&gt;</code> will provide a background context-color for a row</li>
+
+    </ul>
+    
   <h4 class="site-sub-subheader"><strong>Short Table</strong></h4>
   <h3 class="site-lg-code-example"><code>&lt;table&gt;</code></h3>
   <p></p>
@@ -579,7 +589,7 @@
           <td>8-4</td>
           <td>1,137.88</td>
         </tr>
-        <tr>
+        <tr class="bg-fail">
           <td>2</td>
           <td>Foxy Tacos</td>
           <td>7-5</td>
@@ -605,7 +615,7 @@
       <h3 class="site-subheader">Forms</h3>
       
 <h4 class="site-sub-subheader"><strong>Quick Form</strong></h4>
-<h3 class="site-lg-code-example"><code>&lt;form class="form-group grid-container"&gt;</code></h3>
+<h3 class="site-lg-code-example"><code>&lt;form class="form-group"&gt;</code></h3>
 
 <p class="explanation">
   Create a quick form with <code>&lt;form class="form-group"&gt;.</code>
@@ -662,7 +672,7 @@
 <h3 class="site-lg-code-example"><code>&lt;form class="form-group grid-container"&gt;</code></h3>
 
 <p class="explanation">
-  You can also add a class of <code>grid-container</code> to the <code>form</code> to allow for more precise positioning of the form fieldseach <code>&lt;div class="form-field"&gt;</code>.  Each div with a class of form-field will also include class names describing it's column layout: <code>&lt;div class="</code><code class="site-code-marked">form-field</code><code> </code><code class="site-code-marked">sm-12-x-12</code><code> </code><code class="site-code-marked">md-4-x-12</code><code>"&gt;</code>
+  You can also add a class of <code>grid-container</code> to the <code>form</code> to allow for more precise positioning of the form fields. Each div with a class of form-field will also include class names describing it's column layout: <code>&lt;div class="</code><code class="site-code-marked">form-field</code><code> </code><code class="site-code-marked">sm-12-x-12</code><code> </code><code class="site-code-marked">md-4-x-12</code><code>"&gt;</code>
 </p>
 
 

@@ -1323,11 +1323,9 @@ a[name^='docs'] {
   #portfolio-pieces .la-condesa {
     background: #111;
     color: #fff;
-    font-family: Palatino; }
+    font-family: "Oswald", Impact, Charcoal, sans-serif; }
     #portfolio-pieces .la-condesa a {
       color: #fff; }
-    #portfolio-pieces .la-condesa h3 {
-      transform: skewX(10deg) translate(-50%, -50%); }
   #portfolio-pieces .daily-standup {
     background: #3FC380;
     font-family: 'PT Sans', Helvetica, sans-serif; }
@@ -1339,6 +1337,8 @@ a[name^='docs'] {
   background: #111; }
   #site-condesa h1, #site-condesa h2, #site-condesa h3, #site-condesa h4, #site-condesa h5, #site-condesa h6 {
     font-weight: 700; }
+  #site-condesa .thin {
+    font-weight: 200; }
   #site-condesa .container-narrow {
     background: #fff;
     padding: 0; }
@@ -1358,9 +1358,7 @@ a[name^='docs'] {
       text-transform: uppercase;
       font-size: 14vw;
       line-height: 1;
-      letter-spacing: -.08em;
-      font-family: 'Palatino', 'Times', serif;
-      transform: skewX(-20deg) rotateX(10deg); }
+      font-family: "Oswald", Impact, Charcoal, sans-serif; }
       @media screen and (min-width: 750px) {
         #site-condesa .site-hero .title {
           font-size: 10rem; } }
@@ -1449,11 +1447,11 @@ a[name^='docs'] {
     .link-list-box > *:last-child {
       border-bottom: 0; }
 
-.contents-center {
+.contents-centered {
   margin: 0;
   position: relative;
   height: 100%; }
-  .contents-center > * {
+  .contents-centered > * {
     position: absolute;
     margin: 0;
     top: 50%;

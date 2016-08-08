@@ -605,9 +605,20 @@
       <h3 class="site-subheader">Forms</h3>
       
 <h4 class="site-sub-subheader"><strong>Quick Form</strong></h4>
+<h3 class="site-lg-code-example"><code>&lt;form class="form-group grid-container"&gt;</code></h3>
 
-<h3 class="site-lg-code-example"><code>&lt;form class="form-group"&gt;</code></h3>
-<p></p>
+<p class="explanation">
+  Create a quick form with <code>&lt;form class="form-group"&gt;.</code>
+</p>
+
+<p class="explanation">
+  For each form-field <small>( e.g. Username, Password, Email, First Name, Last Name, Occupation, etc. )</small> in a form-group, you should have a div of <code>&lt;div class="form-field"&gt;</code> that contains the field's<code>&lt;label&gt;</code> &amp; <code>&lt;input&gt;</code>.
+</p>
+
+<p class="explanation"> 
+  Note, a <code>&lt;div class="form-field"&gt;</code> is an inline-block element, so you can force a break to a new line by inserting a <code>&lt;br/&gt;</code> after. 
+</p>
+
 
 <form class="form-group">
   <div class="form-field">
@@ -625,11 +636,35 @@
   </div>
 </form>
 
+<pre><code>&lt;form class="form-group"&gt;
+   
+   &lt;div class="form-field"&gt;
+       &lt;label&gt; <span class="txt-muted">Username</span>&lt;/label&gt;
+       &lt;input type="text"/&gt;
+   &lt;/div&gt;
+
+   &lt;div class="form-field"&gt;
+       &lt;label&gt;<span class="txt-muted">Password</span> &lt;/label&gt;
+       &lt;input type="password"/&gt;
+   &lt;/div&gt;
+
+   &lt;br/&gt;
+
+   &lt;div class="form-field"&gt;
+       &lt;input type="submit" class="btn" value="Login"/ &gt;
+   &lt;/div&gt;
+  
+ &lt;/form&gt;</code></pre>
+
 
 <h4 class="site-sub-subheader"><strong>Long Form</strong></h4>
 
 <h3 class="site-lg-code-example"><code>&lt;form class="form-group grid-container"&gt;</code></h3>
-<p></p>
+
+<p class="explanation">
+  You can also add a class of <code>grid-container</code> to the <code>form</code> to allow for more precise positioning of the form fieldseach <code>&lt;div class="form-field"&gt;</code>.  Each div with a class of form-field will also include class names describing it's column layout: <code>&lt;div class="</code><code class="site-code-marked">form-field</code><code> </code><code class="site-code-marked">sm-12-x-12</code><code> </code><code class="site-code-marked">md-4-x-12</code><code>"&gt;</code>
+</p>
+
 
 <form class="form-group grid-container">
 
@@ -670,10 +705,48 @@
   <div class="sm-12-x-12 md-12-x-12 form-field">
     <input type="submit" class="btn primary ">
   </div>
-
-
 </form>
+<pre><code>&lt;form class="form-group grid-container"&gt;
+   
+   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+       &lt;label&gt; <span class="txt-muted">First </span>&lt;/label&gt;
+       &lt;input type="text"/&gt;
+   &lt;/div&gt;
 
+   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+       &lt;label&gt;<span class="txt-muted">Middle</span> &lt;/label&gt;
+       &lt;input type="text"/&gt;
+   &lt;/div&gt;
+
+   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+       &lt;label&gt;<span class="txt-muted">Last</span> &lt;/label&gt;
+       &lt;input type="text"/&gt;
+   &lt;/div&gt;
+
+   &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
+       &lt;label &gt;<span class="txt-muted">Email</span> &lt;/label&gt;
+       &lt;input type="email"/&gt;
+   &lt;/div&gt;
+
+   &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
+       &lt;label&gt;<span class="txt-muted">State</span> &lt;/label&gt;
+       &lt;select&gt;
+         &lt;option <span class="txt-muted">value="CA"</span>&gt;<span class="txt-muted">California</span> &lt;/option&gt;
+         &lt;option <span class="txt-muted">value="NY"</span>&gt;<span class="txt-muted">New York</span> &lt;/option&gt;
+         &lt;option <span class="txt-muted">value="TX"</span>&gt;<span class="txt-muted">Texas</span> &lt;/option&gt;
+     &lt;/select&gt;
+   &lt;/div&gt;
+
+   &lt;div class="sm-12-x-12 md-12-x-12 form-field"&gt;
+      &lt;label"&gt;<span class="txt-muted">Description</span> &lt;/label&gt;
+      &lt;textarea rows="6"&gt; &lt;/textarea&gt;
+   &lt;/div&gt;
+  
+   &lt;div class="sm-6-x-12 md-6-x-12 form-field"&gt;
+       &lt;input type="submit" class="btn md primary" value="submit" / &gt;
+   &lt;/div&gt;
+  
+ &lt;/form&gt;</code></pre>
     </div>
   
   <div class="container-full major-section">

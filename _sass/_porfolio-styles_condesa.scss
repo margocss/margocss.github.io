@@ -1,0 +1,320 @@
+#portfolio-pieces{
+  max-width: 800px;
+  h3 {font-size: 3rem;}
+  .la-condesa{
+    background: #111;
+    color: #fff;
+    font-family: Palatino;
+    a {color: #fff;}
+    h3{transform: skewX(10deg) translate(-50%,-50%);}
+  }
+
+  .daily-standup{
+    background: #3FC380;
+    font-family: 'PT Sans', Helvetica, sans-serif;
+    a {color: #fff;}
+  }
+
+
+}
+
+
+#site-condesa {
+  h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+  }
+
+  font-family: "Oswald", Impact, Charcoal, sans-serif;
+
+  $color-theme: #111;
+  background: #111;
+
+  .container-narrow{
+    background: #fff;
+    padding: 0;
+  }
+  .site-hero{
+    background: $color-theme;
+    overflow: hidden;
+    @include media-query($med-screen){
+      padding-top: 8rem;
+      min-height: 600px;
+    }
+    @include media-query($lg-screen){
+      padding-top: 10rem;
+      min-height: 700px;
+    }
+
+    .title{
+      margin: 0;
+      text-transform: uppercase;
+      font-size: 14vw;
+      line-height: 1;
+      letter-spacing: -.08em;
+      font-family: 'Palatino', 'Times', serif;
+      transform: skewX(-20deg) rotateX(10deg); 
+      
+      @include media-query($med-screen){
+        font-size: 10rem;
+      }
+      @include media-query($lg-screen){
+        font-size: 13rem;
+      }
+    }
+  
+  }
+  
+  .tile-content{
+    border :1px solid #333;
+
+      .little-box:nth-child(1){
+        border-right: 1px solid $color-theme;
+      }
+
+      .little-box:nth-child(2){
+        border-left: 1px solid $color-theme;
+      }
+  }
+
+
+  .chef-profile{
+    p{
+      font-weight: 300;
+    }
+  }
+
+  .full-height{
+    height: 100%;
+  }
+
+}
+
+
+#site-daily-standup{
+  max-width: 1080px; 
+
+  $ds-font-color: #333;
+  $ds-primary-theme: #3FC380;
+  $ds-light-gray: #eee;
+
+  $sans-serif-stack: 'PT Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+  $serif-stack: 'PT Serif', 'Palatino', serif;
+
+    h1,h2,h3,h4,h5,h6{
+      font-family: $sans-serif-stack;
+    }
+
+    a{
+      color: $ds-primary-theme;
+    }
+
+
+    .link-list-box{
+      border: 1px $ds-light-gray solid;
+      > * {
+        font-size: .875rem;
+        color: $ds-font-color;
+        text-decoration: none;
+        padding: .5rem;
+        display: block;
+        border-bottom: 1px solid $ds-light-gray;
+        font-family: $sans-serif-stack;
+        &.active{
+          color: $ds-primary-theme;
+          font-weight: 700;
+        }
+        &:last-child{
+          border-bottom: 0;
+        }
+      }
+    }
+
+    .site-sidebar-area,
+    .site-content-area{
+      padding: 0 2%;
+    }   
+
+    header{
+      margin-bottom: 4rem;
+      @include media-query($med-screen){
+        margin-bottom: 9rem;
+      }
+
+      .site-title {
+        margin: 0;
+        font-weight: 700;
+      }
+      h3{
+        margin-top: .5rem;
+      }
+    }
+
+    .blogpost{
+      padding-bottom: 10rem;
+      border-bottom: 1px $faint-gray solid;
+      &:last-child{
+        padding-bottom: 2rem;
+        border-bottom: 0;
+      }
+
+      .post-title{
+        margin-bottom: 3rem;
+        font-weight: 700;
+      }
+
+      .post-info{
+        font-family: $serif-stack;
+        font-size: .875rem;
+        margin-bottom: 3rem;
+      }
+
+      .post-info{
+
+      }
+
+      .post-content{
+        .subheader{font-family: $sans-serif-stack;}
+        p{
+          font-family: $serif-stack;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  
+}
+
+.link-list-box{
+  border: 1px $faint-gray solid;
+  > * {
+    font-size: .875rem;
+    color: $default-font-color;
+    text-decoration: none;
+    padding: .5rem;
+    display: block;
+    border-bottom: 1px solid $faint-gray;
+    &.active{
+      color: $light-primary;
+      font-weight: 700;
+      background: $faint-gray;
+    }
+    &:hover{
+      background: $faint-gray-translucent;
+      
+    }
+    &:last-child{
+      border-bottom: 0;
+    }
+  }
+}
+  
+.contents-center{
+  margin: 0;
+  position: relative;
+  height: 100%;
+  > * {
+    position: absolute;
+    margin: 0;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.img-stretch {
+  position: relative;
+  overflow: hidden;
+  width :100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; left: 0;
+  }
+}
+
+
+
+.tile{
+  position: relative;
+  
+  .tile-content{
+    margin: 0;
+    overflow: hidden;
+    &.padded-tile{
+      padding: 1rem;
+    }
+  }
+
+  &.sm-1-to-1{padding-bottom: 100%;}
+  &.sm-2-to-1{padding-bottom: 50%;}
+  &.sm-3-to-1{padding-bottom: 33.3333%;}
+  &.sm-4-to-1{padding-bottom: 25%;}
+  &.sm-3-to-2{padding-bottom: 66.6667%;}
+  &.sm-4-to-3{padding-bottom: 75%;}
+  &.sm-8-to-5{padding-bottom: 62.5%;}
+  &.sm-16-to-9{padding-bottom: 56.25%;}
+
+    &.sm-1-to-1  > .tile-content,
+    &.sm-2-to-1  > .tile-content,
+    &.sm-3-to-1  > .tile-content,  
+    &.sm-4-to-1  > .tile-content,
+    &.sm-3-to-2  > .tile-content,
+    &.sm-4-to-3  > .tile-content,
+    &.sm-8-to-5  > .tile-content,
+    &.sm-16-to-9 > .tile-content{ 
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 0; right: 0;  
+    }
+}
+  
+@include media-query($med-screen){
+  .tile{
+    &.md-1-to-1{ padding-bottom: 100%;}
+    &.md-2-to-1{ padding-bottom: 50%;}
+    &.md-3-to-1{ padding-bottom: 33.3333%;}
+    &.md-4-to-1{ padding-bottom: 25%;}
+    &.md-3-to-2{ padding-bottom: 66.6667%;}
+    &.md-4-to-3{ padding-bottom: 75%;}
+    &.md-16-to-9{padding-bottom: 56.25%;}
+    
+    &.md-1-to-1  > .tile-content,
+    &.md-2-to-1  > .tile-content,
+    &.md-3-to-1  > .tile-content,  
+    &.md-4-to-1  > .tile-content,
+    &.md-3-to-2  > .tile-content,
+    &.md-4-to-3  > .tile-content,
+    &.md-16-to-9 > .tile-content{ 
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 0; right: 0;  
+    }
+  }
+}
+
+@include media-query($lg-screen){
+  .tile{
+    &.lg-1-to-1{ padding-bottom: 100%;}
+    &.lg-2-to-1{ padding-bottom: 50%;}
+    &.lg-3-to-1{ padding-bottom: 33.3333%;}
+    &.lg-4-to-1{ padding-bottom: 25%;}
+    &.lg-3-to-2{ padding-bottom: 66.6667%;}
+    &.lg-4-to-3{ padding-bottom: 75%;}
+    &.lg-16-to-9{padding-bottom: 56.25%;}
+    
+    &.lg-1-to-1  > .tile-content,
+    &.lg-2-to-1  > .tile-content,
+    &.lg-3-to-1  > .tile-content,  
+    &.lg-4-to-1  > .tile-content,
+    &.lg-3-to-2  > .tile-content,
+    &.lg-4-to-3  > .tile-content,
+    &.lg-16-to-9 > .tile-content{ 
+      position: absolute;
+      top: 0; bottom: 0;
+      left: 0; right: 0;  
+    }
+  }
+}

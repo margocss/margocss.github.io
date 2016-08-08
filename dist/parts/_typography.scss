@@ -43,7 +43,6 @@ h4 {
 p{
   margin-bottom: 1.5rem;
   font-weight: 400;
-  font-size: 1rem;
 }
 
 
@@ -130,6 +129,10 @@ a {
 
   &:hover{
     color: $primary-color;
+  }
+
+  &:focus{
+    outline: 0;
   }
 }
 

@@ -4,9 +4,9 @@
   .la-condesa{
     background: #111;
     color: #fff;
-    font-family: Palatino;
+    font-family: "Oswald", Impact, Charcoal, sans-serif;
+    
     a {color: #fff;}
-    h3{transform: skewX(10deg) translate(-50%,-50%);}
   }
 
   .daily-standup{
@@ -28,7 +28,9 @@
 
   $color-theme: #111;
   background: #111;
-
+  .thin{
+    font-weight: 200;
+  }
   .container-narrow{
     background: #fff;
     padding: 0;
@@ -50,9 +52,7 @@
       text-transform: uppercase;
       font-size: 14vw;
       line-height: 1;
-      letter-spacing: -.08em;
-      font-family: 'Palatino', 'Times', serif;
-      transform: skewX(-20deg) rotateX(10deg); 
+      font-family: "Oswald", Impact, Charcoal, sans-serif;
       
       @include media-query($med-screen){
         font-size: 10rem;
@@ -207,7 +207,7 @@
   }
 }
   
-.contents-center{
+.contents-centered{
   margin: 0;
   position: relative;
   height: 100%;

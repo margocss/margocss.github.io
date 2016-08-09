@@ -2,16 +2,12 @@
   <p class="explanation">
     The Margo <code>&lt;table&gt;</code> element follows the convention of having an inner <code>&lt;thead&gt; </code> for the table header row and <code>&lt;tbody&gt;</code> for the data rows.
   </p>
-  <h4><strong>Options</strong></h4>
-    <ul>
-      <li><code>&lt;table class="striped"&gt;</code> highlights every other row.</li>
-      <li><code>&lt;tr class="bg-success|fail|info|warn"&gt;</code> will provide a background context-color for a row</li>
 
-    </ul>
-    
-  <h4 class="site-sub-subheader"><strong>Short Table</strong></h4>
-  <h3 class="site-lg-code-example"><code>&lt;table&gt;</code></h3>
-  <p></p>
+  <p class="explanation">&nbsp;</p>
+
+  <h4 class="site-sub-subheader">
+    <strong>Short Table</strong><br/>
+  </h4>
   <table >
     <thead>
       <tr>
@@ -42,24 +38,37 @@
       </tr>
     </tbody>
   </table>
+<pre><code>&lt;table class="striped"&gt;
+   &lt;thead&gt;
+      &lt;tr&gt;
+         &lt;th&gt;<span class="txt-muted">Name</span>&lt;/th&gt;
+         &lt;th&gt;<span class="txt-muted">Age</span>&lt;/th&gt;
+         &lt;th&gt;<span class="txt-muted">Bed Time</span>&lt;/th&gt;
+         &lt;th&gt;<span class="txt-muted">Favorite Animal</span>&lt;/th&gt;
+      &lt;/tr&gt;
+   &lt;/thead&gt;
+   &lt;tbody&gt;
+      &lt;tr&gt;
+         &lt;td&gt;<span class="txt-muted">Zoey</span>&lt;/td&gt;
+         &lt;td&gt;<span class="txt-muted">4</span>&lt;/td&gt;
+         &lt;td&gt;<span class="txt-muted">8:00</span>&lt;/td&gt;
+         &lt;td&gt;<span class="txt-muted">TBD</span>&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/tbody&gt;
+
+&lt;/table&gt;</code></pre>    
 
   <p class="explanation">&nbsp;</p>
 
-  <h4 class="site-sub-subheader"><strong>Full Width Table + Striped</strong></h4>
+  <h4 class="site-sub-subheader">
+    <strong>Full Width Table</strong><br/>
+    <small>with &lt;table class="striped"&gt;</small>
+  </h4>
 
-  <div class="site-demo-code-block">
-    <span class="site-lg-code-example">
-      <code>&lt;div class="table-full-width"&gt;</code>
-    </span>
-    <br/>
-    <span class="site-lg-code-example">
-      <code>&nbsp;&nbsp;&nbsp;&lt;table class="striped"&gt;...&lt;/table&gt;</code>
-    </span>
-    <br/>
-    <span class="site-lg-code-example">
-      <code>&lt;/div&gt;</code>
-    </span>
-  </div>  
+<pre><code>&lt;div class="table-full-width"&gt;
+   &lt;table class="striped"&gt;...&lt;/table&gt;
+</code></pre>  
+
   <div class="table-full-width">
     <table class="striped">
       <thead>
@@ -98,4 +107,12 @@
       </tbody>
     </table>
   </div>
+  
+  <p class="explanation">&nbsp;</p>
+  <h4 class="site-sub-subheader"><strong>Options</strong></h4>
+  <ul>
+    <li><code>&lt;table class="striped"&gt;</code> highlights every other row.</li>
+    <li><code>&lt;tr class="bg-success|fail|info|warn"&gt;</code> will provide a background context-color for a row</li>
+
+  </ul>
 </div>

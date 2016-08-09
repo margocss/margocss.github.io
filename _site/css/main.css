@@ -1093,6 +1093,14 @@ code {
   .tile.sm-1-to-1 {
     padding-bottom: 100%; }
   .tile.sm-2-to-1 {
+    padding-bottom: 200%; }
+  .tile.sm-3-to-1 {
+    padding-bottom: 300; }
+  .tile.sm-4-to-1 {
+    padding-bottom: 400%; }
+  .tile.sm-1-to-1 {
+    padding-bottom: 100%; }
+  .tile.sm-2-to-1 {
     padding-bottom: 50%; }
   .tile.sm-3-to-1 {
     padding-bottom: 33.3333%; }
@@ -1127,6 +1135,14 @@ code {
   .tile.md-1-to-4 {
     padding-bottom: 400%; } }
 @media screen and (min-width: 1000px) {
+  .tile.lg-1-to-1 {
+    padding-bottom: 100%; }
+  .tile.lg-2-to-1 {
+    padding-bottom: 200%; }
+  .tile.lg-3-to-1 {
+    padding-bottom: 300; }
+  .tile.lg-4-to-1 {
+    padding-bottom: 400%; }
   .tile.lg-1-to-1 {
     padding-bottom: 100%; }
   .tile.lg-2-to-1 {

@@ -68,7 +68,7 @@ navigable: false
         <h4 class="site-sub-subheader"><strong>Container-narrow</strong></h4>
 <pre><code>&lt;div class="container-narrow"&gt;
    
-   <span class="txt-muted">&lt;!--your content here--&gt;</span>
+   <span class="txt-muted">&lt;!--your web content here--&gt;</span>
 
 &lt;/div&gt;</code></pre>
     </div>
@@ -85,8 +85,7 @@ navigable: false
         <h4 class="site-sub-subheader"><strong>Container-full</strong></h4>
 <pre><code>&lt;div class="container-full"&gt;
    
-  <span class="txt-muted">&lt;!--your content here--&gt;</span>
-
+  <span class="txt-muted">&lt;!--your web content here--&gt;</span>
 
 &lt;/div&gt;</code></pre>
 </div>
@@ -568,7 +567,6 @@ navigable: false
             <a href="#">Log In</a>
           </div>
         </nav>
-      </div>
 <pre><code>&lt;nav class="nav-bar"&gt;
     <span class="txt-muted">&lt;!--
       You must include both &lt;input type="checkbox" class="hamburger-toggler&gt;
@@ -608,7 +606,7 @@ navigable: false
 
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident earum modi corrupti exp  edita, accusantium numquam nesciunt non eum ipsa iste voluptate saepe, sit quibusdam odio suscipit inventore velit quos aperiam ducimus dicta perspiciatis.</p>
         </section>
-        
+  
 <pre><code>&lt;section class="segment"&gt;</code><span class="txt-muted">
    
    &lt;h4&gt;Cities that start with M&lt;/h4&gt;
@@ -624,10 +622,7 @@ navigable: false
    &lt;/p&gt;</span>
 
 <code>&lt;/section&gt;</code></pre>
-
-
-
-        
+       
 
         <div style="position: relative"><a name="docs-sidebar"></a></div>
 
@@ -640,31 +635,18 @@ navigable: false
           </p>
           <p class="explanation"><strong>In order for the Sidebar to work properly in your layout, you must have <code>&lt;div class="container-full"&gt;</code> <em>immediately</em> after it.</strong> Because the sidebar is a major layout component, it should also be near the root of your <code>&lt;body&gt;</code> element. Here is the required HTML structure:
           </p>
-          <div class="site-demo-code-block">
+<pre><code>&lt;<mark>aside class="sidebar"</mark>&gt;
+    <span class="txt-muted">&nbsp;&nbsp;&nbsp;...</span>
+ &lt;/aside&gt;
 
-            <span class="site-lg-code-example">
-              <code>&lt;aside </code><code class="site-code-marked">class="sidebar"</code><code>&gt;</code>
-              </span>
-              <br/>
-                <span class="site-lg-code-example"><code class="txt-muted">&nbsp;&nbsp;&nbsp;...</code></span>
-              <br/>
-              <span class="site-lg-code-example">
-                <code>&lt;/aside&gt;</code>
-              </span>
-              <br/>
-              <span class="site-lg-code-example">
-
-                <code>&lt;div </code><code class="site-code-marked">class="container-full"</code><code>&gt;</code>
-              </span>
-              <br/>
-                <span class="site-lg-code-example"><code class="txt-muted">&nbsp;&nbsp;&nbsp;&lt;!--site content--&gt;</code></span>
-              <br/>
-              <span class="site-lg-code-example">
-                <code>&lt;/div&gt;</code>
-              </span>
-              <br/>
-          </div>
-          <h4 class="site-sub-subheader"><strong>Sidebar Code Example – Recommended Use</strong></h4>
+ &lt;<mark>div class="container-full"</mark>&gt;
+    <span class="txt-muted">&nbsp;&nbsp;&nbsp;&lt;!--site content--&gt;</span>
+ &lt;/div&gt;</code></pre>
+          <p class="explanation">&nbsp;</p>
+          <h4 class="site-sub-subheader"><strong>
+            Sidebar: Code Example</strong><br/> 
+            <small>Recommended Use</small>
+          </h4>
           <p class="explanation"><strong>Note: </strong>The use of <code>&lt;div class="nav-spacer"&gt;</code> is a helper class that gives padding if you are using a fixed-navbar.</p>
           <p class="explanation">
             Also, if you place a <code>&lt;div class="sidebar-content"&gt;</code> inside the sidebar with nested <code>&lt;a class="sidebar-topic"&gt;</code> and  <code>&lt;a class="sidebar-subtopic"&gt;</code>, the site will provide indentation for a topic-subtopic list of anchor tags (as shown of the sidebar of this very page).
@@ -757,8 +739,8 @@ navigable: false
 
 &lt;/figure&gt;
 </code></pre>
+        </div>
 
-      </div>
         <div style="position: relative"><a name="docs-misc"></a></div>
 
         <div class="container-full major-section">

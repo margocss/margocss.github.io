@@ -31,7 +31,6 @@ gulp.task('minify-dist-css', function(){
 
 gulp.task('minify-production-css', function(){
   return gulp.src('./_site/css/main.css')
-    .pipe(autoprefixer())
     .pipe(cleanCSS())
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./_site/css'))

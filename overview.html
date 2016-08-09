@@ -189,10 +189,30 @@ navigable: true
       
     <div class="container-narrow">
       <h3 class="site-subheader">Tables</h3>
-      {% include table-example.html %}
+      {% include table-overview.html %}
       
       <h3 class="site-subheader">Forms</h3>
-      {% include form-example.html %}
+
+      <h4 class="site-sub-subheader">
+        <strong>Quick Form</strong><br/>
+        <small>inline-block elements</small>
+      </h4>
+      <h3 class="site-lg-code-example"><code>&lt;form class="form-group"&gt;</code></h3>
+      <p class="explanation"></p>
+
+      {% include short_form.html %}
+
+
+      <p class="explanation">&nbsp;</p>
+      <h4 class="site-sub-subheader">
+        <strong>Long Form</strong><br/>
+        <small>with grid-container and grid-item elements</small>
+      </h4>
+      <h3 class="site-lg-code-example"><code>&lt;form class="form-group grid-container"&gt;</code></h3>
+      <p class="explanation"></p>
+
+      {% include long_form.html %}
+
     </div>
   
   <div class="container-full major-section">
@@ -219,28 +239,29 @@ navigable: true
 
 
   <div class="container-narrow">
-    <h3 class="site-subheader">Navigation</h3>
-    
-    <h3 class="site-lg-code-example"><code>&lt;nav class="nav-bar"&gt;</code></h3>
-    <nav class="nav-bar">
-      
-      <input type="checkbox" class="hamburger-toggler"/>
-      <div class="hamburger-menu">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </div>
+      <h3 class="site-subheader">Navigation</h3>
+      <h3 class="site-lg-code-example"><code>&lt;nav class="nav-bar"&gt;</code></h3>
+      <p class="explanation"></p>
+
+      <nav class="nav-bar">
+        
+        <input type="checkbox" class="hamburger-toggler"/>
+        <div class="hamburger-menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
 
 
-      <div class="nav-list">
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-        <a href="#">Our Mission</a>
-        <a href="#">Blog</a>
-        <a href="#">Register</a>
-        <a href="#">Log In</a>
-      </div>
-    </nav>
+        <div class="nav-list">
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#">Our Mission</a>
+          <a href="#">Blog</a>
+          <a href="#">Register</a>
+          <a href="#">Log In</a>
+        </div>
+      </nav>
 
     <h3 class="site-subheader">Callout Segment</h3>
     <h3 class="site-lg-code-example"><code>&lt;section class="segment"&gt;</code></h3>
@@ -259,6 +280,7 @@ navigable: true
 
 
     <h3 class="site-subheader">Sidebars</h3>
+    <h3 class="site-lg-code-example"><code>&lt;aside class="sidebar"&gt;</code></h3>
     <p class="explanation">
       Check out the <a href="./documentation.html">Docs</a> for an example.
     </p>
@@ -306,6 +328,7 @@ navigable: true
         </figure>
       </div>
     </div>
+  </div>
   </div>
 
 

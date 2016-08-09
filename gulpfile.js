@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     shell = require('gulp-shell'),
     cleanCSS = require('gulp-clean-css'),
     rename = require('gulp-rename'),
+    autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync');
 
 gulp.task('build-dev', 
@@ -25,10 +26,12 @@ gulp.task('minify-dist-css', function(){
     .pipe(rename('margo.min.css'))
     .pipe(gulp.dest('dist'))
 
+
 })
 
 gulp.task('minify-production-css', function(){
   return gulp.src('./_site/css/main.css')
+    .pipe(autoprefixer())
     .pipe(cleanCSS())
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./_site/css'))

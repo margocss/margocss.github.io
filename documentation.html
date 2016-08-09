@@ -197,7 +197,7 @@ navigable: false
               <div class="sm-12-x-12 lg-6-x-12">
                 <h4 class="site-sub-subheader"><strong>Text Formats</strong></h4>
 
-                  <p>The text <em>right here</em> is inside of a &lt;p&gt; tag. All text sizes and line heights are calculated based on rems. The standard paragraph text is sized at 1rem. And the default line-height is set to 1.625 on tablet/desktop for ideal legibility and 1.25 on mobile to accomodate the lesser screen height.</p>
+                  <p>The text <em>right here</em> is inside of a &lt;p&gt; tag. All font sizes and line heights are calculated based on rems. If you want to change the default font-size, you can set a baseline font-size value on the <code>html</code> and all of the typography will scale accordingly.  The standard paragraph text is sized at 1rem. And the default line-height is set to 1.625 on tablet/desktop for ideal legibility and 1.25 on mobile to accomodate the lesser screen height.</p>
                   
                   <div class="grid-container site-text-formats">
                     <div class="sm-6-x-12 md-4-x-12">
@@ -249,8 +249,8 @@ navigable: false
               <h4 class="site-sub-subheader"><strong>Default</strong></h4>
               <button>Normal</button>
               <div> 
-                <code>&lt;button class="btn"&gt;...&lt;/button&gt;</code><br/><br/>
-                <code>&lt;a class="btn"&gt;...&lt;/button&gt;</code><br/><br/>
+                <code>&lt;button class="btn"&gt;</code><br/><br/>
+                <code>&lt;a class="btn"&gt;</code><br/><br/>
                 <code>&lt;input class="btn" type="button" ... &gt;</code><br/><br/>
                 <code>&lt;input class="btn" type="submit" ...&gt;</code><br/>
               </div>
@@ -282,8 +282,8 @@ navigable: false
 
               <input type="button" class="primary" value="Primary">
               <div>
-                <code>&lt;button class="btn"&gt;...&lt;/button&gt;</code><br/><br/>
-                <code>&lt;a class="btn primary"&gt;...&lt;/button&gt;</code><br/><br/>
+                <code>&lt;button class="btn"&gt;</code><br/><br/>
+                <code>&lt;a class="btn primary"&gt;
                 <code>&lt;input class="btn primary" type="button" ... &gt;</code><br/><br/>
                 <code>&lt;input class="btn primary" type="submit" ...&gt;</code><br/>
               </div>
@@ -411,25 +411,25 @@ navigable: false
 
     {% include short_form.html %}
 
-    <pre><code>&lt;form class="form-group"&gt;
+<pre><code>&lt;form class="form-group"&gt;
        
-       &lt;div class="form-field"&gt;
-           &lt;label&gt; <span class="txt-muted">Username</span>&lt;/label&gt;
-           &lt;input type="text"/&gt;
-       &lt;/div&gt;
+   &lt;div class="form-field"&gt;
+       &lt;label&gt; <span class="txt-muted">Username</span>&lt;/label&gt;
+       &lt;input type="text"/&gt;
+   &lt;/div&gt;
 
-       &lt;div class="form-field"&gt;
-           &lt;label&gt;<span class="txt-muted">Password</span> &lt;/label&gt;
-           &lt;input type="password"/&gt;
-       &lt;/div&gt;
+   &lt;div class="form-field"&gt;
+       &lt;label&gt;<span class="txt-muted">Password</span> &lt;/label&gt;
+       &lt;input type="password"/&gt;
+   &lt;/div&gt;
 
-       &lt;br/&gt;
+   &lt;br/&gt;
 
-       &lt;div class="form-field"&gt;
-           &lt;input type="submit" class="btn" value="Login"/ &gt;
-       &lt;/div&gt;
+   &lt;div class="form-field"&gt;
+       &lt;input type="submit" class="btn" value="Login"/ &gt;
+   &lt;/div&gt;
       
-     &lt;/form&gt;</code></pre>
+&lt;/form&gt;</code></pre>
 
     <p class="explanation">&nbsp;</p>
 
@@ -658,8 +658,8 @@ navigable: false
 
   &lt;div class="sidebar-content"&gt;
     
-    &lt;a class="sidebar-topic" href='#...'&gt;<span class='txt-muted'>Furniture</span>&lt;/a&gt;
-    &lt;a class="sidebar-subtopic" href='#...'&gt;<span class='txt-muted'>Sofas</span>&lt;/a&gt;
+    &lt;a class=<mark>"sidebar-topic"</mark> href='#...'&gt;<span class='txt-muted'>Furniture</span>&lt;/a&gt;
+    &lt;a class=<mark>"sidebar-subtopic"</mark> href='#...'&gt;<span class='txt-muted'>Sofas</span>&lt;/a&gt;
     &lt;a class="sidebar-subtopic" href='#...'&gt;<span class='txt-muted'>Desks</span>&lt;/a&gt;
     
   &lt;/div&gt;

@@ -71,27 +71,21 @@
 
       
         
-          
-          <a href="http://localhost:3000/overview.html">
-              Overview
-          </a>
-          
-        
-
-      
-        
-          
-          <a href="http://localhost:3000/portfolio.html">
-              Portfolio
-          </a>
-          
-        
 
       
         
           
           <a href="http://localhost:3000/raw-demo.html">
               Raw Demo
+          </a>
+          
+        
+
+      
+        
+          
+          <a href="http://localhost:3000/showcase.html">
+              Showcase
           </a>
           
         
@@ -173,7 +167,7 @@
         </p>
         
       </div>
-      <p class="explanation">&nbsp;</p>
+      <p class="explanation"></p>
       <div class="container-narrow">
         <h4 class="site-sub-subheader"><strong>Container-narrow</strong></h4>
 <pre><code>&lt;div class="container-narrow"&gt;
@@ -190,7 +184,7 @@
 
       </div>
 
-      <p class="explanation">&nbsp;</p>
+      <p class="explanation"></p>
       <div class="container-narrow">
         <h4 class="site-sub-subheader"><strong>Container-full</strong></h4>
 <pre><code>&lt;div class="container-full"&gt;
@@ -210,7 +204,9 @@
       <div class="container-narrow">
           <h3 class="site-subheader">Grid</h3>
           <p class="explanation">
-            Grids <strong>must</strong> have an outer-div with a class of grid-container<br/><br/>
+            Grids <strong>must</strong> have an outer-div with a class of grid-container:
+          </p>
+          <p class="explanation">
             <code>&lt;div class="grid-container"&gt;</code>
           </p>
           <p class="explanation">
@@ -233,10 +229,9 @@
           </p>
 <pre><code>&lt;div class="grid-container"&gt;
 
-      &lt;div class="<mark>sm</mark>-[n]-x-12 <mark>md</mark>-[n]-x-12 <mark>lg</mark>-[n]-x-12"&gt;
-         <span class="txt-muted">&lt;!--your contents here--&gt;</span>
-      &lt;/div&gt;
-
+   &lt;div class="<mark>sm</mark>-[n]-x-12 <mark>md</mark>-[n]-x-12 <mark>lg</mark>-[n]-x-12"&gt;
+      <span class="txt-muted">&lt;!--your contents here--&gt;</span>
+   &lt;/div&gt;
 
 &lt;/div&gt;</code></pre>
 
@@ -258,7 +253,7 @@
             </ul> 
           </p>
          
-          <p class="explanation">&nbsp;</p>
+          <p class="explanation"></p>
 
           <h4 class="site-sub-subheader"><strong>Live Example</strong><br/><small>
           multiple grid-items in a grid-container</small></h4>
@@ -477,7 +472,7 @@
               <div class="sm-12-x-12 lg-6-x-12">
                 <h4 class="site-sub-subheader"><strong>Text Formats</strong></h4>
 
-                  <p>The text <em>right here</em> is inside of a &lt;p&gt; tag. All text sizes and line heights are calculated based on rems. The standard paragraph text is sized at 1rem. And the default line-height is set to 1.625 on tablet/desktop for ideal legibility and 1.25 on mobile to accomodate the lesser screen height.</p>
+                  <p>The text <em>right here</em> is inside of a &lt;p&gt; tag. All font sizes and line heights are calculated based on rems. If you want to change the default font-size, you can set a baseline font-size value on the <code>html</code> and all of the typography will scale accordingly.  The standard paragraph text is sized at 1rem. And the default line-height is set to 1.625 on tablet/desktop for ideal legibility and 1.25 on mobile to accomodate the lesser screen height.</p>
                   
                   <div class="grid-container site-text-formats">
                     <div class="sm-6-x-12 md-4-x-12">
@@ -529,13 +524,14 @@
               <h4 class="site-sub-subheader"><strong>Default</strong></h4>
               <button>Normal</button>
               <div> 
-                <code>&lt;button class="btn"&gt;...&lt;/button&gt;</code><br/><br/>
-                <code>&lt;a class="btn"&gt;...&lt;/button&gt;</code><br/><br/>
+                <code>&lt;button class="btn"&gt;</code><br/><br/>
+                <code>&lt;a class="btn"&gt;</code><br/><br/>
                 <code>&lt;input class="btn" type="button" ... &gt;</code><br/><br/>
                 <code>&lt;input class="btn" type="submit" ...&gt;</code><br/>
               </div>
               <hr>
               <div class="grid-container site-button-sizes">
+
                 <div class="sm-12-x-12 md-4-x-12">
                   <code>"btn sm"</code>
                 </div>
@@ -562,10 +558,10 @@
 
               <input type="button" class="primary" value="Primary">
               <div>
-                <code>&lt;button class="btn"&gt;...&lt;/button&gt;</code><br/><br/>
-                <code>&lt;a class="btn primary"&gt;...&lt;/button&gt;</code><br/><br/>
+                <code>&lt;button class="btn"&gt;</code><br/><br/>
+                <code>&lt;a class="btn primary"&gt;</code><br><br/>
                 <code>&lt;input class="btn primary" type="button" ... &gt;</code><br/><br/>
-                <code>&lt;input class="btn primary" type="submit" ...&gt;</code><br/>
+                <code>&lt;input class="btn primary" type="submit" ...&gt;</code>              
               </div>
               <hr>
 
@@ -664,7 +660,7 @@
     The Margo <code>&lt;table&gt;</code> element follows the convention of having an inner <code>&lt;thead&gt; </code> for the table header row and <code>&lt;tbody&gt;</code> for the data rows.
   </p>
 
-  <p class="explanation">&nbsp;</p>
+  <p class="explanation"></p>
 
   <h4 class="site-sub-subheader">
     <strong>Short Table</strong><br/>
@@ -699,7 +695,8 @@
       </tr>
     </tbody>
   </table>
-<pre><code>&lt;table class="striped"&gt;
+<pre><code>&lt;table&gt;
+
    &lt;thead&gt;
       &lt;tr&gt;
          &lt;th&gt;<span class="txt-muted">Name</span>&lt;/th&gt;
@@ -719,7 +716,7 @@
 
 &lt;/table&gt;</code></pre>    
 
-  <p class="explanation">&nbsp;</p>
+  <p class="explanation"></p>
 
   <h4 class="site-sub-subheader">
     <strong>Full Width Table</strong><br/>
@@ -727,8 +724,12 @@
   </h4>
 
 <pre><code>&lt;div class="table-full-width"&gt;
-   &lt;table class="striped"&gt;...&lt;/table&gt;
-</code></pre>  
+   
+   &lt;table class="striped"&gt;
+      ...
+   &lt;/table&gt;
+
+&lt;/div&gt;</code></pre>  
 
   <div class="table-full-width">
     <table class="striped">
@@ -769,7 +770,7 @@
     </table>
   </div>
   
-  <p class="explanation">&nbsp;</p>
+  <p class="explanation"></p>
   <h4 class="site-sub-subheader"><strong>Options</strong></h4>
   <ul>
     <li><code>&lt;table class="striped"&gt;</code> highlights every other row.</li>
@@ -799,7 +800,7 @@
 <span class="txt-muted">&lt;/form&gt;</span>
 </code></pre>
 
-    <p class="explanation">&nbsp;</p>
+    <p class="explanation"></p>
     <h4 class="site-sub-subheader">
       <strong>Quick Form</strong><br/>
       <small>simple inline-block elements</small>
@@ -823,25 +824,25 @@
 </form>
 
 
-    <pre><code>&lt;form class="form-group"&gt;
+<pre><code>&lt;form class="form-group"&gt;
        
-       &lt;div class="form-field"&gt;
-           &lt;label&gt; <span class="txt-muted">Username</span>&lt;/label&gt;
-           &lt;input type="text"/&gt;
-       &lt;/div&gt;
+   &lt;div class="form-field"&gt;
+       &lt;label&gt; <span class="txt-muted">Username</span>&lt;/label&gt;
+       &lt;input type="text"/&gt;
+   &lt;/div&gt;
 
-       &lt;div class="form-field"&gt;
-           &lt;label&gt;<span class="txt-muted">Password</span> &lt;/label&gt;
-           &lt;input type="password"/&gt;
-       &lt;/div&gt;
+   &lt;div class="form-field"&gt;
+       &lt;label&gt;<span class="txt-muted">Password</span> &lt;/label&gt;
+       &lt;input type="password"/&gt;
+   &lt;/div&gt;
 
-       &lt;br/&gt;
+   &lt;br/&gt;
 
-       &lt;div class="form-field"&gt;
-           &lt;input type="submit" class="btn" value="Login"/ &gt;
-       &lt;/div&gt;
+   &lt;div class="form-field"&gt;
+       &lt;input type="submit" class="btn" value="Login"/ &gt;
+   &lt;/div&gt;
       
-     &lt;/form&gt;</code></pre>
+&lt;/form&gt;</code></pre>
 
     <p class="explanation">&nbsp;</p>
 
@@ -951,6 +952,7 @@
       <div class="container-narrow">
         <h3 class="site-subheader">Hero-Header</h3>
         <p class="explanation">Commonly seen on landing pages.</p>
+        <p class="explanation"></p>
         <h4 class="site-sub-subheader"><strong>Example</strong></h4>
       </div>
 
@@ -990,13 +992,13 @@
         </p>
         <p class="explanation">
           <code>&lt;nav class="nav-bar"&gt;</code>. 
-        </p> 
+        </p>
         <p class="explanation">
           <strong>The hamburger menu is optional</strong>, however if you elect to include it, you must arrange your HTML in the ordering and naming of elements shown below.
         </p>  
 
-        </p>
-      
+        <p class="explanation"></p>
+
         <h4 class="site-sub-subheader"><strong>Example</strong></h4>
        
         <nav class="nav-bar">
@@ -1028,6 +1030,8 @@
 
     &lt;div class="hamburger-menu"&gt;
       &lt;span class="line"&gt;&lt;/span&gt; 
+      &lt;span class="line"&gt;&lt;/span&gt; 
+      &lt;span class="line"&gt;&lt;/span&gt; 
     &lt;/div&gt;
 
     &lt;div class="nav-list"&gt;
@@ -1044,7 +1048,10 @@
           Use a callout segment for any kind of content that you want to emphasize. To use this component, you use the HTML5 <code>&lt;section&gt;</code> tag with a class of <strong>segment</strong>.
         </p>
 
+        <p class="explanation"></p>
+        
         <h4 class="site-sub-subheader"><strong>Example</strong></h4>
+        
 
         <section class="segment">
           
@@ -1109,8 +1116,8 @@
 
   &lt;div class="sidebar-content"&gt;
     
-    &lt;a class="sidebar-topic" href='#...'&gt;<span class='txt-muted'>Furniture</span>&lt;/a&gt;
-    &lt;a class="sidebar-subtopic" href='#...'&gt;<span class='txt-muted'>Sofas</span>&lt;/a&gt;
+    &lt;a class=<mark>"sidebar-topic"</mark> href='#...'&gt;<span class='txt-muted'>Furniture</span>&lt;/a&gt;
+    &lt;a class=<mark>"sidebar-subtopic"</mark> href='#...'&gt;<span class='txt-muted'>Sofas</span>&lt;/a&gt;
     &lt;a class="sidebar-subtopic" href='#...'&gt;<span class='txt-muted'>Desks</span>&lt;/a&gt;
     
   &lt;/div&gt;
@@ -1133,26 +1140,33 @@
 
         <h3 class="site-subheader">Thumbnails/Cards</h3>
         <p class="explanation">
-          Card thumbnails uses HTML5 <code>&lt;figure&gt;</code> tag with a class of <strong>tn-card</strong> and are 270px in width.
+          Card thumbnails  and are 270px in width and are created with:
+        </p>
+        <p class="explanation">
+          <code>&lt;figure class="tn-card&gt;</code> 
         </p>
         <div class="grid-container guttered">
           <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
             <figure class="tn-card">
-              <img  class="card-image" alt="example-image" src="./images/butterfly.jpeg">
+              <div class="tn-img">
+                  <img alt="example-image" src="./images/butterfly.jpeg">
+              </div>
               <figcaption>
-                <h4><strong>Tiny Butterfly</strong></h4>
-                <p>So delicate sitting there. </p>
-                <p>On a flower.</p>
+                <h4><strong>(Simple Card</strong></h4>
+                <p>Image inside <code>&lt;figure&gt;</code>will naturally extend to 100% width of its container</p> 
+                <p>The image's height will scale to its original proportion.</p>
                 <button class="btn sm">Buy</button>
               </figcaption>
             </figure>
           </div>
           <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
             <figure class="tn-card">
-              <img  class="card-image" alt="example-image" src="./images/friendly.jpeg">
+              <div class="tn-img padded-img">
+                <img  class="card-image" alt="example-image" src="./images/friendly.jpeg">
+              </div>
               <figcaption>
-                <h4><strong>Baby Shampoo</strong></h4>
-                <p>I love u baby shampoo. You make my hair feel so soft and I know that you will never make me cry.</p>
+                <h4><strong>Padded Tile</strong></h4>
+                <p>You can create padding inside the image-figure by wrapping the <code>&lt;img&gt;</code> with: <br/><br/><code>&lt;div class="tn-img padded-img"&gt;</code> </p>
               </figcaption>
               <figcaption class="more-info">
                 <p>
@@ -1163,32 +1177,90 @@
           </div>
           <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
             <figure class="tn-card">
-              <img  class="card-image" alt="example-image" src="./images/how-to-use.jpeg">
+              <div class="tn-img tile sm-1-to-1">
+                <div class="tile-content">
+                  <div class="img-stretch">
+                    <img alt="example-image" src="./images/how-to-use.jpeg">
+                  </div>
+                </div>
+              </div>
               <figcaption>
-                <h4><strong>My Bella</strong></h4>
-                <p>Come here little guy, I think you need to take a bath. I can smell you from here. It is bath time.</p>
+                <h4><strong>Advanced Tile</strong></h4>
+                <p>This is an example of an image inside a <a href="#docs-tiles">responsive tile</a> that has a height/width ratio of 1:1</p>
               </figcaption>
               <figcaption class="more-info">
                 <p>
-                You should be making this easier.
+                See the code below
                 </p>
               </figcaption>
             </figure>
           </div>
         </div>
-<pre><code>&lt;figure class="tn-card"&gt;
+<pre><code><span class="txt-muted">&lt;div class="grid-container"&gt;
+   &lt;div class="sm-12-x-12 md-4-x-12"&gt;</span>
+      
+      <span class="txt-muted">&lt;!--<mark>Simple Card</mark>--&gt;</span>
+      &lt;figure class="tn-card"&gt;
+         
+         &lt;div class="tn-img padded-img"/&gt;
+            &lt;img alt="..." src="..."&gt;
+         &lt;/div&gt;
+      
+         &lt;figcaption&gt;
+            <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+         &lt;/figcaption&gt;
 
-  &lt;img class="card-image" alt="..." src="..."&gt;
-  
-  &lt;figcaption&gt;
-    <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
-  &lt;/figcaption&gt;
+         &lt;figcaption class="more-info"&gt;
+            <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
+         &lt;/figcaption&gt;
 
-  &lt;figcaption class="more-info"&gt;
-    <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
-  &lt;/figcaption&gt;
+      &lt;/figure&gt;<span class="txt-muted">
+   &lt;/div&gt;</span>
+    
+   <span class="txt-muted">&lt;div class="sm-12-x-12 md-4-x-12"&gt;</span>
+      
+      <span class="txt-muted">&lt;!--<mark>Padded Card</mark>--&gt;</span>
+      &lt;figure class="tn-card"&gt;
+         &lt;div class="tn-img padded-img"/&gt;
+            &lt;img alt="..." src="..."&gt;
+         &lt;/div&gt;
+      
+         &lt;figcaption&gt;
+            <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+         &lt;/figcaption&gt;
 
-&lt;/figure&gt;
+         &lt;figcaption class="more-info"&gt;
+            <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
+         &lt;/figcaption&gt;
+
+      &lt;/figure&gt;<span class="txt-muted">
+   &lt;/div&gt;</span>
+
+   <span class="txt-muted">&lt;div class="sm-12-x-12 md-4-x-12"&gt;</span>
+
+      <span class="txt-muted">&lt;!--<mark>Advanced Card</mark>--&gt;</span>
+      &lt;figure class="tn-card"&gt;
+         
+         
+         &lt;div class="tn-img tile sm-1-to-1"&gt;
+           &lt;div class="tile-content"&gt;
+             &lt;div class="img-stretch"&gt;
+               &lt;img alt="example-image" src="./images/how-to-use.jpeg"&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+      
+         &lt;figcaption&gt;
+            <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+         &lt;/figcaption&gt;
+
+         &lt;figcaption class="more-info"&gt;
+            <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
+         &lt;/figcaption&gt;
+
+      &lt;/figure&gt;<span class="txt-muted">
+   &lt;/div&gt;</span>
+
 </code></pre>
         </div>
 

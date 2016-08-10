@@ -25,11 +25,8 @@ markdown: kramdown
 exclude: [node_modules, gulpfile.js, bower_component, exec]
 gems: 
   - jekyll-paginate 
-  - jekyll-autoprefixer
+  - octopress-autoprefixer
 
-autoprefixer:
-  browsers:
-  - > 5%
 
 #Development-Settings
 # url: "http://localhost:3000" # the base hostname & protocol for your site

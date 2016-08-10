@@ -824,18 +824,18 @@ aside {
     .nav-bar input.hamburger-toggler:checked ~ .hamburger-menu > span.line:nth-child(1) {
       top: 50%;
       left: 0;
-      -webkit-transform: translate(0, -50%) rotate(45deg);
-              transform: translate(0, -50%) rotate(45deg); }
+      -webkit-transform: translate(0, -50%) rotate(-45deg);
+      transform: translate(0, -50%) rotate(45deg); }
     .nav-bar input.hamburger-toggler:checked ~ .hamburger-menu > span.line:nth-child(2) {
       top: 50%;
       left: 0;
-      -webkit-transform: translate(0, -50%) rotate(45deg);
-              transform: translate(0, -50%) rotate(45deg); }
+      -webkit-transform: translate(0, -50%) rotate(-45deg);
+      transform: translate(0, -50%) rotate(45deg); }
     .nav-bar input.hamburger-toggler:checked ~ .hamburger-menu > span.line:nth-child(3) {
       top: 50%;
       left: 0;
       -webkit-transform: translate(0, -50%) rotate(-45deg);
-              transform: translate(0, -50%) rotate(-45deg); }
+      transform: translate(0, -50%) rotate(-45deg); }
   .nav-bar input.hamburger-toggler:hover:checked ~ .hamburger-menu > span.line {
     background: #333; }
 
@@ -1090,7 +1090,7 @@ code {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%); }
 
 .img-stretch {
   position: relative;

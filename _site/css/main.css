@@ -744,7 +744,7 @@ aside {
         top: 50%;
         left: 10px;
         -webkit-transform: translate(0, -50%);
-                transform: translate(0, -50%);
+        transform: translate(0, -50%);
         display: block;
         margin: 0;
         max-width: 210px;
@@ -862,7 +862,7 @@ aside {
     -webkit-transition: all .2s;
     transition: all .2s;
     -webkit-transform: translate(0, -50%);
-            transform: translate(0, -50%); }
+    transform: translate(0, -50%); }
     .hamburger-menu > span.line:nth-child(1) {
       top: 10%;
       left: 0; }

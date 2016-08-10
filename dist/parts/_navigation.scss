@@ -178,10 +178,11 @@ $hamburger-dropdown-bg-color: rgba(255,255,255,.95);
         &:nth-child(1){
           top: 50%; left: 0; 
           -webkit-transform: translate(-50%, -50%);
-
           transform: translate(0, -50%) rotate(45deg);
         }
-        &:nth-child(2){top: 50%; left: 0; transform: translate(0, -50%) rotate(45deg);}
+
+        &:nth-child(2){
+          top: 50%; left: 0; transform: translate(0, -50%) rotate(45deg);}
         &:nth-child(3){top: 50%; left: 0; transform: translate(0, -50%) rotate(-45deg);}
       }
       

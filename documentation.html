@@ -63,7 +63,7 @@ navigable: false
         </p>
         
       </div>
-      <p class="explanation">&nbsp;</p>
+      <p class="explanation"></p>
       <div class="container-narrow">
         <h4 class="site-sub-subheader"><strong>Container-narrow</strong></h4>
 <pre><code>&lt;div class="container-narrow"&gt;
@@ -80,7 +80,7 @@ navigable: false
 
       </div>
 
-      <p class="explanation">&nbsp;</p>
+      <p class="explanation"></p>
       <div class="container-narrow">
         <h4 class="site-sub-subheader"><strong>Container-full</strong></h4>
 <pre><code>&lt;div class="container-full"&gt;
@@ -100,7 +100,9 @@ navigable: false
       <div class="container-narrow">
           <h3 class="site-subheader">Grid</h3>
           <p class="explanation">
-            Grids <strong>must</strong> have an outer-div with a class of grid-container<br/><br/>
+            Grids <strong>must</strong> have an outer-div with a class of grid-container:
+          </p>
+          <p class="explanation">
             <code>&lt;div class="grid-container"&gt;</code>
           </p>
           <p class="explanation">
@@ -123,10 +125,9 @@ navigable: false
           </p>
 <pre><code>&lt;div class="grid-container"&gt;
 
-      &lt;div class="<mark>sm</mark>-[n]-x-12 <mark>md</mark>-[n]-x-12 <mark>lg</mark>-[n]-x-12"&gt;
-         <span class="txt-muted">&lt;!--your contents here--&gt;</span>
-      &lt;/div&gt;
-
+   &lt;div class="<mark>sm</mark>-[n]-x-12 <mark>md</mark>-[n]-x-12 <mark>lg</mark>-[n]-x-12"&gt;
+      <span class="txt-muted">&lt;!--your contents here--&gt;</span>
+   &lt;/div&gt;
 
 &lt;/div&gt;</code></pre>
 
@@ -148,7 +149,7 @@ navigable: false
             </ul> 
           </p>
          
-          <p class="explanation">&nbsp;</p>
+          <p class="explanation"></p>
 
           <h4 class="site-sub-subheader"><strong>Live Example</strong><br/><small>
           multiple grid-items in a grid-container</small></h4>
@@ -256,6 +257,7 @@ navigable: false
               </div>
               <hr>
               <div class="grid-container site-button-sizes">
+
                 <div class="sm-12-x-12 md-4-x-12">
                   <code>"btn sm"</code>
                 </div>
@@ -283,9 +285,9 @@ navigable: false
               <input type="button" class="primary" value="Primary">
               <div>
                 <code>&lt;button class="btn"&gt;</code><br/><br/>
-                <code>&lt;a class="btn primary"&gt;
+                <code>&lt;a class="btn primary"&gt;</code><br><br/>
                 <code>&lt;input class="btn primary" type="button" ... &gt;</code><br/><br/>
-                <code>&lt;input class="btn primary" type="submit" ...&gt;</code><br/>
+                <code>&lt;input class="btn primary" type="submit" ...&gt;</code>              
               </div>
               <hr>
 
@@ -402,7 +404,7 @@ navigable: false
 <span class="txt-muted">&lt;/form&gt;</span>
 </code></pre>
 
-    <p class="explanation">&nbsp;</p>
+    <p class="explanation"></p>
     <h4 class="site-sub-subheader">
       <strong>Quick Form</strong><br/>
       <small>simple inline-block elements</small>
@@ -500,6 +502,7 @@ navigable: false
       <div class="container-narrow">
         <h3 class="site-subheader">Hero-Header</h3>
         <p class="explanation">Commonly seen on landing pages.</p>
+        <p class="explanation"></p>
         <h4 class="site-sub-subheader"><strong>Example</strong></h4>
       </div>
 
@@ -539,13 +542,13 @@ navigable: false
         </p>
         <p class="explanation">
           <code>&lt;nav class="nav-bar"&gt;</code>. 
-        </p> 
+        </p>
         <p class="explanation">
           <strong>The hamburger menu is optional</strong>, however if you elect to include it, you must arrange your HTML in the ordering and naming of elements shown below.
         </p>  
 
-        </p>
-      
+        <p class="explanation"></p>
+
         <h4 class="site-sub-subheader"><strong>Example</strong></h4>
        
         <nav class="nav-bar">
@@ -578,6 +581,8 @@ navigable: false
 
     &lt;div class="hamburger-menu"&gt;
       &lt;span class="line"&gt;&lt;/span&gt; 
+      &lt;span class="line"&gt;&lt;/span&gt; 
+      &lt;span class="line"&gt;&lt;/span&gt; 
     &lt;/div&gt;
 
     &lt;div class="nav-list"&gt;
@@ -594,7 +599,10 @@ navigable: false
           Use a callout segment for any kind of content that you want to emphasize. To use this component, you use the HTML5 <code>&lt;section&gt;</code> tag with a class of <strong>segment</strong>.
         </p>
 
+        <p class="explanation"></p>
+        
         <h4 class="site-sub-subheader"><strong>Example</strong></h4>
+        
 
         <section class="segment">
           
@@ -683,26 +691,33 @@ navigable: false
 
         <h3 class="site-subheader">Thumbnails/Cards</h3>
         <p class="explanation">
-          Card thumbnails uses HTML5 <code>&lt;figure&gt;</code> tag with a class of <strong>tn-card</strong> and are 270px in width.
+          Card thumbnails  and are 270px in width and are created with:
+        </p>
+        <p class="explanation">
+          <code>&lt;figure class="tn-card&gt;</code> 
         </p>
         <div class="grid-container guttered">
           <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
             <figure class="tn-card">
-              <img  class="card-image" alt="example-image" src="./images/butterfly.jpeg">
+              <div class="tn-img">
+                  <img alt="example-image" src="./images/butterfly.jpeg">
+              </div>
               <figcaption>
-                <h4><strong>Tiny Butterfly</strong></h4>
-                <p>So delicate sitting there. </p>
-                <p>On a flower.</p>
+                <h4><strong>(Simple Card</strong></h4>
+                <p>Image inside <code>&lt;figure&gt;</code>will naturally extend to 100% width of its container</p> 
+                <p>The image's height will scale to its original proportion.</p>
                 <button class="btn sm">Buy</button>
               </figcaption>
             </figure>
           </div>
           <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
             <figure class="tn-card">
-              <img  class="card-image" alt="example-image" src="./images/friendly.jpeg">
+              <div class="tn-img padded-img">
+                <img  class="card-image" alt="example-image" src="./images/friendly.jpeg">
+              </div>
               <figcaption>
-                <h4><strong>Baby Shampoo</strong></h4>
-                <p>I love u baby shampoo. You make my hair feel so soft and I know that you will never make me cry.</p>
+                <h4><strong>Padded Tile</strong></h4>
+                <p>You can create padding inside the image-figure by wrapping the <code>&lt;img&gt;</code> with: <br/><br/><code>&lt;div class="tn-img padded-img"&gt;</code> </p>
               </figcaption>
               <figcaption class="more-info">
                 <p>
@@ -713,32 +728,90 @@ navigable: false
           </div>
           <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
             <figure class="tn-card">
-              <img  class="card-image" alt="example-image" src="./images/how-to-use.jpeg">
+              <div class="tn-img tile sm-1-to-1">
+                <div class="tile-content">
+                  <div class="img-stretch">
+                    <img alt="example-image" src="./images/how-to-use.jpeg">
+                  </div>
+                </div>
+              </div>
               <figcaption>
-                <h4><strong>My Bella</strong></h4>
-                <p>Come here little guy, I think you need to take a bath. I can smell you from here. It is bath time.</p>
+                <h4><strong>Advanced Tile</strong></h4>
+                <p>This is an example of an image inside a <a href="#docs-tiles">responsive tile</a> that has a height/width ratio of 1:1</p>
               </figcaption>
               <figcaption class="more-info">
                 <p>
-                You should be making this easier.
+                See the code below
                 </p>
               </figcaption>
             </figure>
           </div>
         </div>
-<pre><code>&lt;figure class="tn-card"&gt;
+<pre><code><span class="txt-muted">&lt;div class="grid-container"&gt;
+   &lt;div class="sm-12-x-12 md-4-x-12"&gt;</span>
+      
+      <span class="txt-muted">&lt;!--<mark>Simple Card</mark>--&gt;</span>
+      &lt;figure class="tn-card"&gt;
+         
+         &lt;div class="tn-img padded-img"/&gt;
+            &lt;img alt="..." src="..."&gt;
+         &lt;/div&gt;
+      
+         &lt;figcaption&gt;
+            <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+         &lt;/figcaption&gt;
 
-  &lt;img class="card-image" alt="..." src="..."&gt;
-  
-  &lt;figcaption&gt;
-    <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
-  &lt;/figcaption&gt;
+         &lt;figcaption class="more-info"&gt;
+            <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
+         &lt;/figcaption&gt;
 
-  &lt;figcaption class="more-info"&gt;
-    <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
-  &lt;/figcaption&gt;
+      &lt;/figure&gt;<span class="txt-muted">
+   &lt;/div&gt;</span>
+    
+   <span class="txt-muted">&lt;div class="sm-12-x-12 md-4-x-12"&gt;</span>
+      
+      <span class="txt-muted">&lt;!--<mark>Padded Card</mark>--&gt;</span>
+      &lt;figure class="tn-card"&gt;
+         &lt;div class="tn-img padded-img"/&gt;
+            &lt;img alt="..." src="..."&gt;
+         &lt;/div&gt;
+      
+         &lt;figcaption&gt;
+            <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+         &lt;/figcaption&gt;
 
-&lt;/figure&gt;
+         &lt;figcaption class="more-info"&gt;
+            <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
+         &lt;/figcaption&gt;
+
+      &lt;/figure&gt;<span class="txt-muted">
+   &lt;/div&gt;</span>
+
+   <span class="txt-muted">&lt;div class="sm-12-x-12 md-4-x-12"&gt;</span>
+
+      <span class="txt-muted">&lt;!--<mark>Advanced Card</mark>--&gt;</span>
+      &lt;figure class="tn-card"&gt;
+         
+         
+         &lt;div class="tn-img tile sm-1-to-1"&gt;
+           &lt;div class="tile-content"&gt;
+             &lt;div class="img-stretch"&gt;
+               &lt;img alt="example-image" src="./images/how-to-use.jpeg"&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+      
+         &lt;figcaption&gt;
+            <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+         &lt;/figcaption&gt;
+
+         &lt;figcaption class="more-info"&gt;
+            <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
+         &lt;/figcaption&gt;
+
+      &lt;/figure&gt;<span class="txt-muted">
+   &lt;/div&gt;</span>
+
 </code></pre>
         </div>
 

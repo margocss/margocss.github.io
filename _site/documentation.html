@@ -11,9 +11,9 @@
 ">
   
   <link rel="icon" type="image/png" href="./images/favicon.png">
-  <link rel="stylesheet" href="https://margocss.github.io/css/main.css">
-  <link rel="canonical" href="https://margocss.github.io/documentation.html">
-  <link rel="alternate" type="application/rss+xml" title="Welcome" href="https://margocss.github.io/feed.xml">
+  <link rel="stylesheet" href="http://localhost:3000/css/main.css">
+  <link rel="canonical" href="http://localhost:3000/documentation.html">
+  <link rel="alternate" type="application/rss+xml" title="Welcome" href="http://localhost:3000/feed.xml">
 </head>
 
 
@@ -22,7 +22,7 @@
 <nav class="nav-bar with-logo fixed">
   
   <div class="nav-logo">
-    <a href="https://margocss.github.io">
+    <a href="http://localhost:3000">
       <img src="./images/molecule2.png" alt="logo" class="site-nav-logo">
     </a>
   </div>
@@ -37,7 +37,7 @@
   
   <div class="nav-list">
       
-        <a href="https://margocss.github.io">
+        <a href="http://localhost:3000">
           Home
         </a>
       
@@ -75,7 +75,7 @@
       
         
           
-          <a href="https://margocss.github.io/raw-demo.html">
+          <a href="http://localhost:3000/raw-demo.html">
               Raw Demo
           </a>
           
@@ -84,7 +84,7 @@
       
         
           
-          <a href="https://margocss.github.io/showcase.html">
+          <a href="http://localhost:3000/showcase.html">
               Showcase
           </a>
           
@@ -1186,13 +1186,8 @@
                 </div>
               </div>
               <figcaption>
-                <h4><strong>Advanced Card</strong></h4>
+                <h4><strong>Tile Card</strong></h4>
                 <p>This is an example of an image inside a <a href="#docs-tiles">responsive tile</a> that has a height/width ratio of 1:1</p>
-              </figcaption>
-              <figcaption class="more-info">
-                <p>
-                See the code below
-                </p>
               </figcaption>
             </figure>
           </div>
@@ -1204,7 +1199,7 @@
       &lt;figure class="tn-card"&gt;
          
          &lt;div class="tn-img padded-img"/&gt;
-            &lt;img alt="..." src="..."&gt;
+            &lt;img src="..."&gt;
          &lt;/div&gt;
       
          &lt;figcaption&gt;
@@ -1223,7 +1218,7 @@
       <span class="txt-muted">&lt;!--<mark>Padded Card</mark>--&gt;</span>
       &lt;figure class="tn-card"&gt;
          &lt;div class="tn-img padded-img"/&gt;
-            &lt;img alt="..." src="..."&gt;
+            &lt;img src="..."&gt;
          &lt;/div&gt;
       
          &lt;figcaption&gt;
@@ -1239,24 +1234,19 @@
 
    <span class="txt-muted">&lt;div class="sm-12-x-12 md-4-x-12"&gt;</span>
 
-      <span class="txt-muted">&lt;!--<mark>Advanced Card</mark>--&gt;</span>
+      <span class="txt-muted">&lt;!--<mark>Tile Card</mark>--&gt;</span>
       &lt;figure class="tn-card"&gt;
-         
          
          &lt;div class="tn-img tile sm-1-to-1"&gt;
            &lt;div class="tile-content"&gt;
              &lt;div class="img-stretch"&gt;
-               &lt;img alt="example-image" src="./images/how-to-use.jpeg"&gt;
+               &lt;img src="..."&gt;
              &lt;/div&gt;
            &lt;/div&gt;
          &lt;/div&gt;
       
          &lt;figcaption&gt;
             <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
-         &lt;/figcaption&gt;
-
-         &lt;figcaption class="more-info"&gt;
-            <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
          &lt;/figcaption&gt;
 
       &lt;/figure&gt;<span class="txt-muted">
@@ -1435,22 +1425,20 @@
 <pre><code><span class="txt-muted">&lt;div class="grid-container"&gt;
 
    &lt;div class="sm-12-x-12 md-6-x-12"&gt;</span>
-      &lt;div class="tile sm-2-to-1"&gt;
+      &lt;div class="<span class="bg-success">tile sm-2-to-1"</span>&gt;
          &lt;div class="tile-content padded-tile"&gt;<span class="txt-muted">
-            &lt;h2&gt;Speaker&lt;/h2&gt;
-            &lt;p&gt;Ramsey Chang&lt;/p&gt;
-            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, ipsa.&lt;/p&gt;</span>
+             &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, ipsa.&lt;/p&gt;</span>
          &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class="tile sm-2-to-1"&gt;
+      &lt;div class="<span class="bg-info">tile sm-2-to-1"</span>&gt;
          &lt;div class="tile-content contents-centered"&gt;<span class="txt-muted">
-            &lt;h3&gt;Email&lt;/h3&gt;</span>
+            &lt;h3&gt;Ramsey Jung&lt;/h3&gt;</span>
          &lt;/div&gt;
       &lt;/div&gt;
    <span class="txt-muted">&lt;/div&gt;
 
    &lt;div class="sm-12-x-12 md-6-x-12"&gt;</span>
-      &lt;div class="tile sm-1-to-1"&gt;
+      &lt;div class="<span class="bg-warn">tile sm-1-to-1</span>"&gt;
          &lt;div class="tile-content padded-tile"&gt;<span class="txt-muted">
             &lt;div class="img-stretch"&gt;
                &lt;img src="..."/&gt;

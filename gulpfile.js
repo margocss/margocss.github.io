@@ -20,22 +20,27 @@ gulp.task('serve', function(){
   gulp.watch('_site/**/*.*')//.on('change', function(){ browserSync.reload() })
 })
 
-gulp.task('minify-dist-css', function(){
+gulp.task('minify-dist-css', ['run-autoprefix'], function(){
   return gulp.src('./_site/css/main.css')
     .pipe(cleanCSS())
     .pipe(rename('margo.min.css'))
     .pipe(gulp.dest('dist'))
-
-
 })
 
-gulp.task('minify-production-css', function(){
+gulp.task('minify-production-css', ['run-autoprefix'], function(){
   return gulp.src('./_site/css/main.css')
     .pipe(cleanCSS())
     .pipe(rename('main.min.css'))
     .pipe(gulp.dest('./_site/css'))
 
 })
+
+gulp.task('run-autoprefix', function(){
+  return gulp.src('./_site/css/main.css')
+    .pipe(autoprefixer({ browsers: ['> 5%'] }))
+    .pipe(gulp.dest('./_site/css/'))
+})
+
 
 
 gulp.task('build-production', shell.task([
@@ -58,4 +63,4 @@ gulp.task('dev', ['build-dev', 'serve']);
 
 gulp.task('production', ['build-production', 'minify-production-css']);
 
-gulp.task('dist', ['build-dist', 'minify-dist-css']);
+gulp.task('dist', ['build-dist', 'minify-dist-css']); 

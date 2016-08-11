@@ -183,8 +183,8 @@ $hamburger-dropdown-bg-color: rgba(255,255,255,.95);
           transform: translate(0, -50%) rotate(45deg);}
 
         &:nth-child(3){top: 50%; left: 0; 
-          -webkit-transform: translate(0, -50%) rotate(-45deg);
-          transform: translate(0, -50%) rotate(-45deg);}
+          -webkit-transform: translate(0, -50%) rotate(45deg);
+          transform: translate(0, -50%) rotate(45deg);}
       }
       
     }

@@ -3,13 +3,8 @@
 ---
 @charset "utf-8";
 
-
-
-@import "../_sass/mixins";
 @import "../_sass/lib/margo.scss";
 
-
-@import "../_sass/site-styles";
-@import "../_sass/porfolio-styles";
-
-@import "../_sass/recipes/toggle-sidebar";
+@import "../_sass/site/site-styles";
+@import "../_sass/site/porfolio-styles";
+@import "../_sass/site/recipes/toggle-sidebar";

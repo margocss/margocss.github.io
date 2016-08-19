@@ -1627,19 +1627,19 @@ a[name^='docs'] {
       font-family: "PT Serif", "Palatino", serif;
       font-size: 1.25rem; }
 
-.sidebar,
-input {
+.sidebar.popout-left,
+input.sidebar-toggler {
   -webkit-transition: all .2s;
   transition: all .2s; }
 
-.sidebar {
+.sidebar.popout-left {
   left: -220px; }
 
-input.sidebar-toggler:checked ~ .sidebar {
+input.sidebar-toggler:checked ~ .sidebar.popout-left {
   left: 0; }
 
 input.sidebar-toggler {
-  cursor: hover;
+  cursor: pointer;
   position: fixed;
   top: 5px;
   left: 5px;
@@ -1684,36 +1684,33 @@ input.sidebar-toggler:checked + .sidebar-arrow {
 
 .sidebar-arrow span.line:nth-child(1) {
   position: absolute;
-  top: 49%;
-  right: 8%;
-  left: initial;
+  top: 15%;
+  left: 50%;
   background: #010101;
-  width: 90%;
+  width: 75%;
   height: 4px;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%); }
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0); }
 
 .sidebar-arrow span.line:nth-child(2) {
   position: absolute;
-  top: 66.666%;
-  right: 0;
-  left: initial;
+  top: 50%;
+  left: 100%;
   background: black;
-  width: 49%;
-  height: 3px;
-  -webkit-transform: rotate(-45deg) translate(0, -50%);
-          transform: rotate(-45deg) translate(0, -50%); }
+  width: 40%;
+  height: 4px;
+  -webkit-transform: translate(-145%, -50%);
+          transform: translate(-145%, -50%); }
 
 .sidebar-arrow span.line:nth-child(3) {
   position: absolute;
-  top: 33.3333%;
-  right: 1%;
-  left: initial;
+  top: 85%;
+  left: 50%;
   background: black;
-  width: 50%;
-  height: 3px;
-  -webkit-transform: rotate(45deg) translate(0, -50%);
-          transform: rotate(45deg) translate(0, -50%); }
+  width: 75%;
+  height: 4px;
+  -webkit-transform: translate(-50%, -100%);
+          transform: translate(-50%, -100%); }
 
 .sidebar-toggler:checked + .sidebar-arrow span.line:nth-child(1) {
   position: absolute;
@@ -1723,8 +1720,7 @@ input.sidebar-toggler:checked + .sidebar-arrow {
   background: rgba(1, 1, 1, 0.3);
   width: 90%;
   height: 4px;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%); }
+  opacity: 0; }
 
 .sidebar-toggler:checked + .sidebar-arrow span.line:nth-child(2) {
   position: absolute;

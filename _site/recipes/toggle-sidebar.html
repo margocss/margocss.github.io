@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700|PT+Sans:400,700' rel='stylesheet' type='text/css'>
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +11,7 @@
   
   <link rel="icon" type="image/png" href="./images/favicon.png">
   <link rel="stylesheet" href="http://localhost:3000/css/main.css">
-  <link rel="canonical" href="http://localhost:3000/portfolio/tiy-demo-day.html">
+  <link rel="canonical" href="http://localhost:3000/recipes/toggle-sidebar.html">
   <link rel="alternate" type="application/rss+xml" title="Welcome" href="http://localhost:3000/feed.xml">
 </head>
 
@@ -35,9 +33,24 @@
   </style>
   <body>
 
-    <div class="container-narrow">
-  <h1>TIY Demo Day</h1>
+    <input type="checkbox" class="sidebar-toggler"/>
+
+<div class="sidebar-arrow">
+  <span class="line"></span>
+  <span class="line"></span>  
+  <span class="line"></span>    
 </div>
+
+<aside class="sidebar ">
+  <div class="sidebar-content">
+    <a class="sidebar-topic" href='#'>My Profile</a>
+    <a class="sidebar-topic" href='#'>Friends</a>
+    <a class="sidebar-topic" href='#'>Family</a>
+    <a class="sidebar-topic" href='#'>Statistics</a>
+    <a class="sidebar-topic" href='#'>Log Out</a>
+  </div>
+</aside>
+<div>
 
     <a id="go-to-main" href="http://localhost:3000/portfolio.html">BACK</a> 
     <script src="../js/main.js"></script>

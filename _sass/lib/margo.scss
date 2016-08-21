@@ -13,22 +13,22 @@ img { max-width: 100%; }
 
 
 
-@import "./lib/parts/mixins";
-@import "./lib/parts/variables";
+@import "./lib/parts/_mixins.scss";
+@import "./lib/parts/_variables.scss";
 
-@import "./lib/parts/containers";
-@import "./lib/parts/grid";
-@import "./lib/parts/typography";
-@import "./lib/parts/lists";
-@import "./lib/parts/buttons";
-@import "./lib/parts/forms";
-@import "./lib/parts/sidebar";
-@import "./lib/parts/header-hero";
-@import "./lib/parts/navigation";
-@import "./lib/parts/tables";
-@import "./lib/parts/thumbnail-cards";
-@import "./lib/parts/segment";
-@import "./lib/parts/miscellaneous";
-@import "./lib/parts/helpers";
+@import "./lib/parts/_containers.scss";
+@import "./lib/parts/_grid.scss";
+@import "./lib/parts/_typography.scss";
+@import "./lib/parts/_lists.scss";
+@import "./lib/parts/_buttons.scss";
+@import "./lib/parts/_forms.scss";
+@import "./lib/parts/_sidebar.scss";
+@import "./lib/parts/_header-hero.scss";
+@import "./lib/parts/_navigation.scss";
+@import "./lib/parts/_tables.scss";
+@import "./lib/parts/_thumbnail-cards.scss";
+@import "./lib/parts/_segment.scss";
+@import "./lib/parts/_miscellaneous.scss";
+@import "./lib/parts/_helpers.scss";
 
 

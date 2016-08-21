@@ -1,0 +1,75 @@
+---
+layout: recipes
+permalink: /recipes/pagination.html
+---
+
+<style>
+  .pagination{
+    list-style-type: none;
+    padding:  0;
+    font-size:  0;
+  }
+
+  .pagination > * {
+    display:  inline-block;
+  }
+
+ 
+  
+  .page-nums .active{
+    background: rgba(247, 202, 24, 1.0);
+  }
+
+  .page-older > *:nth-of-type(n+1),
+  .page-newer > *:nth-of-type(n+1),
+  .page-nums > *:nth-of-type(n+1) {
+    margin-left:  -1px ;
+  }
+  
+  .page-older{
+    margin-right: .5rem;
+  }
+
+  .page-newer{
+    margin-left: .5rem;
+  }
+  
+  .page-nums > *,
+  .page-older > *,
+  .page-newer > *{
+    font-size:  medium;
+    padding:  0 .5rem;
+    display: inline-block;
+    border: 1px solid #333;
+    text-align:  center;
+    line-height:  50px; height: 50px;
+    text-decoration:  none;
+    min-width: 50px;
+  }
+  
+
+</style>
+
+<div class="container-narrow">
+<h2>Pagination</h2>
+
+<div class="pagination">
+  
+  <div class="page-older">
+    <a href="#">Next</a>
+  </div>
+
+  <div class="page-nums">
+    <a>1</a>
+    <a>2</a>
+    <a class="active">3</a>
+    <a>4</a>
+    <a>5</a>
+  </div>
+
+  <div class="page-newer">
+    <a href="#">Previous</a>
+  </div>
+</div>
+
+</div>

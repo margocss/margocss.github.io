@@ -870,10 +870,8 @@ aside {
       top: 90%;
       left: 0; }
 
-div.table-full-width {
-  overflow: scroll; }
-  div.table-full-width > table {
-    width: 100%; }
+div.table-full-width > table {
+  width: 100%; }
 
 table {
   border-collapse: collapse;
@@ -1048,15 +1046,20 @@ pre {
       font-size: 1.125rem; } }
   @media screen and (min-width: 1000px) {
     pre {
-      font-size: 1.25rem; } }
+      font-size: 1.125rem; } }
+  pre code {
+    padding: 0; }
 
 code {
   background: #eeeeee;
   color: #96281B;
   padding: .1em .2em;
   margin: 0 1px;
-  font-size: 1.125em;
-  font-family: monospace; }
+  font-family: monospace;
+  font-size: 1em; }
+  @media screen and (min-width: 750px) {
+    code {
+      font-size: 1.125em; } }
 
 .link-list-box {
   border: 1px #eeeeee solid; }

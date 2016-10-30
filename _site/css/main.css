@@ -954,7 +954,7 @@ table {
 
 figure,
 .tn-card {
-  max-width: 270px;
+  width: 100%;
   margin: .5rem auto;
   border: #bfbfbf 1px solid;
   box-shadow: 0 1px 2px 0 rgba(191, 191, 191, 0.5);
@@ -1282,6 +1282,22 @@ table.striped tbody tr.bg-disabled {
   background: #d2d7d3;
   opacity: 0.4; }
 
+.ez-2-col {
+  margin: 0;
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  position: relative;
+  z-index: 7; }
+  .ez-2-col + .ez-2-col {
+    padding-left: .1em;
+    margin-left: -.30rem !important;
+    z-index: 6; }
+  .ez-2-col.long-col {
+    width: 75%; }
+  .ez-2-col.short-col {
+    width: 25%; }
+
 .site-nav-logo {
   width: 30px; }
   @media screen and (min-width: 750px) {
@@ -1402,7 +1418,8 @@ div.site-demo-code-block {
 
 .site-header {
   padding: 3px;
-  color: #3a539b;
+  background: #3a539b;
+  color: #fff;
   opacity: .25;
   font-weight: 200; }
   @media screen and (min-width: 750px) {

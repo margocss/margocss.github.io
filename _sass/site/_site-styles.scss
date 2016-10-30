@@ -17,14 +17,14 @@ header.site-demo-hero{
   position: relative;
   background: #E0EAFC; /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #E0EAFC , #CFDEF3); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+  background: linear-gradient(to left, #E0EAFC , #CFDEF3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin-top: #{$nav-height * .75}px;
   color: $light-primary;
 
   @include media-query($med-screen){
     margin-top: #{$nav-height * 1}px;
   }
-  
+
 
   h1{
     margin-bottom: .5rem;
@@ -68,7 +68,7 @@ header.site-demo-hero{
   padding: 1rem 0 ;
   background: $faint-gray;
   margin-top: 3rem;
-  
+
   section.segment{background: #fff;}
   .project-description{
     padding: 0 2.5%;
@@ -78,7 +78,7 @@ header.site-demo-hero{
 div.site-demo-code-block{
   width: 95%;
   margin: 1rem auto;
-  padding: .625rem .5rem;  
+  padding: .625rem .5rem;
   background: $faint-gray;
   > .site-lg-code-example {
     line-height: 1.5;
@@ -152,12 +152,12 @@ div.site-demo-code-block{
 
 .major-section + .container-narrow > .site-subheader:nth-child(1) {
   margin-top: 1.5rem;
-  
+
   @include media-query($med-screen){
     margin-top: 3rem;
   }
 
-  @include media-query($lg-screen){ 
+  @include media-query($lg-screen){
     margin-top: 4rem;
   }
 }
@@ -166,25 +166,26 @@ div.site-demo-code-block{
 
 .site-header{
   padding: $general-site-padding;
-  color: $strong-header;
+  background: $strong-header;
+  color: #fff;
   opacity: .25;
   font-weight: 200;
   @include media-query($med-screen){
-    font-size: 3em;  
+    font-size: 3em;
   }
   @include media-query($lg-screen){
-    font-size: 6em;  
+    font-size: 6em;
   }
 }
 
 .site-subheader{
   margin-top: 3rem;
-  
+
   @include media-query($med-screen){
     margin-top: 6rem;
   }
-  
-  @include media-query($lg-screen){ 
+
+  @include media-query($lg-screen){
     margin-top: 8rem;
   }
 
@@ -210,7 +211,7 @@ div.site-demo-code-block{
   }
 
   @include media-query($lg-screen){
-    font-size: 1.125em;  
+    font-size: 1.125em;
   }
 }
 
@@ -298,7 +299,7 @@ aside.demo-docs-sidebar{
 }
 
 .site-docs-page{
-  
+
   .site-demo-header{
     h1{ position: relative; z-index: 4; }
     img{position: absolute; width: 150px; opacity: .1; z-index: 3; }

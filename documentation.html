@@ -107,7 +107,7 @@ navigable: false
           </p>
           <p class="explanation">
             The grid-items (columns) are nested inside grid-container and have the following format:<br/><br/>
-            <code>&lt;div class="sm-[n]-x-12 md-[n]-x-12 lg-[n]-x-12"&gt;</code>
+            <code>&lt;div class="sm-[n]-of-12 md-[n]-of-12 lg-[n]-of-12"&gt;</code>
           </p>
 
           <p class="explanation">
@@ -125,14 +125,14 @@ navigable: false
           </p>
 <pre><code>&lt;div class="grid-container"&gt;
 
-   &lt;div class="<mark>sm</mark>-[n]-x-12 <mark>md</mark>-[n]-x-12 <mark>lg</mark>-[n]-x-12"&gt;
+   &lt;div class="<mark>sm</mark>-[n]-of-12 <mark>md</mark>-[n]-of-12 <mark>lg</mark>-[n]-of-12"&gt;
       <span class="txt-muted">&lt;!--your contents here--&gt;</span>
    &lt;/div&gt;
 
 &lt;/div&gt;</code></pre>
 
           <p class="explanation">
-            Thus, the grid-item <code>&lt;div class="<span class="bg-info">sm-12-x-12</span> <span class="bg-success">md-6-x-12</span> <span class="bg-fail">lg-3-x-12</span>"&gt;</code> will be:
+            Thus, the grid-item <code>&lt;div class="<span class="bg-info">sm-12-of-12</span> <span class="bg-success">md-6-of-12</span> <span class="bg-fail">lg-3-of-12</span>"&gt;</code> will be:
             <ul>
               <li>
                 <p ><span class="bg-info">
@@ -158,11 +158,11 @@ navigable: false
           </p>
 <pre><code>&lt;div class="grid-container"&gt;
 
-   &lt;div class" sm-[n]-x-12 md-[n]-x-12 lg-[n]-x-12"&gt;...&lt;/div&gt;
+   &lt;div class" sm-[n]-of-12 md-[n]-of-12 lg-[n]-of-12"&gt;...&lt;/div&gt;
 
-   &lt;div class" sm-[n]-x-12 md-[n]-x-12 lg-[n]-x-12"&gt;...&lt;/div&gt;
+   &lt;div class" sm-[n]-of-12 md-[n]-of-12 lg-[n]-of-12"&gt;...&lt;/div&gt;
 
-   &lt;div class" sm-[n]-x-12 md-[n]-x-12 lg-[n]-x-12"&gt;...&lt;/div&gt;
+   &lt;div class" sm-[n]-of-12 md-[n]-of-12 lg-[n]-of-12"&gt;...&lt;/div&gt;
    ...
 
 &lt;/div&gt;</code></pre>
@@ -183,7 +183,7 @@ navigable: false
     <!--       <div class="container-narrow"> -->
             <h3 class="site-subheader">Typography</h3>
             <div class="grid-container guttered dual-example">
-              <div class="sm-12-x-12 lg-6-x-12">
+              <div class="sm-12-of-12 lg-6-of-12">
                 <h4 class="site-sub-subheader"><strong>Heading Tags</strong></h4>
                 <h1>Heading : &lt;h1&gt; </h1>
                 <h2>Heading : &lt;h2&gt; </h2>
@@ -192,33 +192,33 @@ navigable: false
                 <h5>Heading : &lt;h5&gt; </h5>
                 <h6>Heading : &lt;h6&gt; </h6>
               </div>
-              <div class="sm-12-x-12 lg-6-x-12">
+              <div class="sm-12-of-12 lg-6-of-12">
                 <h4 class="site-sub-subheader"><strong>Text Formats</strong></h4>
 
                   <p>The text <em>right here</em> is inside of a &lt;p&gt; tag. All font sizes and line heights are calculated based on rems. If you want to change the default font-size, you can set a baseline font-size value on the <code>html</code> and all of the typography will scale accordingly.  The standard paragraph text is sized at 1rem. And the default line-height is set to 1.625 on tablet/desktop for ideal legibility and 1.25 on mobile to accomodate the lesser screen height.</p>
 
                   <div class="grid-container site-text-formats">
-                    <div class="sm-6-x-12 md-4-x-12">
+                    <div class="sm-6-of-12 md-4-of-12">
                       <a href="#"> link example</a>
                       <br/>
                       ( in<code>&lt;a&gt;</code> tag )
                     </div>
-                    <div class="sm-6-x-12 md-4-x-12">
+                    <div class="sm-6-of-12 md-4-of-12">
                       <code>code syntax</code>
                       <br/>
                       ( in<code>&lt;code&gt;</code> tag )
                     </div>
-                    <div class="sm-6-x-12 md-4-x-12">
+                    <div class="sm-6-of-12 md-4-of-12">
                       <mark>highlighted text</mark>
                       <br/>
                       ( in <code>&lt;mark&gt;</code> tag )
                     </div>
-                    <div class="sm-6-x-12 md-4-x-12">
+                    <div class="sm-6-of-12 md-4-of-12">
                       <del>line-through text</del>
                       <br/>
                       ( in <code>&lt;del&gt;</code> )
                     </div>
-                    <div class="sm-6-x-12 md-4-x-12">
+                    <div class="sm-6-of-12 md-4-of-12">
                       <small>small text </small>
                       <br/>
                       (in <code>&lt;small&gt;</code> tag )
@@ -243,7 +243,7 @@ navigable: false
           <h3 class="site-subheader">Buttons</h3>
           <!-- <p class="explanation">There are two button styles (<strong>primary</strong> and <strong>normal</strong>) and four html syntaxes available for each style.</p> -->
           <div class="grid-container dual-example">
-            <div class="sm-12-x-12 lg-6-x-12">
+            <div class="sm-12-of-12 lg-6-of-12">
               <h4 class="site-sub-subheader"><strong>Default</strong></h4>
               <button>Normal</button>
               <div>
@@ -255,28 +255,28 @@ navigable: false
               <hr>
               <div class="grid-container site-button-sizes">
 
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <code>"btn sm"</code>
                 </div>
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <code>"btn md"</code>
                 </div>
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <code>"btn lg"</code>
                 </div>
 
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <button class="sm">Small</button>
                 </div>
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <button class="md">Medium</button>
                 </div>
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <button class="lg">Large</button>
                 </div>
               </div>
             </div>
-            <div class="sm-12-x-12 lg-6-x-12">
+            <div class="sm-12-of-12 lg-6-of-12">
               <h4 class="site-sub-subheader"><strong>Primary</strong></h4>
 
               <input type="button" class="primary" value="Primary">
@@ -289,23 +289,23 @@ navigable: false
               <hr>
 
               <div class="grid-container site-button-sizes">
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <code>"btn primary sm"</code>
                 </div>
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <code>"btn primary md"</code>
                 </div>
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <code>"btn primary lg"</code>
                 </div>
 
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <button class="btn sm primary">Small</button>
                 </div>
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <button class="btn md primary">Medium</button>
                 </div>
-                <div class="sm-12-x-12 md-4-x-12">
+                <div class="sm-12-of-12 md-4-of-12">
                   <button class="btn lg primary">Large</button>
                 </div>
               </div>
@@ -315,7 +315,7 @@ navigable: false
           <div style="position: relative"><a name="docs-lists"></a></div>
           <h3 class="site-subheader">Lists</h3>
           <div class="grid-container guttered dual-example">
-            <div class="sm-12-x-12 lg-6-x-12">
+            <div class="sm-12-of-12 lg-6-of-12">
               <h4 class="site-sub-subheader"><strong>Unordered List</strong></h4>
                 <ul>
                   <li>Order</li>
@@ -341,7 +341,7 @@ navigable: false
    &lt;li&gt;Butter&lt;/li&gt;
 &lt;/ul&gt;</code></pre>
             </div>
-            <div class="sm-12-x-12 lg-6-x-12">
+            <div class="sm-12-of-12 lg-6-of-12">
               <h4 class="site-sub-subheader"><strong>Ordered List</strong></h4>
                 <ol>
                   <li>Milk</li>
@@ -394,7 +394,7 @@ navigable: false
           </p>
 
 <pre><code><span class="txt-muted">&lt;form class="form-group"&gt;</span>
-   &lt;div class="<mark>form-field</mark> sm-12-x-12 md-4-x-12"&gt;
+   &lt;div class="<mark>form-field</mark> sm-12-of-12 md-4-of-12"&gt;
        &lt;label&gt; <span class="txt-muted">Username </span>&lt;/label&gt;
        &lt;input type="text"/&gt;
    &lt;/div&gt;
@@ -442,33 +442,33 @@ navigable: false
     </p>
 
     <p class="explanation">
-      <code>&lt;div class="<mark>form-field</mark> <mark>sm-[n]-x-12</mark> <mark>md-[n]-x-12</mark> ..."&gt;</code>
+      <code>&lt;div class="<mark>form-field</mark> <mark>sm-[n]-of-12</mark> <mark>md-[n]-of-12</mark> ..."&gt;</code>
     </p>
 
     {% include long_form.html %}
 
 <pre><code>&lt;form class="form-group grid-container"&gt;
-   &lt;div class="<mark>form-field</mark> <mark>sm-12-x-12</mark> <mark>md-4-x-12</mark>"&gt;
+   &lt;div class="<mark>form-field</mark> <mark>sm-12-of-12</mark> <mark>md-4-of-12</mark>"&gt;
        &lt;label&gt; <span class="txt-muted">First </span>&lt;/label&gt;
        &lt;input type="text"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+   &lt;div class="form-field sm-12-of-12 md-4-of-12"&gt;
        &lt;label&gt;<span class="txt-muted">Middle</span> &lt;/label&gt;
        &lt;input type="text"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+   &lt;div class="form-field sm-12-of-12 md-4-of-12"&gt;
        &lt;label&gt;<span class="txt-muted">Last</span>&lt;/label&gt;
        &lt;input type="text"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
+   &lt;div class="form-field sm-12-of-12 md-6-of-12"&gt;
        &lt;label &gt;<span class="txt-muted">Email</span> &lt;/label&gt;
        &lt;input type="email"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
+   &lt;div class="form-field sm-12-of-12 md-6-of-12"&gt;
        &lt;label&gt;<span class="txt-muted">State</span> &lt;/label&gt;
        &lt;select&gt;
          &lt;option value="CA"&gt;<span class="txt-muted">California </span>&lt;/option&gt;
@@ -477,12 +477,12 @@ navigable: false
      &lt;/select&gt;
    &lt;/div&gt;
 
-   &lt;div class="sm-12-x-12 md-12-x-12 form-field"&gt;
+   &lt;div class="sm-12-of-12 md-12-of-12 form-field"&gt;
       &lt;label"&gt;<span class="txt-muted">Description </span>&lt;/label&gt;
       &lt;textarea rows="6"&gt; &lt;/textarea&gt;
    &lt;/div&gt;
 
-   &lt;div class="sm-6-x-12 md-6-x-12 form-field"&gt;
+   &lt;div class="sm-6-of-12 md-6-of-12 form-field"&gt;
        &lt;input type="submit" class="btn md primary" value="submit" / &gt;
    &lt;/div&gt;
 
@@ -694,7 +694,7 @@ navigable: false
           <code>&lt;figure class="tn-card&gt;</code>
         </p>
         <div class="grid-container guttered">
-          <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
+          <div class="sm-12-of-12 md-6-of-12 lg-4-of-12">
             <figure class="tn-card">
               <div class="tn-img">
                   <img alt="example-image" src="./images/fjord-house.jpeg">
@@ -707,7 +707,7 @@ navigable: false
               </figcaption>
             </figure>
           </div>
-          <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
+          <div class="sm-12-of-12 md-6-of-12 lg-4-of-12">
             <figure class="tn-card">
               <div class="tn-img padded-img">
                 <img  class="card-image" alt="example-image" src="./images/friendly.jpeg">
@@ -723,9 +723,9 @@ navigable: false
               </figcaption>
             </figure>
           </div>
-          <div class="sm-12-x-12 md-6-x-12 lg-4-x-12">
+          <div class="sm-12-of-12 md-6-of-12 lg-4-of-12">
             <figure class="tn-card">
-              <div class="tn-img tile sm-1-to-1">
+              <div class="tn-img tile sm-1-x-1">
                 <div class="tile-content">
                   <div class="img-stretch">
                     <img alt="example-image" src="./images/fjord-shack.jpeg">
@@ -740,7 +740,7 @@ navigable: false
           </div>
         </div>
 <pre><code><span class="txt-muted">&lt;div class="grid-container"&gt;
-   &lt;div class="sm-12-x-12 md-4-x-12"&gt;</span>
+   &lt;div class="sm-12-of-12 md-4-of-12"&gt;</span>
 
       <span class="txt-muted">&lt;!--<mark>Simple Card</mark>--&gt;</span>
       &lt;figure class="tn-card"&gt;
@@ -760,7 +760,7 @@ navigable: false
       &lt;/figure&gt;<span class="txt-muted">
    &lt;/div&gt;</span>
 
-   <span class="txt-muted">&lt;div class="sm-12-x-12 md-4-x-12"&gt;</span>
+   <span class="txt-muted">&lt;div class="sm-12-of-12 md-4-of-12"&gt;</span>
 
       <span class="txt-muted">&lt;!--<mark>Padded Card</mark>--&gt;</span>
       &lt;figure class="tn-card"&gt;
@@ -779,12 +779,12 @@ navigable: false
       &lt;/figure&gt;<span class="txt-muted">
    &lt;/div&gt;</span>
 
-   <span class="txt-muted">&lt;div class="sm-12-x-12 md-4-x-12"&gt;</span>
+   <span class="txt-muted">&lt;div class="sm-12-of-12 md-4-of-12"&gt;</span>
 
       <span class="txt-muted">&lt;!--<mark>Tile Card</mark>--&gt;</span>
       &lt;figure class="tn-card"&gt;
 
-         &lt;div class="tn-img tile sm-1-to-1"&gt;
+         &lt;div class="tn-img tile sm-1-x-1"&gt;
            &lt;div class="tile-content"&gt;
              &lt;div class="img-stretch"&gt;
                &lt;img src="..."&gt;
@@ -813,32 +813,32 @@ navigable: false
         <div class="container-narrow">
           <h3 class="site-subheader">Context Colors</h3>
           <div class="grid-container adjacent">
-            <div class="sm-12-x-12 md-6-x-12 txt-center bg-success">
+            <div class="sm-12-of-12 md-6-of-12 txt-center bg-success">
               <p class="explanation"> <code>class="... bg-success"</code></p>
               <p>Something good happened</p>
             </div>
-            <div class="sm-12-x-12 md-6-x-12 txt-center bg-info">
+            <div class="sm-12-of-12 md-6-of-12 txt-center bg-info">
               <p class="explanation"> <code>class="... bg-info"</code></p>
               <p>Something notable happened</p>
             </div>
-            <div class="sm-12-x-12 md-6-x-12 txt-center bg-warn">
+            <div class="sm-12-of-12 md-6-of-12 txt-center bg-warn">
               <p class="explanation"> <code>class="... bg-warn"</code></p>
               <p>Something peculiar happened</p>
             </div>
-            <div class="sm-12-x-12 md-6-x-12 txt-center bg-fail">
+            <div class="sm-12-of-12 md-6-of-12 txt-center bg-fail">
               <p class="explanation"> <code>class="... bg-fail"</code></p>
               <p>Something bad happened</p>
             </div>
 
-            <div class="sm-12-x-12">
+            <div class="sm-12-of-12">
               <hr/>
             </div>
 
-            <div class="sm-12-x-12 md-6-x-12 txt-center bg-inverted">
+            <div class="sm-12-of-12 md-6-of-12 txt-center bg-inverted">
               <p class="explanation"> <code>class="... bg-inverted"</code></p>
               <p>Something needs to be contrasted</p>
             </div>
-            <div class="sm-12-x-12 md-6-x-12 txt-center bg-disabled">
+            <div class="sm-12-of-12 md-6-of-12 txt-center bg-disabled">
               <p class="explanation"> <code>class="... bg-disabled"</code></p>
               <p>Something needs to be disabled</p>
             </div>
@@ -886,55 +886,55 @@ navigable: false
   </p>
 
   <div class="grid-container site-tile-demo">
-    <div class="sm-6-x-12 md-4-x-12">
-      <p class="tile-label txt-center"><code>tile sm-1-to-1</code></p>
-      <div class="tile sm-1-to-1">
+    <div class="sm-6-of-12 md-4-of-12">
+      <p class="tile-label txt-center"><code>tile sm-1-x-1</code></p>
+      <div class="tile sm-1-x-1">
         <div class="tile-content contents-centered">
           <span>1:1</span>
         </div>
       </div>
     </div>
-    <div class="sm-6-x-12 md-4-x-12">
-      <p class="tile-label txt-center"><code>tile sm-4-to-3</code></p>
-      <div class="tile sm-4-to-3">
+    <div class="sm-6-of-12 md-4-of-12">
+      <p class="tile-label txt-center"><code>tile sm-4-x-3</code></p>
+      <div class="tile sm-4-x-3">
         <div class="tile-content contents-centered">
           <span>4:3</span>
         </div>
       </div>
     </div>
-    <div class="sm-6-x-12 md-4-x-12">
-      <p class="tile-label txt-center"><code>tile sm-3-to-2</code></p>
-      <div class="tile sm-3-to-2">
+    <div class="sm-6-of-12 md-4-of-12">
+      <p class="tile-label txt-center"><code>tile sm-3-x-2</code></p>
+      <div class="tile sm-3-x-2">
         <div class="tile-content contents-centered">
           <span>3:2</span>
         </div>
       </div>
     </div>
-    <div class="sm-6-x-12 md-4-x-12">
-      <p class="tile-label txt-center"><code>tile sm-16-to-9</code></p>
-      <div class="tile sm-16-to-9">
+    <div class="sm-6-of-12 md-4-of-12">
+      <p class="tile-label txt-center"><code>tile sm-16-x-9</code></p>
+      <div class="tile sm-16-x-9">
         <div class="tile-content contents-centered">
           <span>16:9</span>
         </div>
       </div>
     </div>
-    <div class="sm-6-x-12 md-4-x-12">
-      <p class="tile-label txt-center"><code>tile sm-2-to-1</code></p>
-      <div class="tile sm-2-to-1">
+    <div class="sm-6-of-12 md-4-of-12">
+      <p class="tile-label txt-center"><code>tile sm-2-x-1</code></p>
+      <div class="tile sm-2-x-1">
         <div class="tile-content contents-centered">
           <span>2:1</span>
         </div>
       </div>
     </div>
-    <div class="sm-6-x-12 md-4-x-12">
-      <p class="tile-label txt-center"><code>tile sm-3-to-1</code></p>
-      <div class="tile sm-3-to-1">
+    <div class="sm-6-of-12 md-4-of-12">
+      <p class="tile-label txt-center"><code>tile sm-3-x-1</code></p>
+      <div class="tile sm-3-x-1">
         <div class="tile-content contents-centered">
           <span>3:1</span>
         </div>
       </div>
-      <p class="tile-label txt-center"><code>tile sm-4-to-1</code></p>
-      <div class="tile sm-4-to-1">
+      <p class="tile-label txt-center"><code>tile sm-4-x-1</code></p>
+      <div class="tile sm-4-x-1">
         <div class="tile-content contents-centered">
           <span>4:1</span>
         </div>
@@ -945,20 +945,20 @@ navigable: false
   <h4 class="site-sub-subheader"><strong>Full Example + Code</strong> </h4>
 
   <div class="grid-container adjacent site-demo-tiles-live">
-    <div class="sm-12-x-12 md-6-x-12">
-      <div class="tile sm-3-to-2">
+    <div class="sm-12-of-12 md-6-of-12">
+      <div class="tile sm-3-x-2">
          <div class="tile-content padded-tile bg-success">
             <p>Facilis error nobis, autem nulla quis doloribus corporis porro animi voluptatibus quisquam tenetur totam!</p>
          </div>
       </div>
-      <div class="tile sm-3-to-1">
+      <div class="tile sm-3-x-1">
          <div class="tile-content contents-centered bg-info">
             <h3>Strandgarden<br/></h3>
          </div>
       </div>
     </div>
-    <div class="sm-12-x-12 md-6-x-12">
-      <div class="tile sm-1-to-1">
+    <div class="sm-12-of-12 md-6-of-12">
+      <div class="tile sm-1-x-1">
          <div class="tile-content padded-tile bg-inverted">
             <div class="img-stretch">
               <img src="./images/example-photo-2.jpg">
@@ -970,21 +970,21 @@ navigable: false
 
 <pre><code><span class="txt-muted">&lt;div class="grid-container"&gt;
 
-   &lt;div class="sm-12-x-12 md-6-x-12"&gt;</span>
-      &lt;div class="<span class="bg-success">tile sm-3-to-2"</span>&gt;
+   &lt;div class="sm-12-of-12 md-6-of-12"&gt;</span>
+      &lt;div class="<span class="bg-success">tile sm-3-x-2"</span>&gt;
          &lt;div class="tile-content padded-tile"&gt;<span class="txt-muted">
              &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, ipsa.&lt;/p&gt;</span>
          &lt;/div&gt;
       &lt;/div&gt;
-      &lt;div class="<span class="bg-info">tile sm-3-to-1"</span>&gt;
+      &lt;div class="<span class="bg-info">tile sm-3-x-1"</span>&gt;
          &lt;div class="tile-content contents-centered"&gt;<span class="txt-muted">
             &lt;h3&gt;Strandgarden&lt;/h3&gt;</span>
          &lt;/div&gt;
       &lt;/div&gt;
    <span class="txt-muted">&lt;/div&gt;
 
-   &lt;div class="sm-12-x-12 md-6-x-12"&gt;</span>
-      &lt;div class="<span class="bg-inverted">tile sm-1-to-1</span>"&gt;
+   &lt;div class="sm-12-of-12 md-6-of-12"&gt;</span>
+      &lt;div class="<span class="bg-inverted">tile sm-1-x-1</span>"&gt;
          &lt;div class="tile-content padded-tile"&gt;<span class="txt-muted">
             &lt;div class="img-stretch"&gt;
                &lt;img src="..."/&gt;
@@ -1000,7 +1000,7 @@ navigable: false
       If you want to create an element with a fixed height, then you can make the image scale to 'cover' the height buy putting the <code>img</code> inside a  <code>&lt;div class="img-stretch"/&gt;</code> tag.
     </p>
 
-<div class="tile sm-4-to-1 site-stretch-image">
+<div class="tile sm-4-x-1 site-stretch-image">
   <div class="tile-content padded-tile">
     <div class="img-stretch">
       <img src="./images/stock-default.jpeg" alt="example-img">
@@ -1034,12 +1034,12 @@ navigable: false
     Create a quick 2-column display. Generally useful for when you are trying to split align text.
   </p>
   <div class="grid-container">
-    <div class="md-6-x-12">
+    <div class="md-6-of-12">
       <h4 class="site-sub-subheader"><strong>Default (50-50)</strong></h4>
       <h3 class="ez-2-col txt-primary"><em>Corndog</em></h3>
       <p class="ez-2-col "><strong>Definition: <br/></strong><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small></p>
     </div>
-    <div class="md-6-x-12">
+    <div class="md-6-of-12">
       <h4 class="site-sub-subheader"><strong>Long / Short (75-25)</strong></h4>
       <h2 class="ez-2-col long-col bg-inverted">Baby Shampoo</h2>
       <p class="ez-2-col short-col bg-success txt-right">$17</p>

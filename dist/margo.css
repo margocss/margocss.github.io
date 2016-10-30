@@ -1281,3 +1281,19 @@ table.striped thead tr.bg-disabled,
 table.striped tbody tr.bg-disabled {
   background: #d2d7d3;
   opacity: 0.4; }
+
+.ez-2-col {
+  margin: 0;
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  position: relative;
+  z-index: 7; }
+  .ez-2-col + .ez-2-col {
+    padding-left: .1em;
+    margin-left: -.30rem !important;
+    z-index: 6; }
+  .ez-2-col.long-col {
+    width: 75%; }
+  .ez-2-col.short-col {
+    width: 25%; }

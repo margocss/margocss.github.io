@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-body{ 
-  margin: 0; 
+body{
+  margin: 0;
   font-family: 'Libre Franklin', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
@@ -16,19 +16,18 @@ img { max-width: 100%; }
 @import "./lib/parts/_mixins.scss";
 @import "./lib/parts/_variables.scss";
 
-@import "./lib/parts/_containers.scss";
-@import "./lib/parts/_grid.scss";
-@import "./lib/parts/_typography.scss";
-@import "./lib/parts/_lists.scss";
 @import "./lib/parts/_buttons.scss";
+@import "./lib/parts/_containers.scss";
 @import "./lib/parts/_forms.scss";
-@import "./lib/parts/_sidebar.scss";
+@import "./lib/parts/_grid.scss";
 @import "./lib/parts/_header-hero.scss";
+@import "./lib/parts/_helpers.scss";
+@import "./lib/parts/_lists.scss";
+@import "./lib/parts/_miscellaneous.scss";
 @import "./lib/parts/_navigation.scss";
+@import "./lib/parts/_segment.scss";
+@import "./lib/parts/_sidebar.scss";
 @import "./lib/parts/_tables.scss";
 @import "./lib/parts/_thumbnail-cards.scss";
-@import "./lib/parts/_segment.scss";
-@import "./lib/parts/_miscellaneous.scss";
-@import "./lib/parts/_helpers.scss";
-
-
+@import "./lib/parts/_tiles.scss";
+@import "./lib/parts/_typography.scss";

@@ -10,8 +10,8 @@
   For each form-field <small>( e.g. Username, Password, Email, First Name, Last Name, Occupation, etc. )</small> in a form-group, you should have a div of <code>&lt;div class="form-field"&gt;</code> that contains the field's<code>&lt;label&gt;</code> &amp; <code>&lt;input&gt;</code>.
 </p>
 
-<p class="explanation"> 
-  Note, a <code>&lt;div class="form-field"&gt;</code> is an inline-block element, so you can force a break to a new line by inserting a <code>&lt;br/&gt;</code> after. 
+<p class="explanation">
+  Note, a <code>&lt;div class="form-field"&gt;</code> is an inline-block element, so you can force a break to a new line by inserting a <code>&lt;br/&gt;</code> after.
 </p>
 
 
@@ -26,7 +26,7 @@
   </div>
   <br/>
   <div class="form-field">
-    
+
     <input type="submit"/ value="Log In">
   </div>
 </form>
@@ -39,33 +39,33 @@
 <h3 class="site-lg-code-example"><code>&lt;form class="form-group grid-container"&gt;</code></h3>
 
 <p class="explanation">
-  You can also add a class of <code>grid-container</code> to the <code>form</code> to allow for more precise positioning of the form fields. Each div with a class of form-field will also include class names describing it's column layout: <code>&lt;div class="</code><code class="site-code-marked">form-field</code><code> </code><code class="site-code-marked">sm-12-x-12</code><code> </code><code class="site-code-marked">md-4-x-12</code><code>"&gt;</code>
+  You can also add a class of <code>grid-container</code> to the <code>form</code> to allow for more precise positioning of the form fields. Each div with a class of form-field will also include class names describing it's column layout: <code>&lt;div class="</code><code class="site-code-marked">form-field</code><code> </code><code class="site-code-marked">sm-12-of-12</code><code> </code><code class="site-code-marked">md-4-of-12</code><code>"&gt;</code>
 </p>
 
 
 <form class="form-group grid-container">
 
-  <div class="sm-12-x-12 md-4-x-12 form-field">
+  <div class="sm-12-of-12 md-4-of-12 form-field">
     <label for="firstField">First</label>
     <input type="text"/ >
   </div>
 
-  <div class="sm-12-x-12 md-4-x-12 form-field">
+  <div class="sm-12-of-12 md-4-of-12 form-field">
     <label for="middleField">Middle</label>
     <input type="text"/ >
   </div>
 
-  <div class="sm-12-x-12 md-4-x-12 form-field">
+  <div class="sm-12-of-12 md-4-of-12 form-field">
     <label for="lastField">Last</label>
     <input type="text"/ >
   </div>
 
-  <div class="sm-12-x-12 md-6-x-12 form-field">
+  <div class="sm-12-of-12 md-6-of-12 form-field">
     <label for="emailField">Email</label>
     <input type="email"/ >
   </div>
 
-  <div class="sm-12-x-12 md-6-x-12 form-field">
+  <div class="sm-12-of-12 md-6-of-12 form-field">
     <label for="nameField">State</label>
     <select/ >
       <option value="CA">California</option>
@@ -74,38 +74,39 @@
     </select>
   </div>
 
-  <div class="sm-12-x-12 md-12-x-12 form-field">
+  <div class="sm-12-of-12 md-12-of-12 form-field">
     <label for="nameField">Description</label>
     <textarea rows="6"></textarea>
   </div>
 
-  <div class="sm-12-x-12 md-12-x-12 form-field">
+  <div class="sm-12-of-12 md-12-of-12 form-field">
+    
     <input type="submit" class="btn primary ">
   </div>
 </form>
 <pre><code>&lt;form class="form-group grid-container"&gt;
-   
-   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+
+   &lt;div class="form-field sm-12-of-12 md-4-of-12"&gt;
        &lt;label&gt; <span class="txt-muted">First </span>&lt;/label&gt;
        &lt;input type="text"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+   &lt;div class="form-field sm-12-of-12 md-4-of-12"&gt;
        &lt;label&gt;<span class="txt-muted">Middle</span> &lt;/label&gt;
        &lt;input type="text"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field sm-12-x-12 md-4-x-12"&gt;
+   &lt;div class="form-field sm-12-of-12 md-4-of-12"&gt;
        &lt;label&gt;<span class="txt-muted">Last</span> &lt;/label&gt;
        &lt;input type="text"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
+   &lt;div class="form-field sm-12-of-12 md-6-of-12"&gt;
        &lt;label &gt;<span class="txt-muted">Email</span> &lt;/label&gt;
        &lt;input type="email"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field sm-12-x-12 md-6-x-12"&gt;
+   &lt;div class="form-field sm-12-of-12 md-6-of-12"&gt;
        &lt;label&gt;<span class="txt-muted">State</span> &lt;/label&gt;
        &lt;select&gt;
          &lt;option <span class="txt-muted">value="CA"</span>&gt;<span class="txt-muted">California</span> &lt;/option&gt;
@@ -114,13 +115,13 @@
      &lt;/select&gt;
    &lt;/div&gt;
 
-   &lt;div class="sm-12-x-12 md-12-x-12 form-field"&gt;
+   &lt;div class="sm-12-of-12 md-12-of-12 form-field"&gt;
       &lt;label"&gt;<span class="txt-muted">Description</span> &lt;/label&gt;
       &lt;textarea rows="6"&gt; &lt;/textarea&gt;
    &lt;/div&gt;
-  
-   &lt;div class="sm-6-x-12 md-6-x-12 form-field"&gt;
+
+   &lt;div class="sm-6-of-12 md-6-of-12 form-field"&gt;
        &lt;input type="submit" class="btn md primary" value="submit" / &gt;
    &lt;/div&gt;
-  
+
  &lt;/form&gt;</code></pre>

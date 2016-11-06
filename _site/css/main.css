@@ -75,8 +75,12 @@ input,
 input[type='text'],
 input[type='email'],
 input[type='password'] {
-  padding: 0 .75rem;
   height: 2.5rem; }
+
+input[type='date'],
+input[type='email'],
+input[type='password'] {
+  padding: 0 0.1 0.25rem; }
 
 .input-defaults, form.form-group input[type='text'],
 form.form-group input[type='email'],
@@ -88,6 +92,7 @@ input[type='email'],
 input[type='password'],
 select,
 textarea {
+  padding: 0 .75rem;
   line-height: 1.5;
   outline: 0;
   border: #bfbfbf 1px solid;
@@ -138,11 +143,12 @@ form.form-group {
       display: block; }
 
 input[type="checkbox"] {
+  padding: 0;
   -webkit-appearance: none;
   display: inline-block;
   vertical-align: bottom;
   width: 22px;
-  height: 24px;
+  height: 22px;
   border: 1px #333 solid;
   position: relative;
   z-index: 9; }
@@ -1149,13 +1155,12 @@ aside {
         margin-top: .5rem;
         padding: 0 0 0 1.75rem; } }
 
-table.table-full-width {
-  width: 100%; }
-
 table {
   border-collapse: collapse;
   table-layout: fixed;
   margin: 1rem 0; }
+  table.table-full-width {
+    width: 100%; }
   table th:first-child,
   table td:first-child {
     padding-left: .375rem; }

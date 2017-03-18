@@ -1,120 +1,103 @@
-div.navbar-spacer{
-  border: 0;
-  margin: 0;
-  height: 60px;
-
-  @include media-query($med-screen){
-    height: 80px;
-  }
-}
-
-.txt-center{
+.M-text_center{
   text-align: center;
 }
 
-.txt-left{
+.M-text_left{
   text-left: left;
 }
 
-.txt-justify{
+.M-text_justify{
   text-align: justify;
 }
 
-.txt-right{
+.M-text_right{
   text-align: right;
 }
 
-.txt-primary{
+.M-text_primary{
   color: $primary-color;
 
 }
 
-.txt-muted{
+.M-text_muted{
   color: $txt-muted-color;
 }
 
-button.bg-inverted,
-a.bg-inverted,
-.bg-inverted,
-table tbody tr.bg-inverted,
-table thead tr.bg-inverted,
-table.striped thead tr.bg-inverted,
-table.striped tbody tr.bg-inverted {
+button.M-bg_inverted,
+a.M-bg_inverted,
+.M-bg_inverted,
+table tbody tr.M-bg_inverted,
+table thead tr.M-bg_inverted,
+table.M-table_striped thead tr.M-bg_inverted,
+table.M-table_striped tbody tr.M-bg_inverted {
   background: $bg-inverted-color;
   color: $inverted-font-color;
 }
 
-button.bg-success,
-a.bg-success,
-.bg-success,
-table tbody tr.bg-success,
-table thead tr.bg-success,
-table.striped thead tr.bg-success,
-table.striped tbody tr.bg-success{
-  background: $bg-success-color;
+button.M-bg_success,
+a.M-bg_success,
+.M-bg_success,
+table tbody tr.M-bg_success,
+table thead tr.M-bg_success,
+table.M-table_striped thead tr.M-bg_success,
+table.M-table_striped tbody tr.M-bg_success{
+  background: $success-color;
+  color: $inverted-font-color;
 }
 
-button.bg-info,
-a.bg-info,
-.bg-info,
-table tbody tr.bg-info,
-table thead tr.bg-info,
-table.striped thead tr.bg-info,
-table.striped tbody tr.bg-info{
-  background: $bg-info-color;
+button.M-bg_info,
+a.M-bg_info,
+.M-bg_info,
+table tbody tr.M-bg_info,
+table thead tr.M-bg_info,
+table.M-table_striped thead tr.M-bg_info,
+table.M-table_striped tbody tr.M-bg_info{
+  background: $info-color;
+  color: $inverted-font-color;
+
 }
 
-button.bg-warn,
-a.bg-warn,
-.bg-warn,
-table tbody tr.bg-warn,
-table thead tr.bg-warn,
-table.striped thead tr.bg-warn,
-table.striped tbody tr.bg-warn{
-  background: $bg-warn-color;
+button.M-bg_warn,
+a.M-bg_warn,
+.M-bg_warn,
+table tbody tr.M-bg_warn,
+table thead tr.M-bg_warn,
+table.M-table_striped thead tr.M-bg_warn,
+table.M-table_striped tbody tr.M-bg_warn{
+  background: $warn-color;
 }
 
-button.bg-fail,
-a.bg-fail,
-.bg-fail,
-table tbody tr.bg-fail,
-table thead tr.bg-fail,
-table.striped thead tr.bg-fail,
-table.striped tbody tr.bg-fail
+button.M-bg_fail,
+a.M-bg_fail,
+.M-bg_fail,
+table tbody tr.M-bg_fail,
+table thead tr.M-bg_fail,
+table.M-table_striped thead tr.M-bg_fail,
+table.M-table_striped tbody tr.M-bg_fail
  {
-  background: $bg-fail-color;
+  background: $fail-color;
+  color: $inverted-font-color;
+
 }
 
-button.bg-disabled,
-a.bg-disabled,
-.bg-disabled,
-table tbody tr.bg-disabled,
-table thead tr.bg-disabled,
-table.striped thead tr.bg-disabled,
-table.striped tbody tr.bg-disabled{
+button.M-bg_disabled,
+a.M-bg_disabled,
+.M-bg_disabled,
+table tbody tr.M-bg_disabled,
+table thead tr.M-bg_disabled,
+table.M-table_striped thead tr.M-bg_disabled,
+table.M-table_striped tbody tr.M-bg_disabled{
   background: $bg-disabled-color;
   opacity: $bg-disabled-opacity;
 }
 
-.ez-2-col {
-    margin: 0;
-		display: inline-block;
-		width: 50%;
-    vertical-align: middle;
-    position: relative;
-    z-index: 7;
-
-		+ .ez-2-col{
-      padding-left: .1em;
-			margin-left: -.30rem !important;
-      z-index: 6;
-		}
-
-    &.long-col {
-      width: 75%
-    }
-
-    &.short-col{
-      width: 25%
-    }
+button.M-bg_primary,
+a.M-bg_primary,
+.M-bg_primary,
+table tbody tr.M-bg_primary,
+table thead tr.M-bg_primary,
+table.M-table_striped thead tr.M-bg_primary,
+table.M-table_striped tbody tr.M-bg_primary{
+  background: $primary-color;
+  color: $inverted-font-color;
 }

@@ -1,15 +1,23 @@
 // INPUT SETTINGS
 // -------------------------
-.input-paddings,
-input,
+.MG-input-paddings,
 input[type='text'],
 input[type='email'],
+input[type='date'],
 input[type='password']{
   padding: 0 .75rem;
   height: 2.5rem;
 }
 
-.input-defaults,
+input[type='date'],
+input[type='email'],
+input[type='password']{
+  padding: 0 .1.25rem;
+}
+
+
+
+.MG-input-defaults,
 input[type='text'],
 input[type='email'],
 input[type='password'],
@@ -28,8 +36,7 @@ textarea{
   }
 }
 
-textarea,
-.textarea-defaults {
+.MG-textarea {
   padding: .5rem .75rem;
   &:focus{
     border: 1px solid $light-primary;
@@ -37,30 +44,33 @@ textarea,
 }
 
 
-form.form-group{
+.MG-form-group{
   display: block;
 
   input[type='text'],
   input[type='email'],
   input[type='password'],
+  input[type='date'],
   select{
-    @extend .input-paddings
+    @extend .MG-input-paddings;
   }
+
 
   input[type='text'],
   input[type='email'],
   input[type='password'],
+  input[type='date'],
   select,
   textarea{
-    @extend .input-defaults;
+    @extend .MG-textarea;
     width: 100%;
   }
 
   textarea{
-    @extend .textarea-defaults
+    @extend .MG-input-paddings;
   }
 
-  .form-field{
+  .MG-form-group__field{
     display: inline-block;
     label{
       display: block;
@@ -80,11 +90,14 @@ form.form-group{
 
 //Checkbox Settings
 //=======================
-input[type="checkbox"]{
+.MG-checkbox{
+    padding: initial;
     -webkit-appearance: none;
+    padding: 0;
     display: inline-block;
+    margin: 0 3px 0 0;
     vertical-align: bottom;
-    width: 22px; height: 24px;
+    width: 24px; height: 24px;
     border: 1px #333 solid;
     position: relative;
     z-index: 9;
@@ -112,11 +125,29 @@ input[type="checkbox"]{
 
 //Radio Settings
 //=======================
-input[type="radio"]{
+.MG-radiocheck{
+ -webkit-appearance: none;
+ margin-right: .75rem;
+ > input[type="radio"],
+ > input[type="checkbox"],
+ > span{
+   display: inline-block;
+   vertical-align: middle;
+ }
+
+ > span {
+   font-weight: initial;
+ }
+}
+
+
+.MG-radio{
+    padding: 0;
+    margin: 0 3px 0 0px;
     -webkit-appearance: none;
     display: inline-block;
     vertical-align: bottom;
-    width: 26px; height: 26px;
+    width: 24px; height: 24px;
     border: 1px #333 solid;
     border-radius: 50%;
     position: relative;
@@ -141,8 +172,7 @@ input[type="radio"]{
     }
 }
 
-select {
-
+.MG-select {
   -webkit-appearance: none;
   background: #ddd;
 
@@ -153,4 +183,9 @@ select {
     border-bottom: 2px solid #333;
     border-left: 2px solid #333;
   }
+}
+
+
+input[type='date']{
+  font-family: $font-stack
 }

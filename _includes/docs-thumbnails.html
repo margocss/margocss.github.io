@@ -1,0 +1,117 @@
+<div style="position: relative"><a name="docs-thumbnails"></a></div>
+<div class="M-container_narrow">
+	<h3 class="site-subheader">Thumbnails/Cards</h3>
+	<p class="explanation">
+	  Card thumbnails  and are 270px in width and are created with:
+	</p>
+	<p class="explanation">
+	  <code>&lt;figure class="M-tn-card&gt;</code>
+	</p>
+	<div class="M-grid M-guttered">
+	  <div class="M-sm-12-of-12 M-md-6-of-12 M-lg-4-of-12">
+		 <figure class="M-tn-card">
+			<div class="M-tn-card__img">
+				 <img alt="example-image" src="./images/fjord-house.jpeg">
+			</div>
+			<figcaption>
+			  <h4><strong>Simple Card</strong></h4>
+			  <p>Image inside <code>&lt;figure&gt;</code>will naturally extend to 100% width of its container</p>
+			  <p>The image's height will scale to its original proportion.</p>
+			  <button class="btn sm">Buy</button>
+			</figcaption>
+		 </figure>
+	  </div>
+	  <div class="M-sm-12-of-12 M-md-6-of-12 M-lg-4-of-12">
+		 <figure class="M-tn-card">
+			<div class="M-tn_card__img padded-img">
+			  <img  class="card-image" alt="example-image" src="./images/friendly.jpeg">
+			</div>
+			<figcaption>
+			  <h4><strong>Padded Card</strong></h4>
+			  <p>You can create padding inside the image-figure by wrapping the <code>&lt;img&gt;</code> with: <br/><br/><code>&lt;div class="M-tn_card__img padded-img"&gt;</code> </p>
+			</figcaption>
+			<figcaption class="more-info">
+			  <p>
+			  There are so many things to talk about...
+			  </p>
+			</figcaption>
+		 </figure>
+	  </div>
+	  <div class="M-sm-12-of-12 M-md-6-of-12 M-lg-4-of-12">
+		 <figure class="M-tn-card">
+			<div class="M-tn__img M-tile M-sm-1-x-1">
+			  <div class="M-tile__content">
+				 <div class="img-stretch">
+					<img alt="example-image" src="./images/fjord-shack.jpeg">
+				 </div>
+			  </div>
+			</div>
+			<figcaption>
+			  <h4><strong>Tile Card</strong></h4>
+			  <p>This is an example of an image inside a <a href="#docs-tiles">responsive tile</a> that has a height/width ratio of 1:1</p>
+			</figcaption>
+		 </figure>
+	  </div>
+	</div>
+<pre><code><span class="txt-muted">&lt;div class="M-grid"M-&gt;
+&lt;div class="M-sm-12-of-12 M-md-4-of-12"&gt;</span>
+
+<span class="txt-muted">&lt;!--<mark>Simple Card</mark>--&gt;</span>
+&lt;figure class="M-tn-card"&gt;
+
+ &lt;div class="M-tn_card__img padded-img"/&gt;
+	 &lt;img src="..."&gt;
+ &lt;/div&gt;
+
+ &lt;figcaption&gt;
+	 <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+ &lt;/figcaption&gt;
+
+ &lt;figcaption class="more-info"&gt;
+	 <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
+ &lt;/figcaption&gt;
+
+&lt;/figure&gt;<span class="txt-muted">
+&lt;/div&gt;</span>
+
+<span class="txt-muted">&lt;div class="M-sm-12-of-12 M-md-4-of-12"&gt;</span>
+
+<span class="txt-muted">&lt;!--<mark>Padded Card</mark>--&gt;</span>
+&lt;figure class="M-tn-card"&gt;
+ &lt;div class="M-tn_card__img padded-img"/&gt;
+	 &lt;img src="..."&gt;
+ &lt;/div&gt;
+
+ &lt;figcaption&gt;
+	 <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+ &lt;/figcaption&gt;
+
+ &lt;figcaption class="more-info"&gt;
+	 <span class="txt-muted">&lt;!-- appends a box with a top border and muted, smaller text--&gt;</span>
+ &lt;/figcaption&gt;
+
+&lt;/figure&gt;<span class="txt-muted">
+&lt;/div&gt;</span>
+
+<span class="txt-muted">&lt;div class="M-sm-12-of-12 M-md-4-of-12"&gt;</span>
+
+<span class="txt-muted">&lt;!--<mark>Tile Card</mark>--&gt;</span>
+&lt;figure class="M-tn-card"&gt;
+
+ &lt;div class="M-tn_card__img tile M-sm-1-x-1"&gt;
+	&lt;div class="M-tile__content"&gt;
+	  &lt;div class="img-stretch"&gt;
+		 &lt;img src="..."&gt;
+	  &lt;/div&gt;
+	&lt;/div&gt;
+ &lt;/div&gt;
+
+ &lt;figcaption&gt;
+	 <span class="txt-muted">&lt;!-- &lt;h4&gt; recommended for title --&gt;</span>
+ &lt;/figcaption&gt;
+
+&lt;/figure&gt;<span class="txt-muted">
+&lt;/div&gt;</span>
+
+</code></pre>
+</div>

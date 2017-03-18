@@ -16,7 +16,24 @@
 
 .M-text_primary{
   color: $primary-color;
+}
+.M-text_success{
+  color: $success-color;
+  text-shadow: 1px 1px 1px #333;
+}
+.M-text_fail{
+  color: $fail-color;
+  text-shadow: 1px 1px 1px #333;
+}
 
+.M-text_warn{
+  color: $warn-color;
+  text-shadow: 1px 1px 1px #333;
+}
+
+.M-text_info{
+  color: $info-color;
+  text-shadow: 1px 1px 1px #333;
 }
 
 .M-text_muted{
@@ -24,6 +41,7 @@
 }
 
 button.M-bg_inverted,
+input[type="submit"].M-bg_inverted,
 a.M-bg_inverted,
 .M-bg_inverted,
 table tbody tr.M-bg_inverted,
@@ -35,6 +53,7 @@ table.M-table_striped tbody tr.M-bg_inverted {
 }
 
 button.M-bg_success,
+input[type="submit"].M-bg_success,
 a.M-bg_success,
 .M-bg_success,
 table tbody tr.M-bg_success,

@@ -22,14 +22,7 @@ button, .M-btn, button.M-btn, input[type='button'], input[type='submit'], a.M-bt
   color: #333;
 
   &.M-btn_sm { font-size: .75rem; padding: .5rem 1.25rem; }
-  &.M-btn_lg {
-    font-size: 1.5rem;
-    padding: 1rem 1.75rem;
-
-    @include media-query($med-screen){
-      padding: 0 1.5rem;
-    }
-  }
+  &.M-btn_lg { font-size: 1.5rem; padding: 1rem 1.75rem; }
 
   &:hover{
     background: $light-gray;

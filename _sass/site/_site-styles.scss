@@ -75,6 +75,10 @@ header.site-demo-hero{
   }
 }
 
+.site-demo-features{
+   background: #fff;
+}
+
 div.site-demo-code-block{
   width: 95%;
   margin: 1rem auto;
@@ -101,19 +105,19 @@ div.site-demo-code-block{
 }
 
 
-.container-narrow.site-demo, .container-full.site-demo{
+.M-container_narrow.site-demo, .M-container_full.site-demo{
   margin-bottom: 1rem;
   padding: $general-site-padding;
   border: 3px $translucent-secondary solid;
 }
 
-.grid-container.site-demo{
+.M-grid.site-demo{
   border: 3px solid $translucent-secondary;
   margin-bottom: 2rem;
   margin-top: 1rem;
 
 }
-.grid-container.site-demo > *{
+.M-grid.site-demo > *{
   text-align: center;
   margin-bottom: .5rem;
   padding: 10px 2px;
@@ -282,11 +286,11 @@ div.site-demo-code-block{
 aside.demo-docs-sidebar{
 
   a {
-    color: #fff;
-    font-weight: 700;
+    color: $dark-gray;
+    font-weight: 400;
 
    &.sidebar-subtopic{
-      color: #ededed;
+      color: $light-primary;
 
       font-size: .875rem;
       margin-top: .5rem;
@@ -311,8 +315,15 @@ aside.demo-docs-sidebar{
     margin-bottom: .5rem;
     margin-top: 1.5rem;
   }
-  .tile {
+  .site-tile {
     border: 1px solid $med-gray-translucent;
+	 .contents-centered{
+       > * {
+	    	position: absolute;
+	      top: 50%; left: 50%;
+         transform: translate(-50%,-50%);
+	  	}
+	  }
   }
 }
 

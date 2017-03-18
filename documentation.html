@@ -23,7 +23,7 @@ navigable: false
 
       <a class="sidebar-topic" href="#docs-components">Components</a>
       <a class="sidebar-subtopic" href="#docs-segment">Segment</a>
-      <a class="sidebar-subtopic" href="#docs-quotes">Blockquotes</a>
+      <a class="sidebar-subtopic" href="#docs-blockquotes">Blockquotes</a>
       <a class="sidebar-subtopic" href="#docs-tiles">Responsive Tiles</a>
 
       <a class="sidebar-topic" href="#docs-misc">Misc</a>
@@ -268,96 +268,8 @@ navigable: false
       <div class="container-full major-section">
         <h1 class="site-header">Miscellaneous</h1>
       </div>
+			  {% include docs-contextcolors.html %}
+			  {% include docs-texthelpers.html %}
+			  {% include docs-code.html %}
 
-     <div style="position: relative"><a name="docs-context-colors"></a></div>
-
-        <div class="M-container_narrow">
-          <h3 class="site-subheader">Context Colors</h3>
-          <div class="grid-container adjacent">
-            <div class="sm-12-of-12 md-6-of-12 txt-center bg-success">
-              <p class="explanation"> <code>class="... bg-success"</code></p>
-              <p>Something good happened</p>
-            </div>
-            <div class="sm-12-of-12 md-6-of-12 txt-center bg-info">
-              <p class="explanation"> <code>class="... bg-info"</code></p>
-              <p>Something notable happened</p>
-            </div>
-            <div class="sm-12-of-12 md-6-of-12 txt-center bg-warn">
-              <p class="explanation"> <code>class="... bg-warn"</code></p>
-              <p>Something peculiar happened</p>
-            </div>
-            <div class="sm-12-of-12 md-6-of-12 txt-center bg-fail">
-              <p class="explanation"> <code>class="... bg-fail"</code></p>
-              <p>Something bad happened</p>
-            </div>
-
-            <div class="sm-12-of-12">
-              <hr/>
-            </div>
-
-            <div class="sm-12-of-12 md-6-of-12 txt-center bg-inverted">
-              <p class="explanation"> <code>class="... bg-inverted"</code></p>
-              <p>Something needs to be contrasted</p>
-            </div>
-            <div class="sm-12-of-12 md-6-of-12 txt-center bg-disabled">
-              <p class="explanation"> <code>class="... bg-disabled"</code></p>
-              <p>Something needs to be disabled</p>
-            </div>
-
-
-          </div>
-
-          <div style="position: relative"><a name="docs-text-helpers"></a></div>
-          <h3 class="site-subheader">Text Formatting Helpers</h3>
-            <p class="explanation txt-left">Aligned <strong>left</strong><br/><code>class="... txt-left"</code></p>
-            <p class="explanation txt-center">Aligned <strong>center</strong><br/><code>class="... txt-center"</code></p>
-            <p class="explanation txt-right">Aligned <strong>right</strong><br/><code>class="... txt-right"</code></p>
-            <hr/>
-            <p class="explanation">
-              <span class="txt-muted">
-                <code>class="... txt-muted"</code> will subdue the text a light gray color
-              </span>
-              <br/>
-                <span class="txt-primary">
-                  <code>class="... txt-primary"</code> will emphasize the text with the primary color.
-                </span>
-            </p>
-
-
-  <div style="position: relative"><a name="docs-code"></a></div>
-    <h3 class="site-subheader">Responsive Padded Images</h3>
-    <p class="explanation">
-      If you want to create an element with a fixed height, then you can make the image scale to 'cover' the height buy putting the <code>img</code> inside a  <code>&lt;div class="img-stretch"/&gt;</code> tag.
-    </p>
-
-<div class="tile sm-4-x-1 site-stretch-image">
-  <div class="tile-content padded-tile">
-    <div class="img-stretch">
-      <img src="./images/stock-default.jpeg" alt="example-img">
-    </div>
-  </div>
-</div>
-
-<pre><code><span class="txt-muted">&lt;!-- .example-image {height: 200px; padding: 15px;} --&gt;
-
-&lt;div class="example-image"&gt;</span>
-    &lt;div class="img-stretch"&gt;
-       &lt;img src="..."/&gt;
-    &lt;/div&gt;<span class="txt-muted">
-&lt;/div&gt;</span></code></pre>
-
-  <div style="position: relative"><a name="docs-code"></a></div>
-    <h3 class="site-subheader">Code Blocks</h3>
-    <p class="explanation">
-      Encapsulated in <code>&lt;pre&gt;&lt;code&gt;</code> ... <code>&lt;/pre&gt;&lt;/code&gt;</code>. Be mindful of whitespace inside of <code>&lt;pre&gt;</code> tag.
-    </p>
-<pre><code>&lt;pre&gt;&lt;code&gt;
-    <span class="txt-muted">
-    &lt;h2&gt;This is code&lt;/h2&gt;
-    &lt;p&gt;And this is what might happen if you extend past the width of the &lt;pre&gt; container-- a scroll bar will appear. No word-wrap.&lt;/p&gt;
-    </span>
-&lt;/code&gt;&lt;/pre&gt;</code></pre>
-  </div>
-
-  </div>
-</div>
+ </div>   

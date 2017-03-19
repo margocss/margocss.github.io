@@ -8,7 +8,7 @@
     "build-dev": "gulp dev",
     "build-production": "gulp production",
     "build-dist": "bash ./exec/make-dist.sh && gulp dist &&  npm run zip-dist-and-distribute ",
-    "zip-dist-and-distribute": "zip -r ./dist/margo-css.zip ./dist/* && cp -r ./dist/* ../margo-css/ && cp ./dist/margo-css.zip ./download/margo-css.zip"
+    "zip-dist-and-distribute": "zip -r ./dist/margo-css.zip ./dist/* && rm -rf ../margo-css/* && cp -r ./dist/* ../margo-css/ && cp ./dist/margo-css.zip ./download/margo-css.zip"
   },
   "author": "",
   "license": "ISC",

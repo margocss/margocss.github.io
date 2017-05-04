@@ -6,9 +6,9 @@
 </description>
     <link>http://localhost:3000/</link>
     <atom:link href="http://localhost:3000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 19 Mar 2017 13:02:08 -0400</pubDate>
-    <lastBuildDate>Sun, 19 Mar 2017 13:02:08 -0400</lastBuildDate>
-    <generator>Jekyll v3.3.0</generator>
+    <pubDate>Wed, 03 May 2017 23:42:53 -0500</pubDate>
+    <lastBuildDate>Wed, 03 May 2017 23:42:53 -0500</lastBuildDate>
+    <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>And include .html!</title>
@@ -17,7 +17,7 @@
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias accusamus natus iusto inventore et incidunt alias commodi unde iste praesentium debitis rem vero dolorum architecto ducimus, quidem, fuga esse, sed corrupti neque voluptates veritatis.&lt;/p&gt;
 
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias accusamus natus iusto inventore et incidunt alias commodi unde iste praesentium debitis rem vero dolorum architecto ducimus, quidem, fuga esse, sed corrupti neque voluptates veritatis.&lt;/p&gt;</description>
-        <pubDate>Thu, 26 May 2016 12:02:09 -0400</pubDate>
+        <pubDate>Thu, 26 May 2016 11:02:09 -0500</pubDate>
         <link>http://localhost:3000/articles/with-html-13.html</link>
         <guid isPermaLink="true">http://localhost:3000/articles/with-html-13.html</guid>
         
@@ -39,7 +39,7 @@ center: lines packed to the center of the container&lt;/p&gt;
 space-around: lines evenly distributed with equal space around each line
 stretch (default): lines stretch to take up the remaining space&lt;/p&gt;
 </description>
-        <pubDate>Wed, 25 May 2016 22:02:09 -0400</pubDate>
+        <pubDate>Wed, 25 May 2016 21:02:09 -0500</pubDate>
         <link>http://localhost:3000/articles/more-filler-12.html</link>
         <guid isPermaLink="true">http://localhost:3000/articles/more-filler-12.html</guid>
         
@@ -61,7 +61,7 @@ center: items are centered in the cross-axis&lt;/p&gt;
 
 &lt;p&gt;stretch (default): stretch to fill the container (still respect min-width/max-width)&lt;/p&gt;
 </description>
-        <pubDate>Wed, 25 May 2016 20:02:09 -0400</pubDate>
+        <pubDate>Wed, 25 May 2016 19:02:09 -0500</pubDate>
         <link>http://localhost:3000/articles/more-filler-11.html</link>
         <guid isPermaLink="true">http://localhost:3000/articles/more-filler-11.html</guid>
         
@@ -83,7 +83,7 @@ center: items are centered in the cross-axis&lt;/p&gt;
 
 &lt;p&gt;stretch (default): stretch to fill the container (still respect min-width/max-width)&lt;/p&gt;
 </description>
-        <pubDate>Wed, 25 May 2016 19:02:09 -0400</pubDate>
+        <pubDate>Wed, 25 May 2016 18:02:09 -0500</pubDate>
         <link>http://localhost:3000/articles/more-filler-10.html</link>
         <guid isPermaLink="true">http://localhost:3000/articles/more-filler-10.html</guid>
         
@@ -100,7 +100,7 @@ center: items are centered in the cross-axis&lt;/p&gt;
 
 &lt;p&gt;Now let’s use some more properties. Consider a list of 6 items, all with a fixed dimensions in a matter of aesthetics but they could be auto-sized. We want them to be evenly and nicely distributed on the horizontal axis so that when we resize the browser, everything is fine (without media queries!).&lt;/p&gt;
 </description>
-        <pubDate>Wed, 25 May 2016 18:02:09 -0400</pubDate>
+        <pubDate>Wed, 25 May 2016 17:02:09 -0500</pubDate>
         <link>http://localhost:3000/articles/more-filler-09.html</link>
         <guid isPermaLink="true">http://localhost:3000/articles/more-filler-09.html</guid>
         
@@ -118,7 +118,7 @@ center: items are centered in the cross-axis&lt;/p&gt;
 &lt;hr /&gt;
 &lt;p&gt;Some people just don’t know&lt;/p&gt;
 </description>
-        <pubDate>Thu, 19 May 2016 19:44:09 -0400</pubDate>
+        <pubDate>Thu, 19 May 2016 18:44:09 -0500</pubDate>
         <link>http://localhost:3000/articles/filler-8.html</link>
         <guid isPermaLink="true">http://localhost:3000/articles/filler-8.html</guid>
         
@@ -137,7 +137,7 @@ center: items are centered in the cross-axis&lt;/p&gt;
 
 &lt;p&gt;Capitalise on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 19 May 2016 18:02:09 -0400</pubDate>
+        <pubDate>Thu, 19 May 2016 17:02:09 -0500</pubDate>
         <link>http://localhost:3000/articles/filler-7.html</link>
         <guid isPermaLink="true">http://localhost:3000/articles/filler-7.html</guid>
         
@@ -155,7 +155,7 @@ center: items are centered in the cross-axis&lt;/p&gt;
 &lt;p&gt;Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 19 May 2016 16:42:09 -0400</pubDate>
+        <pubDate>Thu, 19 May 2016 15:42:09 -0500</pubDate>
         <link>http://localhost:3000/articles/filler-6.html</link>
         <guid isPermaLink="true">http://localhost:3000/articles/filler-6.html</guid>
         
@@ -172,7 +172,7 @@ center: items are centered in the cross-axis&lt;/p&gt;
 
 &lt;p&gt;Cottage cheese cut the cheese danish fontina. Cottage cheese halloumi port-salut mascarpone cheese and wine chalk and cheese hard cheese the big cheese. Parmesan cheese and wine cheddar everyone loves paneer rubber cheese cheddar cheddar. Bocconcini monterey jack cheesecake gouda fromage melted cheese squirty cheese squirty cheese. Monterey jack.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 19 May 2016 15:01:09 -0400</pubDate>
+        <pubDate>Thu, 19 May 2016 14:01:09 -0500</pubDate>
         <link>http://localhost:3000/articles/filler-5.html</link>
         <guid isPermaLink="true">http://localhost:3000/articles/filler-5.html</guid>
         
@@ -191,7 +191,7 @@ center: items are centered in the cross-axis&lt;/p&gt;
 
 &lt;p&gt;Trysail Sail ho Corsair red ensign hulk smartly boom jib rum gangway. Case shot Shiver me timbers gangplank crack Jennys tea cup ballast Blimey lee snow crow’s nest rutters. Fluke jib scourge of the seven seas boatswain schooner gaff booty Jack Tar transom spirits.&lt;/p&gt;
 </description>
-        <pubDate>Thu, 19 May 2016 06:57:09 -0400</pubDate>
+        <pubDate>Thu, 19 May 2016 05:57:09 -0500</pubDate>
         <link>http://localhost:3000/articles/filler-4.html</link>
         <guid isPermaLink="true">http://localhost:3000/articles/filler-4.html</guid>
         

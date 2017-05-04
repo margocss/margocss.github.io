@@ -168,6 +168,7 @@ div.site-demo-code-block{
 
 
 
+
 .site-header{
   padding: $general-site-padding;
   background: $strong-header;
@@ -184,16 +185,11 @@ div.site-demo-code-block{
 
 .site-subheader{
   margin-top: 3rem;
-
-  @include media-query($med-screen){
-    margin-top: 6rem;
-  }
-
-  @include media-query($lg-screen){
-    margin-top: 8rem;
-  }
+  border-top: 2px dotted $primary-color-tranlucent;
 
   padding: $general-site-padding;
+  padding-top: 3rem;
+
   color: $weak-header;
 
 }
@@ -226,10 +222,9 @@ div.site-demo-code-block{
 }
 
 .dual-example {
-  > * { padding: 10px; }
+  > * { padding: 10px; padding-bottom: 0; }
 
   > *:nth-child(odd){
-    border-bottom: 2px solid $example-color;
     @include media-query($lg-screen){
       border-bottom: 0;
       border-right: 2px solid $example-color;
@@ -239,6 +234,9 @@ div.site-demo-code-block{
 
 .site-text-formats > * {
   margin-bottom: 2.5rem;
+  &:last-of-type{
+    padding-bottom: 0;
+  }
 }
 
 .site-button-sizes {
@@ -303,6 +301,10 @@ aside.demo-docs-sidebar{
 }
 
 .site-docs-page{
+  .site-docs__page-title{
+    margin: 0;
+    padding: 3rem 0;
+  }
 
   .site-demo-header{
     h1{ position: relative; z-index: 4; }
@@ -335,11 +337,7 @@ aside.demo-docs-sidebar{
 
 a[name^='docs']{
   position: absolute;
-  top: -30px;
-
-  @include media-query($med-screen){
-    top: -10px;
-  }
+  top: -50px;
 }
 
 div.navbar-spacer{

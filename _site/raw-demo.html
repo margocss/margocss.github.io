@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+  
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,6 +18,108 @@
 
 
   <body>
+    
+<nav class="nav-bar with-logo fixed">
+  
+  <div class="nav-logo">
+    <a href="https://margocss.github.io">
+      <img src="./images/molecule2.png" alt="logo" class="site-nav-logo">
+    </a>
+  </div>
+
+
+  <input type="checkbox" class="hamburger-toggler"/>
+  <div class="hamburger-menu">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+  
+  <div class="nav-list">
+      
+        <a href="https://margocss.github.io">
+          Home
+        </a>
+      
+
+      
+        
+
+      
+        
+
+      
+        
+          
+          <a href="https://margocss.github.io/documentation.html">
+              Docs
+          </a>
+          
+        
+
+      
+        
+
+      
+        
+
+      
+        
+
+      
+        
+
+      
+        
+
+      
+        
+
+      
+        
+
+      
+        
+          
+          <a class="active "href="/raw-demo.html">              
+              Raw Demo
+          </a>          
+          
+        
+
+      
+        
+
+      
+        
+
+      
+        
+          
+          <a href="https://margocss.github.io/showcase.html">
+              Showcase
+          </a>
+          
+        
+
+      
+        
+
+      
+        
+
+      
+        
+
+      
+        
+
+      
+      
+
+
+  </div>
+</nav>
     <nav class="nav-bar with-logo">
 
   <div class="nav-logo">
@@ -37,18 +139,21 @@
   </div>
 </nav>
 
-
-<header class="hero bg-inverted">
-  <div class="container-narrow">
+<div class="M-container_full M-bg_info">
+  <div class="M-container_narrow">
+    <p>&nbsp;</p>
     <h1 class="title">Site Name</h1>
     <h3 class="subtitle">A clever subtitle.</h3>
-    <button class="bg-fail">Learn More</button>
+    <button class="M-btn_lg M-bg_fail">Learn More</button>
+    <p>&nbsp;</p>
   </div>
-</header>
+</div>
 
-<div class="container-narrow">
-  <h3 class="txt-center">Leaderboard</h3>
-    <table class="table-full-width striped">
+<hr/>
+
+<div class="M-container_narrow">
+  <h3>Leaderboard</h3>
+    <table class="M-table M-table_full-width M-table_striped">
       <thead>
         <tr>
           <th>Rank</th>
@@ -60,7 +165,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="bg-success">
+        <tr class="M-bg_success">
           <td class="tcol-2rem">1</td>
           <td class="tcol-8rem">Yoshi Eggs</td>
           <td class="tcol-7rem">10-3</td>
@@ -108,64 +213,57 @@
     </table>
 </div>
 
-<div class="container-narrow">
+<div class="M-container_narrow">
   <h3>Log In to Comment</h4>
-  <form action="" class="form-group grid-container">
-    <div class="sm-12-of-12 md-4-of-12 form-field">
+  <form action="" class="M-form-group M-grid">
+    <div class="M-sm-12-of-12 M-md-4-of-12 M-form-group__field">
       <label>Username</label>
       <input type="text"/ >
 
       <label>Password</label>
       <input type="text"/ >
     </div>
-    <div class="sm-12-of-12 md-8-of-12 form-field">
+    <div class="M-sm-12-of-12 M-md-8-of-12 M-form-group__field">
       <label>Comment</label>
       <textarea rows="5" ></textarea>
     </div>
-    <div class="sm-12-of-12 md-3-of-12 form-field">
-      <input type="submit" class='btn primary'>
+    <div class="M-sm-12-of-12 M-md-3-of-12 M-form-group__field">
+      <input type="submit" class='M-btn M-btn_primary'>
     </div>
   </form>
 
-<div class="container-narrow">
+<div class="M-container_narrow">
 
 </div>
 
-<div class="container-full">
-  <div class="container-narrow">
+<div class="M-container_full">
+  <div class="M-container_narrow">
+	
 
+    <h2 class="M-text_primary">What they're saying about Margo</h2>
 
-    <h2 class="txt-primary">What they're saying about Margo</h2>
-
-    <section class="segment bg-warn">
+    <section class="M-segment M-bg_warn">
       <h4><strong>NOTE</strong></h4>
       <p>The following testimonials may or may not be fabricated and may or may not be from paid actors</p>
     </section>
 
-    <div class="grid-container">
-      <div class="sm-12-of-12 md-6-of-12">
-        <blockquote>
+    <div class="M-grid-container">
+      <div class="M-sm-12-of-12 M-md-6-of-12">
+        <blockquote class="M-blockquote">
           <p>Mmmmm, that's a fine lookin' framework. Been waiting for this for a long, long time</p>
-          <cite>Willis McDermott</cite>
+          <cite class="M-cite">Willis McDermott</cite>
         </blockquote>
       </div>
-      <div class="sm-12-of-12 md-6-of-12">
-        <blockquote>
+      <div class="M-sm-12-of-12 M-md-6-of-12">
+        <blockquote class="M-blockquote">
           <p>
             This one could be truly revolutionary. I will totally fork this, star this, and watch it on Github.
           </p>
-          <cite>Ingrid Kaminsky</cite>
+          <cite class="M-cite">Ingrid Kaminsky</cite>
         </blockquote>
       </div>
     </div>
   </div>
-
-
-
-
-</div>
-
-</div>
 
     <script src="./js/main.js"></script>
   </body>

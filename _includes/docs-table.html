@@ -1,0 +1,119 @@
+<div style="position: relative"><a name="docs-tables"></a></div>
+  <div class="M-container_narrow">
+
+   <h3 class="site-subheader">Tables</h3>
+	   <p class="explanation">
+	     The Margo <code>&lt;table&gt;</code> element follows the convention of having an inner <code>&lt;thead&gt;</code> for the table header row and <code>&lt;tbody&gt;</code> for the data rows.
+	   </p>
+	   <h4 class="site-sub-subheader">
+	     <strong>Short Table</strong><br/>
+	   </h4>
+	   <table class="M-table">
+	     <thead>
+	       <tr>
+	         <th>Name</th>
+	         <th>Age</th>
+	         <th>Bed Time</th>
+	         <th>Favorite Animal</th>
+	       </tr>
+	     </thead>
+	    <tbody>
+	       <tr>
+	         <td>Zoey</td>
+	         <td>4</td>
+	         <td>9:30</td>
+	         <td>Giraffe</td>
+	       </tr>
+	       <tr>
+	         <td>Haley</td>
+	         <td>2</td>
+	         <td>8:00</td>
+	         <td>Tiger</td>
+	       </tr>
+	       <tr>
+	         <td>Rylan</td>
+	         <td>1</td>
+	         <td>7:30</td>
+	         <td>TBD</td>
+	       </tr>
+	     </tbody>
+	   </table>
+	<pre><code>&lt;table <mark>class="M-table"</mark>&gt;
+   &lt;thead&gt;
+      &lt;tr&gt;
+         &lt;th&gt;<span class="txt-muted">Name</span>&lt;/th&gt;
+         &lt;th&gt;<span class="txt-muted">Age</span>&lt;/th&gt;
+         &lt;th&gt;<span class="txt-muted">Bed Time</span>&lt;/th&gt;
+         &lt;th&gt;<span class="txt-muted">Favorite Animal</span>&lt;/th&gt;
+      &lt;/tr&gt;
+   &lt;/thead&gt;
+   &lt;tbody&gt;
+      &lt;tr&gt;
+         &lt;td&gt;<span class="txt-muted">Zoey</span>&lt;/td&gt;
+         &lt;td&gt;<span class="txt-muted">4</span>&lt;/td&gt;
+         &lt;td&gt;<span class="txt-muted">8:00</span>&lt;/td&gt;
+         &lt;td&gt;<span class="txt-muted">TBD</span>&lt;/td&gt;
+      &lt;/tr&gt;
+   &lt;/tbody&gt;
+
+&lt;/table&gt;</code></pre>
+
+	  <p class="explanation"></p>
+
+	  <h4 class="site-sub-subheader">
+	    <strong>Full Width Table</strong><br/>
+	  </h4>
+
+<pre><code>&lt;table <mark>class="M-table M-table_full-width M-table_striped"</mark>&gt;
+   ...
+&lt;/table&gt;
+</code></pre>
+
+	    <table class="M-table M-table_full-width M-table_striped">
+	      <thead>
+	        <tr>
+	          <th>Rank</th>
+	          <th>Team</th>
+	          <th>W-L Record</th>
+	          <th>Pts For</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td>1</td>
+	          <td>food fight</td>
+	          <td>8-4</td>
+	          <td>1,137.88</td>
+	        </tr>
+	        <tr class="bg-fail">
+	          <td>2</td>
+	          <td>Foxy Tacos</td>
+	          <td>7-5</td>
+	          <td>1,184.96</td>
+	        </tr>
+	        <tr>
+	          <td>3</td>
+	          <td>DorkTron</td>
+	          <td>7-5</td>
+	          <td>912.22</td>
+	        </tr>
+	        <tr class="M-bg_fail">
+	          <td>4</td>
+	          <td>It's Just A Name</td>
+	          <td>6-6</td>
+	          <td>1,158.42</td>
+	        </tr>
+	      </tbody>
+	    </table>
+
+	  <p class="explanation"></p>
+	  <h4 class="site-sub-subheader"><strong>Configuration Options</strong></h4>
+	  <ul>
+	    <li>
+			<p><code>&lt;table class="M-striped"&gt;</code> highlights every other row.</p>
+		 </li>
+	    <li>
+			<p><code>&lt;tr class="M-bg_success|fail|info|warn"&gt;</code> will provide a background context-color for a row</p>
+		 </li>
+	  </ul>
+</div>

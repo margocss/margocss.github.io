@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Libre+Franklin:400,600,600italic,400italic,200italic,200);
+@import "./lib/parts/_normalize.scss";
 
 @import "./lib/parts/_mixins.scss";
 @import "./lib/parts/_variables.scss";
@@ -7,15 +8,11 @@
 @import "./lib/parts/_containers.scss";
 @import "./lib/parts/_forms.scss";
 @import "./lib/parts/_grid.scss";
-@import "./lib/parts/_header-hero.scss";
 @import "./lib/parts/_helpers.scss";
 @import "./lib/parts/_lists.scss";
 @import "./lib/parts/_miscellaneous.scss";
-@import "./lib/parts/_navigation.scss";
 @import "./lib/parts/_segment.scss";
-@import "./lib/parts/_sidebar.scss";
 @import "./lib/parts/_tables.scss";
-@import "./lib/parts/_thumbnail-cards.scss";
 @import "./lib/parts/_tiles.scss";
 @import "./lib/parts/_typography.scss";
 
@@ -29,7 +26,6 @@ html{
 
 body{
   margin: 0;
-  font-family: $font-stack;
 }
 
 img { max-width: 100%; }

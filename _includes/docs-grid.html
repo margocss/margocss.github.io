@@ -1,15 +1,18 @@
 <div style="position: relative"><a name="docs-grid"></a></div>
-<div class="M-container_narrow">
+<div class="M-container--narrow">
 	 <h3 class="site-subheader">Grid</h3>
 	 <p class="explanation">
-		Grids <strong>must</strong> have an outer-div with a class of grid-container:
+		Grids <em>must</em> have an outer-div with a class of <code>M-grid</code> :
 	 </p>
 	 <p class="explanation">
-		<code>&lt;div class="grid-container"&gt;</code>
+		<code>&lt;div class="M-grid"&gt;</code>
 	 </p>
 	 <p class="explanation">
 		The grid-items (columns) are nested inside grid-container and have the following format:<br/><br/>
-		<code>&lt;div class="M-sm-[n]-of-12 M-md-[n]-of-12 M-lg-[n]-of-12"&gt;</code>
+		<code>&lt;div class="</code>
+		<br/>&nbsp;&nbsp;&nbsp;&nbsp;<code>M-grid__<mark>sm</mark>-[n]-of-12</code>
+		<br/>&nbsp;&nbsp;&nbsp;&nbsp;<code>M_grid__<mark>md</mark>-[n]-of-12</code>
+		<br>&nbsp;&nbsp;&nbsp;&nbsp;<code>M-grid__<mark>lg</mark>-[n]-of-12"&gt;</code>
 	 </p>
 
 	 <p class="explanation">
@@ -27,26 +30,30 @@
 	 </p>
 <pre><code>&lt;div class="grid-container"&gt;
 
-&lt;div class="M-<mark>sm</mark>-[n]-of-12 M-<mark>md</mark>-[n]-of-12 M-<mark>lg</mark>-[n]-of-12"&gt;
+&lt;div class="M-grid__<mark>sm</mark>-[n]-of-12 M-grid__<mark>md</mark>-[n]-of-12 M-grid__<mark>lg</mark>-[n]-of-12"&gt;
 <span class="txt-muted">&lt;!--your contents here--&gt;</span>
 &lt;/div&gt;
 
 &lt;/div&gt;</code></pre>
 
 	 <p class="explanation">
-		Thus, the grid-item <code>&lt;div class="<span class="bg-info">M-sm-12-of-12</span> <span class="bg-success">M-md-6-of-12</span> <span class="bg-fail">M-lg-3-of-12</span>"&gt;</code> will be:
+		Thus, the grid-item with classes:
+			<br/>&nbsp;&nbsp;&nbsp;&nbsp;<code><span class="bg-info">M-grid__sm-12-of-12</span></code>
+			<br/>&nbsp;&nbsp;&nbsp;&nbsp;<code><span class="bg-success">M-grid__md-6-of-12</span></code>
+			<br/>&nbsp;&nbsp;&nbsp;&nbsp;<code><span class="bg-fail">M-grid__lg-3-of-12</span></code>
+
 		<ul>
 		  <li>
 			 <p ><span class="bg-info">
-				<strong>100% width</strong> ( 12-by-12 columns ) of the container on a small-sized screen <small>(<code>sm</code>, &lt; 750px)</small></span>
+				<strong>100% width</strong> ( 12-of-12 columns ) of the container on a small-sized screen <small>(<code>sm</code>, &lt; 750px)</small></span>
 			  </p>
 		  </li>
 		  <li>
-			 <p ><span class="bg-success"><strong>50% width</strong> ( 6-by-12 columns ) of the container on a medium-sized screen <small>(<code>lg</code>, &gt; 750px)</small></span></p>
+			 <p ><span class="bg-success"><strong>50% width</strong> ( 6-of-12 columns ) of the container on a medium-sized screen <small>(<code>lg</code>, &gt; 750px)</small></span></p>
 		  </li>
 		  <li>
 			<p ><span class="bg-fail">
-			 <strong>25% width</strong> (3 by 12 columns) of the container on a large sized screen <small>(<code>md</code>, &gt; 1,000px)</small></span></p>
+			 <strong>25% width</strong> (3-of-12 columns) of the container on a large sized screen <small>(<code>md</code>, &gt; 1,000px)</small></span></p>
 		  </li>
 		</ul>
 	 </p>
@@ -55,22 +62,8 @@
 
 	 <h4 class="site-sub-subheader"><strong>Live Example</strong><br/><small>
 	 multiple grid-items in a grid-container</small></h4>
-	 <p class="explanation">
-		If you resize the screen horizontally, you will see the dynamic resizing of a grid-item since its width depends on the of the browser-window's width.
-	 </p>
-<pre><code>&lt;div class="M-grid"&gt;
-
-&lt;div class" M-sm-[n]-of-12 M-md-[n]-of-12 M-lg-[n]-of-12"&gt;...&lt;/div&gt;
-
-&lt;div class" M-sm-[n]-of-12 M-md-[n]-of-12 M-lg-[n]-of-12"&gt;...&lt;/div&gt;
-
-&lt;div class" M-sm-[n]-of-12 M-md-[n]-of-12 M-lg-[n]-of-12"&gt;...&lt;/div&gt;
-...
-
-&lt;/div&gt;</code></pre>
 
 	 <div class="M-grid site-demo">
 		{% include grid-default.html %}
 	 </div>
 </div>
-

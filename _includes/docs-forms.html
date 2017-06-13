@@ -1,9 +1,6 @@
  <div style="position: relative"><a name="docs-forms"></a></div>
- <div class="M-container_narrow">
+ <div class="M-container--narrow">
 	 <h3 class="site-subheader">Forms</h3>
-	 <p class="explanation">
-	   Forms need to be inside a <code>&lt;form&gt;</code> tag with a class of <strong>form-group</strong>:
-	 </p>
 	 <p class="explanation">
 	   <code>&lt;form class="form-group"&gt;</code>
 	 </p>
@@ -21,19 +18,19 @@
 <pre><code>&lt;form <mark>class="M-form-group"</mark>&gt;
 
    &lt;div <mark>class="M-form-group__field"</mark>&gt;
-       &lt;label&gt; <span class="M-txt_muted">Username</span>&lt;/label&gt;
+       &lt;label &gt; <span class="M-text--muted">Username</span>&lt;/label&gt;
        &lt;input type="text"/&gt;
    &lt;/div&gt;
 
    &lt;div <mark>class="M-form-group__field"</mark>&gt;
-       &lt;label&gt;<span class="M-txt_muted">Password</span> &lt;/label&gt;
+       &lt;label &gt;<span class="M-text--muted">Password</span> &lt;/label&gt;
        &lt;input type="password"/&gt;
    &lt;/div&gt;
 
    &lt;br/&gt;
 
    &lt;div <mark>class="M-form-group__field"</mark>&gt;
-       &lt;input type="submit" class="btn" value="Login"/ &gt;
+       &lt;input type="submit" class="M-btn" value="Login"/ &gt;
    &lt;/div&gt;
 
 &lt;/form&gt;</code></pre>
@@ -46,70 +43,65 @@
     </h4>
 
     <p class="explanation">
-      You can also add a class of <code>M-grid</code> to the form to allow for more precise positioning of the form fields. Each div with a class of <code>M-form-field</code> will also include class names describing it's column layout:
-    </p>
-
-    <p class="explanation">
-      <code>&lt;div class="<mark>M-form-group__field</mark> <mark>M-sm-[n]-of-12</mark> <mark>M-md-[n]-of-12</mark> ..."&gt;</code>
+      <code>&lt;div class="</code>
+        <br/>&nbsp;&nbsp;<code><mark>M-form-group__field</mark></code>
+        <br/>&nbsp;&nbsp;<code><mark>M-grid__sm-[n]-of-12</mark></code>
+        <br/>&nbsp;&nbsp;<code><mark>M-grid__md-[n]-of-12</mark> ..."&gt;</code>
     </p>
 
     {% include long_form.html %}
 
 <pre><code>&lt;form <mark>class="M-form-group M-grid"</mark>&gt;
-   &lt;div class="<mark>M-form-group__field</mark> <mark>M-sm-12-of-12</mark> <mark>M-md-4-of-12</mark>"&gt;
-       &lt;label&gt; <span class="M-text_muted">First </span>&lt;/label&gt;
-       &lt;input type="text"/&gt;
+   &lt;div class="<mark>M-form-group__field</mark> <mark>M-grid__sm-12-of-12</mark> <mark>M-grid__md-4-of-12</mark>"&gt;
+       &lt;label <mark>class="M-form-group__field_label"</mark> &gt; <span class="M-text_muted">First </span>&lt;/label&gt;
+       &lt;input <mark>class="M-form-group__field_input"</mark> type="text"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field M-sm-12-of-12 M-md-4-of-12"&gt;
-       &lt;label&gt;<span class="M-text_muted">Middle</span> &lt;/label&gt;
-       &lt;input type="text"/&gt;
+   &lt;div class="form-field M-grid__sm-12-of-12 M-grid__md-4-of-12"&gt;
+       &lt;label class="M-form-group__field_label" &gt;<span class="M-text_muted">Middle</span> &lt;/label&gt;
+       &lt;input class="M-form-group__field_input" type="text"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field M-sm-12-of-12 M-md-4-of-12"&gt;
-       &lt;label&gt;<span class="M-text_muted">Last</span>&lt;/label&gt;
-       &lt;input type="text"/&gt;
+   &lt;div class="form-field M-grid__sm-12-of-12 M-grid__md-4-of-12"&gt;
+       &lt;label class="M-form-group__field_label" &gt;<span class="M-text_muted">Last</span>&lt;/label&gt;
+       &lt;input class="M-form-group__field_input" type="text"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field M-sm-12-of-12 M-md-6-of-12"&gt;
-       &lt;label &gt;<span class="M-text_muted">Email</span> &lt;/label&gt;
-       &lt;input type="email"/&gt;
+   &lt;div class="form-field M-grid__sm-12-of-12 M-grid__md-6-of-12"&gt;
+       &lt;label class="M-form-group__field_label" &gt;<span class="M-text_muted">Email</span> &lt;/label&gt;
+       &lt;input class="M-form-group__field_input" type="email"/&gt;
    &lt;/div&gt;
 
-   &lt;div class="form-field M-sm-12-of-12 M-md-6-of-12"&gt;
-       &lt;label&gt;<span class="M-text_muted">State</span> &lt;/label&gt;
-       &lt;select&gt;
+   &lt;div class="form-field M-grid__sm-12-of-12 M-grid__md-6-of-12"&gt;
+       &lt;label class="M-form-group__field_label" &gt;<span class="M-text_muted">State</span> &lt;/label&gt;
+       &lt;select class="M-form-group__field_input" &gt;
          &lt;option value="CA"&gt;<span class="M-text_muted">California </span>&lt;/option&gt;
          &lt;option value="NY"&gt;<span class="M-text_muted">New York </span>&lt;/option&gt;
          &lt;option value="TX"&gt;<span class="M-text_muted">Texas</span> &lt;/option&gt;
      &lt;/select&gt;
    &lt;/div&gt;
 
-   &lt;div class="M-sm-12-of-12 md-12-of-12 M-form-group__field"&gt;
-      &lt;label"&gt;<span class="M-text_muted">Description </span>&lt;/label&gt;
-      &lt;textarea rows="6"&gt; &lt;/textarea&gt;
+   &lt;div class="M-grid__sm-12-of-12 md-12-of-12 M-form-group__field"&gt;
+      &lt;label class="M-form-group__field_label" &gt;<span class="M-text_muted">Description </span>&lt;/label&gt;
+      &lt;textarea class="M-form-group__field_input" rows="6"&gt; &lt;/textarea&gt;
    &lt;/div&gt;
 
-    &lt;div class="M-sm-12-of-12 M-md-4-of-12 M-form-group__field"&gt;
-        &lt;label&gt;Do you like me?&lt;/label&gt;
-        &lt;label class="radiocheck"&gt;&lt;input type="radio" value="no" name="shampoo" &gt;&lt;span&gt;No&lt;/span&gt;&lt;/label&gt;
-        &lt;label class="radiocheck"&gt;&lt;input type="radio" value="yes" name="shampoo" &gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/label&gt;
+    &lt;div class="M-grid__sm-12-of-12 M-grid__md-4-of-12 M-form-group__field"&gt;
+        &lt;label class="M-form-group__field_label" &gt;Do you like me?&lt;/label&gt;
+        &lt;label class="M-form-group__field_input M-radiocheck"&gt;&lt;input type="radio" value="no" name="shampoo" &gt;&lt;span&gt;No&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="M-form-group__field_input M-radiocheck"&gt;&lt;input type="radio" value="yes" name="shampoo" &gt;&lt;span&gt;Yes&lt;/span&gt;&lt;/label&gt;
     &lt;/div&gt;
 
-    &lt;div class="M-sm-12-of-12 M-md-4-of-12 M-form-group__field"&gt;
-        &lt;label&gt;Pizza Toppings?&lt;/label&gt;
-        &lt;label class="radiocheck"&gt;&lt;input type="checkbox" value="mushrooms" name="pizza" &gt;&lt;span&gt;<span class="M-txt_muted">Mushrooms</span>&lt;/span&gt;&lt;/label&gt;
-        &lt;label class="radiocheck"&gt;&lt;input type="checkbox" value="pepperoni" name="pizza" &gt;&lt;span&gt;<span class="M-txt_muted">Pepperoni</span>&lt;/span&gt;&lt;/label&gt;
-        &lt;label class="radiocheck"&gt;&lt;input type="checkbox" value="deviant" name="pizza"&gt;&lt;span&gt;<span class="M-txt_muted">Pineapple</span>&lt;/span&gt;&lt;/label&gt;
+    &lt;div class="M-grid__sm-12-of-12 M-grid__md-4-of-12 M-form-group__field"&gt;
+        &lt;label class="M-form-group__field_label" &gt;Pizza Toppings?&lt;/label&gt;
+        &lt;label class="M-form-group__field_input M-radiocheck"&gt;&lt;input type="checkbox" value="mushrooms" name="pizza" &gt;&lt;span&gt;<span class="M-text--muted">Mushrooms</span>&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="M-form-group__field_input M-radiocheck"&gt;&lt;input type="checkbox" value="pepperoni" name="pizza" &gt;&lt;span&gt;<span class="M-text--muted">Pepperoni</span>&lt;/span&gt;&lt;/label&gt;
+        &lt;label class="M-form-group__field_input M-radiocheck"&gt;&lt;input type="checkbox" value="deviant" name="pizza"&gt;&lt;span&gt;<span class="M-text--muted">Pineapple</span>&lt;/span&gt;&lt;/label&gt;
     &lt;/div&gt;
 
-    &lt;div class="sm-6-of-12 M-md-6-of-12 M-form-group__field"&gt;
-        &lt;input type="submit" class="btn md primary" value="Update" / &gt;
+    &lt;div class="M-grid__sm-6-of-12 M-grid__md-6-of-12 M-form-group__field"&gt;
+        &lt;input type="submit" class="M-btn M-btn--md" value="Update" / &gt;
     &lt;/div&gt;
-
-   &lt;div class="sm-6-of-12 M-md-6-of-12 M-form-group__field"&gt;
-       &lt;input type="submit" class="btn md primary" value="submit" / &gt;
-   &lt;/div&gt;
 
 &lt;/form&gt;</code></pre>
 
@@ -121,10 +113,16 @@
   <p class="explanation">
     <strong>Radio Buttons</strong>
     <br/>
-    <label><label class="M-radiocheck"><input class="M-radio" type="radio" value="pass" name="pass_or_fail" ><span>Pass</span></label></label>
-    <label><label class="M-radiocheck"><input class="M-radio" type="radio" value="fail" name="pass_or_fail" ><span>Fail</label></label>
+    <label class="M-radiocheck">
+      <input class="M-radio" type="radio" value="pass" name="pass_or_fail" >
+      <span>Pass</span>
+    </label>
+    <label class="M-radiocheck">
+      <input class="M-radio" type="radio" value="fail" name="pass_or_fail" >
+      <span>Fail</span>
+    </label>
   </p>
-<pre><code>&lt;label <mark>class="radiocheck"</mark>&gt;
+<pre><code>&lt;label <mark>class="M-radiocheck"</mark>&gt;
    &lt;input <mark>class="M-radio" type="radio"</mark> value="pass" name="pass_or_fail"&gt;
    &lt;span&gt;<span class="M-text_muted">Pass</span>&lt;/span&gt;
 &lt;/label&gt;</code></pre>
@@ -135,10 +133,10 @@
     <label class="M-radiocheck">
        <input class="M-checkbox" type="checkbox" value="bill_later" name="pizza" >
        <span>Bill Me Later</span>
-     </label>
+    </label>
   </p>
 <pre><code>&lt;label <mark>class="M-radiocheck"</mark>>
    &lt;input <mark>class="M-checkbox" type="checkbox"</mark> value="bill_later" name="pizza" &gt;
-   &lt;span&gt;<span class="M-text_muted">Bill Me Later</span>&lt;/span&gt;&lt;
+   &lt;span&gt;<span class="M-text--muted">Bill Me Later</span>&lt;/span&gt;&lt;
 &lt;/label&gt;</code></pre>
 </div>

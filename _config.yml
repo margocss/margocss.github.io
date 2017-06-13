@@ -23,18 +23,18 @@ paginate_path: "/posts/page:num"
 # Build settings
 markdown: kramdown
 exclude: [node_modules, gulpfile.js, bower_component, exec]
-gems: 
-  - jekyll-paginate 
+gems:
+  - jekyll-paginate
   - octopress-autoprefixer
 
 
 #Development-Settings
-# url: "http://localhost:3000" # the base hostname & protocol for your site
-# baseurl: "" # the subpath of your site, e.g. /my-furries
+url: "http://localhost:3000" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /my-furries
 
 #Production-Settings
-baseurl: "" 
-url: "https://margocss.github.io" # the base hostname & protocol for your site
+# baseurl: ""
+# url: "https://margocss.github.io" # the base hostname & protocol for your site
 
 
 #ENV

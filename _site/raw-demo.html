@@ -11,9 +11,9 @@
 ">
   
   <link rel="icon" type="image/png" href="./images/favicon.png">
-  <link rel="stylesheet" href="https://margocss.github.io/css/main.css">
-  <link rel="canonical" href="https://margocss.github.io/raw-demo.html">
-  <link rel="alternate" type="application/rss+xml" title="Welcome" href="https://margocss.github.io/feed.xml">
+  <link rel="stylesheet" href="http://localhost:3000/css/main.css">
+  <link rel="canonical" href="http://localhost:3000/raw-demo.html">
+  <link rel="alternate" type="application/rss+xml" title="Welcome" href="http://localhost:3000/feed.xml">
 </head>
 
 
@@ -22,7 +22,7 @@
 <nav class="nav-bar with-logo fixed">
   
   <div class="nav-logo">
-    <a href="https://margocss.github.io">
+    <a href="http://localhost:3000">
       <img src="./images/molecule2.png" alt="logo" class="site-nav-logo">
     </a>
   </div>
@@ -37,7 +37,7 @@
   
   <div class="nav-list">
       
-        <a href="https://margocss.github.io">
+        <a href="http://localhost:3000">
           Home
         </a>
       
@@ -51,7 +51,7 @@
       
         
           
-          <a href="https://margocss.github.io/documentation.html">
+          <a href="http://localhost:3000/documentation.html">
               Docs
           </a>
           
@@ -96,7 +96,7 @@
       
         
           
-          <a href="https://margocss.github.io/showcase.html">
+          <a href="http://localhost:3000/showcase.html">
               Showcase
           </a>
           
@@ -135,25 +135,25 @@
 
   <div class="nav-list">
     <a class="active" href="#">Raw-Demo</a>
-    <a href="https://margocss.github.io">Back Home</a>
+    <a href="http://localhost:3000">Back Home</a>
   </div>
 </nav>
 
-<div class="M-container_full M-bg_info">
-  <div class="M-container_narrow">
+<div class="M-container_full M-bg--info">
+  <div class="M-container--narrow">
     <p>&nbsp;</p>
     <h1 class="title">Site Name</h1>
     <h3 class="subtitle">A clever subtitle.</h3>
-    <button class="M-btn_lg M-bg_fail">Learn More</button>
+    <button class="M-btn--lg M-bg--fail">Learn More</button>
     <p>&nbsp;</p>
   </div>
 </div>
 
 <hr/>
 
-<div class="M-container_narrow">
+<div class="M-container--narrow">
   <h3>Leaderboard</h3>
-    <table class="M-table M-table_full-width M-table_striped">
+    <table class="M-table M-table--full-width M-table--striped">
       <thead>
         <tr>
           <th>Rank</th>
@@ -165,7 +165,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr class="M-bg_success">
+        <tr class="M-bg--success">
           <td class="tcol-2rem">1</td>
           <td class="tcol-8rem">Yoshi Eggs</td>
           <td class="tcol-7rem">10-3</td>
@@ -213,48 +213,46 @@
     </table>
 </div>
 
-<div class="M-container_narrow">
+<div class="M-container--narrow">
   <h3>Log In to Comment</h4>
   <form action="" class="M-form-group M-grid">
-    <div class="M-sm-12-of-12 M-md-4-of-12 M-form-group__field">
-      <label>Username</label>
-      <input type="text"/ >
+    <div class="M-grid__sm-12-of-12 M-grid__md-4-of-12 M-form-group__field">
+      <label class="M-form-group__field_label">Username</label>
+      <input class="M-form-group__field_input" type="text"/ >
 
-      <label>Password</label>
-      <input type="text"/ >
+      <label class="M-form-group__field_label">Password</label>
+      <input class="M-form-group__field_input" type="text"/ >
     </div>
-    <div class="M-sm-12-of-12 M-md-8-of-12 M-form-group__field">
-      <label>Comment</label>
-      <textarea rows="5" ></textarea>
+    <div class="M-grid__sm-12-of-12 M-grid__md-8-of-12 M-form-group__field">
+      <label class="M-form-group__field_label">Comment</label>
+      <textarea class="M-textarea M-form-group__field_input" rows="5" ></textarea>
     </div>
-    <div class="M-sm-12-of-12 M-md-3-of-12 M-form-group__field">
-      <input type="submit" class='M-btn M-btn_primary'>
+    <div class="M-grid__sm-12-of-12 M-grid__md-3-of-12 M-form-group__field">
+      <input type="submit" class='M-btn M-btn--primary'>
     </div>
   </form>
 
-<div class="M-container_narrow">
+<div class="M-container--narrow">
 
 </div>
 
-<div class="M-container_full">
-  <div class="M-container_narrow">
-	
+<div class="M-container--full">
 
     <h2 class="M-text_primary">What they're saying about Margo</h2>
 
-    <section class="M-segment M-bg_warn">
+    <section class="M-segment M-bg--warn">
       <h4><strong>NOTE</strong></h4>
       <p>The following testimonials may or may not be fabricated and may or may not be from paid actors</p>
     </section>
 
-    <div class="M-grid-container">
-      <div class="M-sm-12-of-12 M-md-6-of-12">
+    <div class="M-grid">
+      <div class="M-grid__sm-12-of-12 M-grid__md-6-of-12">
         <blockquote class="M-blockquote">
           <p>Mmmmm, that's a fine lookin' framework. Been waiting for this for a long, long time</p>
           <cite class="M-cite">Willis McDermott</cite>
         </blockquote>
       </div>
-      <div class="M-sm-12-of-12 M-md-6-of-12">
+      <div class="M-grid__sm-12-of-12 M-grid__md-6-of-12">
         <blockquote class="M-blockquote">
           <p>
             This one could be truly revolutionary. I will totally fork this, star this, and watch it on Github.
@@ -263,7 +261,7 @@
         </blockquote>
       </div>
     </div>
-  </div>
+</div>
 
     <script src="./js/main.js"></script>
   </body>

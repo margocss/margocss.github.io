@@ -8,7 +8,7 @@ input[type='submit'] {
   -webkit-appearance: none;
 }
 
-button, .M-btn, button.M-btn, input[type='button'], input[type='submit'], a.M-btn_md, a.M-btn{
+button, .M-btn, button.M-btn, input[type='button'], input[type='submit'], a.M-btn--md, a.M-btn{
   display: inline-block;
   text-decoration: none;
   background: #fff;
@@ -21,15 +21,15 @@ button, .M-btn, button.M-btn, input[type='button'], input[type='submit'], a.M-bt
   cursor: pointer;
   color: #333;
 
-  &.M-btn_sm { font-size: .75rem; padding: .5rem 1.25rem; }
-  &.M-btn_lg { font-size: 1.5rem; padding: 1rem 1.75rem; }
-  &.M-btn_block { width: 100% }
+  &.M-btn--sm { font-size: .75rem; padding: .5rem 1.25rem; }
+  &.M-btn--lg { font-size: 1.5rem; padding: 1rem 1.75rem; }
+  &.M-btn--block { width: 100% }
 
   &:hover{
     background: $light-gray;
   }
 
-  &.M-btn_primary{
+  &.M-btn--primary{
     background: $primary-color;
     color:#fff;
 
@@ -38,5 +38,5 @@ button, .M-btn, button.M-btn, input[type='button'], input[type='submit'], a.M-bt
     }
   }
 
-  
+
 }

@@ -74,17 +74,18 @@ textarea{
 
  .M-form-group__field{
    display: inline-block;
-   label{
+   .M-form-group__field_label{
      display: block;
      font-weight: 700;
      margin-bottom: .5rem;
    }
 
-   input[type='text'],
-   input[type='email'],
-   input[type='password'],
-   select,
-   textarea{
+   .M-form-group__field_input,
+   input[type='text'].M-form-group__field_input,
+   input[type='email'].M-form-group__field_input,
+   input[type='password'].M-form-group__field_input,
+   select.M-form-group__field_input,
+   textarea.M-form-group__field_input{
      display: block;
    }
  }
